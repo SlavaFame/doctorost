@@ -1,0 +1,137 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 576px) {
+	.alphabet__block h2:after {
+		left: 15px;
+	}
+
+	.head__location,
+	.head__time,
+	.head__btn,
+	.menu__list,
+	.menuBottom {
+		display: none;
+	}
+	.head__logo {
+		height: 27px;
+		width: 87px;
+		display: flex;
+		img {
+			max-width: 100%;
+		}
+	}
+	.head__phoneNumber {
+		font-size: 10px;
+		line-height: 11px;
+	}
+
+	.navBottom__inner {
+		justify-content: center;
+    	gap: 20px;
+	}
+
+	.navBottom-item {
+		width: 260px;
+	}
+
+	.head {
+		flex-direction: row;
+	}
+
+	.menu {
+		order:1;
+		&-button {
+			display: block;
+		}
+	}
+
+	.head__container {
+		order: 2;
+		width: 100%;
+		margin: 0 15px;
+		justify-content: space-between;
+	}
+
+	.head__logo {
+		margin: 0 auto;
+	}
+
+	.navigation {
+		flex-direction: column;
+		margin: 45px 0 15px;
+	}
+
+	.navigation__search__field {
+		width: 100%;
+	}
+
+	.navigation__search {
+		order: 1;
+		width: 100%;
+	}
+
+	.navigation__breadcrumbs {
+		order: 2;
+		margin-top: 10px;
+		justify-content: flex-start;
+		width: 100%;
+	}
+
+	.head__phoneNumber-item {
+		margin: 5px 0 3px 0;
+	}
+
+	.aboutMain__col__textright,
+	.aboutMain__col__textleft,
+	.reviews__mainslider__desc {
+		padding: 0;
+	}
+
+	.method__statistics h4, .direction__statistics h4 {
+		font-size: 45px;
+    	line-height: 45px;
+	}
+
+	.availability__block {
+		gap:20px 0;
+	}
+
+	/*.aboutMain__prints {
+		height: auto;
+		flex-wrap: wrap;
+	}
+
+	.aboutMain__prints-item {
+		position: relative;
+	}*/
+
+	.reviews__mainslider__photo {
+		flex: 100%;
+	}
+
+	.footer__address {
+		margin: 15px 20px 20px 0;
+	}
+
+	.greenInfo__list {
+		justify-content: flex-start;
+	}
+
+	.topMain__slider-item h1 {
+    	font-size: 30px;
+    	line-height: 40px;
+	}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+.salesMain__head:after, .doctorsMain__head:after, .methodsMain__head:after, .newsMain__head:after {
+	width: auto;
+}
+
+.phys__head h2, .medic__head h2, .regenerat__head h2, .methods__head h2, .diagnostics__head h2, 
+.reviews__head h2, .faq__head h2, .author__head h2, .howMuch__head h2, .opinion__head h2 {
+	font-size: 16px;
+}
+
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Статья</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/">
+	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header class="head">
+		<div class="head__container">
+			<a class="head__logo" href="#">
+				<img class="head__logo-img" src="img/logos/logo2.svg" alt="Лого Доктор Ост">
+			</a>
+			<div class="head__location">
+				<a class="head__location-city" href="#">Челябинск</a>
+				<span>Университетская набережная, 34</span>
+			</div>
+			<div class="head__time">
+				<span>Пн-Пт: 8:00-22:00</span>
+				<span>Сб-Вс: 8:00-21:00</span>
+			</div>
+			<div class="head__appointment">
+				<div class="head__phoneNumber">
+					<a href="tel:83512252929" class="head__phoneNumber-item">8 (351) 
+						<span class="head__phoneNumber-showText">показать телефон</span>
+						<span class="head__phoneNumber-showNum">225-29-29</span>
+					</a>
+					<a href="tel:88002019911" class="head__phoneNumber-item">8 (800) 
+						<span class="head__phoneNumber-showText">показать телефон</span>
+						<span class="head__phoneNumber-showNum">2019-911</span>
+					</a>
+				</div>
+				<button href="modal3" class="head__btn open_modal">Записаться на прием</button>
+			</div>
+		</div>
+		<nav class="menu">
+			<div class="menu-button">
+				<span class="menu-button__lines">
+					<span class="menu-button__line"></span>
+					<span class="menu-button__line"></span>
+					<span class="menu-button__line"></span>
+				</span>
+			</div>
+
+			<ul class="menu__list">
+				<li class="menu__list-item"><a class="menu__link" href="#">О Доктор Ост</a></li>
+				<li class="menu__list-item">
+					<a class="menu__link menu__sub" href="#">Направления</a>
+
+					<div class="menu__subwrap">
+						<div class="container">	
+							<ul class="menu__sublist">
+								<li class="menu__sublist-item">
+									<a href="#">Лечение позвоночника</a>
+								</li>
+								<li class="menu__sublist-item">
+									<a href="#">Лечение суставов</a>
+								</li>
+								<li class="menu__sublist-item">
+									<a href="#">Лечение головной боли</a>
+								</li>
+								<li class="menu__sublist-item">
+									<a href="#">Реабилитация после протезирования</a>
+								</li>
+								<li class="menu__sublist-item">
+									<a href="#">Спортивная медицина</a>
+								</li>
+								<li class="menu__sublist-item">
+									<a href="#">Реабилитация после инсульта</a>
+								</li>							
+							</ul>	
+						</div>
+					</div>
+				</li>
+				<li class="menu__list-item"><a class="menu__link" href="chto-lechim.html">Что лечим</a></li>
+				<li class="menu__list-item"><a class="menu__link" href="methods.html">Методики</a></li>
+				<li class="menu__list-item"><a class="menu__link" href="specialists.html">Специалисты</a></li>
+				<li class="menu__list-item"><a class="menu__link" href="#">Отзывы</a></li>
+				<li class="menu__list-item"><a class="menu__link" href="#">Акции</a></li>
+				<li class="menu__list-item"><a class="menu__link" href="#">Цены</a></li>
+				<li class="menu__list-item"><a class="menu__link" href="#">Новости</a></li>
+				<li class="menu__list-item"><a class="menu__link" href="faq.html">Вопрос-ответ</a></li>
+				<li class="menu__list-item"><a class="menu__link" href="#">Статьи</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="container">
+		<div class="navigation">
+			<div class="navigation__search">
+				<form class="navigation__search__form" action="/search/index.php">
+					<input class="navigation__search__field" placeholder="Поиск..." name="q" autocomplete="off" type="text">
+					<input class="navigation__search__btn" name="s" type="submit" value="">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<main>
+		<article class="articleDetail">
+			<section class="container">
+				<h1>Lorem, ipsum, dolor.</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus accusamus iure fugiat nobis consectetur, hic omnis harum perspiciatis. Iure placeat animi laudantium veniam iusto eius dolorum autem assumenda! Sapiente eius eos iure corporis velit? Voluptatem repellat animi accusamus eligendi nobis facere voluptate suscipit sequi placeat velit, dignissimos enim praesentium ex facilis, corporis laboriosam, est hic fuga voluptatum sapiente fugit eos perferendis aliquid. Repudiandae aliquam non quaerat quae nobis ut quia possimus amet? Sapiente, reprehenderit accusantium quos neque labore voluptatibus qui eaque in, libero ipsum itaque quasi aut est veniam minus.</p>
+			</section>
+			<section class="container">
+				<div class="article__dropdownMenu">
+					<button class="article__btnSelect" id="article__btnSelect" onclick="dropdownMenu()">Выбрать другую статью</button>
+					<div id="article__dropdownList" class="article__dropdownList">
+    					<a class="article__dropdownList-item" href="#">Link 1</a>
+    					<a class="article__dropdownList-item" href="#">Link 2</a>
+    					<a class="article__dropdownList-item" href="#">Link 3</a>
+  					</div>
+				</div>
+			</section>
+		</article>
+	</main>
+
+		<footer class="footer">
+			<nav class="menuBottom">
+				<ul class="menuBottom__list">
+					<li class="menuBottom__list-item"><a class="menuBottom__link" href="#">О Доктор Ост</a></li>
+					<li class="menuBottom__list-item"><a class="menuBottom__link" href="#">Направления</a></li>
+					<li class="menuBottom__list-item"><a class="menuBottom__link" href="#">Что лечим</a></li>
+					<li class="menuBottom__list-item"><a class="menuBottom__link" href="#">Методики</a></li>
+					<li class="menuBottom__list-item"><a class="menuBottom__link" href="#">Специалисты</a></li>
+					<li class="menuBottom__list-item"><a class="menuBottom__link" href="#">Отзывы</a></li>
+					<li class="menuBottom__list-item"><a class="menuBottom__link" href="#">Акции</a></li>
+					<li class="menuBottom__list-item"><a class="menuBottom__link" href="#">Цены</a></li>
+					<li class="menuBottom__list-item"><a class="menuBottom__link" href="#">Новости</a></li>
+					<li class="menuBottom__list-item"><a class="menuBottom__link" href="#">Вопрос-ответ</a></li>
+					<li class="menuBottom__list-item"><a class="menuBottom__link" href="#">Статьи</a></li>
+				</ul>
+			</nav>
+			<div class="container">
+				<div class="footer__info">
+					<div class ="footer__license">
+						МЕДИЦИНСКИЙ ЦЕНТР «ДОКТОР ОСТ» <br>
+						ООО «Челябинск «ДОКТОР ОСТ» <br>
+						<a href="#" class="footer__license__link">Лицензия ЛО-24-01-004119 от 13.09.2018 <br>
+							выдана Министерством <br>
+						здравоохранения Красноярского края.</a>
+					</div>
+					<div class="footer__button">
+						<button class="footer__button-error">Увидели ошибку?</button>
+						<button class="footer__button-suggest">Жалобы и предложения</button>
+					</div>
+					<address class="footer__address">
+						<span>Адрес: Челябинск ул. Университетская набережная, д.34</span>
+						<span>Телефон: +7 351 225-29-29</span>
+						<span>Часы работы: 8:00-20:00</span>
+						<a class="footer__address__link" href="#">Схема проезда</a>
+						<div class="footer__socialx">
+							<div class="footer__socialx-item">
+								<div class="footer__socialx__ig"></div>
+							</div>
+							<div class="footer__socialx-item">
+								<div class="footer__socialx__vk"></div>
+							</div>
+							<div class="footer__socialx-item">
+								<div class="footer__socialx__ok"></div>
+							</div>
+						</div>
+						<button class="btn__scrollTop">Наверх</button>
+					</address> 
+				</div>
+			</div>
+			<div class="footer__disclaimer">
+				<div class="container">
+					<div class="row">
+						Имеются противопоказания. Необходимо получить консультацию специалиста
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/libs.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+	</html>

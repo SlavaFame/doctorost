@@ -1,0 +1,254 @@
+.disease_nav {
+	display: flex;
+	flex-flow: wrap row;
+	justify-content: space-between;
+	flex: 1 1 auto;
+	margin: 1rem 0;
+	font-size: 18px;
+	line-height: 21px;
+
+	&__item {
+		font-weight: bold;
+		border: 1px solid $green-1;
+		color: $green-1;
+		background-color: #fff;
+		text-align: center;
+		text-transform: uppercase;
+		text-decoration: none;
+
+		&:hover, &.active {
+			color: #fff;
+			background-color: $green-1;
+			cursor: pointer;
+		}
+
+		&:focus{
+			color: #fff;
+			background-color: $green-1;
+		}
+	}
+}
+
+.disease_list {
+	h2 {
+		text-transform: uppercase;
+		text-align: center;
+		color: $green-1;
+		margin-bottom: 1rem;
+		font-size: 1.75rem;
+		width: 100%;
+	}
+}
+
+.disease_search {
+	display: flex;
+	width: 100%;
+	margin-bottom: 40px;
+	input {
+		width: 100%;
+		height: 3rem;
+		padding-left: 4rem;
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 23px;
+		border: 2px solid $green-1;
+		position: relative;
+		background: url(img/icons/search.svg) left no-repeat;
+		background-size: 20px;
+    	background-position: 20px;
+    	&:focus {
+    		box-shadow: 0 4px 6px 0 rgba(32,33,36,0.28);
+    		border: 2px solid $white;
+    	}
+    	&::placeholder {
+    		color: #A19F9F;
+    	}
+	}
+}
+
+.disease_info {
+	font-size: 18px;
+	line-height: 21px;
+	padding: 0;
+	position: relative;
+	align-items: flex-start;
+	margin-bottom: 50px;
+
+	h3{
+		color: $green-1;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+		margin: 50px 0 30px 0;
+		font-weight: 500;
+		font-size: 30px;
+		line-height: 34px;
+
+		&:first-letter {
+			color: $orange;
+		}
+	}
+	h4{
+		color: $green-1;
+		text-transform: uppercase;
+		font-weight: 400;
+		border-bottom: 2px solid $green-1;
+		padding: 10px 0 16px 0;
+		font-size: 20px;
+		line-height: 23px;
+	}
+	p {
+		line-height: 1;
+		margin-bottom: 1rem;
+	}
+
+	&__desc{
+		a {
+			color: $green-1;
+			text-decoration: none;
+
+			&:after{
+				content: '>';
+				padding-left: 0.25rem;
+			}
+			&:hover{
+				color: $green-1;
+			}
+		}
+
+		button {
+			width: 215px;
+			height: 54px;
+			color: #fff;
+			background-color: $green-1;
+			padding: 15px 20px;
+			text-transform: uppercase;
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 23px;
+
+			&:hover {
+				background-color: $orange;
+				transition: all 0.35s ease-in-out;
+				cursor: pointer;
+			}
+			&:focus {
+				outline: none;
+				background-color: $orange;
+			}
+		}
+	}
+}
+
+.disease_symthom{
+	ul {
+		display: flex;
+		flex-flow: wrap column;
+		justify-content: center;
+		padding: 38px 0;
+	}
+
+	li {
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 23px;
+		padding-bottom: 15px;
+		list-style-type: none;
+	}
+
+	a {
+		color: #000;
+		text-decoration: none;
+		display: block;
+
+		&:hover, &:first-letter, &:focus {
+			color: $orange;
+		}
+	}
+}
+
+.disease_recomendation {
+	ul {
+		padding: 38px 0;
+	}
+	li {
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 23px;
+		padding-bottom: 15px;
+		list-style-type: none;
+	}
+	a {
+		color: #000;
+		text-decoration: none;
+		&:hover, &:focus{
+			color: $orange;
+
+		}
+	}
+}
+
+.select_disease__list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 0 4px 6px 0 rgba(32,33,36,0.28);
+}
+
+.select_disease a {
+    color: $green-1;
+    width: 100%;
+    display: flex;
+    padding: 6px 0 6px 0.5rem;
+    
+    &:before {
+    	content: '';
+    	width: 20px;
+    	height: 20px;
+    	background: url(img/icons/search.svg) no-repeat;
+    	background-size: contain;
+    	margin-right: 13px;
+	}
+}
+
+.alphabet_disease{
+	margin: 0 0 40px 0;
+	&-item{
+		list-style-type: none;
+		&.active{
+			a {
+				color:$orange;
+				&:hover {
+					color:$orange;
+				}
+			}
+		}
+		&:focus{
+			color: #fff;
+			background-color: $orange;
+		}
+	}
+
+	ul {
+		display: flex;
+		flex-flow: wrap row;
+		justify-content: center;
+		gap:40px;
+	}
+
+	a {
+		color: $green-1;
+		text-decoration: none;
+		font-size: 25px;
+    	line-height: 27px;
+
+		&:hover{
+			color: $orange;
+		}
+	}
+}

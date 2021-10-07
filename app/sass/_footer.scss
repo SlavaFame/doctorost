@@ -1,0 +1,117 @@
+.footer {
+	background-color: $green-3;
+	color: $white;
+	font-size: 16px;
+	line-height: 23px;
+	padding: 15px 0 30px 0;
+
+	&__socialx {
+		display: flex;
+		gap: 30px;
+		&-item {
+			width: 50px;
+			height: 50px;
+			background-color: $white;
+			margin-top: 19px;
+			cursor: pointer;
+			display: flex;
+    		justify-content: center;
+    		align-items: center;
+		}
+		&__vk {
+			background: url(img/icons/socials-vk.svg) center center / contain no-repeat;
+			height: 22px;
+    		width: 36px;
+		}
+		&__ig {
+			background: url(img/icons/socials-ig.svg) center center / cover no-repeat;
+			height: 32px;
+    		width: 32px;
+		}
+		&__ok {
+			background: url(img/icons/socials-ok.svg) center center / contain no-repeat;
+			height: 30px;
+    		width: 18px;
+		}
+	}
+
+	&__info {
+		display: flex;
+    	flex-wrap: wrap;
+    	justify-content: space-between;
+    	flex:1;
+	}
+
+	&__license {
+		flex:1;
+		margin-bottom: 15px;
+		&__link {
+			color: $white;
+			text-decoration: underline
+		}
+	}
+
+	&__button {
+		display: flex;
+		flex-direction: column;
+		flex:1;
+
+		&-error,
+		&-suggest {
+			text-transform: uppercase;
+			background-color: $green-3;
+			color: $white;
+			font-size: 16px;
+			border: 1px solid $white;
+			padding: 20px 0px 18px 0px;
+    		margin-bottom: 31px;
+    		width: 258px;
+
+			&:hover {
+				background-color: $white;
+				color: $green-3;
+			}
+		}
+	}
+
+	&__disclaimer {
+		background-color: $white;
+		color: $green-3;
+		font-size: 25px;
+		text-align: center;
+		text-transform: uppercase;
+		padding: 24px 0 23px 0;
+	}
+
+	&__address {
+		display: flex;
+		flex-direction: column;
+		margin: 0 20px 20px 20px;
+		width: 290px;
+		&__link {
+			color: $white;
+			text-decoration: underline
+		}
+	}
+}
+
+.btn__scrollTop {
+	display: none;
+	position: fixed;
+	justify-content: center;
+    align-items: center;
+	background-image: url("data:image/svg+xml,%3Csvg fill='%23009C9D' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 256 256' style='enable-background:new 0 0 256 256;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpolygon points='128,48.907 0,176.907 30.187,207.093 128,109.28 225.813,207.093 256,176.907 '/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
+	background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center center;
+	font-size: 0;
+	width: 50px;
+    height: 50px;
+    background-color: $white;
+    border: 2px solid $green-1;
+    margin-top: 19px;
+    cursor: pointer;
+    right: 10px;
+    bottom: 15%;
+    z-index: 993;
+}

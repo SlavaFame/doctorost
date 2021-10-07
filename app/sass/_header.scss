@@ -1,0 +1,115 @@
+.head {
+	font-size: 1.6em;
+	line-height: 1.6em;
+	color: $green-1;
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 994;
+
+    &__container {
+    	display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+    	margin: 0 auto;
+    	width: 1170px;
+    	min-width: 320px;
+    }
+
+	&__logo {
+		width: 242px;
+		&-img {
+			max-height: 100%;
+    		max-width: 100%;
+    		object-fit: contain;
+    		object-position: center bottom;
+    		width: auto;
+		}
+	}
+	&__location {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		&:before {
+			content: '';
+			background-image: url('img/icons/pin-green.svg');
+			width: 10px;
+			height: 15px;
+    		margin-right: 10px;
+    		position: absolute;
+    		left: -20px;
+    		top: 25%;
+		}
+		&-city {
+			display: flex;
+    		align-items: center;
+			&:after {
+				content: '';
+				background: url("img/icons/green-arrow-down.svg") center no-repeat;
+				width: 12px;
+    			height: 6px;
+    			display: flex;
+    			margin-left: 5px;
+			}
+		}
+	}
+	&__time {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		&:before {
+			content: '';
+			background-image: url('img/icons/clock-green.svg');
+			width: 15px;
+			height: 15px;
+			margin-right: 10px;
+			position: absolute;
+    		left: -20px;
+    		top: 25%;
+		}
+	}
+	&__appointment {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	&__btn {
+		height: 53px;
+		width: 232px;
+		font-size: 1em;
+		color: $white;
+		background-color: $orange;
+		border: 3px solid $orange;
+		text-transform: uppercase;
+		&:hover {
+			background-color: $white;
+			border: 3px solid $orange;
+			color: $orange;
+		}
+	}
+	&__phoneNumber {
+		color: $orange;
+		display: flex;
+		flex-direction: column;
+		margin-right: 10px;
+		&-item {
+			font-size: 1.4em;
+    		font-weight: 500;
+    		display: flex;
+			align-items: center;
+			gap: 5px;
+			color: $orange;
+		}
+		&-showText {
+			font-size: 13px;
+			cursor: pointer;
+		}
+		&-showNum {
+			display: none;
+		}
+	}
+}

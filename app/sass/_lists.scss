@@ -1,0 +1,120 @@
+.doctorDetail__head {
+	margin: 60px 0 20px;
+}
+
+.vertebra__orange li,
+.green__cubes li,
+.contraindications li,
+.graduation li,
+.dopGraduation li,
+.courses li,
+.achievements li,
+.articles li,
+.checkMarks li {
+	list-style: none;
+    padding: 0 0 16px 0;
+}
+
+.vertebra__orange {
+	li {
+		&:before {
+			content: '';
+			background-image: url(img/lists/vertebra.svg);
+    		background-size: contain;
+    		background-repeat: no-repeat;
+    		margin-right: 15px;
+    		padding: 0px 10px;
+		}
+	}
+}
+
+.green__cubes {
+	li {
+		&:before {
+			content: '';
+			background-image: url(img/lists/green_cube.svg);
+    		background-size: contain;
+    		background-repeat: no-repeat;
+    		margin-right: 15px;
+    		padding: 0px 10px;
+		}
+	}
+}
+
+.contraindications {
+	li {
+		&:before {
+			content: '';
+			background-image: url(img/lists/contraindication.svg);
+    		background-size: contain;
+    		background-repeat: no-repeat;
+    		margin-right: 15px;
+    		padding: 0px 10px;
+		}
+	}
+}
+
+.graduation {
+		li {
+		&:before {
+			content: '';
+			background-image: url(img/lists/edu_green.svg);
+    		background-size: contain;
+    		background-repeat: no-repeat;
+    		margin-right: 15px;
+    		padding: 0px 10px;
+		}
+	}
+}
+
+.dopGraduation {
+		li {
+		&:before {
+			content: '';
+			background-image: url(img/lists/edu_orange.svg);
+    		background-size: contain;
+    		background-repeat: no-repeat;
+    		margin-right: 15px;
+    		padding: 0px 10px;
+		}
+	}
+}
+
+.achievements {
+		li {
+		&:before {
+			content: '';
+			background-image: url(img/lists/achievements.svg);
+    		background-size: contain;
+    		background-repeat: no-repeat;
+    		margin-right: 15px;
+    		padding: 0px 10px;
+		}
+	}
+}
+
+.checkMarks {
+		li {
+		&:before {
+			content: '';
+			background-image: url(img/lists/courses.svg);
+    		background-size: contain;
+    		background-repeat: no-repeat;
+    		margin-right: 15px;
+    		padding: 0px 10px;
+		}
+	}
+}
+
+.articles {
+		li {
+		&:before {
+			content: '';
+			background-image: url(img/lists/articles.svg);
+    		background-size: contain;
+    		background-repeat: no-repeat;
+    		margin-right: 15px;
+    		padding: 0px 10px;
+		}
+	}
+}

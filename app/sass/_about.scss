@@ -1,0 +1,31 @@
+.card {
+    width: 270px;
+    color: $green-1;
+    text-align: center;
+    margin-bottom: 1rem;
+    //box-shadow: 0 0 20px 5px rgb(0 121 167 / 13%);
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.insurance_card__img {
+    display: flex;
+    height: 100%;
+    background-size: contain;
+    filter: grayscale(100%);
+    min-height: 170px;
+    
+    &:hover { 
+        filter: grayscale(0%);
+        transition: 0.75s ease-in-out;
+    }
+}

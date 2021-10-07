@@ -1,0 +1,181 @@
+.reviews {
+	&_head {
+		margin-bottom: 20px;
+	}
+	&__slider {
+		h3 {
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 23px;
+			color: $green-1;
+			text-transform: uppercase;
+			margin-bottom: 27px;
+		}
+		h4 {
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 21px;
+			color: $green-1;
+			text-transform: uppercase;
+			text-align: left;
+		}
+	}
+	&__btn {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 21px;
+		background-color: $green-1;
+		color: $white;
+		width: 240px;
+		height: 53px;
+		margin-top: 55px;
+		text-transform: uppercase;
+		border: 3px solid $green-1;
+		&:hover {
+			color: $green-1;
+			background-color: $white;
+			border: 3px solid $green-1;
+		}
+	}
+	&__mainslider {
+		&-item {
+			display: flex;
+			flex-wrap: wrap;
+			height: 100%;
+		}
+		
+		&__link {
+			color: rgba(0, 0, 0, 0.56); 
+			&:after {
+				content: '';
+				background: url(img/diagnostics/grey-arrow.svg) 0px 7px / contain no-repeat;
+				padding: 0 3px;
+				margin-left: 5px;
+			}
+		}
+		&__photo {
+			width: 627px;
+			flex:1;
+			img {
+				height: auto;
+				max-width: 100%;
+			}
+		}
+		&__desc {
+			flex:1;
+			padding: 0 25px;
+			text-align: left;
+		}
+	}
+	&__navslider {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 50px;
+		&-item {
+			display: flex;
+			flex-wrap: wrap;
+			flex:1;
+		}
+
+		&__link {
+			color: rgba(0, 0, 0, 0.56); 
+			&:after {
+				content: '';
+				background: url(img/diagnostics/grey-arrow.svg) 0px 7px / contain no-repeat;
+				padding: 0px 3px;
+				margin-left: 5px;
+			}
+		}
+		&__photo {
+			flex: 0 0 248px;
+			img {
+				height: auto;
+				max-width: 100%;
+			}
+		}
+		&__desc {
+			flex:1;
+			padding: 0 25px;
+			text-align: left;
+		}
+	}
+}
+
+.reviewsDetail {
+	&__header {
+		color: $white;
+		background-color: $green-1;
+		font-weight: 500;
+		padding: 22px 0 20px;
+		margin-bottom: 30px;
+		a {
+			color: $white;
+			text-decoration: underline
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	&__content {
+		img {
+			margin: 0 15px 15px 0;
+			float: left
+		}
+		iframe{
+			margin: 0 20px 20px 0;
+			float: left;
+			min-width: 300px;
+			max-width: 55%;
+			height: 353px;
+		}
+	}
+
+	&__links {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		gap: 10px;
+		margin: 30px 0 0 0;
+
+		&-item {
+			color: $green-1;
+			border-bottom: 1px solid $green-1;
+			width: fit-content;
+		}
+	}
+}
+
+.reviewsSection {
+	&__header {
+		color: $white;
+		background-color: $green-1;
+		font-weight: 500;
+		padding: 22px 0 20px;
+		margin-bottom: 30px;
+	}
+	&-item {
+		display: flex;
+		gap: 20px;
+		margin-bottom: 30px;
+	}
+	&__photo {
+		flex: 0 0 250px;
+	}
+	&__text {
+		flex: 1;
+	}
+	&__link {
+		margin-top: 15px;
+		font-weight: 400;
+    	font-size: 20px;
+    	line-height: 23px;
+    	color: #c4c4c4;
+    	&:after {
+      		content: "";
+      		background: url(img/diagnostics/grey-arrow.svg) 0 7px / contain no-repeat;
+      		padding: 0 3px;
+      		margin-left: 5px;
+    	}
+	}
+}

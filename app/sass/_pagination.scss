@@ -1,0 +1,37 @@
+.content {
+	background-color: $grey;
+	&__inner {
+		font-weight: 300;
+    	font-size: 16px;
+    	line-height: 19px;
+	}
+
+	&__pagination {
+		margin: 15px 0 20px 0;
+		display: flex;
+		flex-wrap: wrap;
+
+		a {
+			margin-right: 20px;
+		}
+
+		&-item {
+			margin-right: 10px;
+			&:hover {
+				color: $green-1;
+				cursor: pointer;	
+			}
+		}
+		.active {
+			color: $green-1;
+			font-weight: 400;
+		}
+	}
+	a {
+		color: #000;
+		
+		&:hover {
+        	color: $green-1;
+      	}
+	}
+}

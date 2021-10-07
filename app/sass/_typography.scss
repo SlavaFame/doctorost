@@ -1,0 +1,82 @@
+$green-1: #009C9D; //rgba(0, 156, 157, 0,88);
+$green-2: #42C9C5;
+$green-3: #0BBBB9;
+$green-4: #48D1CC;
+$green-5: #27D0CC;
+$green-6: #32C8C3;
+$green-7: #33C5C0; //rgba(51, 197, 192, 0,9);
+$green-8: #32B6C0;
+
+$orange: #E05222;
+$black: #000000;
+$white: #FFFFFF;
+$grey: #F5F5F5;
+
+$telegram: #61A8DE;
+$viber: #7D3DAF;
+$skype: #15ACE5;
+$whatsapp: #1BD741;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	outline: none;
+}
+
+body, h1, h2, h3, h4, h5, input, button, address, a, b, strong, textarea, div, span {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+	color: $green-1;
+	text-decoration: none;
+	&:hover {
+		color: $orange;
+		transition: 0.5s ease;
+	}
+}
+
+address {
+	font-style: normal;
+}
+
+body {
+	font-size: 10px;
+	line-height: 10px;
+	font-weight: 400;
+	font-style: normal;
+	min-width: 320px;
+	color: $black;
+	overflow-x: hidden;
+}
+
+button {
+	font-weight: 500;
+	cursor: pointer;
+	border: none;
+	&:hover {
+    	transition: 0.5s ease;
+	}
+}
+
+h1 {
+	color: $green-1;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 34px;
+	text-transform: uppercase;
+}
+
+h2 {
+	color: $green-1;
+	text-transform: uppercase;
+	font-size: 25px;
+    line-height: 29px;
+	font-weight: 500;
+}
+
+h2, h3, h4, h5 {
+	margin: 15px 0;
+}

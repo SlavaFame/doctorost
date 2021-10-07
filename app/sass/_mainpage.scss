@@ -1,0 +1,385 @@
+.topMain {
+	&__slider {
+		&__main {
+			display: flex;
+			flex-direction: column;
+		}
+		&-item {
+			font-size: 22px;
+			line-height: 25px;
+			background-position: center center;
+			background-size: cover;
+			background-repeat: no-repeat;
+
+			h1 {
+				font-weight: bold;
+				font-size: 55px;
+				line-height: 63px;
+				text-transform: uppercase;
+				margin: 0 0 25px 0;
+			}
+
+			p {
+				margin-bottom: 70px;
+			}
+		}
+		&__btn {
+			width: 267px;
+			background-color: $green-1;
+			border: 3px solid $green-1;
+			color: $white;
+			padding: 20px;
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 23px;
+			text-transform: uppercase;
+			margin-bottom: 186px;
+
+			&:hover {
+				background-color: $white;
+				color: $green-1;
+				border: 3px solid $green-1;
+				cursor: pointer;
+			}
+		}
+	}
+	&__direction {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 18px;
+		position: relative;
+		top: -30px;
+		z-index: 993;
+
+		&-item {
+			font-size: 16px;
+			line-height: 18px;
+			text-transform: uppercase;
+			height: 191px;
+			color: #000;
+			border: 5px solid $green-1;
+			background-color: #F5F5F5;
+			padding: 10px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+
+			img {
+				width: 111px;
+				max-width: 100%;
+				height: auto;
+			}
+
+			&:hover {
+				border: 5px solid $orange;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+/* шапка с линией */
+
+.salesMain,
+.doctorsMain,
+.methodsMain,
+.newsMain {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 21px;
+	&__head {
+		padding: 0;
+		display: flex;
+		margin: 60px 0 30px 0;
+
+		&:after {
+			content: '';
+			width: 100%;
+			height: 34px;
+			border-bottom: 5px solid $green-1;
+			left: 382px;
+			position: absolute;
+			right: 0;
+			z-index: 0;
+		}
+		
+		h2 {
+			background-color: $white;
+			display: flex;
+			align-items: center;
+			flex-wrap: nowrap;
+			padding: 19px 40px 0 0;
+			z-index: 1;
+			margin: 0;
+		}
+	}
+	&__counter {
+		color: $green-1;
+		display: flex;
+		margin-left: auto;
+		padding: 0 15px 15px 0;
+		align-items: center;
+		z-index: 1;
+		font-size: 20px;
+		line-height: 23px;
+		font-weight: normal;
+	}
+}
+
+.greenInfo {
+	background-color: $green-1;
+	color: $white;
+	padding: 56px;
+	text-transform: uppercase;
+	font-size: 17px;
+	line-height: 21px;
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 0;
+	}
+	&-item {
+		width: 292px;
+		display: flex;
+		align-items: center;
+		div {
+			font-weight: 500;
+			font-size: 50px;
+			line-height: 57px;
+			margin-right: 15px;
+		}
+	}
+}
+
+.newsMain {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 21px;
+
+	h3 {
+		font-size: 20px;
+		line-height: 23px;
+		font-weight: normal;
+		text-transform: uppercase;
+		margin: 0 0 10px 0;
+		color: $green-1;
+	}
+
+	&__link {
+		color: rgba(0, 0, 0, 0.56); 
+		&:after {
+			content: '';
+			background: url(img/diagnostics/grey-arrow.svg) 0px 7px / contain no-repeat;
+			padding: 0px 3px;
+			margin-left: 5px;
+		}
+	}
+
+	&__label {
+		background: url(img/mainnews/icon_news.svg) 50% / cover no-repeat;
+		width: 111px;
+		height: 41px;
+		position: absolute;
+		top: -10px;
+		p {
+			font-weight: 500;
+			color: $white;
+			text-transform: uppercase;
+			padding: 6px 16px;
+		}
+	}
+	
+	&__slider {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 50px;
+		position: relative;
+		
+		&-item {
+			display: flex;
+			flex-wrap: wrap;
+			flex:1;
+			position: relative;
+		}
+		&__photo {
+			flex: 0 0 300px;
+			img {
+				height: auto;
+				max-width: 100%;
+			}
+		}
+		&__desc {
+			display: flex;
+			flex-direction: column;
+			flex: 1;
+			padding: 0 0 0 20px;
+			text-align: left;
+		}
+	}
+}
+
+.aboutMain {
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 21px;
+	display: flex;
+	flex-wrap: wrap;
+	
+	&__col {
+		margin-top: 53px;
+		flex:1;
+		img {
+			margin-bottom: 59px;
+			max-width: 100%;
+			height: auto;
+		}
+		h3 {
+			font-weight: 500;
+			font-size: 30px;
+			line-height: 34px;
+			text-transform: uppercase;
+			text-align: center;
+			color: $orange;
+		}
+		&__textright {
+			padding-left: 54px;
+		}
+		&__textleft {
+			padding-right: 28px;
+		}
+	}
+
+	&__prints {
+		display: flex;
+		position: relative;
+		height: 67px;
+		margin: 37px auto;
+		&-item {
+			width: 115px;
+			height: 115px;
+			position: absolute;
+
+			&:nth-child(1) {
+				left: 0;
+			}
+			&:nth-child(2) {
+				left: 95px;
+			}
+			&:nth-child(3) {
+				left: 190px;
+			}
+			&:nth-child(4) {
+				left: 285px;
+			}
+			&:nth-child(5) {
+				left: 380px;
+			}
+
+			img {
+				max-width: 100%;
+				border-radius: 100%;
+			}
+		}
+	}
+
+	&__infographic {
+		display: flex;
+		gap: 30px;
+		margin: 65px 0 42px 0;
+
+		&-item {
+			background-color: $green-1;
+			color: $white;
+			display: flex;
+			flex-direction: column;
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 23px;
+			text-transform: uppercase;
+			text-align: center;
+			width: 100%;
+			padding: 18px;
+
+			div {
+				font-style: normal;
+				font-weight: bold;
+				font-size: 50px;
+				line-height: 57px;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+.advantages {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 35px;
+
+	&-item {
+		margin-top: 35px;
+		width: 356.51px;
+		height: 461.76px;
+		box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.04);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		position: relative;
+	}
+	&__text {
+		position: absolute;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 21px;
+		text-transform: uppercase;
+		color: $white;
+		width: 100%;
+		left: 0;
+
+		&-1 {
+			background:url("img/advantages/bg1.png") center center / cover no-repeat;
+			bottom: -5px;
+    		left: 0;
+    		padding: 15px 0 0 15px;
+    		height: 111px;
+		}
+
+		&-2 {
+			background:url("img/advantages/bg2.png") center center / cover no-repeat;
+			top: 0;
+			padding: 16px 31px 39px;
+		}
+
+		&-3 {
+			background:url("img/advantages/bg3.png") center center / cover no-repeat;
+			bottom: -8px;
+    		left: 0;
+    		padding: 30px 0 0 15px;
+    		height: 115px;
+		}
+
+		&-4 {
+			background:url("img/advantages/bg4.png") center center / cover no-repeat;
+			bottom: -8px;
+			padding: 65px 0px 25px 45px;
+		}
+
+		&-5 {
+			background:url("img/advantages/bg5.png") center center / cover no-repeat;
+			top: 0;
+    		left: 0;
+    		height: 108px;
+    		padding: 30px 25px 0;
+		}
+
+		&-6 {
+			background:url("img/advantages/bg6.png") center center / cover no-repeat;
+			bottom: 0;
+    		left: -4px;
+   			padding: 35px 35px 35px 55px;
+		}
+	}
+}

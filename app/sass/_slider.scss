@@ -1,0 +1,344 @@
+.lazy:not(img) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.lazy:not(img)[data-was-processed=true] {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s ease;
+}
+
+.lazy  {
+ opacity: 0;
+ visibility: hidden;
+}
+
+.lazy.loaded {
+  transition: 0.5s linear;
+  opacity: 1;
+  visibility: visible;
+}
+
+.slider {
+  position: relative;
+  padding: 0 60px;
+}
+
+.slider .slick-track{
+  display: block;
+}
+
+/*ограничивающая оболочка*/
+.slick-list {
+  height: 100%;
+  overflow: hidden;
+  z-index: 993;
+  position: relative;
+}
+
+/*лента слайдов*/
+.method__slider__photo .slick-track,
+.direction__slider__photo .slick-track,
+.method__procedure__sliderPhoto .slick-track,
+.reviews__mainslider .slick-track,
+.topMain__slider .slick-track,
+.topMain__slider__about .slick-track  {
+  display: flex;
+  height: 100%;
+}
+
+.topMain__slider__about {
+  position: relative;
+}
+
+.faqPage__slider .slick-track {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.methods__slider .slick-track,
+.doctor__slider-treat .slick-track,
+.doctor__slider-main .slick-track,
+.sales-mainslider .slick-track,
+.doctorDetail__sertificates__slider .slick-track,
+.phys__slider .slick-track,
+.regenerat__slider .slick-track,
+.medic__slider .slick-track,
+.diagnostics__slider .slick-track {
+  display: flex;
+  gap: 30px;
+}
+
+.newsMain__slider .slick-track {
+  display: flex;
+  gap: 30px;
+  top: 10px;
+  position: relative;
+}
+
+.method__procedure__sliderNav .slick-track,
+.reviews__navslider .slick-track,
+.doctor__slider__nav .slick-track,
+.doctorDetail__sertificates__nav .slick-track {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  position: relative;
+  margin: 5px 2px;
+}
+
+.topMain__direction .slick-track {  
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  left: 2px;
+  top: 2px;
+  position: relative;
+}
+
+.method__procedure__sliderNav .slick-track {
+  max-width: 560px;
+}
+
+.doctorDetail__sertificates__nav .slick-track {
+  flex-direction: column;
+}
+
+.method__slider__nav .slick-track,
+.direction__slider__nav .slick-track, {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  left: 2px;
+  top: 2px;
+  position: relative;
+  margin: 5px 0;
+}
+
+.direction__slider__nav .slick-list {
+  width: 100%;
+}
+
+.methods__slider {
+  position: relative;
+  margin: 30px 0 60px 0;
+
+  &-link {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #c4c4c4;
+    
+    &:after {
+      content: "";
+      background: url(img/diagnostics/grey-arrow.svg) 0 7px / contain no-repeat;
+      padding: 0 3px;
+      margin-left: 5px;
+    }
+  }
+}
+
+.sectificates__slider-main__slide {
+  position: relative;
+}
+
+.methods__slider .slick-dots,
+.sales-mainslider .slick-dots,
+.doctor__slider .slick-dots,
+.newsMain__slider .slick-dots,
+.diagnostics__slider .slick-dots,
+.regenerat__slider .slick-dots,
+.phys__slider .slick-dots,
+.medic__slider .slick-dots {
+  bottom: -30px;
+}
+
+.sectificates__slider-main__slide .slick-dots {
+  position: absolute;
+  flex-wrap: wrap;
+  bottom: -100px;
+}
+
+.method__procedure__sliderPhoto .slick-dots {
+  right: 25%;
+}
+
+.reviews__mainslider .slick-dots{
+  position: relative;
+  bottom: -240px;
+}
+
+.topMain__slider .slick-dots {
+  bottom: 220px;
+  height: 20px;
+  justify-content: flex-start;
+}
+
+.topMain__slider__about .slick-dots {
+  bottom: 0;
+}
+
+.topMain__direction .slick-dots{
+  bottom: -40px;
+}
+
+.slick-slide .slick-active{
+  background-color: $orange;
+}
+
+.slick-slide .slick-current{}
+.slick-slide .slick-center{}
+
+/*слайд*/
+.slick-arrow{}
+.slick-arrow .slick-prev{}
+.slick-arrow .slick-next{}
+.slick-arrow .slick-disabled{}
+
+/*точки*/
+.slick-dots{ 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  gap: 20px;
+  position: absolute;
+  bottom: 15px;
+  z-index: 993;
+  margin: 0px auto;
+  width: 100%;
+}
+
+.slick-dots .slick-active button {
+  background-color: $orange;
+}
+
+.slick-dots li { 
+  list-style-type: none;
+}
+
+.slick-dots button{
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  background-color: $white;
+  border:2px solid $orange;
+  outline:none
+}
+
+.slick-arrow.slick-next {
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 492.004 492.004' width='512' height='512'%3E%3Cpath d='M382.678 226.804L163.73 7.86C158.666 2.792 151.906 0 144.698 0s-13.968 2.792-19.032 7.86l-16.124 16.12c-10.492 10.504-10.492 27.576 0 38.064L293.398 245.9l-184.06 184.06c-5.064 5.068-7.86 11.824-7.86 19.028 0 7.212 2.796 13.968 7.86 19.04l16.124 16.116c5.068 5.068 11.824 7.86 19.032 7.86s13.968-2.792 19.032-7.86L382.678 265c5.076-5.084 7.864-11.872 7.848-19.088.016-7.244-2.772-14.028-7.848-19.108z' data-original='%23000000' class='active-path' data-old_color='%23000000' fill='%23E54D28'/%3E%3C/svg%3E") 0 0/100% no-repeat;
+}
+
+.slick-arrow.slick-prev {
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 492.004 492.004' width='512' height='512'%3E%3Cpath d='M382.678 226.804L163.73 7.86C158.666 2.792 151.906 0 144.698 0s-13.968 2.792-19.032 7.86l-16.124 16.12c-10.492 10.504-10.492 27.576 0 38.064L293.398 245.9l-184.06 184.06c-5.064 5.068-7.86 11.824-7.86 19.028 0 7.212 2.796 13.968 7.86 19.04l16.124 16.116c5.068 5.068 11.824 7.86 19.032 7.86s13.968-2.792 19.032-7.86L382.678 265c5.076-5.084 7.864-11.872 7.848-19.088.016-7.244-2.772-14.028-7.848-19.108z' data-original='%23000000' class='active-path' data-old_color='%23000000' fill='%23E54D28'/%3E%3C/svg%3E") 0 0/100% no-repeat;
+  transform: rotate(180deg);
+}
+
+.method__slider .slick-arrow,
+.direction__slider .slick-arrow{
+  position: absolute;
+  top: 50%;
+  margin: -10px 0 0 0;
+  z-index: 993;
+  font-size: 0;
+  width: 18px;
+  height: 18px;
+}
+
+.method__slider .slick-arrow.slick-prev,
+.direction__slider .slick-arrow.slick-prev{
+  left:10px;
+}
+
+.method__slider .slick-arrow.slick-next,
+.direction__slider .slick-arrow.slick-next{
+  right:10px;
+}
+
+.methods__slider,
+.diagnostics__slider,
+.phys__slider,
+.regenerat__slider,
+.medic__slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px 0;
+  position: relative;
+  
+  &-item {
+    width: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    h4 {
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 26px;
+      color: $green-1;
+      margin: 20px 0;
+      text-transform: uppercase;
+    }
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  
+  &__link {
+    color: rgba(0, 0, 0, 0.56);
+    &:hover {
+      color: $orange;
+    }
+    &:after {
+      content: '';
+      background: url(img/diagnostics/grey-arrow.svg) 0px 7px / contain no-repeat;
+      padding: 0px 3px;
+      margin-left: 5px;
+    }
+  }
+
+  &__photo {
+    width: 361px;
+    height: 243px;
+  }
+}
+
+.methods__slider__photo {
+  background-position: center center; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.doctor__slider-treat .slick-track {
+  display: flex;
+}
+
+.method__slider__nav .slick-track .slick-current,
+.direction__slider__nav .slick-track .slick-current,
+.method__procedure__sliderNav .slick-track .slick-current {
+  outline: 2px solid #e05222;
+  display: flex;
+}
+
+.reviews__mainslider-nav {
+  width: calc(100% / 6);
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  position: relative;
+  z-index: 994;
+}
+
+.reviews__mainslider-nav .slick-dots {
+  bottom: 0;
+}
+
+.reviews__mainslider-nav .slick-arrow {
+  z-index: 994;
+  font-size: 0;
+  width: 18px;
+  height: 18px;
+}
