@@ -16,7 +16,7 @@
 				font-size: 55px;
 				line-height: 63px;
 				text-transform: uppercase;
-				margin: 0 0 25px 0;
+				margin: 10px 0 25px 0;
 			}
 
 			p {
@@ -130,20 +130,22 @@
 .greenInfo {
 	background-color: $green-1;
 	color: $white;
-	padding: 56px;
+	padding: 56px 0;
 	text-transform: uppercase;
 	font-size: 17px;
 	line-height: 21px;
 	&__list {
 		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		padding: 0;
+    	flex-wrap: wrap;
+    	justify-content: center;
+    	padding: 0;
 	}
 	&-item {
-		width: 292px;
-		display: flex;
-		align-items: center;
+		width: 320px;
+    	display: flex;
+    	align-items: center;
+    	font-size: 18px;
+    	line-height: 21px;
 		div {
 			font-weight: 500;
 			font-size: 50px;
@@ -229,7 +231,7 @@
 	flex-wrap: wrap;
 	
 	&__col {
-		margin-top: 53px;
+		margin-top: 30px;
 		flex:1;
 		img {
 			margin-bottom: 59px;
@@ -256,7 +258,8 @@
 		display: flex;
 		position: relative;
 		height: 67px;
-		margin: 37px auto;
+		margin: 22px auto;
+
 		&-item {
 			width: 115px;
 			height: 115px;

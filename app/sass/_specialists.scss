@@ -3,7 +3,7 @@
 		text-transform: uppercase;
 	}
 	&__slider {
-		margin: 30px 0 80px 0;
+		margin: 30px 0 30px 0;
 		gap: 25px;
 		display: flex;
 		justify-content: space-between;
@@ -18,7 +18,7 @@
 			display: flex;
 			flex-wrap: wrap;
 			gap: 26px;
-			padding-bottom: 25px;
+			padding: 25px 0;
 
 			&-item {
 				text-align: center;
@@ -36,6 +36,7 @@
 				width: 168px;
 				height: 160px;
 				border: 5px solid $green-1;
+				margin-bottom: 10px;
 
 				&:hover {
 					border: 5px solid $orange;
@@ -74,6 +75,7 @@
 		height: 364px;
 		width: 293px;
 		position: relative;
+		cursor: pointer;
 		&-online {
 			width: 108px;
 			height: 89px;
@@ -101,6 +103,9 @@
 			font-size: 20px;
 			line-height: 23px;
 			font-weight: 400;
+		}
+		a {
+			color: #000;
 		}
 	}
 
@@ -259,7 +264,7 @@
 	background-color: $grey;
 
 	.doctor__info__rating {
-		background-color: $white;
+		//background-color: $white;
 	}
 
 	&__inner {

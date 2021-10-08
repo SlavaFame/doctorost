@@ -29,3 +29,12 @@
         transition: 0.75s ease-in-out;
     }
 }
+
+.tiles_achievements {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-block {
+  margin-top: 30px;
+}

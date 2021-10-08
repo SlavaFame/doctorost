@@ -4,6 +4,7 @@
 
 .vertebra__orange li,
 .green__cubes li,
+.orange__cubes li,
 .contraindications li,
 .graduation li,
 .dopGraduation li,
@@ -37,6 +38,20 @@
     		background-repeat: no-repeat;
     		margin-right: 15px;
     		padding: 0px 10px;
+		}
+	}
+}
+
+.orange__cubes {
+	li {
+		&:before {
+			content: '';
+			background-image: url(img/lists/orange_cube.svg);
+    		background-size: contain;
+    		height: 12px;
+    		width: 12px;
+    		margin-right: 10px;
+    		display: inline-flex;
 		}
 	}
 }
