@@ -58,6 +58,17 @@ h2 {
 h2, h3, h4, h5 {
   margin: 15px 0; }
 
+.regular__section {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 30px; }
+  .regular__section img {
+    max-width: 100%; }
+
+.pageDetail-head {
+  margin-bottom: 30px; }
+
 .lazy:not(img) {
   opacity: 0;
   visibility: hidden; }
@@ -127,6 +138,7 @@ h2, h3, h4, h5 {
 .phys__slider .slick-track,
 .regenerat__slider .slick-track,
 .medic__slider .slick-track,
+.hirurg__slider .slick-track,
 .diagnostics__slider .slick-track {
   display: -webkit-box;
   display: -webkit-flex;
@@ -216,9 +228,6 @@ h2, h3, h4, h5 {
       padding: 0 3px;
       margin-left: 5px; }
 
-.sectificates__slider-main__slide {
-  position: relative; }
-
 .methods__slider .slick-dots,
 .sales-mainslider .slick-dots,
 .doctor__slider .slick-dots,
@@ -226,7 +235,8 @@ h2, h3, h4, h5 {
 .diagnostics__slider .slick-dots,
 .regenerat__slider .slick-dots,
 .phys__slider .slick-dots,
-.medic__slider .slick-dots {
+.medic__slider .slick-dots,
+.hirurg__slider .slick-dots {
   bottom: -30px; }
 
 .sectificates__slider-main__slide .slick-dots {
@@ -234,7 +244,8 @@ h2, h3, h4, h5 {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  bottom: -100px; }
+  bottom: -80px;
+  gap: 12px; }
 
 .method__procedure__sliderPhoto .slick-dots {
   right: 25%; }
@@ -251,7 +262,14 @@ h2, h3, h4, h5 {
       -ms-flex-pack: start;
           justify-content: flex-start; }
 
-.topMain__slider__about .slick-dots {
+.reviews__mainslider-nav .slick-dots,
+.topMain__direction-nav .slick-dots,
+.sales-mainslider-nav .slick-dots,
+.topMain__slider__about .slick-dots,
+.doctor__slider-nav .slick-dots,
+.diagnostics__slider-nav .slick-dots,
+.regenerat__slider-nav .slick-dots,
+.hirurg__slider-nav .slick-dots {
   bottom: 0; }
 
 .topMain__direction .slick-dots {
@@ -329,7 +347,8 @@ h2, h3, h4, h5 {
 .diagnostics__slider,
 .phys__slider,
 .regenerat__slider,
-.medic__slider {
+.medic__slider,
+.hirurg__slider {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -347,7 +366,8 @@ h2, h3, h4, h5 {
   .diagnostics__slider-item,
   .phys__slider-item,
   .regenerat__slider-item,
-  .medic__slider-item {
+  .medic__slider-item,
+  .hirurg__slider-item {
     width: 360px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -360,7 +380,8 @@ h2, h3, h4, h5 {
     .diagnostics__slider-item h4,
     .phys__slider-item h4,
     .regenerat__slider-item h4,
-    .medic__slider-item h4 {
+    .medic__slider-item h4,
+    .hirurg__slider-item h4 {
       font-weight: 500;
       font-size: 23px;
       line-height: 26px;
@@ -371,26 +392,30 @@ h2, h3, h4, h5 {
   .diagnostics__slider__text,
   .phys__slider__text,
   .regenerat__slider__text,
-  .medic__slider__text {
+  .medic__slider__text,
+  .hirurg__slider__text {
     font-size: 18px;
     line-height: 21px; }
   .methods__slider__link,
   .diagnostics__slider__link,
   .phys__slider__link,
   .regenerat__slider__link,
-  .medic__slider__link {
+  .medic__slider__link,
+  .hirurg__slider__link {
     color: rgba(0, 0, 0, 0.56); }
     .methods__slider__link:hover,
     .diagnostics__slider__link:hover,
     .phys__slider__link:hover,
     .regenerat__slider__link:hover,
-    .medic__slider__link:hover {
+    .medic__slider__link:hover,
+    .hirurg__slider__link:hover {
       color: #E05222; }
     .methods__slider__link:after,
     .diagnostics__slider__link:after,
     .phys__slider__link:after,
     .regenerat__slider__link:after,
-    .medic__slider__link:after {
+    .medic__slider__link:after,
+    .hirurg__slider__link:after {
       content: '';
       background: url(img/diagnostics/grey-arrow.svg) 0px 7px/contain no-repeat;
       padding: 0px 3px;
@@ -399,15 +424,10 @@ h2, h3, h4, h5 {
   .diagnostics__slider__photo,
   .phys__slider__photo,
   .regenerat__slider__photo,
-  .medic__slider__photo {
+  .medic__slider__photo,
+  .hirurg__slider__photo {
     width: 361px;
     height: 243px; }
-
-.methods__slider__photo {
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  cursor: pointer; }
 
 .doctor__slider-treat .slick-track {
   display: -webkit-box;
@@ -452,11 +472,6 @@ h2, h3, h4, h5 {
   margin: 0 auto;
   position: relative;
   z-index: 994; }
-
-.reviews__mainslider-nav .slick-dots,
-.topMain__direction-nav .slick-dots,
-.sales-mainslider-nav .slick-dots {
-  bottom: 0; }
 
 .reviews__mainslider-nav .slick-arrow,
 .topMain__direction-nav .slick-arrow,
@@ -503,12 +518,19 @@ h2, h3, h4, h5 {
   width: 18px;
   height: 18px; }
 
-.diagnostics__slider__photo {
+.methods__slider__photo,
+.diagnostics__slider__photo,
+.medic__slider__photo,
+.regenerat__slider__photo,
+.hirurg__slider__photo,
+.phys__slider__photo {
   background-position: center center;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  cursor: pointer; }
 
 .diagnostics__slider-nav {
+  width: calc(100% / 6);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -519,21 +541,17 @@ h2, h3, h4, h5 {
           justify-content: space-between;
   margin: 0 auto;
   position: relative;
-  z-index: 994;
-  width: calc(100% / 6); }
-
-.doctor__slider-nav .slick-dots,
-.diagnostics__slider-nav .slick-dots,
-.regenerat__slider-nav .slick-dots {
-  bottom: 0; }
+  z-index: 994; }
 
 .diagnostics__slider-nav .slick-arrow,
-.regenerat__slider-nav .slick-arrow {
+.regenerat__slider-nav .slick-arrow,
+.hirurg__slider-nav .slick-arrow {
   z-index: 994;
   font-size: 0;
   width: 18px;
   height: 18px; }
 
+.hirurg__slider-nav,
 .regenerat__slider-nav {
   width: calc(100% / 3);
   display: -webkit-box;
@@ -565,7 +583,7 @@ h2, h3, h4, h5 {
   right: 0;
   left: 0;
   background-color: #fff;
-  z-index: 994; }
+  z-index: 995; }
   .head__container {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1190,25 +1208,22 @@ h2, h3, h4, h5 {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
     .content__pagination a {
-      margin-right: 20px; }
+      color: #000; }
     .content__pagination-item {
-      margin-right: 10px; }
+      margin-right: 15px;
+      color: #000; }
       .content__pagination-item:hover {
         color: #009C9D;
         cursor: pointer; }
     .content__pagination .active {
       color: #009C9D;
       font-weight: 400; }
-  .content a {
-    color: #000; }
-    .content a:hover {
-      color: #009C9D; }
 
 .salePreview {
   font-weight: 400;
   font-size: 22px;
   line-height: 25px;
-  margin-bottom: 30px; }
+  margin: 30px 0; }
 
 .sale {
   display: -webkit-box;
@@ -1218,15 +1233,17 @@ h2, h3, h4, h5 {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  gap: 24px; }
+  gap: 24px;
+  padding: 0;
+  margin-bottom: 30px; }
   .sale__head {
     color: #FFFFFF;
     background-color: #0BBBB9;
     padding: 14px 13px 9px 13px;
     text-align: center;
     font-weight: 500;
-    font-size: 25px;
-    line-height: 29px;
+    font-size: 20px;
+    line-height: 23px;
     margin: 0; }
   .sale__counter {
     display: -webkit-box;
@@ -1243,7 +1260,7 @@ h2, h3, h4, h5 {
         -ms-flex: 1 1 590px;
             flex: 1 1 590px; }
     .sale__counter p {
-      font-size: 16px; }
+      font-size: 25px; }
     .sale__counter__limit {
       margin-top: 16px;
       font-weight: normal;
@@ -1298,11 +1315,14 @@ h2, h3, h4, h5 {
     display: -ms-flexbox;
     display: flex;
     gap: 25px; }
+    .sale__warning__symbol img {
+      max-width: inherit; }
     .sale__warning__text {
       font-weight: 300;
       font-size: 12px;
       line-height: 14px;
       background: #F6F6F6;
+      color: #000;
       padding: 12px; }
   .sale__form {
     display: -webkit-box;
@@ -1314,15 +1334,20 @@ h2, h3, h4, h5 {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: #009C9D;
-    margin-bottom: 61px; }
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #009C9D; }
     .sale__form__head {
       color: #fff;
       padding: 14px 13px 9px 13px;
+      margin: 0;
       text-align: center;
       font-weight: 500;
-      font-size: 25px;
-      line-height: 29px; }
+      font-size: 22px;
+      line-height: 25px;
+      text-transform: uppercase; }
 
 .sms__form {
   display: -webkit-box;
@@ -1338,7 +1363,8 @@ h2, h3, h4, h5 {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 25px 25px 70px 25px; }
+  padding: 25px;
+  width: 300px; }
   .sms__form-item {
     font-weight: 300;
     font-size: 20px;
@@ -1373,7 +1399,6 @@ h2, h3, h4, h5 {
   background-image: url(img/icons/form-clock.svg); }
 
 .checkbox__outer {
-  width: 248px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1431,11 +1456,7 @@ h2, h3, h4, h5 {
   text-align: left;
   font-weight: normal; }
   .saleSecond h3, .saleSecond h4 {
-    margin: 0; }
-  .saleSecond span {
-    font-weight: bold;
-    font-size: 27px;
-    line-height: 34px;
+    margin: 0;
     text-transform: uppercase; }
   .saleSecond__inner {
     display: -webkit-box;
@@ -1446,12 +1467,18 @@ h2, h3, h4, h5 {
     background-color: #FFFFFF;
     padding: 0; }
   .saleSecond__counter {
-    background-color: #009C9D;
-    padding: 21px 18px; }
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+    .saleSecond__counter__inner {
+      background-color: #009C9D;
+      padding: 16px 16px 0 16px;
+      margin-bottom: 25px; }
     .saleSecond__counter p {
       font-weight: 500;
-      font-size: 18px;
-      line-height: 21px;
+      font-size: 25px;
+      line-height: 28px;
       text-align: center; }
     .saleSecond__counter-head--one {
       font-weight: 500;
@@ -1499,13 +1526,20 @@ h2, h3, h4, h5 {
         color: #FFFFFF;
         text-align: center; }
   .saleSecond__form {
-    background-color: #0BBBB9;
-    padding: 21px 18px;
-    width: 100%; }
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+    .saleSecond__form__inner {
+      background-color: #0BBBB9;
+      padding: 21px 18px 0 21px;
+      height: 100%; }
+    .saleSecond__form__smalltext {
+      font-size: 12px; }
     .saleSecond__form h3 {
       font-weight: 700;
-      font-size: 27px;
-      line-height: 27px;
+      font-size: 22px;
+      line-height: 25px;
       text-transform: uppercase; }
     .saleSecond__form a {
       color: #FFFFFF; }
@@ -1547,7 +1581,7 @@ h2, h3, h4, h5 {
     .saleSecond__smsform__btn {
       font-weight: bold;
       font-size: 18px;
-      width: 240px;
+      width: 100%;
       height: 50px;
       border: 2px solid #FFFFFF;
       background-color: #E05222;
@@ -1699,7 +1733,7 @@ h2, h3, h4, h5 {
     margin: 10px 0 0 0; }
 
 .checkbox__outer__green {
-  width: 88%;
+  width: 86%;
   margin: 0 auto; }
   .checkbox__outer__green input[type='checkbox'] {
     width: auto;
@@ -2436,9 +2470,10 @@ h2.last span {
   margin: 0 0 20px;
   line-height: 1.4; }
 
-.method h1, .method h2, .method h3, .method h4, .method h5, .method p {
-  text-align: left; }
-
+/*
+.method h1,.method h2,.method h3,.method h4,.method h5, .method p {
+    text-align: left;
+}*/
 .adviceOuter {
   height: inherit; }
 
@@ -3718,20 +3753,6 @@ h2.last span {
 .btn_green {
   width: calc(100% - 10px); }
 
-.sectificates__slider-main__slide .lazy {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.sectificates__slider-nav__slide .mini-images {
-  width: 120px;
-  height: 100px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
-
 .b-review-card__reply {
   -webkit-box-orient: horizontal;
   -ms-flex-flow: row nowrap;
@@ -3890,7 +3911,8 @@ h2.last span {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
         -ms-flex: 1;
-            flex: 1; }
+            flex: 1;
+    cursor: pointer; }
   .reviews__navslider__link {
     color: rgba(0, 0, 0, 0.56); }
     .reviews__navslider__link:after {
@@ -4086,6 +4108,9 @@ h2.last span {
       cursor: pointer; }
 
 /* шапка с линией */
+.doctorsMain {
+  margin-bottom: 30px; }
+
 .salesMain,
 .doctorsMain,
 .methodsMain,
@@ -4423,7 +4448,8 @@ h2.last span {
 .consultation__head {
   font-weight: 500;
   font-size: 25px;
-  line-height: 29px; }
+  line-height: 29px;
+  margin: 0; }
 
 .article_head {
   text-transform: uppercase; }
@@ -4554,22 +4580,9 @@ h2.last span {
     .sympthoms__announce-img img {
       max-width: 100%; }
     .sympthoms__announce-text {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
       min-height: 312px; }
       .sympthoms__announce-text button {
-        margin-right: auto; }
+        margin-top: 30px; }
 
 .articleDetail {
   font-weight: 300;
@@ -4580,6 +4593,7 @@ h2.last span {
   background-color: #F6F6F6;
   padding: 20px 0; }
 
+.hirurg,
 .phys,
 .medic,
 .regenerat,
@@ -4595,6 +4609,7 @@ h2.last span {
   font-size: 18px;
   line-height: 21px;
   margin: 30px 0 0 0; }
+  .hirurg__grey,
   .phys__grey,
   .medic__grey,
   .regenerat__grey,
@@ -4609,6 +4624,7 @@ h2.last span {
     padding: 32px 0 44px 0;
     margin-bottom: 30px;
     background-color: #F5F5F5; }
+  .hirurg__head,
   .phys__head,
   .medic__head,
   .regenerat__head,
@@ -4629,6 +4645,7 @@ h2.last span {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+    .hirurg__head:after,
     .phys__head:after,
     .medic__head:after,
     .regenerat__head:after,
@@ -4645,6 +4662,7 @@ h2.last span {
       height: 20px;
       background-color: #009C9D;
       position: absolute; }
+    .hirurg__head h2,
     .phys__head h2,
     .medic__head h2,
     .regenerat__head h2,
@@ -4673,6 +4691,7 @@ h2.last span {
       font-weight: 500;
       font-size: 25px;
       line-height: 29px; }
+  .hirurg__counter,
   .phys__counter,
   .medic__counter,
   .regenerat__counter,
@@ -4743,15 +4762,6 @@ h2.last span {
       padding: 0 30px 0 15px;
       font-size: 25px;
       line-height: 29px; }
-
-.regular__section {
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 21px;
-  margin-bottom: 30px; }
-  .regular__section img {
-    height: auto;
-    max-width: 100%; }
 
 .howMuch__desc {
   padding: 25px 0;
@@ -5182,9 +5192,6 @@ h2.last span {
     .alphabet a:hover {
       color: #E05222; }
 
-.newsDetail h1 {
-  margin-bottom: 30px; }
-
 .newsDetail__section {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5613,6 +5620,10 @@ h2.last span {
           -ms-flex-wrap: wrap;
               flex-wrap: wrap;
       gap: 27px; }
+      .method__future__block h2, .method__procedure__block h2,
+      .direction__future__block h2,
+      .direction__procedure__block h2 {
+        margin: 0; }
     .method__future__desc, .method__procedure__desc,
     .direction__future__desc,
     .direction__procedure__desc {
@@ -6031,8 +6042,7 @@ h2.last span {
   .reviewsWrap h1,
   .newsWrap h1,
   .catalogSpecWrap h1 {
-    text-transform: uppercase;
-    margin-bottom: 0; }
+    text-transform: uppercase; }
   .video a:hover,
   .methodsWrap a:hover,
   .articlesWrap a:hover,
@@ -6123,17 +6133,6 @@ h2.last span {
       padding: 0px 3px;
       margin-left: 5px; }
 
-/*
-.articlesWrap,
-.newsWrap,
-.newsDetail,
-.articleDetail,
-.regular__section,
-.method {
-	h1 {
-		margin-bottom: 30px;
-	}
-}*/
 .catalogSpecWrap__header,
 .methodsWrap__header,
 .salesWrap__header,
@@ -6564,6 +6563,7 @@ h2.last span {
       max-width: 100%;
       height: auto; }
   .doctorDetail__info {
+    min-height: 350px;
     font-weight: 300;
     font-size: 22px;
     line-height: 25px;
@@ -7165,7 +7165,7 @@ h2.last span {
     position: absolute;
     right: 0;
     margin-right: 0;
-    top: 0; }
+    top: 25%; }
   .table-cell_discount {
     -ms-flex-align: stretch;
     -webkit-box-align: stretch;
@@ -7197,7 +7197,8 @@ h2.last span {
 
 @media screen and (max-width: 576px) {
   .table-cell {
-    font-size: 12px; } }
+    font-size: 12px;
+    width: 100%; } }
 
 .table-head {
   display: -ms-flexbox;
@@ -7460,10 +7461,238 @@ h2.last span {
 .text-block {
   margin-top: 30px; }
 
+.sectificates .sectificates__slider {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.sectificates .sectificates__slider-main {
+  width: calc(100% - 165px);
+  padding: 0 45px; }
+
+@media screen and (max-width: 991px) {
+  .sectificates .sectificates__slider-main {
+    width: 100%; } }
+
+@media screen and (max-width: 768px) {
+  .sectificates .sectificates__slider-main {
+    padding: 20px 30px; } }
+
+.sectificates .sectificates__slider-main img {
+  max-height: 450px;
+  margin: 0 auto; }
+
+.sectificates__slider-main .slick-track {
+  height: 470px; }
+
+.sectificates__slider-main__slide {
+  position: relative; }
+  .sectificates__slider-main__slide img {
+    height: 470px; }
+
+.sectificates .sectificates__slider-nav {
+  height: 530px;
+  width: 150px;
+  overflow: hidden; }
+
+.sectificates .sectificates__slider-nav__slide {
+  margin-bottom: 10px;
+  background: #FFFFFF;
+  border: 3px solid #009C9D;
+  cursor: pointer;
+  height: 150px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.sectificates__slider-nav__slide img {
+  padding: 36px 16px;
+  height: 100%; }
+
+.sectificates__slider-nav .slick-current {
+  border: 3px solid #e05222; }
+
+.sectificates__slider-nav__slide .mini-images {
+  width: 120px;
+  height: 100px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 576px) {
+  h1, h2 {
+    font-size: 20px;
+    line-height: 24px; }
+  .modal_div {
+    width: 100%; }
+  .topMain__slider-item h1 {
+    font-size: 30px;
+    line-height: 40px; }
+  .topMain__slider-item p {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 19px; }
+  .diagnostics__slider .slick-track, .doctor__slider-main .slick-track, .doctor__slider-treat .slick-track, .doctorDetail__sertificates__slider .slick-track, .hirurg__slider .slick-track, .medic__slider .slick-track, .methods__slider .slick-track, .newsMain__slider .slick-track, .phys__slider .slick-track, .regenerat__slider .slick-track, .sales-mainslider .slick-track {
+    gap: 0; }
+  .direction__statistics b,
+  .method__statistics b {
+    font-size: 23px;
+    line-height: 26px; }
+  .aboutMain__prints-item {
+    height: 100px;
+    width: 100px; }
+  .articlesWrap__list__pic, .catalogSpecWrap__list__pic, .methodsWrap__list__pic, .newsWrap__list__pic, .reviewsWrap__list__pic, .salesWrap__list__pic, .video__list__pic {
+    margin-bottom: 0; }
+  .doctorsMain__head, .methodsMain__head, .newsMain__head, .salesMain__head {
+    margin: 30px 0; }
+  .doctorsMain__head:after, .methodsMain__head:after, .newsMain__head:after, .salesMain__head:after {
+    width: auto; }
+  .tiles_achievements .col-lg-6 {
+    width: 100%; }
+  .doctorsMain__head h2, .methodsMain__head h2, .newsMain__head h2, .salesMain__head h2 {
+    padding: 0px 15px 0 0; }
+  .diagnostics__slider-item h4, .hirurg__slider-item h4, .medic__slider-item h4, .methods__slider-item h4, .phys__slider-item h4, .regenerat__slider-item h4 {
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0; }
+  #achievements .box h3 {
+    font-size: 28px; }
+  #achievements .box p {
+    font-size: 22px; }
+  .tiles_achievements,
+  .advantages-item {
+    margin: 0 -15px;
+    width: 100%; }
+  .main__number {
+    padding: 0px 10px;
+    font-size: 30px; }
+    .main__number:after {
+      left: -5px;
+      top: -7px;
+      height: 43px;
+      width: 43px; }
+  .doctor__info {
+    min-height: 310px; }
+  .doctor__info__desc h3 {
+    font-size: 18px;
+    line-height: 20px; }
+  .doctor__info__bigtext {
+    font-size: 22px;
+    line-height: 25px; }
+  .doctor__info__speciality {
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 15px; }
+  .doctor__info__online {
+    font-size: 14px;
+    line-height: 16px; }
+  .doctor__info__detail {
+    font-size: 16px; }
+  .aboutMain__col {
+    margin: 0 -15px; }
+    .aboutMain__col p {
+      padding: 15px; }
+    .aboutMain__col img {
+      margin: 0 auto; }
+    .aboutMain__col h3 {
+      font-size: 20px;
+      line-height: 25px; }
+  .aboutMain__infographic {
+    gap: 15px;
+    margin: 0; }
+  .aboutMain__infographic-item {
+    font-size: 18px;
+    line-height: 21px; }
+  .aboutMain__infographic-item div {
+    font-size: 40px;
+    line-height: 50px; }
+  .newsMain__slider__photo {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%; }
+  .blue-box {
+    margin: 15px -15px; }
+  .reviews__slider h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 21px; }
+  .direction__block, .method__block {
+    margin: 0; }
+  .direction__text, .method__text {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 100%;
+        -ms-flex: 1 100%;
+            flex: 1 100%;
+    padding: 15px;
+    font-size: 16px; }
+  .direction__btn, .method__btn {
+    margin-top: 10px; }
+  .doctorsMain__counter,
+  .methodsMain__counter,
+  .newsMain__counter,
+  .salesMain__counter,
+  .doctor__info__desc {
+    padding: 0; }
+  .saleSecond__counter__datetime__number:before {
+    height: 49px; }
+  .saleSecond__inner {
+    padding: 0; }
+  .reviews__navslider__photo {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%; }
+  .reviews__btn, .reviews__slider h4 {
+    font-size: 16px;
+    line-height: 19px; }
+  .reviews__btn {
+    margin-top: 20px; }
+  .reviews__mainslider__photo {
+    -webkit-box-flex: 100%;
+    -webkit-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%; }
+  .reviews__navslider {
+    margin-bottom: 15px; }
+  .reviews__navslider__desc {
+    padding: 0;
+    font-size: 14px; }
+  #achievements .box h2 {
+    margin: 0;
+    font-size: 49px; }
+  .card__list {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .direction__slider__photo, .method__slider__photo {
+    width: 100%;
+    height: auto; }
+  .direction__slider, .method__slider {
+    max-width: 100%; }
+  .howMuch__desc__inner {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
   .alphabet__block h2:after {
     left: 15px; }
+  .menu__list {
+    top: 30px; }
   .head__location,
   .head__time,
   .head__btn,
@@ -7553,42 +7782,57 @@ h2.last span {
     line-height: 45px; }
   .availability__block {
     gap: 20px 0; }
-  .aboutMain__prints-item:nth-child(1) {
-    left: 0; }
-  .aboutMain__prints-item:nth-child(2) {
-    left: 75px; }
-  .aboutMain__prints-item:nth-child(3) {
-    left: 150px; }
-  .aboutMain__prints-item:nth-child(4) {
-    left: 222px; }
-  .aboutMain__prints-item:nth-child(5) {
-    left: 294px; }
-  .reviews__btn {
-    margin-top: 20px; }
+  .aboutMain__prints {
+    height: 100px;
+    margin: 0 10px; }
+    .aboutMain__prints-item:nth-child(1) {
+      left: 0; }
+    .aboutMain__prints-item:nth-child(2) {
+      left: 75px; }
+    .aboutMain__prints-item:nth-child(3) {
+      left: 150px; }
+    .aboutMain__prints-item:nth-child(4) {
+      left: 222px; }
+    .aboutMain__prints-item:nth-child(5) {
+      left: 294px; }
   .doctor__info__photo {
     height: auto;
     width: 220px; }
-  .reviews__mainslider__photo {
-    -webkit-box-flex: 100%;
-    -webkit-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%; }
-  .reviews__navslider__desc {
-    padding: 0; }
   .footer__address {
     margin: 15px 20px 20px 0; }
-  .greenInfo__list {
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-            justify-content: flex-start; }
-  .topMain__slider-item h1 {
-    font-size: 30px;
-    line-height: 40px; } }
+  .opinion__doctor__desc {
+    padding: 10px 0 0 0; } }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
   .salesMain__head:after, .doctorsMain__head:after, .methodsMain__head:after, .newsMain__head:after {
     width: auto; }
-  .phys__head h2, .medic__head h2, .regenerat__head h2, .methods__head h2, .diagnostics__head h2,
-  .reviews__head h2, .faq__head h2, .author__head h2, .howMuch__head h2, .opinion__head h2 {
-    font-size: 16px; } }
+  .navigation,
+  .regular__section,
+  .howMuch__desc,
+  .reviews__mainslider-item,
+  .doctorsMain, .methodsMain, .newsMain, .salesMain {
+    font-size: 16px;
+    font-size: 19px; }
+  .phys__head h2,
+  .medic__head h2,
+  .regenerat__head h2,
+  .methods__head h2,
+  .method__text,
+  .diagnostics__head h2,
+  .reviews__head h2,
+  .faq__head h2,
+  .author__head h2,
+  .howMuch__head h2,
+  .opinion__head h2,
+  .availability h2,
+  .availability__city__link,
+  .availability__city__soon,
+  .direction__text,
+  .articlesWrap__list-item h2,
+  .catalogSpecWrap__list-item h2,
+  .methodsWrap__list-item h2,
+  .newsWrap__list-item h2,
+  .reviewsWrap__list-item h2,
+  .salesWrap__list-item h2,
+  .video__list-item h2 {
+    font-size: 18px; } }

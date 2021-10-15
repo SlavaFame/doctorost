@@ -214,6 +214,9 @@
 			display: flex;
 			flex-wrap: wrap;
 			gap: 27px;
+			h2 {
+				margin: 0;
+			}
 		}
 		&__desc {
 			flex: 1;

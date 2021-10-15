@@ -2,6 +2,7 @@
     font-weight: 500;
     font-size: 25px;
     line-height: 29px;
+    margin: 0;
 }
 
 .article {
@@ -135,12 +136,9 @@
 			}
 		}
 		&-text {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
 			min-height: 312px;
 			button {
-				margin-right: auto;
+				margin-top: 30px;
 			}
 		}
 	}
@@ -157,6 +155,7 @@
 	padding: 20px 0;
 }
 
+.hirurg,
 .phys,
 .medic,
 .regenerat,
@@ -251,17 +250,6 @@
 			font-size: 25px;
 			line-height: 29px;
 		}
-	}
-}
-
-.regular__section {
-	font-weight: 300;
-	font-size: 18px;
-	line-height: 21px;
-	margin-bottom: 30px;
-	img {
-		height: auto;
-		max-width: 100%;
 	}
 }
 
@@ -689,12 +677,6 @@
 		&:hover{
 			color: $orange;
 		}
-	}
-}
-
-.newsDetail {
-	h1 {
-		margin-bottom: 30px;
 	}
 }
 

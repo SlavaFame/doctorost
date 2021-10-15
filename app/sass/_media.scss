@@ -2,8 +2,254 @@
 @media only screen 
 and (min-device-width: 320px) 
 and (max-device-width: 576px) {
+
+	h1, h2 {
+    	font-size: 20px;
+    	line-height: 24px;
+	}
+
+	.modal_div {
+		width: 100%;
+	}
+
+	.topMain__slider-item {
+		h1 {
+			font-size: 30px;
+    		line-height: 40px;
+		}
+
+		p {
+    		margin-bottom: 30px;
+    		font-size: 16px;
+    		line-height: 19px;
+		}
+	}
+
+	.diagnostics__slider .slick-track, .doctor__slider-main .slick-track, .doctor__slider-treat .slick-track, .doctorDetail__sertificates__slider .slick-track, .hirurg__slider .slick-track, .medic__slider .slick-track, .methods__slider .slick-track, .newsMain__slider .slick-track, .phys__slider .slick-track, .regenerat__slider .slick-track, .sales-mainslider .slick-track {
+    	gap: 0;
+	}
+
+	.direction__statistics b, 
+	.method__statistics b {
+    	font-size: 23px;
+    	line-height: 26px;
+	}
+
+	.aboutMain__prints-item {
+		height: 100px;
+		width: 100px;
+	}
+
+	.articlesWrap__list__pic, .catalogSpecWrap__list__pic, .methodsWrap__list__pic, .newsWrap__list__pic, .reviewsWrap__list__pic, .salesWrap__list__pic, .video__list__pic {
+		margin-bottom: 0;
+	}
+
+	.doctorsMain__head, .methodsMain__head, .newsMain__head, .salesMain__head {
+		margin: 30px 0;
+	}
+
+	.doctorsMain__head:after, .methodsMain__head:after, .newsMain__head:after, .salesMain__head:after {
+		width: auto;
+	}
+
+	.tiles_achievements {
+		.col-lg-6 {
+			width: 100%;
+		}
+	}
+
+	.doctorsMain__head h2, .methodsMain__head h2, .newsMain__head h2, .salesMain__head h2 {
+		padding: 0px 15px 0 0;
+	}
+
+	.diagnostics__slider-item h4, .hirurg__slider-item h4, .medic__slider-item h4, .methods__slider-item h4, .phys__slider-item h4, .regenerat__slider-item h4 {
+		font-size: 18px;
+    	line-height: 21px;
+    	margin: 0;
+	}
+
+	#achievements .box h3 {
+		font-size: 28px;
+	}
+
+	#achievements .box p {
+		font-size: 22px;
+	}
+
+	.tiles_achievements,
+	.advantages-item  {
+		margin: 0 -15px;
+    	width: 100%;
+	}
+
+
+
+	.main__number {
+		padding: 0px 10px;
+    	font-size: 30px;
+
+		&:after {
+    		left: -5px;
+    		top: -7px;
+    		height: 43px;
+    		width: 43px;
+		}
+	}
+
+	.doctor__info {
+		min-height: 310px;
+	}
+
+	.doctor__info__desc h3 {
+    	font-size: 18px;
+    	line-height: 20px
+	}
+
+	.doctor__info__bigtext {
+    	font-size: 22px;
+    	line-height: 25px;
+	}
+
+	.doctor__info__speciality {
+    	font-size: 16px;
+    	line-height: 18px;
+    	margin-top: 15px; 
+	}
+
+	.doctor__info__online {
+    	font-size: 14px;
+    	line-height: 16px;
+	}
+
+	.doctor__info__detail {
+		font-size: 16px;
+	}
+
+	.aboutMain__col { 
+		margin: 0 -15px;
+		p {
+			padding: 15px;
+		}
+		img {
+			margin: 0 auto;
+		}
+		h3 {
+    		font-size: 20px;
+    		line-height: 25px;
+		}
+	}
+
+	.aboutMain__infographic {
+		gap: 15px;
+    	margin: 0;
+	}
+
+	.aboutMain__infographic-item {
+		font-size: 18px;
+    	line-height: 21px;
+	}
+
+	.aboutMain__infographic-item div {		
+    	font-size: 40px;
+    	line-height: 50px;
+	}
+
+	.newsMain__slider__photo {
+		flex: 0 0 100%;
+	}
+
+	.blue-box {
+		margin: 15px -15px;
+	}
+
+	.reviews__slider h3 {
+		margin-bottom: 15px;
+		font-size: 18px;
+    	line-height: 21px;
+	}
+
+	.direction__block, .method__block {
+		margin: 0;
+	}
+
+	.direction__text, .method__text {
+		flex: 1 100%;
+		padding: 15px;
+		font-size: 16px;
+	}
+	.direction__btn, .method__btn {
+		margin-top: 10px;
+	}
+
+	.doctorsMain__counter, 
+	.methodsMain__counter, 
+	.newsMain__counter, 
+	.salesMain__counter, 
+	.doctor__info__desc {
+		padding: 0;
+	}
+
+	.saleSecond__counter__datetime__number:before{
+		height: 49px;
+	}
+
+	.saleSecond__inner {
+		padding: 0;
+	}
+
+	.reviews__navslider__photo {
+		flex: 0 0 100%;
+	}
+	.reviews__btn, .reviews__slider h4 {
+		font-size: 16px;
+    	line-height: 19px;
+	}
+
+	.reviews__btn {
+		margin-top: 20px;
+	}
+
+	.reviews__mainslider__photo {
+		flex: 100%;
+	}
+
+	.reviews__navslider {
+		margin-bottom: 15px;
+	}
+
+	.reviews__navslider__desc {
+		padding: 0;
+		font-size: 14px;
+	}
+
+	#achievements .box h2 {
+		margin: 0;
+		font-size: 49px;
+	}
+
+	.card__list {
+		justify-content: center;
+	}
+
+	.direction__slider__photo, .method__slider__photo {
+		width: 100%;
+		height: auto;
+	}
+
+	.direction__slider, .method__slider {
+		max-width: 100%;
+	}
+
+	.howMuch__desc__inner {
+		flex-wrap: wrap;
+	}
+
 	.alphabet__block h2:after {
 		left: 15px;
+	}
+
+	.menu__list {
+		top: 30px
 	}
 
 	.head__location,
@@ -94,29 +340,30 @@ and (max-device-width: 576px) {
 	}
 
 	.availability__block {
-		gap:20px 0;
+		gap: 20px 0;
 	}
 
-	.aboutMain__prints-item {
-		&:nth-child(1) {
-			left: 0;
-		}
-		&:nth-child(2) {
-			left: 75px;
-		}
+	.aboutMain__prints {
+		height: 100px;
+		margin: 0 10px;
+
+		&-item {
+			&:nth-child(1) {
+				left: 0;
+			}
+			&:nth-child(2) {
+				left: 75px;
+			}
 			&:nth-child(3) {
-			left: 150px;
+				left: 150px;
+			}
+			&:nth-child(4) {
+				left: 222px;
+			}
+			&:nth-child(5) {
+				left: 294px;
+			}
 		}
-		&:nth-child(4) {
-			left: 222px;
-		}
-		&:nth-child(5) {
-			left: 294px;
-		}
-	}
-
-	.reviews__btn {
-		margin-top: 20px;
 	}
 
 	.doctor__info__photo {
@@ -124,25 +371,12 @@ and (max-device-width: 576px) {
 		width: 220px;
 	}
 
-	.reviews__mainslider__photo {
-		flex: 100%;
-	}
-
-	.reviews__navslider__desc {
-		padding: 0;
-	}
-
 	.footer__address {
 		margin: 15px 20px 20px 0;
 	}
 
-	.greenInfo__list {
-		justify-content: flex-start;
-	}
-
-	.topMain__slider-item h1 {
-    	font-size: 30px;
-    	line-height: 40px;
+	.opinion__doctor__desc {
+		padding: 10px 0 0 0;
 	}
 }
 
@@ -151,9 +385,38 @@ and (max-device-width: 576px) {
 	width: auto;
 }
 
-.phys__head h2, .medic__head h2, .regenerat__head h2, .methods__head h2, .diagnostics__head h2, 
-.reviews__head h2, .faq__head h2, .author__head h2, .howMuch__head h2, .opinion__head h2 {
+.navigation,
+.regular__section,
+.howMuch__desc,
+.reviews__mainslider-item,
+.doctorsMain, .methodsMain, .newsMain, .salesMain {
 	font-size: 16px;
+	font-size: 19px;
+}
+
+.phys__head h2, 
+.medic__head h2, 
+.regenerat__head h2, 
+.methods__head h2,
+.method__text, 
+.diagnostics__head h2, 
+.reviews__head h2, 
+.faq__head h2, 
+.author__head h2, 
+.howMuch__head h2, 
+.opinion__head h2,
+.availability h2, 
+.availability__city__link, 
+.availability__city__soon, 
+.direction__text,
+.articlesWrap__list-item h2, 
+.catalogSpecWrap__list-item h2, 
+.methodsWrap__list-item h2, 
+.newsWrap__list-item h2, 
+.reviewsWrap__list-item h2, 
+.salesWrap__list-item h2, 
+.video__list-item h2 {
+	font-size: 18px;
 }
 
 }

@@ -102,7 +102,7 @@
 		position: absolute;
 		right: 0;
 		margin-right: 0;
-		top: 0
+		top: 25%;
 	}
 	.table-cell_discount {
 		-ms-flex-align: stretch;
@@ -141,6 +141,7 @@
 @media screen and (max-width:576px) {
 	.table-cell {
 		font-size: 12px;
+		width: 100%;
 	}
 }
 

@@ -65,6 +65,7 @@
 .phys__slider .slick-track,
 .regenerat__slider .slick-track,
 .medic__slider .slick-track,
+.hirurg__slider .slick-track,
 .diagnostics__slider .slick-track {
   display: flex;
   gap: 30px;
@@ -139,9 +140,6 @@
   }
 }
 
-.sectificates__slider-main__slide {
-  position: relative;
-}
 
 .methods__slider .slick-dots,
 .sales-mainslider .slick-dots,
@@ -150,14 +148,16 @@
 .diagnostics__slider .slick-dots,
 .regenerat__slider .slick-dots,
 .phys__slider .slick-dots,
-.medic__slider .slick-dots {
+.medic__slider .slick-dots,
+.hirurg__slider .slick-dots {
   bottom: -30px;
 }
 
 .sectificates__slider-main__slide .slick-dots {
   position: absolute;
   flex-wrap: wrap;
-  bottom: -100px;
+  bottom: -80px;
+  gap: 12px;
 }
 
 .method__procedure__sliderPhoto .slick-dots {
@@ -175,7 +175,14 @@
   justify-content: flex-start;
 }
 
-.topMain__slider__about .slick-dots {
+.reviews__mainslider-nav .slick-dots,
+.topMain__direction-nav .slick-dots,
+.sales-mainslider-nav .slick-dots,
+.topMain__slider__about .slick-dots,
+.doctor__slider-nav .slick-dots,
+.diagnostics__slider-nav .slick-dots,
+.regenerat__slider-nav .slick-dots,
+.hirurg__slider-nav .slick-dots {
   bottom: 0;
 }
 
@@ -264,7 +271,8 @@
 .diagnostics__slider,
 .phys__slider,
 .regenerat__slider,
-.medic__slider {
+.medic__slider,
+.hirurg__slider {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -309,13 +317,6 @@
   }
 }
 
-.methods__slider__photo {
-  background-position: center center; 
-  background-size: cover;
-  background-repeat: no-repeat;
-  cursor: pointer;
-}
-
 .doctor__slider-treat .slick-track {
   display: flex;
 }
@@ -346,12 +347,6 @@
   margin: 0 auto;
   position: relative;
   z-index: 994;
-}
-
-.reviews__mainslider-nav .slick-dots,
-.topMain__direction-nav .slick-dots,
-.sales-mainslider-nav .slick-dots {
-  bottom: 0;
 }
 
 .reviews__mainslider-nav .slick-arrow,
@@ -392,35 +387,37 @@
   height: 18px;
 }
 
-.diagnostics__slider__photo {
-  background-position: center center;
+.methods__slider__photo,
+.diagnostics__slider__photo,
+.medic__slider__photo,
+.regenerat__slider__photo,
+.hirurg__slider__photo,
+.phys__slider__photo {
+  background-position: center center; 
   background-size: cover;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .diagnostics__slider-nav {
+    width: calc(100% / 6);
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     position: relative;
     z-index: 994;
-    width: calc(100% / 6);
-}
-
-.doctor__slider-nav .slick-dots,
-.diagnostics__slider-nav .slick-dots,
-.regenerat__slider-nav .slick-dots {
-  bottom: 0;
 }
 
 .diagnostics__slider-nav .slick-arrow,
-.regenerat__slider-nav .slick-arrow {
+.regenerat__slider-nav .slick-arrow,
+.hirurg__slider-nav .slick-arrow {
   z-index: 994;
   font-size: 0;
   width: 18px;
   height: 18px;
 }
 
+.hirurg__slider-nav,
 .regenerat__slider-nav {
   width: calc(100% / 3);
   display: flex;
