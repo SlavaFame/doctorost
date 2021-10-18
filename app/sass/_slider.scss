@@ -246,6 +246,13 @@
   transform: rotate(180deg);
 }
 
+.slick-arrow.slick-next, .slick-arrow.slick-prev {
+    z-index: 994;
+    font-size: 0;
+    width: 18px;
+    height: 18px;
+}
+
 .method__slider .slick-arrow,
 .direction__slider .slick-arrow{
   position: absolute;
@@ -349,15 +356,6 @@
   z-index: 994;
 }
 
-.reviews__mainslider-nav .slick-arrow,
-.topMain__direction-nav .slick-arrow,
-.sales-mainslider-nav .slick-arrow {
-  z-index: 994;
-  font-size: 0;
-  width: 18px;
-  height: 18px;
-}
-
 .topMain__slider-nav {
   display: flex;
   justify-content: space-between;
@@ -380,13 +378,6 @@
   z-index: 994;
 }
 
-.doctor__slider-nav .slick-arrow {
-  z-index: 994;
-  font-size: 0;
-  width: 18px;
-  height: 18px;
-}
-
 .methods__slider__photo,
 .diagnostics__slider__photo,
 .medic__slider__photo,
@@ -406,15 +397,6 @@
     margin: 0 auto;
     position: relative;
     z-index: 994;
-}
-
-.diagnostics__slider-nav .slick-arrow,
-.regenerat__slider-nav .slick-arrow,
-.hirurg__slider-nav .slick-arrow {
-  z-index: 994;
-  font-size: 0;
-  width: 18px;
-  height: 18px;
 }
 
 .hirurg__slider-nav,

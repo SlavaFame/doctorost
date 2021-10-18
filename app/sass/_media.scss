@@ -3,6 +3,70 @@
 and (min-device-width: 320px) 
 and (max-device-width: 576px) {
 
+	.menu__list {
+		top: 30px;
+	    flex-direction: column;
+		background-color: #009c9d;
+    	left: 0;
+    	width: 100%;
+	}
+
+	.menu__list-item {
+		padding: 7px 15px;
+	}
+
+
+	.menu__sublist-item {
+    	width: 100%;
+    	text-align: left;
+    }
+
+	.advantages {
+		justify-content: center;
+	}
+
+	.advantages__text {
+		font-size: 17px;
+	}
+
+	.advantages__text-1 {
+		padding: 15px 15px 0 15px;
+	}
+
+	.advantages__text-2 {
+		padding: 17px 15px 39px;
+	}
+
+	.advantages__text-3 {
+		padding: 30px 35px 0 15px;
+	}
+
+	.advantages__text-4 {
+		padding: 70px 0 55px 15px;
+	}
+
+	.advantages__text-5 {
+		padding: 30px 30px 30px 15px;
+	}
+
+	.footer__info {
+		flex-direction: column;
+	}
+
+	.footer__disclaimer {
+    	font-size: 23px;
+    	text-align: center;
+    	padding: 15px 15px;
+	}
+
+	.alphabet__block {
+		margin: 30px 0;
+	}
+
+	.footer__button-error, .footer__button-suggest {
+		margin-bottom: 15px;
+	}
+
 	h1, h2 {
     	font-size: 20px;
     	line-height: 24px;
@@ -140,7 +204,7 @@ and (max-device-width: 576px) {
 	}
 
 	.aboutMain__infographic {
-		gap: 15px;
+		gap: 0;
     	margin: 0;
 	}
 
@@ -248,10 +312,6 @@ and (max-device-width: 576px) {
 		left: 15px;
 	}
 
-	.menu__list {
-		top: 30px
-	}
-
 	.head__location,
 	.head__time,
 	.head__btn,
@@ -259,6 +319,15 @@ and (max-device-width: 576px) {
 	.menuBottom {
 		display: none;
 	}
+
+	.active {
+  		display: flex;
+	}
+
+	.hide {
+		display: none;
+	}
+
 	.head__logo {
 		height: 27px;
 		width: 87px;
@@ -286,7 +355,14 @@ and (max-device-width: 576px) {
 	}
 
 	.menu {
-		order:1;
+		order: 1;
+    	position: absolute;
+    	right: 0;
+    	left: 0;
+    	&__subwrap {
+    		position: relative;
+    		top:0;
+    	}
 		&-button {
 			display: block;
 		}
@@ -296,7 +372,6 @@ and (max-device-width: 576px) {
 		order: 2;
 		width: 100%;
 		margin: 0 15px;
-		justify-content: space-between;
 	}
 
 	.head__logo {
@@ -334,7 +409,8 @@ and (max-device-width: 576px) {
 		padding: 0;
 	}
 
-	.method__statistics h4, .direction__statistics h4 {
+	.method__statistics h4, 
+	.direction__statistics h4 {
 		font-size: 45px;
     	line-height: 45px;
 	}
@@ -345,7 +421,7 @@ and (max-device-width: 576px) {
 
 	.aboutMain__prints {
 		height: 100px;
-		margin: 0 10px;
+		margin: 15px;
 
 		&-item {
 			&:nth-child(1) {
@@ -366,9 +442,26 @@ and (max-device-width: 576px) {
 		}
 	}
 
+	.disease_search input {
+		padding-left: 2rem;
+		background-size: 16px;
+    	background-position: 10px;
+    	font-size: 14px;
+    	line-height: 17px;
+	}
+
+	.reviews__header__text, .video__header__text {
+		padding: 15px;
+		margin: 15px 0;
+	}
+
+	.reviews__header__logo, .video__header__logo {
+		display: none;
+	}
+
 	.doctor__info__photo {
 		height: auto;
-		width: 220px;
+		width: 100%;
 	}
 
 	.footer__address {
@@ -377,6 +470,60 @@ and (max-device-width: 576px) {
 
 	.opinion__doctor__desc {
 		padding: 10px 0 0 0;
+	}
+
+	.doctorDetail__photo {
+		flex: auto;
+    	height: 180px;
+	}
+
+	.doctorDetail__info {
+	    font-size: 18px;
+    	line-height: 21px;
+    	flex: auto;
+	}
+
+	.doctorDetail__info h1 {
+    	font-size: 22px;
+    	line-height: 25px;
+	}
+
+	.doctorDetail__prodoctorov {
+		width: 100%;
+	}
+
+	.doctorDetail__experience, 
+	.doctorDetail__online {
+		font-size: 16px;
+    	line-height: 19px;
+	}
+
+	.btn_orange {
+		padding: 10px;
+    	font-size: 16px;
+    	line-height: 21px;
+	}
+	.doctorDetail__head {
+		margin: 15px 0 15px;
+	}
+
+	.pro_doc {
+		width: 210px;
+	}
+
+	.b-review-card {
+		flex-flow: row wrap;
+	}
+	.b-doctor-rates__filter {
+		flex-wrap: wrap;
+	}
+
+	.doctorDetail__navBottom__large {
+		flex:auto
+	}
+
+	.doctorDetail__navBottom-item {
+		margin-bottom: 0;
 	}
 }
 

@@ -325,6 +325,12 @@ h2, h3, h4, h5 {
       -ms-transform: rotate(180deg);
           transform: rotate(180deg); }
 
+.slick-arrow.slick-next, .slick-arrow.slick-prev {
+  z-index: 994;
+  font-size: 0;
+  width: 18px;
+  height: 18px; }
+
 .method__slider .slick-arrow,
 .direction__slider .slick-arrow {
   position: absolute;
@@ -473,14 +479,6 @@ h2, h3, h4, h5 {
   position: relative;
   z-index: 994; }
 
-.reviews__mainslider-nav .slick-arrow,
-.topMain__direction-nav .slick-arrow,
-.sales-mainslider-nav .slick-arrow {
-  z-index: 994;
-  font-size: 0;
-  width: 18px;
-  height: 18px; }
-
 .topMain__slider-nav {
   display: -webkit-box;
   display: -webkit-flex;
@@ -512,12 +510,6 @@ h2, h3, h4, h5 {
   position: relative;
   z-index: 994; }
 
-.doctor__slider-nav .slick-arrow {
-  z-index: 994;
-  font-size: 0;
-  width: 18px;
-  height: 18px; }
-
 .methods__slider__photo,
 .diagnostics__slider__photo,
 .medic__slider__photo,
@@ -542,14 +534,6 @@ h2, h3, h4, h5 {
   margin: 0 auto;
   position: relative;
   z-index: 994; }
-
-.diagnostics__slider-nav .slick-arrow,
-.regenerat__slider-nav .slick-arrow,
-.hirurg__slider-nav .slick-arrow {
-  z-index: 994;
-  font-size: 0;
-  width: 18px;
-  height: 18px; }
 
 .hirurg__slider-nav,
 .regenerat__slider-nav {
@@ -6811,6 +6795,10 @@ h2.last span {
 .bg__lightGreen {
   background: #0BBBB9; }
 
+.sympthoms__reasons {
+  font-size: 18px;
+  line-height: 21px; }
+
 .disease_nav {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7479,8 +7467,9 @@ h2.last span {
     width: 100%; } }
 
 @media screen and (max-width: 768px) {
-  .sectificates .sectificates__slider-main {
-    padding: 20px 30px; } }
+  .sectificates .sectificates__slider-main,
+  .sectificates .sectificates__slider {
+    padding: 0; } }
 
 .sectificates .sectificates__slider-main img {
   max-height: 450px;
@@ -7534,6 +7523,52 @@ h2.last span {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 576px) {
+  .menu__list {
+    top: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #009c9d;
+    left: 0;
+    width: 100%; }
+  .menu__list-item {
+    padding: 7px 15px; }
+  .menu__sublist-item {
+    width: 100%;
+    text-align: left; }
+  .advantages {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .advantages__text {
+    font-size: 17px; }
+  .advantages__text-1 {
+    padding: 15px 15px 0 15px; }
+  .advantages__text-2 {
+    padding: 17px 15px 39px; }
+  .advantages__text-3 {
+    padding: 30px 35px 0 15px; }
+  .advantages__text-4 {
+    padding: 70px 0 55px 15px; }
+  .advantages__text-5 {
+    padding: 30px 30px 30px 15px; }
+  .footer__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .footer__disclaimer {
+    font-size: 23px;
+    text-align: center;
+    padding: 15px 15px; }
+  .alphabet__block {
+    margin: 30px 0; }
+  .footer__button-error, .footer__button-suggest {
+    margin-bottom: 15px; }
   h1, h2 {
     font-size: 20px;
     line-height: 24px; }
@@ -7612,7 +7647,7 @@ h2.last span {
       font-size: 20px;
       line-height: 25px; }
   .aboutMain__infographic {
-    gap: 15px;
+    gap: 0;
     margin: 0; }
   .aboutMain__infographic-item {
     font-size: 18px;
@@ -7691,13 +7726,18 @@ h2.last span {
             flex-wrap: wrap; }
   .alphabet__block h2:after {
     left: 15px; }
-  .menu__list {
-    top: 30px; }
   .head__location,
   .head__time,
   .head__btn,
   .menu__list,
   .menuBottom {
+    display: none; }
+  .active {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .hide {
     display: none; }
   .head__logo {
     height: 27px;
@@ -7729,7 +7769,13 @@ h2.last span {
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
         -ms-flex-order: 1;
-            order: 1; }
+            order: 1;
+    position: absolute;
+    right: 0;
+    left: 0; }
+    .menu__subwrap {
+      position: relative;
+      top: 0; }
     .menu-button {
       display: block; }
   .head__container {
@@ -7738,11 +7784,7 @@ h2.last span {
         -ms-flex-order: 2;
             order: 2;
     width: 100%;
-    margin: 0 15px;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+    margin: 0 15px; }
   .head__logo {
     margin: 0 auto; }
   .navigation {
@@ -7777,14 +7819,15 @@ h2.last span {
   .aboutMain__col__textleft,
   .reviews__mainslider__desc {
     padding: 0; }
-  .method__statistics h4, .direction__statistics h4 {
+  .method__statistics h4,
+  .direction__statistics h4 {
     font-size: 45px;
     line-height: 45px; }
   .availability__block {
     gap: 20px 0; }
   .aboutMain__prints {
     height: 100px;
-    margin: 0 10px; }
+    margin: 15px; }
     .aboutMain__prints-item:nth-child(1) {
       left: 0; }
     .aboutMain__prints-item:nth-child(2) {
@@ -7795,13 +7838,71 @@ h2.last span {
       left: 222px; }
     .aboutMain__prints-item:nth-child(5) {
       left: 294px; }
+  .disease_search input {
+    padding-left: 2rem;
+    background-size: 16px;
+    background-position: 10px;
+    font-size: 14px;
+    line-height: 17px; }
+  .reviews__header__text, .video__header__text {
+    padding: 15px;
+    margin: 15px 0; }
+  .reviews__header__logo, .video__header__logo {
+    display: none; }
   .doctor__info__photo {
     height: auto;
-    width: 220px; }
+    width: 100%; }
   .footer__address {
     margin: 15px 20px 20px 0; }
   .opinion__doctor__desc {
-    padding: 10px 0 0 0; } }
+    padding: 10px 0 0 0; }
+  .doctorDetail__photo {
+    -webkit-box-flex: 1;
+    -webkit-flex: auto;
+        -ms-flex: auto;
+            flex: auto;
+    height: 180px; }
+  .doctorDetail__info {
+    font-size: 18px;
+    line-height: 21px;
+    -webkit-box-flex: 1;
+    -webkit-flex: auto;
+        -ms-flex: auto;
+            flex: auto; }
+  .doctorDetail__info h1 {
+    font-size: 22px;
+    line-height: 25px; }
+  .doctorDetail__prodoctorov {
+    width: 100%; }
+  .doctorDetail__experience,
+  .doctorDetail__online {
+    font-size: 16px;
+    line-height: 19px; }
+  .btn_orange {
+    padding: 10px;
+    font-size: 16px;
+    line-height: 21px; }
+  .doctorDetail__head {
+    margin: 15px 0 15px; }
+  .pro_doc {
+    width: 210px; }
+  .b-review-card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap; }
+  .b-doctor-rates__filter {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .doctorDetail__navBottom__large {
+    -webkit-box-flex: 1;
+    -webkit-flex: auto;
+        -ms-flex: auto;
+            flex: auto; }
+  .doctorDetail__navBottom-item {
+    margin-bottom: 0; } }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
   .salesMain__head:after, .doctorsMain__head:after, .methodsMain__head:after, .newsMain__head:after {
