@@ -5,6 +5,10 @@
 	margin: 30px 0;
 }
 
+.saleSecond__smsform__check {
+	padding: 25px 0 13px;
+}
+
 .sale {
 	display: flex;
 	flex-wrap: wrap;
@@ -242,6 +246,7 @@
 
 	&__inner {
 		display: flex;
+		flex-wrap: wrap;
 		gap: 20px;
 		background-color: $white;
 		padding: 0;
@@ -249,6 +254,7 @@
 
 	&__counter {
 		flex:1;
+		width: 100%;
 		//padding: 21px 18px;
 		&__inner {
 			background-color: $green-1;

@@ -67,9 +67,14 @@ and (max-device-width: 576px) {
 		margin-bottom: 15px;
 	}
 
+	.footer__address {
+		margin: 15px 20px 20px 0;
+	}
+
 	h1, h2 {
     	font-size: 20px;
     	line-height: 24px;
+    	margin: 15px 0;
 	}
 
 	.modal_div {
@@ -104,7 +109,7 @@ and (max-device-width: 576px) {
 		width: 100px;
 	}
 
-	.articlesWrap__list__pic, .catalogSpecWrap__list__pic, .methodsWrap__list__pic, .newsWrap__list__pic, .reviewsWrap__list__pic, .salesWrap__list__pic, .video__list__pic {
+	.articlesWrap__list__pic, .catalogSpecWrap__list__pic, .methodsWrap__list__pic, .newsWrap__list__pic, .reviewsWrap__list__pic, .salesWrap__list__pic {
 		margin-bottom: 0;
 	}
 
@@ -128,8 +133,8 @@ and (max-device-width: 576px) {
 
 	.diagnostics__slider-item h4, .hirurg__slider-item h4, .medic__slider-item h4, .methods__slider-item h4, .phys__slider-item h4, .regenerat__slider-item h4 {
 		font-size: 18px;
-    	line-height: 21px;
-    	margin: 0;
+    	line-height: 22px;
+    	margin: 15px 0;
 	}
 
 	#achievements .box h3 {
@@ -141,12 +146,15 @@ and (max-device-width: 576px) {
 	}
 
 	.tiles_achievements,
-	.advantages-item  {
-		margin: 0 -15px;
+	.advantages-item {
+		margin: 0 auto;
     	width: 100%;
 	}
 
-
+	.disclaimer__text {
+    	font-size: 16px;
+    	line-height: 19px;
+	}
 
 	.main__number {
 		padding: 0px 10px;
@@ -210,7 +218,7 @@ and (max-device-width: 576px) {
 
 	.aboutMain__infographic-item {
 		font-size: 18px;
-    	line-height: 21px;
+    	line-height: 22px;
 	}
 
 	.aboutMain__infographic-item div {		
@@ -229,10 +237,19 @@ and (max-device-width: 576px) {
 	.reviews__slider h3 {
 		margin-bottom: 15px;
 		font-size: 18px;
-    	line-height: 21px;
+    	line-height: 22px;
 	}
 
-	.direction__block, .method__block {
+	.reviewsDetail__content iframe {
+		max-width: 100%;
+		height: 216px;
+	}
+
+	.articlesWrap__list, .catalogSpecWrap__list, .methodsWrap__list, .newsWrap__list, .reviewsWrap__list, .salesWrap__list, .video__list {
+		justify-content: center;
+	}
+
+	.direction__block, .method__block, .content {
 		margin: 0;
 	}
 
@@ -253,8 +270,13 @@ and (max-device-width: 576px) {
 		padding: 0;
 	}
 
-	.saleSecond__counter__datetime__number:before{
-		height: 49px;
+	.saleSecond__counter__datetime__number,
+	.sale__counter__datetime__number {
+		font-size: 40px;
+    	line-height: 49px;
+    	&:before {
+    		height: 49px;
+    	}
 	}
 
 	.saleSecond__inner {
@@ -302,6 +324,10 @@ and (max-device-width: 576px) {
 
 	.direction__slider, .method__slider {
 		max-width: 100%;
+	}
+
+	.method__procedure__photo {
+		flex: auto;
 	}
 
 	.howMuch__desc__inner {
@@ -450,26 +476,30 @@ and (max-device-width: 576px) {
     	line-height: 17px;
 	}
 
+	.accordion__label {
+		padding: 10px;
+	}
+
 	.reviews__header__text, .video__header__text {
 		padding: 15px;
-		margin: 15px 0;
+		margin: 15px -15px;
 	}
 
 	.reviews__header__logo, .video__header__logo {
 		display: none;
 	}
 
+	.opinion__doctor__desc {
+		padding: 10px 0 0 0;
+	}
+
+	.doctor__slider {
+		margin-top: 0;
+	}
+
 	.doctor__info__photo {
 		height: auto;
 		width: 100%;
-	}
-
-	.footer__address {
-		margin: 15px 20px 20px 0;
-	}
-
-	.opinion__doctor__desc {
-		padding: 10px 0 0 0;
 	}
 
 	.doctorDetail__photo {
@@ -525,6 +555,34 @@ and (max-device-width: 576px) {
 	.doctorDetail__navBottom-item {
 		margin-bottom: 0;
 	}
+
+	.faqWrap__header, .methodsWrap__header, .salesWrap__header h1 {
+		margin: 0;
+	}
+
+	.faqPage__question {
+		padding: 20px 0 20px 20px;
+		flex: auto;
+	}
+	.faqPage__inner {
+		margin-top: 0;
+	}
+	.faqPage__answer {
+		flex: auto;
+    	max-width: 100%;
+    	padding: 20px 0 0 20px;
+    	
+    	&__head {
+			padding-bottom: 15px;
+		}
+	}
+
+	.author__doctor{
+		order: 2;
+		&__photo {
+			width: 310px;
+		}
+	}
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
@@ -538,7 +596,11 @@ and (max-device-width: 576px) {
 .reviews__mainslider-item,
 .doctorsMain, .methodsMain, .newsMain, .salesMain {
 	font-size: 16px;
-	font-size: 19px;
+	line-height: 19px;
+}
+
+.regular__section img {
+	height: auto;
 }
 
 .phys__head h2, 
@@ -564,6 +626,7 @@ and (max-device-width: 576px) {
 .salesWrap__list-item h2, 
 .video__list-item h2 {
 	font-size: 18px;
+	line-height: 22px;
 }
 
 }

@@ -550,6 +550,9 @@ h2, h3, h4, h5 {
   position: relative;
   z-index: 994; }
 
+.method__procedure__slider {
+  max-width: 100%; }
+
 .head {
   font-size: 1.6em;
   line-height: 1.6em;
@@ -1193,6 +1196,9 @@ h2, h3, h4, h5 {
             flex-wrap: wrap; }
     .content__pagination a {
       color: #000; }
+      .content__pagination a:hover {
+        color: #009C9D;
+        cursor: pointer; }
     .content__pagination-item {
       margin-right: 15px;
       color: #000; }
@@ -1208,6 +1214,9 @@ h2, h3, h4, h5 {
   font-size: 22px;
   line-height: 25px;
   margin: 30px 0; }
+
+.saleSecond__smsform__check {
+  padding: 25px 0 13px; }
 
 .sale {
   display: -webkit-box;
@@ -1447,6 +1456,9 @@ h2, h3, h4, h5 {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     gap: 20px;
     background-color: #FFFFFF;
     padding: 0; }
@@ -1454,7 +1466,8 @@ h2, h3, h4, h5 {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
         -ms-flex: 1;
-            flex: 1; }
+            flex: 1;
+    width: 100%; }
     .saleSecond__counter__inner {
       background-color: #009C9D;
       padding: 16px 16px 0 16px;
@@ -3961,7 +3974,7 @@ h2.last span {
   margin: 30px 0 0 0; }
   .reviewsDetail__links-item {
     color: #009C9D;
-    border-bottom: 1px solid #009C9D;
+    text-decoration: underline;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content; }
@@ -4568,10 +4581,15 @@ h2.last span {
       .sympthoms__announce-text button {
         margin-top: 30px; }
 
+.reviewsSection__links {
+  margin: 15px 0; }
+
 .articleDetail {
   font-weight: 300;
   font-size: 18px;
   line-height: 21px; }
+  .articleDetail img {
+    max-width: 100%; }
 
 .goodKnow__content {
   background-color: #F6F6F6;
@@ -4763,7 +4781,8 @@ h2.last span {
         -ms-flex-align: center;
             align-items: center; }
     .howMuch__desc__inner img {
-      margin-right: 37px; }
+      margin-right: 37px;
+      padding-left: 15px; }
 
 .howMuch p {
   font-weight: 300;
@@ -5286,6 +5305,9 @@ h2.last span {
   font-size: 18px;
   line-height: 21px;
   text-align: left; }
+  .method img,
+  .direction img {
+    max-width: 100%; }
   .method__head,
   .direction__head {
     text-transform: uppercase; }
@@ -6227,6 +6249,36 @@ h2.last span {
 .advantage_box__outer {
   min-height: 209px;
   height: 100%; }
+
+.video__other {
+  font-size: 18px;
+  line-height: 21px; }
+  .video__other-content a {
+    text-transform: uppercase; }
+  .video__other-video {
+    width: 100%;
+    height: 223px; }
+  .video__other-title {
+    font-size: 20px;
+    line-height: 21px;
+    color: #009c9d;
+    margin-bottom: 15px;
+    text-transform: uppercase; }
+  .video__other-item, .video__other-text {
+    margin-top: 15px; }
+  .video__other-item {
+    cursor: pointer; }
+    .video__other-item img {
+      max-width: 100%;
+      height: auto; }
+  .video__other-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
 
 .doctor h1 {
   text-transform: uppercase; }
@@ -7569,9 +7621,12 @@ h2.last span {
     margin: 30px 0; }
   .footer__button-error, .footer__button-suggest {
     margin-bottom: 15px; }
+  .footer__address {
+    margin: 15px 20px 20px 0; }
   h1, h2 {
     font-size: 20px;
-    line-height: 24px; }
+    line-height: 24px;
+    margin: 15px 0; }
   .modal_div {
     width: 100%; }
   .topMain__slider-item h1 {
@@ -7590,7 +7645,7 @@ h2.last span {
   .aboutMain__prints-item {
     height: 100px;
     width: 100px; }
-  .articlesWrap__list__pic, .catalogSpecWrap__list__pic, .methodsWrap__list__pic, .newsWrap__list__pic, .reviewsWrap__list__pic, .salesWrap__list__pic, .video__list__pic {
+  .articlesWrap__list__pic, .catalogSpecWrap__list__pic, .methodsWrap__list__pic, .newsWrap__list__pic, .reviewsWrap__list__pic, .salesWrap__list__pic {
     margin-bottom: 0; }
   .doctorsMain__head, .methodsMain__head, .newsMain__head, .salesMain__head {
     margin: 30px 0; }
@@ -7602,16 +7657,19 @@ h2.last span {
     padding: 0px 15px 0 0; }
   .diagnostics__slider-item h4, .hirurg__slider-item h4, .medic__slider-item h4, .methods__slider-item h4, .phys__slider-item h4, .regenerat__slider-item h4 {
     font-size: 18px;
-    line-height: 21px;
-    margin: 0; }
+    line-height: 22px;
+    margin: 15px 0; }
   #achievements .box h3 {
     font-size: 28px; }
   #achievements .box p {
     font-size: 22px; }
   .tiles_achievements,
   .advantages-item {
-    margin: 0 -15px;
+    margin: 0 auto;
     width: 100%; }
+  .disclaimer__text {
+    font-size: 16px;
+    line-height: 19px; }
   .main__number {
     padding: 0px 10px;
     font-size: 30px; }
@@ -7651,7 +7709,7 @@ h2.last span {
     margin: 0; }
   .aboutMain__infographic-item {
     font-size: 18px;
-    line-height: 21px; }
+    line-height: 22px; }
   .aboutMain__infographic-item div {
     font-size: 40px;
     line-height: 50px; }
@@ -7665,8 +7723,16 @@ h2.last span {
   .reviews__slider h3 {
     margin-bottom: 15px;
     font-size: 18px;
-    line-height: 21px; }
-  .direction__block, .method__block {
+    line-height: 22px; }
+  .reviewsDetail__content iframe {
+    max-width: 100%;
+    height: 216px; }
+  .articlesWrap__list, .catalogSpecWrap__list, .methodsWrap__list, .newsWrap__list, .reviewsWrap__list, .salesWrap__list, .video__list {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .direction__block, .method__block, .content {
     margin: 0; }
   .direction__text, .method__text {
     -webkit-box-flex: 1;
@@ -7683,8 +7749,13 @@ h2.last span {
   .salesMain__counter,
   .doctor__info__desc {
     padding: 0; }
-  .saleSecond__counter__datetime__number:before {
-    height: 49px; }
+  .saleSecond__counter__datetime__number,
+  .sale__counter__datetime__number {
+    font-size: 40px;
+    line-height: 49px; }
+    .saleSecond__counter__datetime__number:before,
+    .sale__counter__datetime__number:before {
+      height: 49px; }
   .saleSecond__inner {
     padding: 0; }
   .reviews__navslider__photo {
@@ -7720,6 +7791,11 @@ h2.last span {
     height: auto; }
   .direction__slider, .method__slider {
     max-width: 100%; }
+  .method__procedure__photo {
+    -webkit-box-flex: 1;
+    -webkit-flex: auto;
+        -ms-flex: auto;
+            flex: auto; }
   .howMuch__desc__inner {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -7844,18 +7920,20 @@ h2.last span {
     background-position: 10px;
     font-size: 14px;
     line-height: 17px; }
+  .accordion__label {
+    padding: 10px; }
   .reviews__header__text, .video__header__text {
     padding: 15px;
-    margin: 15px 0; }
+    margin: 15px -15px; }
   .reviews__header__logo, .video__header__logo {
     display: none; }
+  .opinion__doctor__desc {
+    padding: 10px 0 0 0; }
+  .doctor__slider {
+    margin-top: 0; }
   .doctor__info__photo {
     height: auto;
     width: 100%; }
-  .footer__address {
-    margin: 15px 20px 20px 0; }
-  .opinion__doctor__desc {
-    padding: 10px 0 0 0; }
   .doctorDetail__photo {
     -webkit-box-flex: 1;
     -webkit-flex: auto;
@@ -7902,7 +7980,33 @@ h2.last span {
         -ms-flex: auto;
             flex: auto; }
   .doctorDetail__navBottom-item {
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+  .faqWrap__header, .methodsWrap__header, .salesWrap__header h1 {
+    margin: 0; }
+  .faqPage__question {
+    padding: 20px 0 20px 20px;
+    -webkit-box-flex: 1;
+    -webkit-flex: auto;
+        -ms-flex: auto;
+            flex: auto; }
+  .faqPage__inner {
+    margin-top: 0; }
+  .faqPage__answer {
+    -webkit-box-flex: 1;
+    -webkit-flex: auto;
+        -ms-flex: auto;
+            flex: auto;
+    max-width: 100%;
+    padding: 20px 0 0 20px; }
+    .faqPage__answer__head {
+      padding-bottom: 15px; }
+  .author__doctor {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2; }
+    .author__doctor__photo {
+      width: 310px; } }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
   .salesMain__head:after, .doctorsMain__head:after, .methodsMain__head:after, .newsMain__head:after {
@@ -7913,7 +8017,9 @@ h2.last span {
   .reviews__mainslider-item,
   .doctorsMain, .methodsMain, .newsMain, .salesMain {
     font-size: 16px;
-    font-size: 19px; }
+    line-height: 19px; }
+  .regular__section img {
+    height: auto; }
   .phys__head h2,
   .medic__head h2,
   .regenerat__head h2,
@@ -7936,4 +8042,5 @@ h2.last span {
   .reviewsWrap__list-item h2,
   .salesWrap__list-item h2,
   .video__list-item h2 {
-    font-size: 18px; } }
+    font-size: 18px;
+    line-height: 22px; } }

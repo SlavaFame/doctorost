@@ -9,7 +9,7 @@
 	&_head {
 		text-transform: uppercase;
 	}
-	&__dropdownMenu{
+	&__dropdownMenu {
 		position: relative;
 	}
 	&__dropdownList {
@@ -144,10 +144,18 @@
 	}
 }
 
+.reviewsSection__links {
+	margin: 15px 0;
+}
+
 .articleDetail {
 	font-weight: 300;
 	font-size: 18px;
 	line-height: 21px;
+
+	img {
+		max-width: 100%;
+	}
 }
 
 .goodKnow__content {
@@ -265,6 +273,7 @@
 			align-items: center;
 			img {
 				margin-right: 37px;
+				padding-left: 15px;
 			}
 		}
 	}
