@@ -1,0 +1,286 @@
+$shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+
+$main-font: 'Ubuntu', sans-serif;
+//$bold-font: "Tahoma-Bold";
+$fa-font: "Font Awesome 5 Pro";
+
+$green: #AFD200;
+$light-blue: #00AAEA;
+$footer-green: #d4ebdf;
+$light-green: #e8edb7;
+$turquoise: #e5f4f9;
+$grey: #818181;
+$pink: #FF5268;
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    outline: none !important;
+    box-sizing: border-box;
+}
+
+body, html { 
+	height: 100% 
+}
+
+body {
+	margin: 0;
+	font-size: 15px;
+	font-weight: 500;
+	font-family: $main-font, san-serif;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 1.6;
+	min-width: 320px;
+	overflow-x: hidden;
+	color: #222
+}
+
+p { 
+	margin: 0 
+}
+
+b, strong { 
+	letter-spacing: 1px; 
+	font-family: $main-font; 
+	font-weight: 500; 
+}
+
+a { 
+	color: $light-blue 
+}
+
+address { 
+	font-style: normal; 
+	font-size: 0.788rem; 
+}
+
+h1, h2, h3, h4, h5, h6, button, input { 
+	font-family: $main-font;
+	font-weight: 400;
+	margin: 0 
+}
+
+ul { 
+	padding: 0 
+}
+
+ol { 
+	padding: 0; 
+	margin: 1rem; 
+}
+
+li { 
+	list-style-type: none; 
+	padding: 0 1rem; 
+}
+
+button {
+	border: none;
+	outline: none;
+	text-transform: uppercase;
+	font-size: 1rem;
+	&:focus {
+		outline: none
+	} 
+	&:hover {
+		cursor: pointer;
+		transition: 0.35s ease-in-out;
+	}
+}
+
+select { 
+	background-color: #fff;
+	border: none;
+	outline: none;
+	text-align-last: center; // for Chrome
+	text-align: center; 
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+option { font-size: 1rem; }
+
+textarea { font-family: $main-font; }
+
+blockquote {
+	padding: 0.85rem 2rem;
+	margin: 1rem 0;
+	background-color: #e7f4f7;
+	font-style: italic;
+	background-image: url(images/icons/quotes.png);
+	background-size: 1rem;
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+	font-size: 1.3rem;
+	line-height: 1.3;
+}
+
+/*--------------| COLOR OF ELEMENTS |-----------------*/
+
+.blue {
+	color: #fff;
+	background-color: $light-blue;
+	&-text {
+		color: $light-blue;
+	}
+}
+
+.lightGreen { 
+	background-color: $light-green; 
+}
+
+.green {
+	background-color: $green;
+	color: #fff;
+	padding: 10px;
+	border-radius: 10px;
+	text-align: center;
+	margin: 1rem 0;
+	&:hover {
+		background-color: lighten($green, 3%);
+	}
+}
+
+/*----------| ACTIVE ELEMENTS ON LEFT MENU SIDEBAR |-------------*/
+
+.leftMenuItem_selected { 
+	background-color: $light-green; 
+}
+
+.leftMenu_btn-green {
+	font-family: $main-font;
+	font-weight: 500;
+  background-color: $green;
+  font-weight: bold;
+  letter-spacing: 1px;
+    &:hover {
+    	background-color: $green!important;
+    }
+    a {
+    	color: #fff;
+    }
+}
+
+.btn_blue__rect {
+  padding: 1rem;
+  background-color: $light-blue;
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 1rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.fade:not(img),
+.lazy:not(img) {
+	opacity: 0;
+	transition: all 1s ease; 
+}
+
+.fade:not(img)[data-was-processed="true"],
+.lazy:not(img)[data-was-processed="true"] { 
+	transition: all 1s ease; 
+	opacity: 1;
+}
+
+// Animate the size, inside
+.fill:hover,
+.fill:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+// Animate the size, outside
+.pulse:hover, 
+.pulse:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(#fff,0);
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 var(--hover); }
+}
+
+// Stack multiple shadows, one from the left, the other from the right
+.close:hover,
+.close:focus {
+  box-shadow: 
+    inset -3.5em 0 0 0 var(--hover),
+    inset 3.5em 0 0 0 var(--hover);  
+}
+
+// Size can also be negative; see how it's smaller than the element
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+// Animating from the bottom
+.up:hover,
+.up:focus {
+  box-shadow: inset 0 -3.25em 0 0 var(--hover);
+}
+
+// And from the left
+.slide:hover,
+.slide:focus {
+  box-shadow: inset 6.5em 0 0 0 var(--hover);
+}
+
+// Multiple shadows, one on the outside, another on the inside
+.offset {  
+  box-shadow: 
+    0.3em 0.3em 0 0 var(--color),
+    inset 0.3em 0.3em 0 0 var(--color);
+  
+  &:hover,
+  &:focus {
+    box-shadow: 
+      0 0 0 0 var(--hover),
+      inset 6em 3.5em 0 0 var(--hover);
+  }
+}
+
+//=== Set button colors
+// If you wonder why use Sass vars or CSS custom properties...
+  // Make a map with the class names and matching colors
+$colors: (
+  fill: #a972cb,
+  pulse: #ef6eae, 
+  close: #ff7f82, 
+  raise: #ffa260, 
+  up: #e4cb58, 
+  slide: #8fc866, 
+  offset: #19bc8b
+);
+
+// Sass variables compile to a static string; CSS variables are dynamic and inherited
+  // Loop through the map and set CSS custom properties using Sass variables
+@each $button, $color in $colors {
+  .#{$button} {
+    --color: #{$color};
+    --hover: #{adjust-hue($color, 45deg)};
+  }
+}
+
+// Now every button will have different colors as set above. We get to use the same structure, only changing the custom properties.
+button {  
+  color: var(--color);
+  transition: 0.25s;
+  
+  &:hover,
+  &:focus { 
+    border-color: var(--hover);
+    color: #fff;
+  }
+}
+
+// Basic button styles
+button {
+  background: none;
+}

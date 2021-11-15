@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Медицинский центр "Дети Индиго - НИИ Неврологии и Педиатрии"</title>
+	<meta name="description" content="Лечение детского аутизма и ДЦП в Челябинске. Медицинский центр 'Дети Индиго' на Набережной" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" sizes="57x57" href="../images/favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="../images/favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../images/favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="../images/favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../images/favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../images/favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../images/favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../images/favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../images/favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="../images/favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../images/favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../images/favicons/favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="../css/libs.min.css">
+	<link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+	<!-- МОДАЛЬНЫЕ ОКНА НАЧАЛО -->
+	<div class="overlay overlay-campaign">
+		<div class="popup popup-campaign">
+			<form id="form" class="popup-form">
+				<h1>Записаться на прием</h1>
+				<div class="userInfo mt-2">
+					<div class="col-lg-6">
+						<p class="mb-2">Напишите, как к вам обращаться</p>
+						<input type="text" placeholder="Иванов Иван Иванович" autocorrect="off"  autocomplete="name" required>
+						<p class="mt-2 mb-2">Ваш E-Mail</p>
+						<input type="email" placeholder="ivanov@mail.ru" autocorrect="off" autocomplete="email" autocapitalize="off">
+					</div>
+					<div class="col-lg-6">
+						<p class="mb-2">Введите номер телефона</p>
+						<input type="tel" class="telmask"  autocorrect="off" autocomplete="tel" placeholder="+7 900 111 22 33" required>
+						<p class="hint">не забудьте указать код города (для городских номеров)</p>
+						<p class="mb-2">Выберите удобную дату</p>
+						<div class="d-flex">
+							<input type="date" class="mr-2" autocorrect="off" autocomplete="date" placeholder="YYYY-MM-DD" >
+							<input type="time" autocorrect="off" autocomplete="time" placeholder="HH:MM" >
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-12 mt-2">
+					<p>Напишите, к какому специалисту и с какой проблемой Вы хотите попасть на прием</p>
+					<textarea name="" placeholder="Сообщение" id="" cols="30" rows="10"></textarea><p class="hint">Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!</p>
+					<div class="d-flex">
+						<div class="attention">
+							<button type="submit" class="btn-blue">Отправить</button>
+							<p>Нажимая кнопку «Отправить», Вы соглашаетесь с <a href="#">Условиями обработки персональных данных.</a></p>
+							<p>Просим отнестись с пониманием, если выбранное при отправлении заявки время посещения врача будет занято. Администраторы предложат ближайшие свободные часы.</p>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="close-popup close-campaign"></div>
+		</div>
+	</div> 
+
+	<div class="overlay overlay-question">
+		<div class="popup popup-question">
+			<form id="form" class="popup-form">
+				<h1>Задать вопрос</h1>
+				<div class="col-lg-12"><p>Напишите ваше имя</p></div>
+				<div class="col-lg-12"><input type="text" placeholder="Ваше имя" autocorrect="off" autocomplete="name" required></div>
+				<div class="col-lg-12"><p>Введите номер телефона</p></div>
+				<div class="col-lg-12"><input type="tel" class="telmask" autocorrect="off" autocomplete="tel" placeholder="+7 900 111 22 33" required name=""></div>
+				<div class="col-lg-12"><p>Или адрес электронной почты</p></div>
+				<div class="col-lg-12"><input type="еmail" placeholder="ivanov@mail.ru" autocorrect="off" autocomplete="email" autocapitalize="off"></div>
+				<div class="col-lg-12"><p>Ваш вопрос</p></div>
+				<div class="col-lg-12"><textarea name="" id="" cols="30" rows="10"></textarea></div>
+				<div class="col-lg-12"><button type="submit" class="btn-blue">Отправить</button></div>	
+			</form>
+			<div class="close-popup close-question"></div> 
+		</div>
+	</div>
+
+	<div class="overlay overlay-suggestion">
+		<div class="popup popup-suggestion">
+			<form id="form" class="popup-form">
+				<h1>Жалобы и предложения</h1>
+				<div class="col-lg-12"><p>Напишите ваше имя</p></div>
+				<div class="col-lg-12"><input type="text" placeholder="Ваше имя" autocorrect="off" autocomplete="name" required></div>
+				<div class="col-lg-12"><p>Введите номер телефона</p></div>
+				<div class="col-lg-12"><input type="tel" class="telmask" placeholder="+7 900 111 22 33"  name="" autocorrect="off" autocomplete="tel" required></div>
+				<div class="col-lg-12"><p>Или адрес электронной почты</p></div>
+				<div class="col-lg-12"><input type="еmail" placeholder="ivanov@mail.ru" autocorrect="off" autocomplete="email" autocapitalize="off"></div>
+				<div class="col-lg-12"><p>Текст вашего сообщения</p></div>
+				<div class="col-lg-12"><textarea name="" id="" cols="30" rows="10"></textarea></div>
+				<div class="col-lg-12"><button type="submit" class="btn-blue">Отправить</button></div>
+			</form>
+			<div class="close-popup close-suggestion"></div>
+		</div>
+	</div>
+
+	<div class="overlay overlay-consultation">
+		<div class="popup popup-consultation">
+			<form id="form" class="popup-form">
+				<h1>Записаться на онлайн-консультацию</h1>
+				<div class="userInfo mt-4">
+					<div class="col-lg-6">
+						<p class="mb-2">Напишите, как к вам обращаться</p>
+						<input type="text" required="" placeholder="Иванов Иван Иванович" name="" id="" autocorrect="off" autocomplete="name">
+						<p class="mt-3 mb-2">Ваш E-Mail</p>
+						<input type="email" placeholder="ivanov@mail.ru" name="" id="" autocorrect="off" autocomplete="email" autocapitalize="off">
+					</div>
+					<div class="col-lg-6">
+						<p class="mb-2">Введите номер телефона</p>
+						<input type="tel" class="telmask" placeholder="+7 900 111 22 33" required="" name="" id="" autocorrect="off" autocomplete="tel">
+						<p class="hint">не забудьте указать код города (для городских номеров)</p>
+						<p class="mb-2">Выберите удобную дату</p>
+						<div class="d-flex">
+							<input type="date" placeholder="15 Июня" name="" id="" class="mr-2" required>
+							<input type="time" required>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-12 mt-4">
+					<p>Напишите, к какому специалисту и с какой проблемой Вы хотите попасть на прием</p>
+					<textarea name="" placeholder="Сообщение" id="" cols="30" rows="10"></textarea>
+					<p class="hint">Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!</p>
+					<div class="d-flex">
+						<div class="attention">
+							<button type="submit" class="btn-blue">Отправить</button>
+							<p>Нажимая кнопку «Отправить», Вы соглашаетесь с <a href="#">Условиями обработки персональных данных.</a></p>
+							<p>Просим отнестись с пониманием, если выбранное при отправлении заявки время посещения врача будет занято. Администраторы предложат ближайшие свободные часы.</p>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="close-popup close-consultation"></div>
+		</div>
+	</div>
+
+	<div class="overlay overlay-repost">
+		<div class="popup popup-repost">
+			<h1>Поделиться в соцсетях</h1>
+			<div class="row">
+				<div class="repost">
+					<div class="repost_item">
+						<a href="#" title="Поделиться в Instagram"></a>
+					</div>
+					<div class="repost_item">
+						<a href="#" title="Поделиться в VK"></a>
+					</div>
+					<div class="repost_item">
+						<a href="#" title="Поделиться в Одноклассниках"></a>
+					</div>
+					<div class="repost_item">
+						<a href="#" title="Поделиться в Facebook"></a>
+					</div>
+				</div>
+			</div>
+			<div class="close-popup close-repost"></div>
+		</div>
+	</div>
+
+	<div class="overlay overlay-call">
+		<div class="popup popup-call">
+			<form id="form" class="popup-form">
+				<h1>Заказать обратный звонок</h1>
+				<div class="col-lg-12"><p>Напишите ваше имя</p></div>
+				<div class="col-lg-12"><input type="text" placeholder="Ваше имя" autocorrect="off" autocomplete="name" required></div>
+				<div class="col-lg-12"><p>Введите номер телефона</p></div>
+				<div class="col-lg-12"><input type="tel" class="telmask" placeholder="+7 900 111 22 33" autocorrect="off" autocomplete="tel" required></div>
+				<div class="col-lg-12"><button type="submit" class="btn-blue">Отправить</button></div>
+			</form>
+			<div class="close-popup close-call"></div>
+		</div>
+	</div>
+
+	<div class="overlay overlay-review">
+		<div class="popup popup-review">
+			<form id="form" class="popup-form">
+				<h1>Оставить отзыв</h1>
+				<div class="userInfo mt-4">
+					<div class="col-lg-6">
+						<p class="mb-2">Напишите, как к вам обращаться</p>
+						<input type="text" required="" placeholder="Иванов Иван Иванович" name="" id="" autocorrect="off" autocomplete="name">
+					</div>
+					<div class="col-lg-6">
+						<p class="mb-2">Ваш E-Mail</p>
+						<input type="email" placeholder="ivanov@mail.ru" name="" id="" autocorrect="off" autocomplete="email" autocapitalize="off">
+					</div>
+				</div>
+
+				<div class="col-lg-12 mt-4">
+					<p>Ваши впечатления о нас</p>
+					<textarea name="" placeholder="Сообщение" id="" cols="30" rows="10"></textarea>
+					<p class="hint">Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!</p>
+					<div class="d-flex">
+						<div class="attention">
+							<button type="submit" class="btn-blue">Отправить</button>
+							<p>Нажимая кнопку «Отправить», Вы соглашаетесь с <a href="#">Условиями обработки персональных данных.</a></p>
+							<p>Просим отнестись с пониманием, если выбранное при отправлении заявки время посещения врача будет занято. Администраторы предложат ближайшие свободные часы.</p>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="close-popup close-review"></div>
+		</div>
+	</div>
+
+	<div class="overlay overlay-skype">
+		<div class="popup popup-skype">
+			<form id="form" class="popup-form">
+				<h1>Записаться на консультацию по Skype</h1>
+				<div class="userInfo mt-4">
+					<div class="col-lg-6">
+						<p class="mb-2">Напишите, как к вам обращаться</p>
+						<input type="text"  placeholder="Иванов Иван Иванович" name="" id="" autocorrect="off" autocomplete="name" required>
+					</div>
+					<div class="col-lg-6">
+						<p class="mb-2">Ваш E-Mail</p>
+						<input type="email" placeholder="ivanov@mail.ru" name="" id="" autocorrect="off" autocomplete="email" autocapitalize="off">
+					</div>
+				</div>
+
+				<div class="col-lg-12 mt-4">
+					<p>Напишите, к какому специалисту и с какой проблемой Вы хотите попасть на прием</p>
+					<textarea name="" placeholder="Сообщение" id="" cols="30" rows="10"></textarea><p class="hint">Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!</p>
+					<div class="d-flex">
+						<div class="attention">
+							<button type="submit" class="btn-blue">Отправить</button>
+							<p>Нажимая кнопку «Отправить», Вы соглашаетесь с <a href="#">Условиями обработки персональных данных.</a></p>
+							<p>Просим отнестись с пониманием, если выбранное при отправлении заявки время посещения врача будет занято. Администраторы предложат ближайшие свободные часы.</p>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="close-popup close-skype"></div>
+		</div>
+	</div>
+	<!-- МОДАЛЬНЫЕ ОКНА КОНЕЦ -->
+	<!-- HEADER НАЧАЛО -->
+	<header class="header_fluid" id="top">
+
+		<div class="header_fluid__info">
+			<div class="logo">
+				<a href="./index.html">
+					<img data-lazy="images/logos/logo_top_new.png" alt="Лого">
+				</a>	
+			</div>
+
+			<div class="infoTop">
+				<div class="addressTop">
+					<div class="citySelect">
+						<p>Челябинск</p>
+					</div> 
+					<div class="street">
+						<p>ул. Университетская набережная, 34</p>
+					</div>
+				</div>
+
+				<div class="time">
+					<div class="timeWork">
+						<span>
+							<p>Пн-Пт: 8:00 - 20:00</p>
+							<p>Сб-Вс: 8:00 - 17:00</p>
+						</span>
+					</div>
+
+					<div class="transportSchema">
+						<a href="howtodrive.html" target="_blank">Схема проезда</a>
+						<a href="inogorodnim.html" target="_blank">Иногородним</a>
+					</div>
+				</div>
+			</div>
+			<button class="btn__greenTop button-campaign">Записаться на приём</button>
+		</div>
+
+		<div class="header_fluid__menu">
+			<nav class="navOuter">
+				<div class="burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="burger_top">
+					<a href="./index.html">
+						<img data-lazy="images/logos/indigo_mob.png" alt="Лого">
+					</a>
+					<button class="btn__greenTop-mobile button-campaign">Записаться</button>
+				</div>
+
+				<ul class="navMenu container px-0">
+					<li class="navMenu_item"><a class="navMenu_item__link" href="about.html">О нас</a></li>
+					<li class="navMenu_item"><a class="navMenu_item__link" href="healing.html">Что лечим</a></li>
+					<li class="navMenu_item"><a class="navMenu_item__link" href="methods.html">Методы лечения</a></li>
+					<li class="navMenu_item"><a class="navMenu_item__link" href="news.html">Новости</a></li>
+					<li class="navMenu_item">
+						<a href="specialists.html" class="navMenu_item__link chevron">Специалисты</a>
+						<ul class="navMenu_sub">
+							<li class="navMenu_sub__item"><a class="navMenu_sub__item-link" href="guide.html">Справочник специальностей</a></li>
+						</ul>
+					</li>
+					<li class="navMenu_item"><a class="navMenu_item__link" href="sales.html">Aкции</a></li>
+					<li class="navMenu_item"><a class="navMenu_item__link" href="reviews1.html">Отзывы</a></li>
+					<li class="navMenu_item"><a class="navMenu_item__link" href="price.html">Цены</a></li>
+					<li class="navMenu_item">
+						<span class="navMenu_item__link chevron">Ещё</span>
+						<ul class="navMenu_sub">
+							<li class="navMenu_sub__item"><a class="navMenu_sub__item-link" href="guide.html">Что-то ещё</a></li>
+							<li class="navMenu_sub__item"><a class="navMenu_sub__item-link" href="guide.html">Что-то ещё</a></li>
+							<li class="navMenu_sub__item"><a class="navMenu_sub__item-link" href="guide.html">Что-то ещё</a></li>
+							<li class="navMenu_sub__item"><a class="navMenu_sub__item-link" href="guide.html">Что-то ещё</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!-- HEADER КОНЕЦ -->
+	
+	<div class="container">
+		<ul class="breadcrumb">
+			<li class="breadcrumbItem"><a href="#">Главная</a></li>
+			<li class="breadcrumbItem"><a href="#">Методы лечения</a></li>
+			<li class="breadcrumbItem active">Чрезкожная микротоковая рефлексотерапия</li>
+		</ul>
+	</div>
+
+	<div class="container">
+		<article class="articleWrap">
+			<h1>О центре в Краснодаре</h1>
+			<a class="back__link" href="#">Назад</a>
+
+			<div class="articleWrap_nav" role="navigation">
+				<ul class="row">
+					<li><a href="#what">Что лечим</a></li>
+					<li><a href="#sales">Акции</a></li>
+					<li><a href="#methods">Методы лечения и диагностики</a></li>
+					<li><a href="#spec">Специалисты</a></li>
+					<li><a href="#consult">Консультация онлайн</a></li>
+					<li><a href="#reviews">Отзывы</a></li>
+					<li><a href="#video">Видео</a></li>
+					<li><a href="#start">Как ведется приём</a></li>
+					<li><a href="#faq">Часто задаваемые вопросы</a></li>
+					<li><a href="#contacts">Контакты и схема проезда</a></li>
+				</ul>
+			</div>
+
+			<div class="mb-2">
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore doloremque omnis facere perferendis, numquam nesciunt dolores, necessitatibus ullam blanditiis, est repellat esse asperiores quod officiis, sequi modi assumenda dolor adipisci.
+			</div>
+			
+			<div class="articlesHead d-flex mb-4">
+				<h2 id="what">Что лечим</h2>
+				<div class="headingPag">
+					<div class="countSales">6 из 15</div>
+					<a class="allSales" href="#">Все заболевания <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+				</div>
+			</div>
+			
+			<div class="articleWrap_tiles tiles">
+				<div class="card" onclick="location.href='about.html'">
+					<div class="card_photo" style="background-image: url(images/tiles/1.webp);"></div>
+					<div class="card_text">ДЦП и моторные нарушения</div>
+					<a class="card_about" href="about.html">Подробнее</a>
+				</div>
+
+				<div class="card" onclick="location.href='about.html'">
+					<div class="card_photo" style="background-image: url(images/tiles/2.webp);"></div>
+					<div class="card_text">Аутизм и задержки развития</div>
+					<a class="card_about" href="#">Подробнее</a>
+				</div>
+
+				<div class="card" onclick="location.href='about.html'">
+					<div class="card_photo" style="background-image: url(images/tiles/3.webp);"></div>
+					<div class="card_text">Задержки речи</div>
+					<a class="card_about" href="#">Подробнее</a>
+				</div>
+
+				<div class="card" onclick="location.href='about.html'">
+					<div class="card_photo" style="background-image: url(images/tiles/4.webp);"></div>
+					<div class="card_text">C.Дауна и генетические патологии</div>
+					<a class="card_about" href="#">Подробнее</a>
+				</div>
+
+				<div class="card" onclick="location.href='about.html'">
+					<div class="card_photo" style="background-image: url(images/tiles/5.webp);"></div>
+					<div class="card_text">Гиперактивность</div>
+					<a class="card_about" href="#">Подробнее</a>
+				</div>
+
+				<div class="card" onclick="location.href='about.html'">
+					<div class="card_photo" style="background-image: url(images/tiles/6.webp);"></div>
+					<div class="card_text">Плоскостопие, сколиоз, дисплазии</div>
+					<a class="card_about" href="#">Подробнее</a>
+				</div>
+			</div>
+			
+			<div class="mt-4 mb-4">
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore doloremque omnis facere perferendis, numquam nesciunt dolores, necessitatibus ullam blanditiis, est repellat esse asperiores quod officiis, sequi modi assumenda dolor adipisci.
+			</div>
+
+			<div class="articleWrap_sales">
+				<div class="salesHead d-flex">
+					<h2 id="sales">АКЦИИ</h2> 
+					<div class="headingPag">
+						<div class="countSales">2 из 15</div>
+						<a class="allSales" href="sales.html">Все акции <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				<div class="saleList">
+					<div class="saleItem">
+						<div class="saleItem_photo lazy" onclick="location.href='specialist-one.html'" data-bg="url(/images/women_and_kid.webp)" data-was-processed="true" style="background-image: url(&quot;/images/women_and_kid.webp&quot;);"></div>
+						<div class="saleItem_desc">
+							<h3><a href="#">Скидка 50% на сеанс БАК для родителей</a></h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis non ullam ex dolorum, consequuntur in eos corrupti pariatur mollitia dignissimos commodi, nostrum dicta accusantium. Similique, a porro quibusdam harum incidunt!</p>
+							<a href="#" class="btn_blue">Подробнее</a>
+						</div>
+					</div>
+					<div class="saleItem">
+						<div class="saleItem_photo lazy" onclick="location.href='specialist-one.html'" data-bg="url(/images/women_and_kid.webp)" data-was-processed="true" style="background-image: url(&quot;/images/women_and_kid.webp&quot;);"></div> 
+						<div class="saleItem_desc">
+							<h3><a href="#">Скидка 50% на первое занятие у логопеда</a></h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis non ullam ex dolorum, consequuntur in eos corrupti pariatur mollitia dignissimos commodi, nostrum dicta accusantium. Similique, a porro quibusdam harum incidunt!</p>
+							<a href="#" class="btn_blue">Подробнее</a>
+						</div>	
+					</div>
+				</div>
+			</div>
+
+			<div class="articleWrap_methods">
+				<div class="articlesHead d-flex mb-4">
+					<h2 id="methods">Методы лечения и диагностики</h2>
+					<div class="headingPag">
+						<div class="countSales">8 из 15</div>
+						<a class="allSales" href="#">Все методы <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				<div class="container">
+					<div class="article_methods row">
+						<div class="article_methods-item">
+							<h3>Lorem, ipsum, dolor.</h3>
+							<div class="article_methods-item--photo" style="background-image: url(images/Фото_1.webp);"></div>
+							<div class="article_methods-item--text">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus beatae, adipisci nobis delectus, fugit, sint provident nemo recusandae architecto repudiandae facere velit, amet odio quis inventore voluptatibus! Voluptatum ullam, atque.</p>
+								<a href="#">Читать подробнее</a>
+							</div>
+						</div>
+						<div class="article_methods-item">
+							<h3>Lorem, ipsum, dolor.</h3>
+							<div class="article_methods-item--photo" style="background-image: url(images/Фото_2.webp);"></div>
+							<div class="article_methods-item--text">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus beatae, adipisci nobis delectus, fugit, sint provident nemo recusandae architecto repudiandae facere velit, amet odio quis inventore voluptatibus! Voluptatum ullam, atque.</p>
+								<a href="#">Читать подробнее</a>
+							</div>
+						</div>
+						<div class="article_methods-item">
+							<h3>Lorem, ipsum, dolor.</h3>
+							<div class="article_methods-item--photo" style="background-image: url(images/Фото_2.webp);"></div>
+							<div class="article_methods-item--text">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus beatae, adipisci nobis delectus, fugit, sint provident nemo.</p>
+								<a href="#">Читать подробнее</a>
+							</div>
+						</div>
+						<div class="article_methods-item">
+							<h3>Lorem, ipsum, dolor.</h3>
+							<div class="article_methods-item--photo" style="background-image: url(images/Фото_2.webp);"></div>
+							<div class="article_methods-item--text">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus beatae, adipisci nobis delectus, fugit, sint provident nemo recusandae architecto repudiandae facere velit, amet odio quis inventore voluptatibus! Voluptatum ullam, atque.</p>
+								<a href="#">Читать подробнее</a>
+							</div>
+						</div>
+						<div class="article_methods-item">
+							<h3>Lorem, ipsum, dolor.</h3>
+							<div class="article_methods-item--photo" style="background-image: url(images/Фото_1.webp);"></div>
+							<div class="article_methods-item--text">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus beatae, adipisci nobis delectus, fugit, sint provident nemo recusandae architecto repudiandae facere velit, amet odio quis inventore voluptatibus! Voluptatum ullam, atque.</p>
+								<a href="#">Читать подробнее</a>
+							</div>
+						</div>
+						<div class="article_methods-item">
+							<h3>Lorem, ipsum, dolor.</h3>
+							<div class="article_methods-item--photo" style="background-image: url(images/Фото_2.webp);"></div>
+							<div class="article_methods-item--text">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus beatae, adipisci nobis delectus, fugit, sint provident nemo recusandae architecto repudiandae facere velit, amet odio quis inventore voluptatibus! Voluptatum ullam, atque.</p>
+								<a href="#">Читать подробнее</a>
+							</div>
+						</div>
+						<div class="article_methods-item">
+							<h3>Lorem, ipsum, dolor.</h3>
+							<div class="article_methods-item--photo" style="background-image: url(images/Фото_2.webp);"></div>
+							<div class="article_methods-item--text">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus beatae, adipisci nobis delectus, fugit, sint provident nemo recusandae architecto repudiandae facere velit, amet odio quis inventore voluptatibus! Voluptatum ullam, atque.</p>
+								<a href="#">Читать подробнее</a>
+							</div>
+						</div>
+						<div class="article_methods-item">
+							<h3>Lorem, ipsum, dolor.</h3>
+							<div class="article_methods-item--photo" style="background-image: url(images/Фото_2.webp);"></div>
+							<div class="article_methods-item--text">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus beatae, adipisci nobis delectus, fugit, sint provident nemo recusandae architecto repudiandae facere velit, amet odio quis inventore voluptatibus! Voluptatum ullam, atque.</p>
+								<a href="#">Читать подробнее</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="articleWrap_spec">
+				<div class="articlesHead d-flex mb-4 mt-4">
+					<h2 id="spec">Специалисты</h2>
+					<div class="headingPag">
+						<div class="countSales">8 из 15</div>
+						<a class="allSales" href="#">Все методы <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				<div class="articleWrap_spec container" style="background-image: url(images/background/white_and_blue_icons.png); background-color: #00AAEA">
+					<div class="personalCards">
+						<div id="sliderPersonal" class="owl-carousel owl-theme">
+							<div class="personalItem">
+								<a class="personalItem__inner-link" href="">
+									<div class="personalItem__inner lazy" data-bg="url(images/personal/new/Коротких.webp)">
+										<a class="personalItem__inner-online button-consultation" href="#" title="<?=$arItem['DISPLAY_PROPERTIES']['NAMEO']['VALUE']?> консультирует онлайн">
+											<span class="personalItem__inner-online--viber"></span>
+											<span class="personalItem__inner-online--telegram"></span>
+											<span class="personalItem__inner-online--whatsapp"></span>
+											<span class="personalItem__inner-online--skype"></span>
+										</a>
+									</div>
+									<div class="personalItem__desc">
+										<h4><span>Lorem </span><br>
+											Lorem ipsum
+										</h4>
+										<p>Lorem ipsum dolor.</p>
+										<a class="personalItem__desc-btn" href="<?=$real_url?>">Записаться</a>
+									</div>
+								</a>
+							</div>
+							<div class="personalItem">
+								<a class="personalItem__inner-link" href="">
+									<div class="personalItem__inner lazy" data-bg="url(images/personal/new/Коротких.webp)">
+										<a class="personalItem__inner-online button-consultation" href="#" title="<?=$arItem['DISPLAY_PROPERTIES']['NAMEO']['VALUE']?> консультирует онлайн">
+											<span class="personalItem__inner-online--viber"></span>
+											<span class="personalItem__inner-online--telegram"></span>
+											<span class="personalItem__inner-online--whatsapp"></span>
+											<span class="personalItem__inner-online--skype"></span>
+										</a>
+									</div>
+									<div class="personalItem__desc">
+										<h4><span>Lorem </span><br>
+											Lorem ipsum
+										</h4>
+										<p>Lorem ipsum dolor.</p>
+										<a class="personalItem__desc-btn" href="<?=$real_url?>">Записаться</a>
+									</div>
+								</a>
+							</div>
+							<div class="personalItem">
+								<a class="personalItem__inner-link" href="">
+									<div class="personalItem__inner lazy" data-bg="url(images/personal/new/Коротких.webp)">
+										<a class="personalItem__inner-online button-consultation" href="#" title="<?=$arItem['DISPLAY_PROPERTIES']['NAMEO']['VALUE']?> консультирует онлайн">
+											<span class="personalItem__inner-online--viber"></span>
+											<span class="personalItem__inner-online--telegram"></span>
+											<span class="personalItem__inner-online--whatsapp"></span>
+											<span class="personalItem__inner-online--skype"></span>
+										</a>
+									</div>
+									<div class="personalItem__desc">
+										<h4><span>Lorem </span><br>
+											Lorem ipsum
+										</h4>
+										<p>Lorem ipsum dolor.</p>
+
+										<a class="personalItem__desc-btn" href="<?=$real_url?>">Записаться</a>
+									</div>
+								</a>
+							</div>
+							<div class="personalItem">
+								<a class="personalItem__inner-link" href="">
+									<div class="personalItem__inner lazy" data-bg="url(images/personal/new/Коротких.webp)">
+										<a class="personalItem__inner-online button-consultation" href="#" title="<?=$arItem['DISPLAY_PROPERTIES']['NAMEO']['VALUE']?> консультирует онлайн">
+											<span class="personalItem__inner-online--viber"></span>
+											<span class="personalItem__inner-online--telegram"></span>
+											<span class="personalItem__inner-online--whatsapp"></span>
+											<span class="personalItem__inner-online--skype"></span>
+										</a>
+									</div>
+									<div class="personalItem__desc">
+										<h4><span>Lorem </span><br>
+											Lorem ipsum
+										</h4>
+										<p>Lorem ipsum dolor.</p>
+
+										<a class="personalItem__desc-btn" href="<?=$real_url?>">Записаться</a>
+									</div>
+								</a>
+							</div>
+							<div class="personalItem">
+								<a class="personalItem__inner-link" href="">
+									<div class="personalItem__inner lazy" data-bg="url(images/personal/new/Коротких.webp)">
+										<a class="personalItem__inner-online button-consultation" href="#" title="<?=$arItem['DISPLAY_PROPERTIES']['NAMEO']['VALUE']?> консультирует онлайн">
+											<span class="personalItem__inner-online--viber"></span>
+											<span class="personalItem__inner-online--telegram"></span>
+											<span class="personalItem__inner-online--whatsapp"></span>
+											<span class="personalItem__inner-online--skype"></span>
+										</a>
+									</div>
+									<div class="personalItem__desc">
+										<h4><span>Lorem </span><br>
+											Lorem ipsum
+										</h4>
+										<p>Lorem ipsum dolor.</p>
+
+										<a class="personalItem__desc-btn" href="<?=$real_url?>">Записаться</a>
+									</div>
+								</a>
+							</div>
+							<div class="personalItem">
+								<a class="personalItem__inner-link" href="">
+									<div class="personalItem__inner lazy" data-bg="url(images/personal/new/Коротких.webp)">
+
+										<a class="personalItem__inner-online button-consultation" href="#" title="<?=$arItem['DISPLAY_PROPERTIES']['NAMEO']['VALUE']?> консультирует онлайн">
+											<span class="personalItem__inner-online--viber"></span>
+											<span class="personalItem__inner-online--telegram"></span>
+											<span class="personalItem__inner-online--whatsapp"></span>
+											<span class="personalItem__inner-online--skype"></span>
+										</a>
+
+
+									</div>
+									<div class="personalItem__desc">
+										<h4><span>Lorem </span><br>
+											Lorem ipsum
+										</h4>
+										<p>Lorem ipsum dolor.</p>
+
+										<a class="personalItem__desc-btn" href="<?=$real_url?>">Записаться</a>
+									</div>
+								</a>
+							</div>		
+						</div> 
+						<button class="next nextSpecialist"><i class="fa fa-chevron-right"></i></button>
+						<button class="prev prevSpecialist"><i class="fa fa-chevron-left"></i></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="articleWrap_consult">
+				<h2 id="consult">КОНСУЛЬТАЦИЯ ОНЛАЙН</h2>
+				<div class="articleInner">
+					<div class="articlePic">
+						<img data-lazy="http://deti-indigo74.ru/upload/iblock/7fc/7fc694d0d5cceca6ec5ffb7531c0ef74.jpg" alt="">
+					</div>
+					<div class="articleAnnounce">
+						<p>Найти толкового врача - залог успешного лечения! Но что, если заболевание редкое, особое и в родном городе специалисты лишь разводят руками и отказываются помочь?</p>
+						<p>Расстояние - не преграда! Также, как и сложная эпидемиологическая ситуация в стране. НИИ “Дети Индиго” предлагает консультации онлайн!</p>
+					</div>
+				</div>
+				<h3>Преимущества консультации онлайн</h3>
+				<ul class="thumbsUp">
+					<li>нет необходимости приезжать в другой город на приём к врачу, если вы иногородние пациенты; </li>
+					<li>даже если ребёнку тяжело передвигаться или вам сложно привезти его в «Дети Индиго», у вас всё равно есть возможность получить полноценную консультацию врача; </li>
+					<li>поскольку дата и время приёма заранее оговорены, вам не нужно сидеть в очереди; </li>
+					<li>удобный способ оплаты: в банке рядом с домом или через интернет-банк.</li>
+				</ul>
+			</div>
+
+			<div class="articleWrap_testimonials">
+				<div class="articlesHead d-flex mb-4">
+					<h2 id="reviews">Отзывы</h2>
+					<div class="headingPag">
+						<div class="countSales">1 из 15</div>
+						<a class="allSales" href="#">Все отзывы <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				<div class="owl-carousel owl-theme pb-4" id="testimonials_slider">
+					<div class="testimonials_slider__item">
+						<div class="testimonials_slider__item-video">
+							<div class="testimonials_slider__item-video--bg lazy" data-bg="url(images/girl_and_kid.webp)" data-hash="testimonial-one" style="width: 100%; height: 360px"></div>
+						</div>
+						<div class="testimonials_slider__item-text">
+							<h3>Степаненко Марина.</h3>
+							<h4>О лечении ДЦП у Насти, 5 лет</h4>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea sequi laborum repellat eos, molestias id! Iusto in libero reprehenderit maiores, accusantium, assumenda perferendis, sunt veritatis consequatur laudantium laborum molestias laboriosam.</p>
+							<a class="testimonials_slider__item-link mt-4" href="#">Читать подробнее<i class="fa fa-angle-double-right ml-1" aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="testimonials_slider__item">
+						<div class="testimonials_slider__item-video">
+							<div class="testimonials_slider__item-video--bg lazy" data-bg="url(images/girl_and_kid.webp)" data-hash="testimonial-two" style="width: 100%; height: 360px"></div>
+						</div>
+						<div class="testimonials_slider__item-text">
+							<h3>Заголовок 2.<br>Подзаголовок 2.</h3>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea sequi laborum repellat eos, molestias id! Iusto in libero reprehenderit maiores, accusantium, assumenda perferendis, sunt veritatis consequatur laudantium laborum molestias laboriosam.</p>
+							<a class="testimonials_slider__item-link mt-4" href="#">Читать подробнее<i class="fa fa-angle-double-right ml-1" aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="testimonials_slider__item">
+						<div class="testimonials_slider__item-video">
+							<div class="testimonials_slider__item-video--bg lazy" data-bg="url(images/girl_and_kid.webp)" data-hash="testimonial-three" style="width: 100%; height: 360px"></div>
+						</div>
+						<div class="testimonials_slider__item-text">
+							<h3>Заголовок 3.<br>Подзаголовок 3.</h3>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea sequi laborum repellat eos, molestias id! Iusto in libero reprehenderit maiores, accusantium, assumenda perferendis, sunt veritatis consequatur laudantium laborum molestias laboriosam.</p>
+							<a class="testimonials_slider__item-link mt-4" href="#">Читать подробнее<i class="fa fa-angle-double-right ml-1" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="testimonials_slider__nav">
+					<a class="testimonials_slider__nav-item" href="#testimonial-one">
+						<div class="testimonials_slider__nav-item--video" style="background-image: url(images/review-kid.png)"></div>
+						<div class="testimonials_slider__nav-item--text">
+							<h4>Заголовок <br>подзаголовок</h4>
+							<p>#метод</p>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Perspiciatis, veniam?</p>
+							<div class="testimonials_slider__nav-item--reviewicon">Читать</div>
+						</div>
+					</a>
+					<a class="testimonials_slider__nav-item" href="#testimonial-two">
+						<div class="testimonials_slider__nav-item--video" style="background-image: url(images/review-kid.png)"></div>
+						<div class="testimonials_slider__nav-item--text">
+							<h4>Заголовок 2<br>подзаголовок 2</h4>
+							<p>#метод</p>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Perspiciatis, veniam?</p>
+							<div class="testimonials_slider__nav-item--reviewicon">Читать</div>
+						</div>
+					</a>
+					<a class="testimonials_slider__nav-item" href="#testimonial-three">
+						<div class="testimonials_slider__nav-item--video" style="background-image: url(images/review-kid.png)"></div>
+						<div class="testimonials_slider__nav-item--text">
+							<h4>Заголовок 3<br>подзаголовок 3</h4>
+							<p>#метод</p>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Perspiciatis, veniam?</p>
+							<div class="testimonials_slider__nav-item--reviewicon">Читать</div>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="articleWrap_videos">
+				<div class="articlesHead d-flex mb-4">
+					<h2 id="video">Видео</h2>
+					<div class="headingPag">
+						<div class="countSales">1 из 15</div>
+						<a class="allSales" href="#">Все видео <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+				</div>
+
+				<div class="owl-carousel owl-theme pb-4" id="videoreviews_slider">
+					<div class="videoreviews_slider__item">
+						<div class="videoreviews_slider__item-video">
+							<div class="youtube" id="FJNf5FWO7lk" data-hash="video-one" style="width: 100%; height: 360px"></div>
+						</div>
+						<div class="videoreviews_slider__item-text">
+							<h3>Заголовок.<br>Подзаголовок.</h3>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea sequi laborum repellat eos, molestias id! Iusto in libero reprehenderit maiores, accusantium, assumenda perferendis, sunt veritatis consequatur laudantium laborum molestias laboriosam.</p>
+						</div>
+					</div>
+					<div class="videoreviews_slider__item">
+						<div class="videoreviews_slider__item-video">
+							<div class="youtube" id="4NvPzptobt8" data-hash="video-two" style="width: 100%; height: 360px"></div>
+						</div>
+						<div class="videoreviews_slider__item-text">
+							<h3>Ульяна, 20 лет. Некроз кости.</h3>
+							<p>В «Доктор Ост» Ульяна обратилась за помощью в борьбе со страшным диагнозом «некроз». Здесь за ее лечение взялся травматолог-ортопед Кузнецов Ю.В., в качестве основного лечения была назначена инъекция стромально-васкулярной фракции. Пациентка признается, что облегчение она почувствовала через месяц после лечения, а спустя полгода она уже могла полноценно двигаться без боли в суставах.</p>
+						</div>
+					</div>
+					<div class="videoreviews_slider__item">
+						<div class="videoreviews_slider__item-video">
+							<div class="youtube" id="FVg_fgOOvdY" data-hash="video-three" style="width: 100%; height: 360px"></div>
+						</div>
+						<div class="videoreviews_slider__item-text">
+							<h3>Кристиан, 29 лет. Гонартроз.</h3>
+							<p>С моей спортивной травмой не справилась даже операция! Хондропротекторы, БАДы и прочие лекарства тоже были бессильны против боли в колене. Поэтому я решил прибегнуть к современному лечению, обратился в "Доктор Ост", прошел лечение Плазмогелем и теперь чувствую себя замечательно!</p>
+						</div>
+					</div>
+					<div class="videoreviews_slider__item">
+						<div class="videoreviews_slider__item-video">
+							<div class="youtube" id="vOvUnFQ0OAs" data-hash="video-four" style="width: 100%; height: 360px"></div>
+						</div>
+						<div class="videoreviews_slider__item-text">
+							<h3>Карина, 23 года. Разрыв мениска.</h3>
+							<p>Профессиональная балерина Карина Самойленко прилетела из Италии на лечение в Челябинский «Доктор Ост», причиной визита стал разрыв мениска. В качестве лечения была назначена инъекция стромально-васкулярной фракции. <br><br>Уже на 10 день после лечения были виды успехи! Болевой синдром исчез, а объем движений был полностью восстановлен, что позволило звездной пациентке в короткие сроки вернуться на сцену и спасти карьеру!</p>
+						</div>
+					</div>
+					<div class="videoreviews_slider__item">
+						<div class="videoreviews_slider__item-video">
+							<div class="youtube" id="wch9vuARo0Q" data-hash="video-five" style="width: 100%; height: 360px"></div>
+						</div>
+						<div class="videoreviews_slider__item-text">
+							<h3>Сергей, 60 лет. Некроз кости.</h3>
+							<p>Сергей Михайлович уже готовился к операции, ошибочно полагая, что только она сможет справиться с некрозом. Но в «Доктор Ост» от хирургического вмешательства его уберегли, и в качестве лечения назначили инъекцию стромально-вакулярной фракции. Результат был налицо! Болевые ощущения исчезли, и пациент вновь ощутил легкость движения.</p>
+						</div>
+					</div>
+					<div class="videoreviews_slider__item">
+						<div class="videoreviews_slider__item-video">
+							<div class="youtube" id="EKpHzTfIm90" data-hash="video-six" style="width: 100%; height: 360px"></div>
+						</div>
+						<div class="videoreviews_slider__item-text">
+							<h3>Фания, 72 года. Гонартроз 3 ст.</h3>
+							<p>Фания Жаватовна обратилась в "Доктор Ост" с диагнозом гонартроз 3 степени, здесь ей была проведена процедура SVF (стромально-васкулярная фракция). Она признается: «Мне буквально сразу помогло. Я впервые за долгое время выспалась нормально и уже хожу без ходунков и даже выхожу на улицу. Как долго я искала помощи у врачей! Жаловалась, что болят колени сильно, спрашивала, как избавиться. Ничего не помогало. А в Доктор Ост меня спасли. Спасибо огромное!»</p>
+						</div>
+					</div>
+					<div class="videoreviews_slider__item">
+						<div class="videoreviews_slider__item-video">
+							<div class="youtube" id="FUWoPp_hl-Q" data-hash="video-seven" style="width: 100%; height: 360px"></div>
+						</div>
+						<div class="videoreviews_slider__item-text">
+							<h3>Анна, 57 лет. Коксартроз.</h3>
+							<p>Анна Сергеевна мучилась от боли из-за коксартроза тазобедренного сустава. Лечение не давало результатов, поэтому врачи предлагали операцию, на которую пациентка так и не решилась. Она обратилась в «Доктор Ост», где после обследования ей была назначена инъекция стромально-васкулярной фракции. Результат от лечения она заметила менее чем через месяц: боли прекратились, а здоровый сон и хорошее самочувствие вернулись!</p>
+						</div>
+					</div>
+					<div class="videoreviews_slider__item">
+						<div class="videoreviews_slider__item-video">
+							<div class="youtube" id="LBkoDx4u510" data-hash="video-eight" style="width: 100%; height: 360px"></div>
+						</div>
+						<div class="videoreviews_slider__item-text">
+							<h3>Антонина, 60 лет. Травма колена.</h3>
+							<p>Антонина Павловна 4 месяца страдала от боли в колене, виной всему травма (комплексный разрыв коленного сустава). Мучения закончились после визита в "Доктор Ост". Антонине Павловне назначили инъекцию стромально-васкулярной фракции (SVF). На следующий день боли исчезли! А через 3 недели пациентка уже гуляла по улице без помощи тросточки!</p>
+						</div>
+					</div>
+					<div class="videoreviews_slider__item">
+						<div class="videoreviews_slider__item-video">
+							<div class="youtube" id="FkvxvKbi8uI" data-hash="video-nine" style="width: 100%; height: 360px"></div>
+						</div>
+						<div class="videoreviews_slider__item-text">
+							<h3>Вера, 79 лет. Коксартроз.</h3>
+							<p>Боли в тазобедренных и коленных суставах Вера Павловна лечила лишь таблетками и обезболивающими уколами. Лечение улучшений не давало, тогда она решила обратиться в «Доктор Ост», здесь пациентке была назначена инъекция стромально-васкулярной фракции (в тазобедренный и коленный суставы). Результаты не заставили себя долго ждать, отек заметно спал, суставам вернулась подвижность, ушли болевые ощущения!</p>
+						</div>
+					</div>
+					<div class="videoreviews_slider__item">
+						<div class="videoreviews_slider__item-video">
+							<div class="youtube" id="yyMpbZs0mIg" data-hash="video-ten" style="width: 100%; height: 360px"></div>
+						</div>
+						<div class="videoreviews_slider__item-text">
+							<h3>Людмила, 70 лет. Остеоартроз.</h3>
+							<p>Людмила Викторовна обратилась в «Доктор Ост» с остеоартрозом коленных суставов. Боль была настолько сильная, что пациентка передвигалась с большим трудом. В июне 2020 г. героине видеоотзыва было назначено лечение - инъекция стромально-васкулярной фракции (SVF), после которой, уже через 2 месяца, был положительный результат! Боли в коленях перестали беспокоит пациентку, и она смогла самостоятельно встать на ноги!</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="videoreviews_slider__nav">
+					<a class="videoreviews_slider__nav-item" href="#video-one">
+						<div class="videoreviews_slider__nav-item--video" style="background-image: url(images/review-kid.png);">
+							<img data-lazy="images/icons/svg/video-green.svg" alt="" class="videoreviews_slider__nav-item--videolink">
+						</div>
+						<div class="videoreviews_slider__nav-item--text">
+							<h4>Заголовок <br>подзаголовок</h4>
+							<p>#метод</p>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Perspiciatis, veniam?</p>
+							<div class="videoreviews_slider__nav-item--videoicon">Смотреть</div>
+						</div>
+					</a>
+					<a class="videoreviews_slider__nav-item" href="#video-two">
+						<div class="videoreviews_slider__nav-item--video" style="background-image: url(images/girl_and_kid.webp);">
+							<img data-lazy="images/icons/svg/video-green.svg" alt="" class="videoreviews_slider__nav-item--videolink">
+						</div>
+						<div class="videoreviews_slider__nav-item--text">
+							<h4>Заголовок <br>подзаголовок</h4>
+							<p>#инъекция_SVF</p>
+							<p>Страх и боль остались позади благодаря лечению в “Доктор Ост”.</p>
+							<div class="videoreviews_slider__nav-item--videoicon">Смотреть</div>
+						</div>
+					</a>
+
+					<a class="videoreviews_slider__nav-item" href="#video-three">
+						<div class="videoreviews_slider__nav-item--video" style="background-image: url(images/girl_and_kid.webp);">
+							<img data-lazy="images/icons/svg/video-green.svg" alt="" class="videoreviews_slider__nav-item--videolink">
+						</div>
+						<span class="videoreviews_slider__nav-item--text">
+							<h4>Кристиан, 29 лет. <br> Гонартроз.</h4>
+							<p>#инъекция_плазмогель</p>
+							<p>Плазмогель вернул меня к долгожданным тренировкам!</p>
+							<div class="videoreviews_slider__nav-item--videoicon">Смотреть</div>
+						</span>
+					</a>
+					<a class="videoreviews_slider__nav-item" href="#video-four">
+						<div class="videoreviews_slider__nav-item--video" style="background-image: url(images/girl_and_kid.webp);">
+							<img data-lazy="images/icons/svg/video-green.svg" alt="" class="videoreviews_slider__nav-item--videolink">
+						</div>
+						<span class="videoreviews_slider__nav-item--text">
+							<h4>Карина, 23 года. <br>Разрыв мениска.</h4>
+							<p>#инъекция_SVF</p>
+							<p>“Доктор Ост” спас мое здоровье и карьеру!</p>
+							<div class="videoreviews_slider__nav-item--videoicon">Смотреть</div>
+						</span>
+					</a>
+					<a class="videoreviews_slider__nav-item" href="#video-five">
+						<div class="videoreviews_slider__nav-item--video" style="background-image: url(images/girl_and_kid.webp);">
+							<img data-lazy="images/icons/svg/video-green.svg" alt="" class="videoreviews_slider__nav-item--videolink">
+						</div>
+						<span class="videoreviews_slider__nav-item--text">
+							<h4>Сергей, 60 лет. <br>Некроз кости.</h4>
+							<p>#инъекция_SVF</p>
+							<p>Рад, что обошлись без операции, живу без боли и счастливо!</p>
+							<div class="videoreviews_slider__nav-item--videoicon">Смотреть</div>
+						</span>
+					</a>
+					<a class="videoreviews_slider__nav-item" href="#video-six">
+						<div class="videoreviews_slider__nav-item--video" style="background-image: url(images/girl_and_kid.webp);">
+							<img data-lazy="images/icons/svg/video-green.svg" alt="" class="videoreviews_slider__nav-item--videolink">
+						</div>
+						<span class="videoreviews_slider__nav-item--text">
+							<h4>Фания, 72 года. <br> Гонартроз 3 ст.</h4>
+							<p>#инъекция_SVF</p>
+							<p>Я и забыла, что у меня когда-то болели колени!</p>
+							<div class="videoreviews_slider__nav-item--videoicon">Смотреть</div>
+						</span>
+					</a>
+					<a class="videoreviews_slider__nav-item" href="#video-seven">
+						<div class="videoreviews_slider__nav-item--video" style="background-image: url(images/girl_and_kid.webp);">
+							<img data-lazy="images/icons/svg/video-green.svg" alt="" class="videoreviews_slider__nav-item--videolink">
+						</div>
+						<span class="videoreviews_slider__nav-item--text">
+							<h4>Анна, 57 лет. <br> Коксартроз.</h4>
+							<p>#инъекция_SVF</p>
+							<p>Мучениям конец! Чудо-укол спас мой больной сустав!</p>
+							<div class="videoreviews_slider__nav-item--videoicon">Смотреть</div>
+						</span>
+					</a>
+					<a class="videoreviews_slider__nav-item" href="#video-eight">
+						<div class="videoreviews_slider__nav-item--video" style="background-image: url(images/girl_and_kid.webp);">
+							<img data-lazy="images/icons/svg/video-green.svg" alt="" class="videoreviews_slider__nav-item--videolink">
+						</div>
+						<span class="videoreviews_slider__nav-item--text">
+							<h4>Антонина, 60 лет. <br> Травма колена.</h4>
+							<p>#инъекция_SVF</p>
+							<p>Теперь сплю спокойно, колено больше не ноет.</p>
+							<div class="videoreviews_slider__nav-item--videoicon">Смотреть</div>
+						</span>
+					</a>
+					<a class="videoreviews_slider__nav-item" href="#video-nine">
+						<div class="videoreviews_slider__nav-item--video" style="background-image: url(images/girl_and_kid.webp);">
+							<img data-lazy="images/icons/svg/video-green.svg" alt="" class="videoreviews_slider__nav-item--videolink">
+						</div>
+						<span class="videoreviews_slider__nav-item--text">
+							<h4>Вера, 79 лет. <br> Коксартроз.</h4>
+							<p>#инъекция_SVF</p>
+							<p>Боль отступила, перестала пить таблетки, чтобы заснуть.</p>
+							<div class="videoreviews_slider__nav-item--videoicon">Смотреть</div>
+						</span>
+					</a>
+					<a class="videoreviews_slider__nav-item" href="#video-ten">
+						<div class="videoreviews_slider__nav-item--video" style="background-image: url(images/girl_and_kid.webp);">
+							<img data-lazy="images/icons/svg/video-green.svg" alt="" class="videoreviews_slider__nav-item--videolink">
+						</div>
+						<span class="videoreviews_slider__nav-item--text">
+							<h4>Людмила, 70 лет. <br> Остеоартроз.</h4>
+							<p>#инъекция_SVF</p>
+							<p>Коленки перестали болеть, хожу сама без трости!</p>
+							<div class="videoreviews_slider__nav-item--videoicon">Смотреть</div>
+						</span>
+					</a>
+				</div>
+			</div>
+
+			<div class="articleWrap_priem">
+				<h2 id="start">Как ведется прием (с чего начать)</h2>
+				<div class="row">
+					<div class="priem-item col-lg-4">
+						<div class="priem-item--photo" style="background-image: url(images/icons/svg/phone-round.svg);"></div>
+						<div class="priem-item--head">
+							<h3>Созвон <br> заявка</h3>
+						</div>
+						
+						<p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Minima in eligendi nihil similique sint nemo, ipsam, magni veniam, asperiores rerum dolore quam. Impedit ipsam dignissimos mollitia voluptatibus excepturi cum, eveniet?</p>
+					</div>
+					<div class="priem-item col-lg-4">
+						<div class="priem-item--photo" style="background-image: url(images/icons/svg/call-round.svg);"></div>
+						<div class="priem-item--head">
+							<h3>Предварительная онлайн-консультация</h3>
+						</div>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate quaerat inventore animi expedita voluptates pariatur ratione nulla ex porro. Ratione nisi asperiores debitis vitae, libero enim dolorum eos quis ut.</p>
+					</div>
+					<div class="priem-item col-lg-4">
+						<div class="priem-item--photo" style="background-image: url(images/icons/svg/car-round.svg);"></div>
+						<div class="priem-item--head">
+							<h3>Поездка <br> в центр</h3>
+						</div>
+						<p>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Quae, molestiae eius aperiam magni at. Veritatis amet maiores commodi. Omnis repudiandae iste placeat id consequuntur maiores odio accusamus et reprehenderit commodi!</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="articleWrap_faq">
+				<div class="articlesHead d-flex mb-4">
+					<h2 id="faq">Часто задаваемые вопросы</h2>
+					<div class="headingPag">
+						<div class="countSales">3 из 15</div>
+						<a class="allSales" href="#">Все вопросы <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				<div class="articleWrap_questions">
+					<div class="articleWrap_questions-item">
+						<div class="articleWrap_questions-item--ask">
+							<div class="articleWrap_questions-item--ask_photo">
+								<img data-lazy="images/icons/svg/question-green.svg" alt="">
+								<p>Вы спрашивали</p>
+							</div>
+							<div class="articleWrap_questions-item--ask_text">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, fugiat quos. Nisi in minima qui minus non alias ipsa, architecto ea perferendis porro perspiciatis fugit nemo voluptatem, maiores. Autem, unde!</p>
+							</div>
+						</div>
+						<div class="articleWrap_questions-item--answer">
+							<div class="articleWrap_questions-item--answer_photo">
+								<div class="articleWrap_questions-item--answer_bubble lazy" data-bg="url(/images/icons/svg/specialist-bubble2.svg)">
+									<div class="articleWrap_questions-item--answer_bubble-pic lazy" data-bg="url(https://deti-indigo74.ru/upload/iblock/ef0/ef07c0d9a427ce3281f4ad1c4af2f6f1.jpg)"></div>
+								</div>
+								<p>Отвечает специалист по физической реабилитации Селюнин А.В.</p>
+							</div>
+							<div class="articleWrap_questions-item--answer_text">
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam sequi, ad pariatur accusantium, asperiores ab repellendus maxime nisi explicabo ea voluptatem. Soluta excepturi dignissimos aspernatur eos quisquam facere? Atque, ex.</p>
+							</div>
+						</div>
+						<a class="articleWrap_questions-item--link" href="#">Читать подробнее<i class="fa fa-angle-double-right ml-1" aria-hidden="true"></i></a>
+					</div>
+					<div class="articleWrap_questions-item">
+						<div class="articleWrap_questions-item--ask">
+							<div class="articleWrap_questions-item--ask_photo">
+								<img data-lazy="images/icons/svg/question-green.svg" alt="">
+								<p>Вы спрашивали</p>
+							</div>
+							<div class="articleWrap_questions-item--ask_text">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, fugiat quos. Nisi in minima qui minus non alias ipsa, architecto ea perferendis porro perspiciatis fugit nemo voluptatem, maiores. Autem, unde!</p>
+							</div>
+						</div>
+						<div class="articleWrap_questions-item--answer">
+							<div class="articleWrap_questions-item--answer_photo">
+								<div class="articleWrap_questions-item--answer_bubble lazy" data-bg="url(/images/icons/svg/specialist-bubble2.svg)">
+									<div class="articleWrap_questions-item--answer_bubble-pic lazy" data-bg="url(https://deti-indigo74.ru/upload/iblock/ef0/ef07c0d9a427ce3281f4ad1c4af2f6f1.jpg)"></div>
+								</div>
+								<p>Отвечает специалист по физической реабилитации Селюнин А.В.</p>
+							</div>
+							<div class="articleWrap_questions-item--answer_text">
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam sequi, ad pariatur accusantium, asperiores ab repellendus maxime nisi explicabo ea voluptatem. Soluta excepturi dignissimos aspernatur eos quisquam facere? Atque, ex.</p>
+							</div>
+						</div>
+						<a class="articleWrap_questions-item--link" href="#">Читать подробнее<i class="fa fa-angle-double-right ml-1" aria-hidden="true"></i></a>
+					</div>
+					<div class="articleWrap_questions-item">
+						<div class="articleWrap_questions-item--ask">
+							<div class="articleWrap_questions-item--ask_photo">
+								<img data-lazy="images/icons/svg/question-green.svg" alt="">
+								<p>Вы спрашивали</p>
+							</div>
+							<div class="articleWrap_questions-item--ask_text">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, fugiat quos. Nisi in minima qui minus non alias ipsa, architecto ea perferendis porro perspiciatis fugit nemo voluptatem, maiores. Autem, unde!</p>
+							</div>
+						</div>
+						<div class="articleWrap_questions-item--answer">
+							<div class="articleWrap_questions-item--answer_photo">
+								<div class="articleWrap_questions-item--answer_bubble lazy" data-bg="url(/images/icons/svg/specialist-bubble2.svg)">
+									<div class="articleWrap_questions-item--answer_bubble-pic lazy" data-bg="url(https://deti-indigo74.ru/upload/iblock/ef0/ef07c0d9a427ce3281f4ad1c4af2f6f1.jpg)"></div>
+								</div>
+								<p>Отвечает специалист по физической реабилитации Селюнин А.В.</p>
+							</div>
+							<div class="articleWrap_questions-item--answer_text">
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam sequi, ad pariatur accusantium, asperiores ab repellendus maxime nisi explicabo ea voluptatem. Soluta excepturi dignissimos aspernatur eos quisquam facere? Atque, ex.</p>
+							</div>
+						</div>
+						<a class="articleWrap_questions-item--link" href="#">Читать подробнее<i class="fa fa-angle-double-right ml-1" aria-hidden="true"></i></a>
+					</div>										
+				</div>
+			</div>
+
+			<div class="articleWrap_contacts">
+				<h2 id="contacts">Контакты и схема проезда</h2>
+				<div class="articleWrap_contacts-info">
+					<p style="text-align: left;">
+						<span style="font-size: 13pt;">Ближайшая к медцентру остановка - </span><span style="color: #00aeef; font-size: 13pt;">Супермаркет, </span><span style="font-size: 13pt;">до нее</span><span style="font-size: 13pt;">&nbsp;</span><span style="font-size: 13pt;">можно добраться на общественном транспорте:
+							<br>
+						</span>
+					</p>
+					<p style="text-align: left;">
+						<span style="font-size: 13pt;"><b>Автобусы №:</b> 2, 41, 108.<br>
+							<b>Троллейбусы №:</b> 7, 12,13.<br>
+							<b>Трамваи №:</b> 4, 5, 9, 10.<br>
+							<b>Маршрутные такси №:</b> 28, 30, 34, 37, 39, 48, 51, 65, 77, 93.
+						</span>
+					</p>
+					<p>
+						<span style="font-size: 13pt;">Далее продолжайте движение согласно карты, путь займет не более 3 минут.</span><br>
+					</p>
+				</div>
+				<div class="articleWrap_contacts-map mt-4">
+					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A34a4a788ee07da796208d05902fc705b72499286247babebf068711c633db7cb&amp;source=constructor" width="100%" height="676" frameborder="0"></iframe>
+				</div>
+				<div class="row justify-content-center mt-4">
+					<button class="btn__greenTop button-campaign">Записаться на приём</button>
+				</div>
+			</div>
+		</article>
+	</div>
+
+	<div class="trees">
+		<footer class="footerWrap container-fluid">
+			<div class="container">
+				<ul class="navBottom container">
+					<li><a href="fonds.html">БЛАГОТВОРИТЕЛЬНЫЕ ФОНДЫ</a></li>
+					<li><a href="guide.html">СПРАВОЧНИК СПЕЦИАЛЬНОСТЕЙ</a></li>
+					<li><a href="forparents.html">РОДИТЕЛЯМ НА ЗАМЕТКУ</a></li>
+					<li><a href="faq.html">ВОПРОС-ОТВЕТ</a></li>
+					<li><a href="video.html">ВИДЕО</a></li>
+					<li><a href="howtodrive.html">КАК ПРОЕХАТЬ</a></li>
+				</ul>
+					<hr class="footerLine">
+					<div class="info">
+						<div class="licencies">
+							<div class="social">
+								<a href="https://www.facebook.com/deti.indigo.74/" class="icon vkontakte" target="_blank" title="Подписывайтесь на нас в Facebook">
+									<svg viewBox="0 0 49.652 49.652">
+										<path d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826    C49.652,11.137,38.516,0,24.826,0z M31,25.7h-4.039c0,6.453,0,14.396,0,14.396h-5.985c0,0,0-7.866,0-14.396h-2.845v-5.088h2.845    v-3.291c0-2.357,1.12-6.04,6.04-6.04l4.435,0.017v4.939c0,0-2.695,0-3.219,0c-0.524,0-1.269,0.262-1.269,1.386v2.99h4.56L31,25.7z"/>
+									</svg>
+								</a>
+
+								<a href="https://www.instagram.com/deti_indigo_74/" class="icon ig" target="_blank" title="Подписывайтесь на нас в Инстаграме">
+									<svg viewBox="0 0 49.652 49.652" >
+										<path d="M24.825,29.796c2.739,0,4.972-2.229,4.972-4.97c0-1.082-0.354-2.081-0.94-2.897c-0.903-1.252-2.371-2.073-4.029-2.073     c-1.659,0-3.126,0.82-4.031,2.072c-0.588,0.816-0.939,1.815-0.94,2.897C19.854,27.566,22.085,29.796,24.825,29.796z" />
+										<polygon points="35.678,18.746 35.678,14.58 35.678,13.96 35.055,13.962 30.891,13.975 30.907,18.762" class="active-path"/>
+										<path d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826     C49.652,11.137,38.516,0,24.826,0z M38.945,21.929v11.56c0,3.011-2.448,5.458-5.457,5.458H16.164     c-3.01,0-5.457-2.447-5.457-5.458v-11.56v-5.764c0-3.01,2.447-5.457,5.457-5.457h17.323c3.01,0,5.458,2.447,5.458,5.457V21.929z"/>
+										<path d="M32.549,24.826c0,4.257-3.464,7.723-7.723,7.723c-4.259,0-7.722-3.466-7.722-7.723c0-1.024,0.204-2.003,0.568-2.897     h-4.215v11.56c0,1.494,1.213,2.704,2.706,2.704h17.323c1.491,0,2.706-1.21,2.706-2.704v-11.56h-4.217     C32.342,22.823,32.549,23.802,32.549,24.826z"  />
+									</svg>
+								</a>
+
+								<a href="https://vk.com/detiindigo74" class="icon vkontakte" target="_blank" title="Подписывайтесь на нас во ВК">
+									<svg viewBox="0 0 112.196 112.196">
+										<g>
+											<circle id="XMLID_11_" cx="56.098" cy="56.098" r="56.098"/>
+										</g>
+										<path d="M53.979,80.702h4.403c0,0,1.33-0.146,2.009-0.878
+										c0.625-0.672,0.605-1.934,0.605-1.934s-0.086-5.908,2.656-6.778c2.703-0.857,6.174,5.71,9.853,8.235
+										c2.782,1.911,4.896,1.492,4.896,1.492l9.837-0.137c0,0,5.146-0.317,2.706-4.363c-0.2-0.331-1.421-2.993-7.314-8.463
+										c-6.168-5.725-5.342-4.799,2.088-14.702c4.525-6.031,6.334-9.713,5.769-11.29c-0.539-1.502-3.867-1.105-3.867-1.105l-11.076,0.069
+										c0,0-0.821-0.112-1.43,0.252c-0.595,0.357-0.978,1.189-0.978,1.189s-1.753,4.667-4.091,8.636c-4.932,8.375-6.904,8.817-7.71,8.297
+										c-1.875-1.212-1.407-4.869-1.407-7.467c0-8.116,1.231-11.5-2.397-12.376c-1.204-0.291-2.09-0.483-5.169-0.514
+										c-3.952-0.041-7.297,0.012-9.191,0.94c-1.26,0.617-2.232,1.992-1.64,2.071c0.732,0.098,2.39,0.447,3.269,1.644
+										c1.135,1.544,1.095,5.012,1.095,5.012s0.652,9.554-1.523,10.741c-1.493,0.814-3.541-0.848-7.938-8.446
+										c-2.253-3.892-3.954-8.194-3.954-8.194s-0.328-0.804-0.913-1.234c-0.71-0.521-1.702-0.687-1.702-0.687l-10.525,0.069
+										c0,0-1.58,0.044-2.16,0.731c-0.516,0.611-0.041,1.875-0.041,1.875s8.24,19.278,17.57,28.993
+										C44.264,81.287,53.979,80.702,53.979,80.702L53.979,80.702z" style="fill:#fff;"/>
+									</svg>
+								</a>
+
+								<a href="https://ok.ru/niidetiindigo" class="icon odnoklassniki" target="_blank" title="Подписывайтесь на нас в Одноклассниках">
+									<svg viewBox="0 0 97.75 97.75">
+										<path d="M48.921,40.507c4.667-0.017,8.384-3.766,8.367-8.443c-0.017-4.679-3.742-8.402-8.411-8.406    c-4.708-0.005-8.468,3.787-8.432,8.508C40.48,36.826,44.239,40.524,48.921,40.507z"/>
+										<path d="M48.875,0C21.882,0,0,21.883,0,48.875S21.882,97.75,48.875,97.75S97.75,75.867,97.75,48.875S75.868,0,48.875,0z     M48.945,14.863c9.52,0.026,17.161,7.813,17.112,17.438c-0.048,9.403-7.814,17.024-17.318,16.992    c-9.407-0.032-17.122-7.831-17.066-17.253C31.726,22.515,39.445,14.837,48.945,14.863z M68.227,56.057    c-2.105,2.161-4.639,3.725-7.453,4.816c-2.66,1.031-5.575,1.55-8.461,1.896c0.437,0.474,0.642,0.707,0.914,0.979    c3.916,3.937,7.851,7.854,11.754,11.802c1.33,1.346,1.607,3.014,0.875,4.577c-0.799,1.71-2.592,2.834-4.351,2.713    c-1.114-0.077-1.983-0.63-2.754-1.407c-2.956-2.974-5.968-5.895-8.862-8.925c-0.845-0.882-1.249-0.714-1.994,0.052    c-2.973,3.062-5.995,6.075-9.034,9.072c-1.365,1.346-2.989,1.59-4.573,0.82c-1.683-0.814-2.753-2.533-2.671-4.262    c0.058-1.166,0.632-2.06,1.434-2.858c3.877-3.869,7.742-7.75,11.608-11.628c0.257-0.257,0.495-0.53,0.868-0.93    c-5.273-0.551-10.028-1.849-14.099-5.032c-0.506-0.396-1.027-0.778-1.487-1.222c-1.783-1.711-1.962-3.672-0.553-5.69    c1.207-1.728,3.231-2.19,5.336-1.197c0.408,0.191,0.796,0.433,1.168,0.689c7.586,5.213,18.008,5.356,25.624,0.233    c0.754-0.576,1.561-1.05,2.496-1.289c1.816-0.468,3.512,0.201,4.486,1.791C69.613,52.874,69.6,54.646,68.227,56.057z"  />
+									</svg>
+								</a>
+							</div>ООО "НИИ Педиатрии и Неврологии "Дети Индиго"&copy;. Все права защищены, 2019 Все статьи и материалы сайта deti-indigo74.ru защищены авторским правом и принадлежат компании ООО "НИИ Педиатрии и Неврологии "Дети Индиго". Любое копирование и перепечатка публикаций, а также их частей строго запрещены и преследуются в соответствии с законом. При нарушении авторских и смежных прав будет открыто судебное преследование и отправлены уведомления хостинг- провайдерам для блокировки интернет-ресурсов. Cодержание сайта не является публичной офертой <br> <a href="#">Политика обработки персональных данных </a><br>
+							<div class="sendWrap">
+								<a href="#" class="sendDirector button-suggestion">Жалобы и предложения</a>
+								<a href="#" class="consultationBtn button-consultation">Записаться на онлайн-консультацию</a>
+							</div>
+						</div>
+						<div class="address">
+							<div class="city">
+								<h5>ЧЕЛЯБИНСК</h5>
+								<address>
+									<p>ул. Университетская набережная, 34</p>
+									<p>(351) 734-55-63</p>
+									<p>+7 919 344-53-04</p>
+								</address>
+							</div>
+							<div class="city">
+								<h5>МАГНИТОГОРСК</h5>
+								<address>
+									<p>ул. 50-лет Магнитки, 33А</p>
+									<p>(3519) 412-888</p>
+								</address>
+							</div>
+						</div>
+					</div>
+
+					<div class="warning">
+						ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ. НЕОБХОДИМО ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ СПЕЦИАЛИСТА
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<div class="navRounds">
+			<a href="#" >
+				<div class="navRounds-item" id="click">
+					<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+				</div>
+			</a>
+
+			<a href="#" class="button-repost">
+				<div class="navRounds-item">
+					<i class="fa fa-share-square" aria-hidden="true"></i>
+				</div>
+			</a>
+			<a href="#" class="button-call">
+				<div class="navRounds-item">
+					<i class="fa fa-phone" aria-hidden="true"></i>
+				</div>
+			</a>
+			<a href="#" class="button-question">
+				<div class="navRounds-item">
+					<i class="fa fa-question" aria-hidden="true"></i>
+				</div>
+			</a>
+			<a href="howtodrive.html">
+				<div class="navRounds-item">
+					<i class="fa fa-map-marker-alt" aria-hidden="true"></i>
+				</div>
+			</a>
+		</div>
+	</body>
+
+	<script src="../js/libs.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="https://kit.fontawesome.com/1765a704fd.js" async defer></script>
+	</html>

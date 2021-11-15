@@ -1,0 +1,27 @@
+.prints {
+	h2 {
+		color: $light-blue;
+		margin: 0.5rem 0;
+		text-transform: uppercase;
+		font-family: $main-font;
+		font-weight: 500;
+	}
+	
+	&__inner {
+		margin: 20px 0;
+		align-items: center;
+	}
+
+	&__photo {
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
+.printsHead {
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-end;
+	border-bottom: 2px solid $green;
+}

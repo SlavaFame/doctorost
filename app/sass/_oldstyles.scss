@@ -1,0 +1,106 @@
+/* важные мысли в  тексте */
+p.tit5 { color: #00AAEA; z-index: 1008; position: relative; }
+
+/* важные мысли в тексте */
+p.tit4 { color: #98B602; z-index: 1008; position: relative; }  
+
+/* еще какие то мысли: */
+p.tit2, p.tit4 {
+	font-size: 0.95rem;
+	text-align: center;
+	background-color: #EEFDCB;
+	color: #7D9600;
+	position: relative;
+	padding: 1rem;
+	border-radius: 10px;
+	margin: 1rem 0;
+	z-index: 99;
+
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		bottom: 5px;
+		left: 5px;
+		border: 2px dashed #B9CE00;
+		border-radius: 10px;
+	}
+
+	a {
+		z-index: 1008; position: relative;
+	}
+}
+
+p.tit3 { 
+	color: #fff;
+	background-color: #7D9600;
+	position: relative;
+	padding: 1rem;
+	border-radius: 10px;
+	margin: 1rem 0;
+
+	a {
+		z-index: 1008; position: relative;
+	}
+
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		bottom: 5px;
+		left: 5px;
+		border: 2px dashed #fff;
+		border-radius: 10px;
+	}  
+}
+
+p.tit7 { 
+	font-size: 1rem;
+}
+
+p.tit1 {
+	background-color: #eee;
+    padding: 1rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+.texting h3 {
+	text-transform: uppercase;
+}
+
+.texting h4 {
+	color: $light-blue;
+}
+
+.texting img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* для БФ */
+.insurance p {
+    line-height: 24px;
+    font-size: 16px;
+}
+
+
+.insurance_card__img {
+	display: flex;
+	height: 100%;
+	width:100%;
+	background-size: contain;
+	background-position:center;
+	background-repeat:no-repeat;
+	filter: grayscale(100%);
+	min-height: 170px;
+}
+
+.insurance_card__img:hover { 
+	filter: grayscale(0%);
+	transition: 0.75s ease-in-out;
+} 

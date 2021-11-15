@@ -1,0 +1,152 @@
+.double-slider-main .slick-arrow:after,
+.sectificates .slick-arrow:after {
+    content: '';
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+    transition: .3s
+}
+
+.sectificates {
+    margin-bottom: 78px
+}
+
+.sectificates .sectificates__slider {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+
+.sectificates__title {
+	margin: 1rem 0;
+}
+
+.sectificates .sectificates__slider-main {
+    width: calc(100% - 200px);
+    padding: 0 40px;
+    background-color: $footer-green;
+}
+
+.sectificates__slider-main__slide img { max-width: 100%; }
+
+@media screen and (max-width:991px) {
+    .sectificates .sectificates__slider-main {
+        width: 100%
+    }
+}
+
+@media screen and (max-width:768px) {
+    .sectificates .sectificates__slider-main {
+        padding: 20px 30px
+    }
+}
+
+.sectificates .sectificates__slider-main img {
+    margin: 0 auto;
+    max-width: 100%
+}
+
+.sectificates .sectificates__slider-nav {
+    width: 120px
+}
+
+.sectificates .sectificates__slider-nav__slide {
+    margin-bottom: 10px;
+    border: 2px solid #b8b8b8
+}
+
+@media screen and (max-width:991px) {
+    .sectificates .sectificates__slider-nav {
+        width: 100%;
+        padding-bottom: 0;
+        margin-top: 15px
+    }
+    .sectificates .sectificates__slider-nav__slide {
+        margin-bottom: 0;
+        margin-right: 10px
+    }
+}
+
+.sectificates .sectificates__slider-nav__slide.slick-current {
+    border-color: $light-blue;
+}
+
+.sectificates .slick-arrow {
+    position: absolute;
+    font-size: 0;
+    left: 10px;
+    cursor: pointer;
+    top: 50%;
+}
+
+@media screen and (max-width:768px) {
+    .sectificates .slick-arrow {
+        left: 10px
+    }
+}
+
+.sectificates .slick-arrow:before {
+    display: none
+}
+
+.sectificates .slick-arrow:after {
+    display: block;
+    width: 25px;
+    border-left: 5px solid #9fc3ad;
+    border-top: 5px solid #9fc3ad
+}
+
+.sectificates .slick-arrow.slick-next {
+    left: auto;
+    right: 35px;
+    border: none;
+    box-shadow: none;
+}
+
+.sectificates .slick-arrow.slick-next:after {
+    border: none;
+    border-right: 5px solid #9fc3ad;
+    border-bottom: 5px solid #9fc3ad
+}
+
+.sectificates .slick-arrow:hover:after {
+    border-color: $green;
+}
+
+.double-slider {
+    margin-bottom: 40px
+}
+
+.double-slider-main {
+    padding-bottom: 0;
+    margin-bottom: 15px;
+    border: 2px solid #b8b8b8
+}
+
+.double-slider-main__slide img {
+    max-width: 100%;
+    width: 100%
+}
+
+.double-slider-main .slick-arrow {
+    position: absolute;
+    font-size: 0;
+    left: 30px;
+    cursor: pointer
+}
+
+@media screen and (max-width:768px) {
+    .sectificates .slick-arrow.slick-next {
+        right: 30px
+    }
+    .double-slider-main .slick-arrow {
+        left: 10px
+    }
+}

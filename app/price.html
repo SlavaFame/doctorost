@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Медицинский центр "Дети Индиго - НИИ Неврологии и Педиатрии"</title>
+	<meta name="description" content="Лечение детского аутизма и ДЦП в Челябинске. Медицинский центр 'Дети Индиго' на Набережной" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="../img/favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="../img/favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../img/favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="../img/favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../img/favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../img/favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../img/favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../img/favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="../img/favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../img/favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../img/favicons/favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" href="../css/libs.min.css">
+	<link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+	<!-- МОДАЛЬНЫЕ ОКНА НАЧАЛО -->
+	<div class="overlay overlay-campaign">
+		<div class="popup popup-campaign">
+			<form id="form" class="">
+				<h1>Записаться на прием</h1>
+				<div class="userInfo mt-4">
+					<div class="col-lg-6">
+						<p class="mb-2">Напишите, как к вам обращаться</p>
+						<input type="text" required="" placeholder="Иванов Иван Иванович" name="" id="">
+						<p class="mt-3 mb-2">Ваш E-Mail</p>
+						<input type="email" placeholder="ivanov@mail.ru" name="" id="">
+					</div>
+					<div class="col-lg-6">
+						<p class="mb-2">Введите номер телефона</p>
+						<input type="tel" class="telmask" placeholder="+7 900 111 22 33" required="" name="" id="">
+						<p class="hint">не забудьте указать код города (для городских номеров)</p>
+						<p class="mb-2">Выберите удобную дату</p>
+						<div class="d-flex">
+							<input type="date" placeholder="15 Июня" name="" id="" class="mr-2" required="">
+							<input type="time" required="">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-12 mt-4">
+					<p>Напишите, к какому специалисту и с какой проблемой Вы хотите попасть на прием</p>
+					<textarea name="" placeholder="Сообщение" id="" cols="30" rows="10"></textarea><p class="hint">Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!</p>
+					<div class="d-flex">
+						<div class="attention">
+							<button type="submit" class="btn-blue">Отправить</button>
+							<p>Нажимая кнопку «Отправить», Вы соглашаетесь с <a href="#">Условиями обработки персональных данных.</a></p>
+							<p>Просим отнестись с пониманием, если выбранное при отправлении заявки время посещения врача будет занято. Администраторы предложат ближайшие свободные часы.</p>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="close-popup close-campaign"></div>
+		</div>
+	</div> 
+
+	<div class="overlay overlay-question">
+		<div class="popup popup-question">
+			<form id="form" class="">
+				<h1>Задать вопрос</h1>
+				<p class="m-2">Напишите ваше имя</p>
+				<input type="text" placeholder="Ваше имя" required>
+				<p class="m-2">Введите номер телефона</p>
+				<input type="tel" class="telmask" placeholder="+7 900 111 22 33" required="" name="">
+				<p class="m-2">Или адрес электронной почты</p>
+				<input type="еmail" placeholder="ivanov@mail.ru">
+				<p class="m-2">Ваш вопрос</p>
+				<textarea name="" id="" cols="30" rows="10"></textarea>
+				<button type="submit" class="btn-blue">Отправить</button>	
+			</form>
+			<div class="close-popup close-question"></div> 
+		</div>
+	</div>
+
+	<div class="overlay overlay-suggestion">
+		<div class="popup popup-suggestion">
+			<form id="form" class="">
+				<h1>Жалобы и предложения</h1>
+				<p class="m-2">Напишите ваше имя</p>
+				<input type="text" placeholder="Ваше имя" required>
+				<p class="m-2">Введите номер телефона</p>
+				<input type="tel" class="telmask" placeholder="+7 900 111 22 33" required="" name="">
+				<p class="m-2">Или адрес электронной почты</p>
+				<input type="еmail" placeholder="ivanov@mail.ru">
+				<p class="m-2">Текст вашего сообщения</p>
+				<textarea name="" id="" cols="30" rows="10"></textarea>
+				<button type="submit" class="btn-blue">Отправить</button>	
+			</form>
+			<div class="close-popup close-suggestion"></div>
+		</div>
+	</div>
+
+	<div class="overlay overlay-consultation">
+		<div class="popup popup-consultation">
+			<form id="form">
+				<h1>Записаться на онлайн-консультацию</h1>
+				<div class="userInfo mt-4">
+					<div class="col-lg-6">
+						<p class="mb-2">Напишите, как к вам обращаться</p>
+						<input type="text" required="" placeholder="Иванов Иван Иванович" name="" id="">
+						<p class="mt-3 mb-2">Ваш E-Mail</p>
+						<input type="email" placeholder="ivanov@mail.ru" name="" id="">
+					</div>
+					<div class="col-lg-6">
+						<p class="mb-2">Введите номер телефона</p>
+						<input type="tel" class="telmask" placeholder="+7 900 111 22 33" required="" name="" id="">
+						<p class="hint">не забудьте указать код города (для городских номеров)</p>
+						<p class="mb-2">Выберите удобную дату</p>
+						<div class="d-flex">
+							<input type="date" placeholder="15 Июня" name="" id="" class="mr-2" required="">
+							<input type="time" required="">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-12 mt-4">
+					<p>Напишите, к какому специалисту и с какой проблемой Вы хотите попасть на прием</p>
+					<textarea name="" placeholder="Сообщение" id="" cols="30" rows="10"></textarea><p class="hint">Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!</p>
+					<div class="d-flex">
+						<div class="attention">
+							<button type="submit" class="btn-blue">Отправить</button>
+							<p>Нажимая кнопку «Отправить», Вы соглашаетесь с <a href="#">Условиями обработки персональных данных.</a></p>
+							<p>Просим отнестись с пониманием, если выбранное при отправлении заявки время посещения врача будет занято. Администраторы предложат ближайшие свободные часы.</p>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="close-popup close-consultation"></div>
+		</div>
+	</div>
+
+	<div class="overlay overlay-repost">
+		<div class="popup popup-repost">
+			<h1>Поделиться в соцсетях</h1>
+			<div class="row">
+				<div class="repost">
+					<div class="repost_item">
+						<a href="#" title="Поделиться в Instagram"><i class="fab fa-instagram"></i></a>
+					</div>
+					<div class="repost_item">
+						<a href="#" title="Поделиться в VK"><i class="fab fa-vk"></i></a>
+					</div>
+					<div class="repost_item">
+						<a href="#" title="Поделиться в Одноклассниках"><i class="fab fa-odnoklassniki"></i></a>
+					</div>
+					<div class="repost_item">
+						<a href="#" title="Поделиться в Facebook"><i class="fab fa-facebook-f"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="close-popup close-repost"></div>
+		</div>
+	</div>
+
+	<div class="overlay overlay-call">
+		<div class="popup popup-call">
+			<form id="form" class="">
+				<h1>Заказать обратный звонок</h1>
+				<p class="m-2">Напишите ваше имя</p>
+				<input type="text" placeholder="Ваше имя" required>
+				<p class="m-2">Введите номер телефона</p>
+				<input type="tel" class="telmask" placeholder="+7 900 111 22 33" required>
+				<button type="submit" class="btn-blue">Отправить</button>	
+			</form>
+			<div class="close-popup close-call"></div>
+		</div>
+	</div>
+
+	<div class="overlay overlay-review">
+		<div class="popup popup-review">
+			<form id="form" class="">
+				<h1>Оставить отзыв</h1>
+				<div class="userInfo mt-4">
+					<div class="col-lg-6">
+						<p class="mb-2">Напишите, как к вам обращаться</p>
+						<input type="text" required="" placeholder="Иванов Иван Иванович" name="" id="">
+					</div>
+					<div class="col-lg-6">
+						<p class="mb-2">Ваш E-Mail</p>
+						<input type="email" placeholder="ivanov@mail.ru" name="" id="">
+					</div>
+				</div>
+
+				<div class="col-lg-12 mt-4">
+					<p>Ваши впечатления о нас</p>
+					<textarea name="" placeholder="Сообщение" id="" cols="30" rows="10"></textarea><p class="hint">Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!</p>
+					<div class="d-flex">
+						<div class="attention">
+							<button type="submit" class="btn-blue">Отправить</button>
+							<p>Нажимая кнопку «Отправить», Вы соглашаетесь с <a href="#">Условиями обработки персональных данных.</a></p>
+							<p>Просим отнестись с пониманием, если выбранное при отправлении заявки время посещения врача будет занято. Администраторы предложат ближайшие свободные часы.</p>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="close-popup close-review"></div>
+		</div>
+	</div>
+
+	<div class="overlay overlay-skype">
+		<div class="popup popup-skype">
+			<form id="form" class="">
+				<h1>Записаться на консультацию по Skype</h1>
+				<div class="userInfo mt-4">
+					<div class="col-lg-6">
+						<p class="mb-2">Напишите, как к вам обращаться</p>
+						<input type="text" required="" placeholder="Иванов Иван Иванович" name="" id="">
+					</div>
+					<div class="col-lg-6">
+						<p class="mb-2">Ваш E-Mail</p>
+						<input type="email" placeholder="ivanov@mail.ru" name="" id="">
+					</div>
+				</div>
+
+				<div class="col-lg-12 mt-4">
+					<p>Напишите, к какому специалисту и с какой проблемой Вы хотите попасть на прием</p>
+					<textarea name="" placeholder="Сообщение" id="" cols="30" rows="10"></textarea><p class="hint">Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!</p>
+					<div class="d-flex">
+						<div class="attention">
+							<button type="submit" class="btn-blue">Отправить</button>
+							<p>Нажимая кнопку «Отправить», Вы соглашаетесь с <a href="#">Условиями обработки персональных данных.</a></p>
+							<p>Просим отнестись с пониманием, если выбранное при отправлении заявки время посещения врача будет занято. Администраторы предложат ближайшие свободные часы.</p>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="close-popup close-skype"></div>
+		</div>
+	</div>
+	
+	<!-- МОДАЛЬНЫЕ ОКНА КОНЕЦ -->
+
+<!-- HEADER НАЧАЛО -->
+<header class="header_fluid" id="top">
+
+	<div class="header_fluid__info">
+		<div class="logo">
+			<a href="./index.html">
+				<img data-lazy="images/logos/logo_top_new.png" alt="Лого">
+			</a>	
+		</div>
+
+		<div class="infoTop">
+			<div class="addressTop">
+				<div class="citySelect">
+					<p>Челябинск</p>
+				</div> 
+				<div class="street">
+					<p>ул. Университетская набережная, 34</p>
+				</div>
+			</div>
+
+			<div class="time">
+				<div class="timeWork">
+					<span>
+						<p>Пн-Пт: 8:00 - 20:00</p>
+						<p>Сб-Вс: 8:00 - 17:00</p>
+					</span>
+				</div>
+
+				<div class="transportSchema">
+					<a href="howtodrive.html" target="_blank">Схема проезда</a>
+					<a href="inogorodnim.html" target="_blank">Иногородним</a>
+				</div>
+			</div>
+		</div>
+		<button class="btn__greenTop button-campaign">Записаться на приём</button>
+	</div>
+
+	<div class="header_fluid__menu">
+		<nav class="navOuter">
+			<div class="burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="burger_top">
+				<a href="./index.html">
+					<img data-lazy="images/logos/indigo_mob.png" alt="Лого">
+				</a>
+				<button class="btn__greenTop-mobile button-campaign">Записаться</button>
+			</div>
+
+			<ul class="navMenu container px-0">
+				<li class="navMenu_item"><a class="navMenu_item__link" href="about.html">О нас</a></li>
+				<li class="navMenu_item"><a class="navMenu_item__link" href="healing.html">Что лечим</a></li>
+				<li class="navMenu_item"><a class="navMenu_item__link" href="methods.html">Методы лечения</a></li>
+				<li class="navMenu_item"><a class="navMenu_item__link" href="news.html">Новости</a></li>
+				<li class="navMenu_item">
+					<a href="specialists.html" class="navMenu_item__link chevron">Специалисты</a>
+					<ul class="navMenu_sub">
+						<li class="navMenu_sub__item"><a class="navMenu_sub__item-link" href="guide.html">Справочник специальностей</a></li>
+					</ul>
+				</li>
+				<li class="navMenu_item"><a class="navMenu_item__link" href="sales.html">Aкции</a></li>
+				<li class="navMenu_item"><a class="navMenu_item__link" href="reviews1.html">Отзывы</a></li>
+				<li class="navMenu_item"><a class="navMenu_item__link" href="price.html">Цены</a></li>
+				<li class="navMenu_item">
+					<span class="navMenu_item__link chevron">Ещё</span>
+					<ul class="navMenu_sub">
+						<li class="navMenu_sub__item"><a class="navMenu_sub__item-link" href="guide.html">Что-то ещё</a></li>
+						<li class="navMenu_sub__item"><a class="navMenu_sub__item-link" href="guide.html">Что-то ещё</a></li>
+						<li class="navMenu_sub__item"><a class="navMenu_sub__item-link" href="guide.html">Что-то ещё</a></li>
+						<li class="navMenu_sub__item"><a class="navMenu_sub__item-link" href="guide.html">Что-то ещё</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+<!-- HEADER КОНЕЦ -->
+	<div class="container">
+		<ul class="breadcrumb">
+			<li class="breadcrumbItem"><a href="#">Главная</a></li>
+			<li class="breadcrumbItem active">Цены</li>
+		</ul>
+	</div>
+
+	<div class="content container-fluid">
+		<div class="container row p-0 mx-auto">
+			<div class="container col-lg-3 hidden-md hidden-sm">
+				<aside>
+					<div class="sidebar">
+						<div class="sidebarHeader">
+							<h3>Методы лечения</h3>
+						</div>
+						<div class="sidebarInner">
+							<ul class="leftMenu_btn-green">
+								<li>
+									<a href="/methods/">Смотреть все методы <i class="pl-1 fa fa-chevron-right" aria-hidden="true"></i></a><hr>
+								</li>
+							</ul>
+							<ul>
+								<li class="leftMenuItem_selected">
+									<a href="/methods/oporno-dvigatelnaya-sistema/kostyum-aksialnoy-nagruzki-regent/">КОСТЮМ АКСИАЛЬНОЙ НАГРУЗКИ “РЕГЕНТ”</a><hr>
+								</li>
+								<li class="leftMenuItem">
+									<a href="/methods/diagnostika/programma-r300/">Программа Р300</a><hr>
+								</li>
+								<li class="leftMenuItem">
+									<a href="/methods/nevrologicheskie-zabolevaniya/mikrotokovaya-polyarizatsiya-golovnogo-i-spinnogo-mozga/">Микротоковая поляризация мозга</a><hr>
+								</li>
+								<li class="leftMenuItem">
+									<a href="/methods/nevrologicheskie-zabolevaniya/eeg-bos-trening/">ЭЭГ-БОС-тренинг</a><hr>
+								</li>
+								<li class="leftMenuItem">
+									<a href="/methods/diagnostika/programma-biomed/">Программа БиоМед</a><hr>
+								</li>
+								<li class="leftMenuItem">
+									<a href="/methods/nevrologicheskie-zabolevaniya/ava-terapiya/">АВА терапия</a><hr>
+								</li>
+								<li class="leftMenuItem">
+									<a href="/methods/nevrologicheskie-zabolevaniya/tomatis-terapiya/">Томатис терапия</a><hr>
+								</li>
+								<li class="leftMenuItem">
+									<a href="/methods/nevrologicheskie-zabolevaniya/alloplant/">Аллоплант</a><hr>
+								</li>
+								<li class="leftMenuItem">
+									<a href="/methods/oporno-dvigatelnaya-sistema/sensornaya-komnata/">Сенсорная комната</a><hr>
+								</li>
+							</ul>
+						</div>
+						<div class="sidebarSales">
+							<div class="card__action card__action_discount">
+								<div class="card__label">
+								</div>
+							</div>
+							<div class="sidebarSalesHeader">
+								<h3>Акции</h3>
+							</div>
+							<div class="sidebarSalesPic" id="bx_3218110189_21262">
+								<div class="sale__topText">Лечение ДЦП с выгодой 34 600руб.</div>
+								<img src="/upload/iblock/4f8/4f89f4b647ad42f0dd47889acaac3155.jpg" alt="Лечение ДЦП с выгодой 34 600руб.">
+							</div>
+							<div class="sidebarSalesDesc">
+								<p>Воспользуйтесь выгодным предложением! Есть замечательная возможность снизить стоимость лечения ДЦП на 34 600 руб! Предлагаем базовую программу реабилитации, включающую самые эффективные методы лечения...</p>
+								<a href="/promo/kompleksnoe-lechenie-dtsp-v-nii-s-vygodoy-34-600rub/">Подробнее</a>
+							</div>
+						</div>
+						<div class="sidebarReviews">
+							<div class="sidebarReviewsHeader">
+								<h3>Отзывы</h3>
+							</div>
+							<div class="sidebarReviewsItem" id="bx_651765591_19442">
+								<div class="sidebarReviewsInner d-flex">
+									<div class="sidebarReviewsDesc">
+										<p>У моего ребенка улучшилось внимание сон. Появилась речевая активность (повторяет зв...</p>
+										<a href="/review/lechenie-dtsp/19-03-2015g/">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="sidebarReviewsItem" id="bx_651765591_19432">
+								<div class="sidebarReviewsInner d-flex">
+									<div class="sidebarReviewsDesc">
+										<p>Лучше стал понимать обращенную речь, стал лучше захват ручкой предметы, лучше стал п...</p>
+										<a href="/review/lechenie-dtsp/patsient-6-let-dtsp/">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="sidebarReviewsItem" id="bx_651765591_19512">
+								<div class="sidebarReviewsInner d-flex">
+									<div class="sidebarReviewsDesc">
+										<p>Понравилась что методика совершенно безболезненная, дочка спокойно во время процедуры смот...</p>
+										<a href="/review/o-transkranialnoy-magnitnoy-stimulyatsii-mozga/patsientka-7-let-zaikanie/">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sidebarBtns">
+							<div class="sidebarBtns_item">
+								<a href="#" class="sidebarBtns_item__btn button-consultation">Записаться на консультацию по скайпу</a>
+							</div>
+							<div class="sidebarBtns_item">
+								<a href="/inogorodnim/rus/" class="sidebarBtns_item__btn">Для иногородних</a>
+							</div>
+							<div class="sidebarBtns_item">
+								<a href="/video/" class="sidebarBtns_item__btn">Видео о нас</a>
+							</div>
+						</div>
+					</div>
+				</aside>
+			</div>
+
+			<div class="right_column container col-lg-9 col-md-12 col-sm-12">
+				
+				<div class="price-head">
+					<h1>Цены</h1>
+					<div class="price-head--btn">
+						<a class="price-head--btn-item active" href="#">в Челябинске</a>
+						<a class="price-head--btn-item" href="#">в Краснодаре</a>
+					</div>
+				</div>
+
+				<h2>Цены</h2>
+				
+				<div class="price_dms container">
+					<p class="price_dms__text">Мы позаботились, чтобы лечение в НИИ «Дети Индиго» оставалось доступным.</p>
+					<b class="price_dms__bold">ИСПОЛЬЗУЙТЕ ВСЕ ВОЗМОЖНОСТИ И ЭКОНОМЬТЕ!</b>
+				</div>
+
+				<div class="dms_outer row dms_outer row p-3">
+					<a class="dms_icon" href="/articles/besprotsentnaya-rassrochka-na-lechenie/">
+						<svg viewBox="0 0 22.68 22.68">
+							<g id="Слой_x0020_1">
+								<g id="_667015200">
+									<g>
+										<path class="fil0" d="M11.34 0c6.26,0 11.34,5.08 11.34,11.34 0,6.26 -5.08,11.34 -11.34,11.34 -6.26,0 -11.34,-5.08 -11.34,-11.34 0,-6.26 5.08,-11.34 11.34,-11.34z"/>
+										<g>
+											<g>
+												<path class="fil1" d="M5.21 8.68l0 3.55c0,2.61 1.69,4.23 4.62,4.23 2.93,0 4.62,-1.62 4.62,-4.23l0 -3.55c0,-2.57 -1.69,-4.21 -4.62,-4.21 -2.93,0 -4.62,1.64 -4.62,4.21zm6.03 -0.13l0 3.81c0,0.81 -0.54,1.26 -1.41,1.26 -0.88,0 -1.41,-0.45 -1.41,-1.26l0 -3.81c0,-0.79 0.53,-1.25 1.41,-1.25 0.87,0 1.41,0.46 1.41,1.25z"/>
+												<g>
+													<path class="fil2 str0" d="M12.62 11.94l0 0.69c0,0.87 0.56,1.41 1.6,1.41 1.04,0 1.59,-0.54 1.59,-1.41l0 -0.69c0,-0.88 -0.55,-1.43 -1.59,-1.43 -1.04,0 -1.6,0.55 -1.6,1.43zm6.37 -1.28l-0.42 0c-0.36,0 -0.44,0.03 -0.61,0.27l-4.58 6.24c-0.12,0.17 -0.08,0.32 0.16,0.32l0.38 0c0.39,0 0.45,-0.02 0.64,-0.28l4.58 -6.23c0.12,-0.17 0.07,-0.32 -0.15,-0.32zm-4.11 1.33l0 0.58c0,0.37 -0.23,0.59 -0.66,0.59 -0.45,0 -0.67,-0.22 -0.67,-0.59l0 -0.58c0,-0.38 0.22,-0.59 0.67,-0.59 0.43,0 0.66,0.21 0.66,0.59zm1.81 3.56l0 0.68c0,0.88 0.56,1.42 1.6,1.42 1.04,0 1.59,-0.54 1.59,-1.42l0 -0.68c0,-0.88 -0.55,-1.43 -1.59,-1.43 -1.04,0 -1.6,0.55 -1.6,1.43zm2.26 0.05l0 0.57c0,0.38 -0.22,0.59 -0.66,0.59 -0.44,0 -0.67,-0.21 -0.67,-0.59l0 -0.57c0,-0.39 0.23,-0.59 0.67,-0.59 0.44,0 0.66,0.2 0.66,0.59z"/>
+													<path id="1" class="fil1" d="M12.62 11.94l0 0.69c0,0.87 0.56,1.41 1.6,1.41 1.04,0 1.59,-0.54 1.59,-1.41l0 -0.69c0,-0.88 -0.55,-1.43 -1.59,-1.43 -1.04,0 -1.6,0.55 -1.6,1.43zm6.37 -1.28l-0.42 0c-0.36,0 -0.44,0.03 -0.61,0.27l-4.58 6.24c-0.12,0.17 -0.08,0.32 0.16,0.32l0.38 0c0.39,0 0.45,-0.02 0.64,-0.28l4.58 -6.23c0.12,-0.17 0.07,-0.32 -0.15,-0.32zm-4.11 1.33l0 0.58c0,0.37 -0.23,0.59 -0.66,0.59 -0.45,0 -0.67,-0.22 -0.67,-0.59l0 -0.58c0,-0.38 0.22,-0.59 0.67,-0.59 0.43,0 0.66,0.21 0.66,0.59zm1.81 3.56l0 0.68c0,0.88 0.56,1.42 1.6,1.42 1.04,0 1.59,-0.54 1.59,-1.42l0 -0.68c0,-0.88 -0.55,-1.43 -1.59,-1.43 -1.04,0 -1.6,0.55 -1.6,1.43zm2.26 0.05l0 0.57c0,0.38 -0.22,0.59 -0.66,0.59 -0.44,0 -0.67,-0.21 -0.67,-0.59l0 -0.57c0,-0.39 0.23,-0.59 0.67,-0.59 0.44,0 0.66,0.2 0.66,0.59z"/>
+												</g>
+											</g>
+										</g>
+									</g>
+								</g>
+							</g>
+						</svg>
+						Рассрочка беспроцентная
+					</a>
+					<a class="dms_icon" href="/articles/rabotaem-po-polisam-dms/">
+						<svg viewBox="0 0 400 400">
+							<g class="icon_2">
+								<g id="_734274552">
+									<path class="crosswrap" d="M200 0c111,0 200,90 200,200 0,111 -90,200 -200,200 -111,0 -200,-90 -200,-200 0,-111 90,-200 200,-200z"/>
+									<g>
+										<path class="cross" d="M94 218l0 -120c0,-2 3,-2 5,-3 24,-6 50,-12 73,-18 5,-1 24,-6 27,-6 3,0 104,25 107,25 0,23 0,47 0,70 0,37 5,66 -12,94 -12,19 -26,32 -43,45 -9,7 -23,15 -33,20 -4,2 -8,4 -12,6 -8,4 -5,3 -13,-1 -4,-2 -8,-4 -12,-6 -14,-7 -32,-18 -43,-28 -2,-2 -3,-2 -5,-4 -2,-2 -3,-2 -5,-4 -20,-19 -35,-42 -35,-71zm-21 -113l0 109c0,19 6,36 13,52 14,29 48,57 76,72 10,5 26,14 35,14 15,0 16,-3 29,-8 17,-7 46,-28 59,-40 6,-6 11,-11 16,-17 16,-20 27,-47 27,-73l0 -109c0,-13 -6,-23 -16,-29 -5,-3 -11,-4 -17,-5 -6,-2 -12,-3 -18,-5 -8,-2 -66,-17 -73,-17 -12,0 -13,1 -25,4l-72 18c-6,2 -12,3 -17,6 -9,5 -16,15 -16,29z"/>
+										<polygon class="cross" points="169,169 124,169 124,231 169,231 169,276 231,276 231,231 276,231 276,169 231,169 231,124 169,124 "/>
+									</g>
+								</g>
+							</g>
+						</svg>
+						Работаем<br>по полисам ДМС
+					</a>
+					<a class="dms_icon" href="/fonds/">
+						<svg viewBox="0 0 2221 2189">
+							<g class="icon_3">
+								<g id="_729105064">
+									<path class="fil7" d="M880 962c5,4 17,4 25,2 9,-3 8,-9 8,-20l0 -649c0,-57 -14,-150 72,-164 37,-6 74,8 90,27 23,29 21,54 21,99 0,78 0,157 0,235l0 469c11,6 17,4 29,2 3,-67 0,-141 0,-209l0 -411c0,-64 38,-107 105,-100 15,2 31,6 40,14 42,35 38,54 38,116l0 513c0,73 -8,83 22,76 6,-22 2,-306 2,-354 0,-50 -9,-126 17,-161 23,-31 84,-49 128,-19 42,29 38,79 38,140l0 533c83,-12 126,-21 207,10 63,24 104,58 136,99 40,51 54,98 59,180 7,139 -48,248 -128,346 -37,46 -73,83 -115,120 -6,5 -9,10 -15,15l-32 27c-50,43 -163,147 -220,164l0 118c54,-10 144,-49 190,-71 283,-138 502,-398 584,-705 148,-553 -141,-1119 -660,-1324 -684,-271 -1434,183 -1515,906 -49,436 160,830 487,1049 85,57 254,142 358,156l0 -292c-107,-57 -117,-99 -166,-182 -75,-127 -138,-244 -210,-371 -14,-25 -27,-49 -42,-74 -13,-23 -29,-51 -41,-75 -30,-66 -25,-135 55,-143 40,-4 64,14 84,33 34,34 76,89 105,127 7,9 43,55 54,59 3,-29 0,-184 1,-226l0 -448c0,-49 -6,-181 4,-220 2,-9 14,-34 18,-38 4,-4 30,-17 37,-19 55,-19 123,11 123,89l0 505c0,20 -4,43 5,51z"/>
+									<path class="fil7" d="M918 1443c9,123 73,210 150,295l138 129c31,29 128,103 167,131 18,13 24,5 40,-4 47,-29 151,-115 198,-159 135,-124 266,-259 246,-462 -3,-33 -9,-70 -24,-96 -16,-27 -33,-51 -53,-66 -106,-83 -254,-90 -346,4l-28 32c-35,26 -49,-31 -107,-63 -55,-30 -123,-45 -195,-29 -138,30 -198,147 -187,288z"/>
+								</g>
+							</g>
+						</svg>
+						Благотворительные фонды
+					</a>
+					<a class="dms_icon" href="/complex/">
+						<svg viewBox="0 0 626 626">
+							<g class="icon_4">
+								<g id="_731775792">
+									<path class="fil9" d="M313 0c173,0 313,140 313,313 0,173 -140,313 -313,313 -173,0 -313,-140 -313,-313 0,-173 140,-313 313,-313z"/>
+									<g>
+										<path class="fil8" d="M494 410c1,-10 0,-27 -2,-36 -5,-24 -14,-32 -31,-46 -3,-3 -7,-6 -10,-9 -7,-7 -19,-25 -23,-34 -5,-12 -7,-15 -17,-21 -14,-9 -40,-15 -59,-17 -42,-4 -101,-3 -135,14 -23,11 -22,39 -51,64 -10,9 -21,18 -28,29 -7,13 -9,34 -9,49 1,25 6,39 20,56 5,5 15,12 23,16 27,13 66,16 97,17 31,1 63,1 94,-2 6,-1 12,-1 19,-1 31,-1 63,-6 88,-27 6,-5 11,-13 16,-22 4,-9 7,-19 8,-30z"/>
+										<path class="fil8" d="M287 194c3,-16 3,-14 8,-15 15,-5 16,-18 18,-20 4,6 6,14 14,18 3,1 6,2 8,3l3 14c-4,1 -20,0 -25,0 -9,0 -18,1 -26,1zm26 -44c-1,-2 -1,-4 -2,-6 -1,-2 -2,-4 -3,-5 -5,-7 -13,-11 -22,-10 -4,0 -8,3 -11,5 -14,8 -16,19 -10,33 1,2 2,4 3,5 1,2 3,2 4,4l-4 19c0,1 0,1 0,1 -1,3 -20,5 -24,6 -9,2 -15,3 -23,6 -20,7 -37,20 -48,37 -13,22 -15,44 -15,70 5,-1 12,-11 15,-16 4,-6 7,-13 11,-19 8,-15 14,-23 29,-31 49,-23 157,-26 203,0 9,5 10,7 17,13 5,5 8,11 11,18 3,7 6,13 11,19 2,3 5,6 7,8 6,6 4,4 7,7 2,-7 -4,-43 -6,-51 -2,-8 -4,-14 -8,-20 -9,-17 -31,-30 -49,-37 -20,-7 -26,-7 -46,-11 -2,-4 -3,-11 -4,-15 -1,-4 -2,-4 0,-7 2,-2 3,-4 4,-6 15,-18 -6,-45 -29,-38 -14,4 -15,15 -18,21z"/>
+									</g>
+								</g>
+							</g>
+						</svg>
+						Комплекс<br>назначений дешевле
+					</a>
+					<a class="dms_icon" href="#">
+						<svg viewBox="0 0 27.65 27.65">
+							<g id="Слой_x0020_1">
+								<path class="fil0" d="M13.82 0c7.64,0 13.83,6.19 13.83,13.82 0,7.64 -6.19,13.83 -13.83,13.83 -7.63,0 -13.82,-6.19 -13.82,-13.83 0,-7.63 6.19,-13.82 13.82,-13.82z"/>
+								<g id="_666470216">
+									<path class="fil1" d="M13.06 10.03l0 -6.75c3.45,0 6.3,2.6 6.7,5.94 -2.11,0.03 -4.01,0.48 -4.01,2.55l0 4.45c-0.83,0.36 -1.74,0.56 -2.69,0.56 -3.34,0 -6.12,-2.42 -6.66,-5.61l-2.36 -2.29 0.87 -0.89 2.11 2.04 6.04 0zm-2.73 7.07c0.65,0 1.24,0.27 1.67,0.69 0.43,0.43 0.69,1.02 0.69,1.67 0,0.66 -0.26,1.25 -0.69,1.68l-0.01 0c-0.43,0.43 -1.01,0.69 -1.66,0.69 -0.65,0 -1.25,-0.27 -1.67,-0.69 -0.43,-0.43 -0.7,-1.02 -0.7,-1.68 0,-0.65 0.27,-1.24 0.7,-1.67 0.42,-0.42 1.02,-0.69 1.67,-0.69zm1.44 0.92c-0.37,-0.37 -0.88,-0.6 -1.44,-0.6 -0.57,0 -1.08,0.23 -1.45,0.6 -0.36,0.37 -0.59,0.88 -0.59,1.44 0,0.57 0.23,1.08 0.59,1.45 0.37,0.37 0.88,0.6 1.45,0.6 0.56,0 1.07,-0.23 1.43,-0.6l0.01 0c0.37,-0.37 0.6,-0.88 0.6,-1.45 0,-0.56 -0.23,-1.07 -0.6,-1.44zm-1.44 0.61c0.23,0 0.44,0.1 0.59,0.25 0.15,0.15 0.24,0.36 0.24,0.58 0,0.23 -0.09,0.44 -0.24,0.59 -0.15,0.15 -0.36,0.25 -0.59,0.25 -0.23,0 -0.44,-0.1 -0.59,-0.25 -0.15,-0.15 -0.24,-0.36 -0.24,-0.59 0,-0.22 0.09,-0.43 0.24,-0.58 0.15,-0.15 0.36,-0.25 0.59,-0.25zm0.36 0.47c-0.09,-0.09 -0.22,-0.14 -0.36,-0.14 -0.14,0 -0.27,0.05 -0.36,0.14 -0.09,0.1 -0.15,0.22 -0.15,0.36 0,0.15 0.06,0.27 0.15,0.36 0.09,0.1 0.22,0.15 0.36,0.15 0.14,0 0.27,-0.05 0.36,-0.15 0.09,-0.09 0.15,-0.21 0.15,-0.36 0,-0.14 -0.06,-0.26 -0.15,-0.36z"/>
+									<g>
+										<path class="fil1" d="M16.28 16.9c-0.81,0.06 -1.5,0.18 -2.13,0.51 -2.44,1.27 -0.18,3.2 2.9,3 0.78,-0.06 1.52,-0.21 2.12,-0.52 0.48,-0.25 1.26,-0.79 0.96,-1.57 -0.41,-1.05 -2.41,-1.54 -3.85,-1.42z"/>
+										<path class="fil1" d="M16.14 23.02l1.08 0 0.07 -0.03c0.04,-0.01 0.03,0 0.06,-0.01 0.05,0 0.11,0 0.16,-0.01 0.79,-0.08 1.98,-0.45 2.45,-1.08 0.17,-0.24 0.34,-0.63 0.16,-0.98 -0.06,0.02 -0.26,0.22 -0.33,0.27 -0.3,0.22 -0.78,0.45 -1.15,0.56 -0.65,0.19 -1.24,0.29 -1.98,0.29 -2.48,0 -3.28,-1.05 -3.47,-1.13 -0.11,0.46 -0.06,0.67 0.18,1 0.44,0.59 1.47,0.92 2.21,1.04 0.17,0.02 0.43,0.02 0.56,0.08z"/>
+										<path class="fil1" d="M13.21 19.59c-0.21,0.39 0.01,0.86 0.21,1.07 1.19,1.28 4.14,1.3 5.64,0.59 0.38,-0.18 0.61,-0.34 0.84,-0.6 0.22,-0.23 0.4,-0.67 0.21,-1.06 -0.19,0.18 -0.37,0.34 -0.65,0.5 -1.66,0.97 -4.98,0.85 -6.25,-0.5z"/>
+										<path class="fil1" d="M16.14 24.36l1.08 0 0.07 -0.03c0.04,0 0.03,0 0.06,0 0.05,-0.01 0.11,-0.01 0.16,-0.02 0.79,-0.08 1.98,-0.45 2.45,-1.08 0.17,-0.24 0.34,-0.63 0.16,-0.98 -0.06,0.02 -0.26,0.22 -0.33,0.27 -0.3,0.22 -0.78,0.45 -1.15,0.56 -0.65,0.19 -1.24,0.29 -1.98,0.29 -2.48,0 -3.28,-1.04 -3.47,-1.13 -0.11,0.47 -0.06,0.67 0.18,1 0.44,0.59 1.47,0.92 2.21,1.04 0.17,0.02 0.43,0.02 0.56,0.08z"/>
+									</g>
+									<g>
+										<path class="fil1" d="M19.69 9.7c-0.81,0.07 -1.51,0.18 -2.13,0.51 -2.45,1.28 -0.18,3.21 2.9,3 0.77,-0.05 1.52,-0.2 2.12,-0.51 0.48,-0.25 1.26,-0.79 0.96,-1.58 -0.41,-1.04 -2.41,-1.54 -3.85,-1.42z"/>
+										<path class="fil1" d="M19.55 15.83l1.08 0 0.07 -0.03c0.04,-0.01 0.03,-0.01 0.06,-0.01 0.05,-0.01 0.11,-0.01 0.16,-0.01 0.79,-0.08 1.98,-0.45 2.45,-1.09 0.17,-0.23 0.33,-0.62 0.16,-0.97 -0.06,0.02 -0.26,0.21 -0.33,0.26 -0.3,0.22 -0.78,0.45 -1.15,0.56 -0.66,0.2 -1.24,0.29 -1.98,0.29 -2.48,0 -3.28,-1.04 -3.47,-1.12 -0.12,0.46 -0.07,0.67 0.18,1 0.44,0.59 1.47,0.92 2.21,1.03 0.17,0.03 0.43,0.02 0.56,0.09z"/>
+										<path class="fil1" d="M16.62 12.4c-0.21,0.38 0.01,0.85 0.21,1.07 1.19,1.27 4.14,1.3 5.64,0.59 0.38,-0.19 0.6,-0.35 0.84,-0.6 0.22,-0.24 0.4,-0.67 0.21,-1.06 -0.2,0.18 -0.37,0.33 -0.65,0.5 -1.66,0.97 -4.99,0.85 -6.25,-0.5z"/>
+										<path class="fil1" d="M19.55 17.17l1.08 0 0.07 -0.03c0.04,-0.01 0.03,0 0.06,-0.01 0.05,0 0.11,-0.01 0.16,-0.01 0.79,-0.08 1.98,-0.45 2.45,-1.09 0.17,-0.23 0.33,-0.62 0.16,-0.97 -0.06,0.02 -0.26,0.21 -0.33,0.26 -0.3,0.23 -0.78,0.46 -1.15,0.56 -0.66,0.2 -1.24,0.3 -1.98,0.3 -2.48,-0.01 -3.28,-1.05 -3.47,-1.13 -0.12,0.46 -0.07,0.67 0.18,1 0.32,0.43 0.94,0.72 1.55,0.89 0.17,0.03 0.33,0.07 0.49,0.11 0.06,0.02 0.11,0.03 0.17,0.03 0.17,0.03 0.43,0.02 0.56,0.09z"/>
+										<path class="fil1" d="M20.6 18.68l0.03 0 0.07 -0.02c0.04,-0.01 0.03,-0.01 0.06,-0.01 0.05,-0.01 0.11,-0.01 0.16,-0.02 0.79,-0.08 1.98,-0.44 2.45,-1.08 0.17,-0.24 0.33,-0.63 0.16,-0.98 -0.06,0.02 -0.26,0.22 -0.33,0.27 -0.3,0.22 -0.78,0.45 -1.15,0.56 -0.66,0.2 -1.24,0.29 -1.98,0.29l-0.05 0c0.27,0.26 0.47,0.58 0.58,0.99z"/>
+										<path class="fil1" d="M20.67 20.37l0.03 -0.01c0.04,-0.01 0.03,-0.01 0.06,-0.01 0.05,-0.01 0.11,-0.01 0.16,-0.01 0.79,-0.09 1.98,-0.45 2.45,-1.09 0.17,-0.23 0.33,-0.62 0.16,-0.97 -0.06,0.02 -0.26,0.21 -0.33,0.26 -0.3,0.22 -0.78,0.45 -1.15,0.56 -0.47,0.14 -0.9,0.23 -1.38,0.27l0 1z"/>
+									</g>
+								</g>
+								<path class="fil1" d="M10.27 18.79c0.38,0 0.68,0.3 0.68,0.68 0,0.37 -0.3,0.67 -0.68,0.67 -0.37,0 -0.67,-0.3 -0.67,-0.67 0,-0.38 0.3,-0.68 0.67,-0.68z"/>
+							</g>
+						</svg>
+						Материнский<br>капитал
+					</a>
+				</div>
+
+				<div class="price_table container px-0">
+					<ul class="accordion accordion--animated margin-top-lg margin-bottom-lg">
+						<li class="accordion__item px-0 accordion__item--has-children">
+							<input class="accordion__input" type="checkbox" name ="group-1" id="group-1">
+							<label class="accordion__label accordion__label--icon-folder" for="group-1"><span>Выезд и оказание услуг на дому</span></label>
+
+							<ul class="accordion__sub accordion__sub--l1">
+								<li class="accordion__item accordion__item--has-children">
+									<input class="accordion__input" type="checkbox" name ="sub-group-1" id="sub-group-1">
+									<label class="accordion__label accordion__label--icon-folder" for="sub-group-1"><span>Sub Group 1</span></label>
+
+									<ul class="accordion__sub accordion__sub--l2">
+										<li class="accordion__item px-0">
+											<div class="table-head">
+												<div class="col-lg-6 table-cell">Наименование услуги</div>
+												<div class="col-lg-3 table-cell">Тип</div>
+												<div class="col-lg-3 table-cell">Стоимость, руб</div>
+											</div>
+										</li>
+										<li class="accordion__item px-0">
+											<ul class="table-content">
+												<li class="table-row">
+													<div class="col-lg-6 table-cell pl-3">Психологическая работа с родителями</div>
+													<div class="col-lg-3 table-cell">Консультация</div>
+													<div class="col-lg-3 table-cell ">
+														<span>1 500</span> 
+														<div class="discount-img"></div>
+													</div>
+												</li>
+												<li class="table-row">
+													<div class="col-lg-6 table-cell pl-3">Психологическая работа с родителями</div>
+													<div class="col-lg-3 table-cell">Консультация</div>
+													<div class="col-lg-3 table-cell ">
+														<span>1 500</span> 
+														<div class="discount-img"></div>
+													</div>
+												</li>
+											</ul>
+										</li>
+									</ul>
+
+								</li>
+
+								<li class="accordion__item accordion__item--has-children">
+									<input class="accordion__input" type="checkbox" name ="sub-group-2" id="sub-group-2">
+									<label class="accordion__label accordion__label--icon-folder" for="sub-group-2"><span>Sub Group 2</span></label>
+
+									<ul class="accordion__sub accordion__sub--l2">
+										<li class="accordion__item px-0">
+											<div class="table-head">
+												<div class="col-lg-6 table-cell">Наименование услуги</div>
+												<div class="col-lg-3 table-cell">Тип</div>
+												<div class="col-lg-3 table-cell">Стоимость, руб</div>
+											</div>
+										</li>
+										<li class="accordion__item px-0">
+											<ul class="table-content">
+												<li class="table-row">
+													<div class="col-lg-6 table-cell pl-3">Психологическая работа с родителями</div>
+													<div class="col-lg-3 table-cell">Консультация</div>
+													<div class="col-lg-3 table-cell ">
+														<span>1 500</span> 
+														<div class="discount-img"></div>
+													</div>
+												</li>
+												<li class="table-row">
+													<div class="col-lg-6 table-cell pl-3">Психологическая работа с родителями</div>
+													<div class="col-lg-3 table-cell">Консультация</div>
+													<div class="col-lg-3 table-cell ">
+														<span>1 500</span> 
+														<div class="discount-img"></div>
+													</div>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+
+								<li class="accordion__item px-0">
+									<div class="table-head">
+										<div class="col-lg-6 table-cell">Наименование услуги</div>
+										<div class="col-lg-3 table-cell">Тип</div>
+										<div class="col-lg-3 table-cell">Стоимость, руб</div>
+									</div>
+								</li>
+								<li class="accordion__item px-0">
+									<ul class="table-content">
+										<li class="table-row">
+											<div class="col-lg-6 table-cell pl-3">Психологическая работа с родителями</div>
+											<div class="col-lg-3 table-cell">Консультация</div>
+											<div class="col-lg-3 table-cell ">
+												<span>1 500</span> 
+												<div class="discount-img"></div>
+											</div>
+										</li>
+										<li class="table-row">
+											<div class="col-lg-6 table-cell pl-3">Психологическая работа с родителями</div>
+											<div class="col-lg-3 table-cell">Консультация</div>
+											<div class="col-lg-3 table-cell ">
+												<span>1 500</span> 
+												<div class="discount-img"></div>
+											</div>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+
+						<li class="accordion__item px-0 accordion__item--has-children">
+							<input class="accordion__input" type="checkbox" name ="group-2" id="group-2">
+							<label class="accordion__label accordion__label--icon-folder" for="group-2"><span>Group 2</span></label>
+
+							<ul class="accordion__sub accordion__sub--l1">
+								<li class="accordion__item px-0">
+									<div class="table-head">
+										<div class="col-lg-6 table-cell">Наименование услуги</div>
+										<div class="col-lg-3 table-cell">Тип</div>
+										<div class="col-lg-3 table-cell">Стоимость, руб</div>
+									</div>
+								</li>
+								<li class="accordion__item px-0">
+									<ul class="table-content">
+										<li class="table-row">
+											<div class="col-lg-6 table-cell pl-3">Психологическая работа с родителями</div>
+											<div class="col-lg-3 table-cell">Консультация</div>
+											<div class="col-lg-3 table-cell ">
+												<span>1 500</span> 
+												<div class="discount-img"></div>
+											</div>
+										</li>
+										<li class="table-row">
+											<div class="col-lg-6 table-cell pl-3">Психологическая работа с родителями</div>
+											<div class="col-lg-3 table-cell">Консультация</div>
+											<div class="col-lg-3 table-cell ">
+												<span>1 500</span> 
+												<div class="discount-img"></div>
+											</div>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="disease container-fluid">
+			<div class="diseaseListWrap container">
+				<p>Поиск заболеваний по алфавиту: </p>
+				<ul class="diseaseList">
+					<li><a href="#">А</a></li>
+					<li><a href="#">Б</a></li>
+					<li><a href="#">В</a></li>
+					<li><a href="#">Г</a></li>
+					<li><a href="#">Д</a></li>
+					<li><a href="#">Е</a></li>
+					<li><a href="#">Ж</a></li>
+					<li><a href="#">З</a></li>
+					<li><a href="#">И</a></li>
+					<li><a href="#">К</a></li>
+					<li><a href="#">Л</a></li>
+					<li><a href="#">М</a></li>
+					<li><a href="#">Н</a></li>
+					<li><a href="#">О</a></li>
+					<li><a href="#">П</a></li>
+					<li><a href="#">Р</a></li>
+					<li><a href="#">С</a></li>
+					<li><a href="#">Т</a></li>
+					<li><a href="#">У</a></li>
+					<li><a href="#">Ф</a></li>
+					<li><a href="#">Х</a></li>
+					<li><a href="#">Ц</a></li>
+					<li><a href="#">Ч</a></li>
+					<li><a href="#">Ш</a></li>
+					<li><a href="#">Э</a></li>
+					<li><a href="#">Я</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="trees">
+		<footer class="footerWrap container-fluid">
+			<div class="container">
+				<ul class="navBottom container">
+					<li><a href="fonds.html">БЛАГОТВОРИТЕЛЬНЫЕ ФОНДЫ</a></li>
+					<li><a href="guide.html">СПРАВОЧНИК СПЕЦИАЛЬНОСТЕЙ</a></li>
+					<li><a href="forparents.html">РОДИТЕЛЯМ НА ЗАМЕТКУ</a></li>
+					<li><a href="faq.html">ВОПРОС-ОТВЕТ</a></li>
+					<li><a href="video.html">ВИДЕО</a></li>
+					<li><a href="howtodrive.html">КАК ПРОЕХАТЬ</a></li>
+				</ul>
+				<hr class="footerLine">
+				<div class="info">
+					<div class="licencies">
+						<div class="social">
+							<a href="https://www.facebook.com/deti.indigo.74/" class="icon vkontakte" target="_blank" title="Подписывайтесь на нас в Facebook">
+								<svg viewBox="0 0 49.652 49.652">
+									<path d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826    C49.652,11.137,38.516,0,24.826,0z M31,25.7h-4.039c0,6.453,0,14.396,0,14.396h-5.985c0,0,0-7.866,0-14.396h-2.845v-5.088h2.845    v-3.291c0-2.357,1.12-6.04,6.04-6.04l4.435,0.017v4.939c0,0-2.695,0-3.219,0c-0.524,0-1.269,0.262-1.269,1.386v2.99h4.56L31,25.7z"/>
+								</svg>
+							</a>
+
+							<a href="https://www.instagram.com/deti_indigo_74/" class="icon ig" target="_blank" title="Подписывайтесь на нас в Инстаграме">
+								<svg viewBox="0 0 49.652 49.652" >
+									<path d="M24.825,29.796c2.739,0,4.972-2.229,4.972-4.97c0-1.082-0.354-2.081-0.94-2.897c-0.903-1.252-2.371-2.073-4.029-2.073     c-1.659,0-3.126,0.82-4.031,2.072c-0.588,0.816-0.939,1.815-0.94,2.897C19.854,27.566,22.085,29.796,24.825,29.796z" />
+									<polygon points="35.678,18.746 35.678,14.58 35.678,13.96 35.055,13.962 30.891,13.975 30.907,18.762" class="active-path"/>
+									<path d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826     C49.652,11.137,38.516,0,24.826,0z M38.945,21.929v11.56c0,3.011-2.448,5.458-5.457,5.458H16.164     c-3.01,0-5.457-2.447-5.457-5.458v-11.56v-5.764c0-3.01,2.447-5.457,5.457-5.457h17.323c3.01,0,5.458,2.447,5.458,5.457V21.929z"/>
+									<path d="M32.549,24.826c0,4.257-3.464,7.723-7.723,7.723c-4.259,0-7.722-3.466-7.722-7.723c0-1.024,0.204-2.003,0.568-2.897     h-4.215v11.56c0,1.494,1.213,2.704,2.706,2.704h17.323c1.491,0,2.706-1.21,2.706-2.704v-11.56h-4.217     C32.342,22.823,32.549,23.802,32.549,24.826z"  />
+								</svg>
+							</a>
+
+							<a href="https://vk.com/detiindigo74" class="icon vkontakte" target="_blank" title="Подписывайтесь на нас во ВК">
+								<svg viewBox="0 0 112.196 112.196">
+									<g>
+										<circle id="XMLID_11_" cx="56.098" cy="56.098" r="56.098"/>
+									</g>
+									<path d="M53.979,80.702h4.403c0,0,1.33-0.146,2.009-0.878
+									c0.625-0.672,0.605-1.934,0.605-1.934s-0.086-5.908,2.656-6.778c2.703-0.857,6.174,5.71,9.853,8.235
+									c2.782,1.911,4.896,1.492,4.896,1.492l9.837-0.137c0,0,5.146-0.317,2.706-4.363c-0.2-0.331-1.421-2.993-7.314-8.463
+									c-6.168-5.725-5.342-4.799,2.088-14.702c4.525-6.031,6.334-9.713,5.769-11.29c-0.539-1.502-3.867-1.105-3.867-1.105l-11.076,0.069
+									c0,0-0.821-0.112-1.43,0.252c-0.595,0.357-0.978,1.189-0.978,1.189s-1.753,4.667-4.091,8.636c-4.932,8.375-6.904,8.817-7.71,8.297
+									c-1.875-1.212-1.407-4.869-1.407-7.467c0-8.116,1.231-11.5-2.397-12.376c-1.204-0.291-2.09-0.483-5.169-0.514
+									c-3.952-0.041-7.297,0.012-9.191,0.94c-1.26,0.617-2.232,1.992-1.64,2.071c0.732,0.098,2.39,0.447,3.269,1.644
+									c1.135,1.544,1.095,5.012,1.095,5.012s0.652,9.554-1.523,10.741c-1.493,0.814-3.541-0.848-7.938-8.446
+									c-2.253-3.892-3.954-8.194-3.954-8.194s-0.328-0.804-0.913-1.234c-0.71-0.521-1.702-0.687-1.702-0.687l-10.525,0.069
+									c0,0-1.58,0.044-2.16,0.731c-0.516,0.611-0.041,1.875-0.041,1.875s8.24,19.278,17.57,28.993
+									C44.264,81.287,53.979,80.702,53.979,80.702L53.979,80.702z" style="fill:#fff;"/>
+								</svg>
+							</a>
+
+							<a href="https://ok.ru/niidetiindigo" class="icon odnoklassniki" target="_blank" title="Подписывайтесь на нас в Одноклассниках">
+								<svg viewBox="0 0 97.75 97.75">
+									<path d="M48.921,40.507c4.667-0.017,8.384-3.766,8.367-8.443c-0.017-4.679-3.742-8.402-8.411-8.406    c-4.708-0.005-8.468,3.787-8.432,8.508C40.48,36.826,44.239,40.524,48.921,40.507z"/>
+									<path d="M48.875,0C21.882,0,0,21.883,0,48.875S21.882,97.75,48.875,97.75S97.75,75.867,97.75,48.875S75.868,0,48.875,0z     M48.945,14.863c9.52,0.026,17.161,7.813,17.112,17.438c-0.048,9.403-7.814,17.024-17.318,16.992    c-9.407-0.032-17.122-7.831-17.066-17.253C31.726,22.515,39.445,14.837,48.945,14.863z M68.227,56.057    c-2.105,2.161-4.639,3.725-7.453,4.816c-2.66,1.031-5.575,1.55-8.461,1.896c0.437,0.474,0.642,0.707,0.914,0.979    c3.916,3.937,7.851,7.854,11.754,11.802c1.33,1.346,1.607,3.014,0.875,4.577c-0.799,1.71-2.592,2.834-4.351,2.713    c-1.114-0.077-1.983-0.63-2.754-1.407c-2.956-2.974-5.968-5.895-8.862-8.925c-0.845-0.882-1.249-0.714-1.994,0.052    c-2.973,3.062-5.995,6.075-9.034,9.072c-1.365,1.346-2.989,1.59-4.573,0.82c-1.683-0.814-2.753-2.533-2.671-4.262    c0.058-1.166,0.632-2.06,1.434-2.858c3.877-3.869,7.742-7.75,11.608-11.628c0.257-0.257,0.495-0.53,0.868-0.93    c-5.273-0.551-10.028-1.849-14.099-5.032c-0.506-0.396-1.027-0.778-1.487-1.222c-1.783-1.711-1.962-3.672-0.553-5.69    c1.207-1.728,3.231-2.19,5.336-1.197c0.408,0.191,0.796,0.433,1.168,0.689c7.586,5.213,18.008,5.356,25.624,0.233    c0.754-0.576,1.561-1.05,2.496-1.289c1.816-0.468,3.512,0.201,4.486,1.791C69.613,52.874,69.6,54.646,68.227,56.057z"  />
+								</svg>
+							</a>
+						</div>ООО "НИИ Педиатрии и Неврологии "Дети Индиго"&copy;. Все права защищены, 2019 Все статьи и материалы сайта deti-indigo74.ru защищены авторским правом и принадлежат компании ООО "НИИ Педиатрии и Неврологии "Дети Индиго". Любое копирование и перепечатка публикаций, а также их частей строго запрещены и преследуются в соответствии с законом. При нарушении авторских и смежных прав будет открыто судебное преследование и отправлены уведомления хостинг- провайдерам для блокировки интернет-ресурсов. Cодержание сайта не является публичной офертой <br> <a href="#">Политика обработки персональных данных </a><br>
+						<div class="sendWrap">
+							<a href="#" class="sendDirector button-suggestion">Жалобы и предложения</a>
+							<a href="#" class="consultationBtn button-consultation">Записаться на онлайн-консультацию</a>
+						</div>
+					</div>
+					<div class="address">
+						<div class="city">
+							<h5>ЧЕЛЯБИНСК</h5>
+							<address>
+								<p>ул. Университетская набережная, 34</p>
+								<p>(351) 734-55-63</p>
+								<p>+7 919 344-53-04</p>
+							</address>
+						</div>
+						<div class="city">
+							<h5>МАГНИТОГОРСК</h5>
+							<address>
+								<p>ул. 50-лет Магнитки, 33А</p>
+								<p>(3519) 412-888</p>
+							</address>
+						</div>
+					</div>
+				</div>
+
+				<div class="warning">
+					ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ. НЕОБХОДИМО ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ СПЕЦИАЛИСТА
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div class="navRounds">
+		<a href="#" >
+			<div class="navRounds-item" id="click">
+				<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+			</div>
+		</a>
+
+		<a href="#" class="button-repost">
+			<div class="navRounds-item">
+				<i class="fa fa-share-square" aria-hidden="true"></i>
+			</div>
+		</a>
+		<a href="#" class="button-call">
+			<div class="navRounds-item">
+				<i class="fa fa-phone" aria-hidden="true"></i>
+			</div>
+		</a>
+		<a href="#" class="button-question">
+			<div class="navRounds-item">
+				<i class="fa fa-question" aria-hidden="true"></i>
+			</div>
+		</a>
+		<a href="howtodrive.html">
+			<div class="navRounds-item">
+				<i class="fa fa-map-marker-alt" aria-hidden="true"></i>
+			</div>
+		</a>
+	</div>
+</body>
+
+<script src="../js/libs.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="https://kit.fontawesome.com/1765a704fd.js" async defer></script>
+
+
+</html>

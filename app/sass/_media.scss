@@ -1,0 +1,335 @@
+@media screen and (max-width: 321px){ 
+	.time { display: none }
+	.addressTop { flex-basis: auto }
+	.allSpecialists, .allNews { padding: 0.5rem 0.01rem }
+}
+
+@media screen and (max-width: 426px) {
+	.nonresident_list__item-content--text { flex: auto }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+	.articleWrap_questions-item--ask, 
+	.articleWrap_questions-item--answer {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.articleWrap_questions-item {
+		gap: 0;
+	}
+
+	.articleWrap_statistics__green:nth-child(2),
+	.articleWrap_statistics__blue:nth-child(2) {
+		width: 100%;
+	}
+
+	.articleWrap_parents__steps-item {
+		&:nth-child(1),
+		&:nth-child(2),
+		&:nth-child(3),
+		&:nth-child(4),
+		&:nth-child(5){
+			flex:1 100%;
+		}
+	}
+
+	.close-popup { 
+		top: 5% 
+	}
+
+	.city, .docs {
+		text-align: center!important;
+		margin: 0!important;
+	}
+	.address { flex-direction: column }
+	.personalItem { width: 75% }
+
+	.specialist_annotation__photo-medal--small {
+		width: calc(100% / 2);
+    	margin: 10px auto;
+	}
+	.nonresident_list__item-content--photo{
+		margin-bottom:1rem;
+	}	
+}
+
+@media screen and (max-width: 576px){
+
+	.b24-widget-button-position-bottom-right{bottom:10px!important; right:5px!important;}
+
+	.saleItem_desc { height: auto; }
+
+	.saleItem, .articlesItem { flex-wrap: wrap; }
+
+	.submenu { 
+		top: 0; 
+		width: 92%; 
+		margin: 0 auto
+	}
+
+	.citySelect, .timeWork, .transportSchema { font-size: 0.9rem }
+
+	.method_nav__item, .disease_nav__item { flex: 1 100%; }
+
+	.btn__greenTop, .phoneListWrap {
+		font-size: 1rem;
+	}
+
+	.sort, .disease_nav__item { flex: 1 100%!important; }
+
+	.phone { 
+		flex-direction: row;
+	}
+
+	.phoneList { letter-spacing: 0px; }
+
+	.navRounds { right: 4%; bottom: 40%; }
+
+	.personalItem__inner {
+		img { height: 440px; }
+	}
+
+	.attention p { font-size: 0.55rem; }
+
+	.newsItem { padding: 1rem; }
+
+	.newsDesc p { line-height: 1.2; }
+
+	.reviewsDesc{ font-size: 0.9rem }
+
+	.popup{
+		overflow: scroll;
+		padding: 2.25rem 0 1rem 0;
+	}
+
+	.popup-form {
+		font-size: 0.8rem;
+		padding: 0;
+		overflow: scroll;
+		
+		button {
+			margin: 0;
+			width: 100%;
+		}
+	}
+
+	.personalItem__desc { 
+		button { position: relative } 
+		p { margin-bottom: 1rem }
+	}
+
+	.nonresident_list__item-content--text { padding-left: 0 }
+
+	.nonresident_reviews__item-desc p { line-height: 1.2; }
+
+	.specialist_annotation__desc { padding:0 }
+}
+
+@media screen and (max-width: 768px) {
+
+	.headerWrap { height: 3rem; }
+	.navOuter {
+		background-color: #fff;
+		display: flex;
+        flex-direction: row;
+    	flex-wrap: wrap;
+    	justify-content: space-between;
+    }
+
+	.sticky { overflow-y: scroll }
+
+	.right_column h2, .nonresident_list h3, .nonresident h3 { font-size: 1.5rem; margin-bottom: 0; }
+
+	.cloud, #sliderTop { display: none }
+
+	.phone { order: 2 }
+
+	.phoneListWrap { display: none }
+
+	.fixed_phone { display: flex }
+
+	.nav label {
+		display: flex;
+		justify-content: flex-end;
+	}
+	.menu {
+		text-align: center;
+		width: 100%;
+		display: none;
+		li {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-bottom: 1px solid #EAEAEB;
+		}
+		a {
+			display: flex;
+			margin: 0;
+			font-size: 1.4rem;
+			justify-content: center;
+			align-items: center;
+			height: 3.7rem;
+		}
+	}
+	.menuList {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	#toggle:checked + .menu {
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+		flex-wrap: wrap;
+		background: rgba(0,0,0,0.7)
+	}
+
+	.sliderTopText h1 {
+		font-size: 2rem;
+	}
+
+	.btn_Top { 
+		border-radius: 10px 
+	}
+
+	.personalCards, 
+	.sliderNewsWrap, 
+	.sliderReviewsWrap {
+		padding: 1rem 0;
+	}
+
+	.navBottom, .info, .sendWrap {
+		flex-direction: column;
+	}
+
+	.headingPag{
+		flex-direction: column;
+		width: 50%;
+	}
+	.navBottom {
+		padding: 0;
+	}
+
+	.salesHead, 
+	.methodsHead, 
+	.reviewsHead, 
+	.articlesHead,
+	.newsHead,
+	.specialistsHead {
+		align-items: center;
+		flex-wrap: nowrap;
+
+		h2{
+			font-size: 0.9rem;
+			margin: 0;
+		}
+	}
+
+	.countSales, 
+	.countMethods, 
+	.countReviews, 
+	.countArticles,
+	.countSpecialists {
+		text-align: center
+	}
+
+	.allSales, 
+	.allSpecialists,
+	.allNews,
+	.allMethods, 
+	.allReviews, 
+	.allArticles {
+		border-left: 2px solid;
+	}
+
+	.reviewsDesc {
+		line-height: 1.3;
+	}
+
+	.footerWrap {
+		position: relative;
+	}
+
+	.trees {
+		background-position: left;
+		background-size: cover;
+	}
+
+	.warning {
+		letter-spacing: -2px;
+		line-height: 1.2;
+	}
+}
+
+/* NETBOOK AND TABLET */
+
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) {
+	.header_fluid__info {order: 2}
+	.phone { flex: 0 230px }
+	.btn__greenTop { font-size: 0.95rem; margin-bottom: 0; }
+	.phoneListWrap{font-size: 1rem}
+	.address { flex-direction: row }
+}
+
+
+@media screen and (max-width: 992px) {
+	.menu li a { font-size: 0.78rem }
+	.navBottom li a { font-size: 0.9rem }
+	.navbar { height: 3rem }
+	.sidebar { display: none }
+}	
+
+
+@media only screen 
+and (min-width: 1024px) {
+	.questionWrap, 	.burger_top {
+		display: none;
+	}
+
+}
+
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 480px) {
+
+	.card_text { height: 26% }
+
+	.btn__greenTop-mobile { 
+		font-size: 1rem;
+		margin-top: 0;
+    	width: 170px;
+	}
+	
+	.tiles { grid-gap: 2rem }
+
+	.articleWrap h2, .articleWrap h3, .articleWrap h4, .articleWrap h5, .articleWrap h6 { 
+		margin:0; 
+	}
+	
+	#canvas, #dom_overlay_container {
+		height: 70px;
+		max-width: 95%;
+	}
+
+	input[type="email"],
+	input[type="date"],
+	input[type="time"],
+	.userInfo_label__email,
+	.userInfo_label__date {
+		display: none;
+	}
+
+	.specialist_annotation__photo img {
+		height: auto;
+	}
+	.popup h2,.popup h4,.popup h4  {
+		text-align: left;
+		padding-left: 1rem;
+		line-height: 1;
+	}
+}

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="3.5565mm" height="5.2397mm" viewBox="0 0 0.46 0.68">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .pin_line {stroke:white;stroke-width:0.1;stroke-linecap:round;stroke-miterlimit:22.9256}
+    .pin_none {fill:none}
+    .pin_circle {fill:#FEFEFE}
+    .pin_wrap {fill:#00ACEE}
+   ]]>
+  </style>
+ </defs>
+ <g>
+  <g id="_2191208240944">
+   <circle class="pin_circle" cx="0.25" cy="0.24" r="0.11"/>
+   <g>
+    <path class="pin_none pin_line" d="M0.23 0.15c0.05,0 0.09,0.04 0.09,0.09 0,0.05 -0.04,0.09 -0.09,0.09 -0.05,0 -0.09,-0.04 -0.09,-0.09 0,-0.05 0.04,-0.09 0.09,-0.09zm-0 0.43l0.17 -0.28c0.05,-0.12 -0.03,-0.25 -0.17,-0.25 -0.13,-0 -0.22,0.14 -0.17,0.25l0.17 0.28z"/>
+    <path id="1" class="pin_wrap" d="M0.23 0.15c0.05,0 0.09,0.04 0.09,0.09 0,0.05 -0.04,0.09 -0.09,0.09 -0.05,0 -0.09,-0.04 -0.09,-0.09 0,-0.05 0.04,-0.09 0.09,-0.09zm-0 0.43l0.17 -0.28c0.05,-0.12 -0.03,-0.25 -0.17,-0.25 -0.13,-0 -0.22,0.14 -0.17,0.25l0.17 0.28z"/>
+   </g>
+  </g>
+ </g>
+</svg>

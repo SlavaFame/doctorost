@@ -1,0 +1,424 @@
+/*----------------| SNIPPETS |--------------------*/
+
+/* FOR FLOAT ELEMENTS */
+
+.floatLeft {
+	float: left; 
+	margin: 1rem 0.5rem 0.5rem 0!important;
+}
+
+.floatRight {
+	float: right; 
+	margin: 1rem 0 0.5rem 0.5rem!important;
+}
+
+/* BLUE RECTANGLE WITH GIRL */
+.blue_block {
+	position: relative;
+	background-color: $light-blue;
+	padding: 1rem;
+	margin: 4rem 0 1rem 0;
+	border-radius: 10px;
+	color: #fff;
+	width: 220px;
+
+	&:after {
+		content: '';
+		position: absolute;
+		background: url(images/icons/girl.png) center no-repeat;
+		width: 110px;
+		height: 70px;
+		top: -56px;
+		left: 20%;
+		background-size: contain;
+	}
+	a {
+		color: #fff;
+	}
+}
+
+/* GREEN TRAPEZOID WITH BOY */
+.green_block {
+	background-color: #009846;
+	padding: 1rem;
+	border-radius: 10px;
+	color: #fff;
+	position: relative;
+	width: 220px;
+	margin: 4rem 0 1rem 0;
+	p {
+		padding: 0 0 0 3rem;
+	}
+	a {
+		color: #fff;
+	}
+
+	&:before {
+		display: inline-block;
+		border-top: 44px solid #fff;
+		border-right: 70px solid transparent;
+		position: absolute;
+		top: 0;
+		left: 0;
+		content: '';
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		background: url(images/icons/boy.png) center no-repeat;
+		width: 110px;
+		height: 80px;
+		top: -37px;
+		left: -34px;
+		background-size: contain;
+	}
+}
+
+/* LISTS */
+.whiteCheckMarks, 
+.checkMarks, 
+.blueCubes, 
+.graduation, 
+.pens, 
+.thumbsUp, 
+.thumbsDown, 
+.books,
+.science, 
+.competentions {
+	margin: 0.5rem 0!important; 
+}
+
+.checkMarks li, 
+.whiteCheckMarks li, 
+.blueCubes li, 
+.graduation li, 
+.dopGraduation li, 
+.pens li, 
+.thumbsUp li, 
+.thumbsDown li, 
+.books li,
+.science li, 
+.competentions li  {
+	list-style-type: none; 
+	padding: 0.1rem 0;
+}
+
+.blueCubes li, 
+.pens li {
+	line-height: 1.2;
+	margin-bottom: 0.75rem;
+}
+
+.science li:before {
+	content: "\f610";
+	padding: 0 0.5rem 0.5rem 0;
+	font-family: $fa-font;
+	font-weight: bold;
+	color: $light-blue;
+}
+
+.checkMarks li:before {
+	content: "\2714\0020";
+	padding: 0 0.5rem 0.5rem 0;
+	color: $green;
+}
+
+.whiteCheckMarks li:before {
+	content: "\2714\0020";
+	padding: 0 0.5rem 0.5rem 0;
+	color: #fff;
+}
+
+.blueCubes li:before {
+	content: '\f0c8';
+	padding: 0 0.5rem 0.5rem 0;
+	font-family: $fa-font;
+	font-weight: bold;
+	color: $light-blue;
+}
+
+.graduation li:before {
+	content: '\f19d';
+	padding: 0 0.5rem 0.5rem 0;
+	font-family: $fa-font;
+	font-weight: bold;
+	color: $light-blue;
+}
+
+.competentions li:before {
+	content: '\f19d';
+	padding: 0 0.5rem 0.5rem 0;
+	font-family: $fa-font;
+	font-weight: bold;
+	color: $green;
+}
+
+.dopGraduation li:before {
+	content: '\f19d';
+	padding: 0 0.5rem 0.5rem 0;
+	font-family: $fa-font;
+	font-weight: bold;
+	color: $light-blue;
+	margin-bottom: 0.5rem;
+}
+
+.pens li:before {
+	content: '\f044';
+	padding: 0 0.5rem 0.5rem 0;
+	font-family: $fa-font;
+	font-weight: bold;
+	color: $green;
+}
+
+.thumbsUp li:before {
+	content: '\f164';
+	padding: 0 0.5rem 0.5rem 0;
+	font-family: $fa-font;
+	font-weight: bold;
+	color: $green;
+}
+
+.thumbsDown li:before {
+	content: '\f165';
+	padding: 0 0.5rem 0.5rem 0;
+	font-family: $fa-font;
+	font-weight: bold;
+	color: $light-blue;
+}
+
+.books li:before  {
+	content: '\f02d';
+	padding: 0 0.5rem 0.5rem 0;
+	font-family: $fa-font;
+	font-weight: bold;
+	color: $light-blue;
+	transform: skewY(10deg);
+}
+
+/* OPINION */
+.opinion_outer {
+	margin: 2rem 0 1rem 0;
+}
+
+.opinion_inner {
+	&__head {
+		background-color: $green;
+		padding: 1rem 1rem 0 0;
+		max-width: 468px;
+		text-align: right;
+		border-radius: 0 10px 0 0;
+		h4 {
+			color: #fff;
+			text-transform: uppercase;
+			font-size: 1.42rem;
+		}
+	}
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		background-color: #eeeeee5e;
+		border-top: 2px solid $green;
+		img {
+			max-width: 100%;
+		}
+		&-nav {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 1rem auto 0 auto;
+			text-transform: uppercase;
+			color: $light-blue;
+			font-family: $main-font;
+			font-weight: 500;
+
+			a {
+				text-decoration: none;
+				&:hover {
+					text-decoration: underline;
+					color: $green;
+				}
+			}
+			
+		}
+		&-specialist {
+			height: 370px; //???
+			flex:1;
+			margin: 0 1rem;
+
+			&--photo {
+				img {
+					border: 2px solid $green;
+					position: relative;
+					top: -5.5rem;
+					width: 100%;
+					height: 220px;
+					margin: 0!important;
+				}
+			}
+			&--desc {
+				padding: 0 10px;
+				position: relative;
+				top: -5rem;
+
+				h4 {
+					color: $light-blue;
+					font-size: 1rem;
+					line-height: 1.2;
+					text-transform: none!important;
+					margin:0 0 10px!important; 
+				}
+				b { 
+					color: $green; 
+				}
+				button {
+					text-transform: uppercase;
+					width: 100%;
+					font-size: 1rem;
+				}
+				span {
+					font-size: 1.5rem;
+				}
+			}
+			
+		}
+		&-text {
+			flex:3;
+			padding: 10px;
+			h3 {
+				text-transform: none!important;
+				color: #222!important;
+				font-size: 1.4rem;
+				margin: 0.25rem 0!important;
+			}
+			span {
+				color: $green;
+			}
+		}
+	}
+}
+
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 480px) {
+
+	.opinion_inner__content-specialist {
+		height: auto;
+	}
+
+	.opinion_inner__head {
+		text-align: center;
+	}
+	.opinion_inner__content-specialist--photo img{
+		width: auto;
+	}
+	.opinion_inner__content-specialist--photo img,
+	.opinion_inner__content-specialist--desc {
+		top: 0;
+	}
+
+	.opinion_inner__content-text {
+		flex: 1 100%;
+	}
+}
+
+.infographic {
+	background-color:#fdfdfd;
+	padding: 1rem 0 0 0;
+	&_item {
+		padding: 0;
+		text-align: center;
+		text-transform: uppercase;
+		display: flex;
+		flex-direction: column;
+		justify-content:center;
+		align-items:center;
+		margin-bottom: 1rem;
+
+		&:not(:last-child) {
+			border-right: 2px solid #ececec;
+			height: 50%;
+		}
+
+		&__circle {
+			margin-bottom: 10px;
+			width: 100px;
+			height: 100px;
+			border-radius:100%;
+			background-color: $green;
+			color: #fff;
+			font-size:2.7rem;
+			font-weight:bold;
+			display: flex;
+			flex-direction: column;
+			justify-content:center;
+			align-items:center;
+			position: relative;
+			&:after{
+				@include stitch(all);
+				border-radius: 100%;
+				border: 1.5px dashed #fff;
+			}
+		}
+		&__wrapText { 
+			padding: 0 1rem;
+		}
+		&__text { 
+			color: $green; 
+			font-weight:bold; 
+			padding: 0 1rem; 
+			font-size:1.4rem;
+		}
+		&__textDop { 
+			color: #b7b7b7; 
+			font-weight:bold;  
+		}
+	}   
+}
+
+/* эмбрион */
+.embryo {
+	margin: 1rem 0;
+	&_item {
+		img {
+			margin:0!important;
+		}
+		h3 {
+			color: $light-blue;
+			text-align: center;
+			text-transform: capitalize;
+			margin: 0 0 10px 0!important;
+		}
+	}
+}
+
+.immersia-effect {
+	margin: 1rem 0;
+
+	&_photo {
+		padding: 0;
+		
+		img {
+			margin: 0!important;
+		}
+	}
+	&_desc {
+		color: $green;
+		
+		h3 {
+			margin: 0 0 10px 0!important;
+			line-height: 1;
+		}
+		p {
+			line-height: 1.2;
+		}
+	}
+}
+
+/* нумерованный список */
+.green_number {
+	border-radius: 100%;
+	color: #fff;
+	background-color: $green;
+	padding: 2px 5px;
+	margin: 0 5px 0 0;
+	font-size: 1.2rem;
+}
