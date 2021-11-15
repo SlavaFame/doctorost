@@ -73,6 +73,7 @@
 
 .newsMain__slider .slick-track {
   display: flex;
+  //flex-wrap: wrap;
   gap: 30px;
   top: 10px;
   position: relative;
@@ -102,12 +103,16 @@
   max-width: 560px;
 }
 
+.method__procedure__sliderNav .slick-track .slick-current {
+  
+}
+
 .doctorDetail__sertificates__nav .slick-track {
   flex-direction: column;
 }
 
 .method__slider__nav .slick-track,
-.direction__slider__nav .slick-track, {
+.direction__slider__nav .slick-track {
   display: flex;
   align-items: flex-start;
   gap: 40px;
@@ -140,7 +145,6 @@
   }
 }
 
-
 .methods__slider .slick-dots,
 .sales-mainslider .slick-dots,
 .doctor__slider .slick-dots,
@@ -151,6 +155,7 @@
 .medic__slider .slick-dots,
 .hirurg__slider .slick-dots {
   bottom: -30px;
+  margin: 0 auto;
 }
 
 .sectificates__slider-main__slide .slick-dots {
@@ -162,11 +167,20 @@
 
 .method__procedure__sliderPhoto .slick-dots {
   right: 25%;
+  bottom: 40px;
 }
 
 .reviews__mainslider .slick-dots{
   position: relative;
   bottom: -240px;
+}
+
+.topMain__slider .slick-list {
+    height: 425px;
+}
+
+.box .topMain__direction {
+    top: 0;
 }
 
 .topMain__slider .slick-dots {
@@ -184,6 +198,10 @@
 .regenerat__slider-nav .slick-dots,
 .hirurg__slider-nav .slick-dots {
   bottom: 0;
+}
+
+.method__slider__photo .slick-dots {
+  bottom: 40px;
 }
 
 .topMain__direction .slick-dots{
@@ -204,16 +222,14 @@
 .slick-arrow .slick-disabled{}
 
 /*точки*/
-.slick-dots{ 
-  display: flex; 
-  align-items: center; 
+.slick-dots {
+  display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 20px;
-  position: absolute;
-  bottom: 15px;
+  gap: 10px;
   z-index: 993;
-  margin: 0px auto;
-  width: 100%;
+  order: 2;
+  position: relative;
 }
 
 .slick-dots .slick-active button {
@@ -230,13 +246,7 @@
   height: 20px;
   background-color: $white;
   border:2px solid $orange;
-  outline:none
-}
-
-.slick-arrow.slick-next {
-  //background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 492.004 492.004' width='512' height='512'%3E%3Cpath d='M382.678 226.804L163.73 7.86C158.666 2.792 151.906 0 144.698 0s-13.968 2.792-19.032 7.86l-16.124 16.12c-10.492 10.504-10.492 27.576 0 38.064L293.398 245.9l-184.06 184.06c-5.064 5.068-7.86 11.824-7.86 19.028 0 7.212 2.796 13.968 7.86 19.04l16.124 16.116c5.068 5.068 11.824 7.86 19.032 7.86s13.968-2.792 19.032-7.86L382.678 265c5.076-5.084 7.864-11.872 7.848-19.088.016-7.244-2.772-14.028-7.848-19.108z' data-original='%23000000' class='active-path' data-old_color='%23000000' fill='%23E54D28'/%3E%3C/svg%3E") 0 0/100% no-repeat;
-  background: url(img/icons/grey-arrow.svg);
-  background-repeat: no-repeat;
+  outline:none;
 }
 
 .slick-arrow.slick-prev {
@@ -244,34 +254,22 @@
   background: url(img/icons/grey-arrow.svg);
   background-repeat: no-repeat;
   transform: rotate(180deg);
+  order:1
 }
 
-.slick-arrow.slick-next, .slick-arrow.slick-prev {
+.slick-arrow.slick-next {
+  //background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 492.004 492.004' width='512' height='512'%3E%3Cpath d='M382.678 226.804L163.73 7.86C158.666 2.792 151.906 0 144.698 0s-13.968 2.792-19.032 7.86l-16.124 16.12c-10.492 10.504-10.492 27.576 0 38.064L293.398 245.9l-184.06 184.06c-5.064 5.068-7.86 11.824-7.86 19.028 0 7.212 2.796 13.968 7.86 19.04l16.124 16.116c5.068 5.068 11.824 7.86 19.032 7.86s13.968-2.792 19.032-7.86L382.678 265c5.076-5.084 7.864-11.872 7.848-19.088.016-7.244-2.772-14.028-7.848-19.108z' data-original='%23000000' class='active-path' data-old_color='%23000000' fill='%23E54D28'/%3E%3C/svg%3E") 0 0/100% no-repeat;
+  background: url(img/icons/grey-arrow.svg);
+  background-repeat: no-repeat;
+  order:3
+}
+
+.slick-arrow.slick-next, 
+.slick-arrow.slick-prev {
     z-index: 994;
     font-size: 0;
     width: 18px;
     height: 18px;
-}
-
-.method__slider .slick-arrow,
-.direction__slider .slick-arrow{
-  position: absolute;
-  top: 50%;
-  margin: -10px 0 0 0;
-  z-index: 993;
-  font-size: 0;
-  width: 18px;
-  height: 18px;
-}
-
-.method__slider .slick-arrow.slick-prev,
-.direction__slider .slick-arrow.slick-prev{
-  left:10px;
-}
-
-.method__slider .slick-arrow.slick-next,
-.direction__slider .slick-arrow.slick-next{
-  right:10px;
 }
 
 .methods__slider,
@@ -335,47 +333,42 @@
   display: flex;
 }
 
-// Arrows 
+// Arrows
 
 .reviews__mainslider-nav,
-.topMain__direction-nav {
-  width: calc(100% / 5);
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  position: relative;
-  z-index: 994;
+.topMain__direction-nav,
+.sales-mainslider-nav,
+.topMain__slider-nav,
+.doctor__slider-nav,
+.diagnostics__slider-nav,
+.hirurg__slider-nav,
+.regenerat__slider-nav,
+.methods__slider-nav,
+.newsMain__slider-nav,
+.direction__slider-nav,
+.method__slider-nav,
+.method__procedure__sliderPhoto-nav,
+.direction__slider__photo-nav,
+.method__slider__photo-nav,
+.sectificates__slider-main-nav,
+.slider__filials-nav {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    z-index: 994;
+    gap: 15px;
+    align-items: baseline;
 }
 
-.sales-mainslider-nav {
-  width: calc(100% / 3);
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  position: relative;
-  z-index: 994;
+.sectificates__slider-main-nav .slick-dots {
+  flex-wrap: wrap;
 }
 
-.topMain__slider-nav {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  position: relative;
-  z-index: 994;
-}
-
-.topMain__slider-nav .slick-dots {
-  bottom: 140px;
-  width: auto;
-}
-
-.doctor__slider-nav {
-  width: calc(100% / 3);
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  position: relative;
-  z-index: 994;
+.topMain__slider-nav,
+.direction__slider__photo-nav,
+.method__slider__photo-nav {
+  bottom: 40px;
 }
 
 .methods__slider__photo,
@@ -390,26 +383,15 @@
   cursor: pointer;
 }
 
-.diagnostics__slider-nav {
-    width: calc(100% / 6);
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    position: relative;
-    z-index: 994;
-}
-
-.hirurg__slider-nav,
-.regenerat__slider-nav {
-  width: calc(100% / 3);
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  position: relative;
-  z-index: 994;
-}
-
-
 .method__procedure__slider {
   max-width: 100%;
+}
+
+.doctor__slider .slick-dots {
+    bottom: -50px;
+    flex-wrap: wrap;
+}
+
+.doctor__info__photo {
+    width: 215px;
 }

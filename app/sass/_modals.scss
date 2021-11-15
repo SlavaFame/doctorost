@@ -28,6 +28,11 @@
     transform: translate(-50%,-50%);
 }
 
+.form-bars p, .result_form p {
+    font-size: 18px; 
+    font-weight: 21px
+}
+
 .form-bars__title {
     background: $green-1;
     width: 100%;

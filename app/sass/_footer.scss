@@ -33,6 +33,11 @@
 			height: 30px;
     		width: 18px;
 		}
+		&__fb {
+			background: url(img/icons/socials-fb.png) center center / cover no-repeat;
+			height: 30px;
+    		width: 18px;
+		}
 	}
 
 	&__info {
@@ -95,9 +100,15 @@
 	}
 }
 
+.phone__call {
+	display:none
+} 
+
 .btn__scrollTop {
 	display: none;
 	position: fixed;
+	right: 15px;
+    bottom: 13%;
 	justify-content: center;
     align-items: center;
 	background-image: url("data:image/svg+xml,%3Csvg fill='%23009C9D' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 256 256' style='enable-background:new 0 0 256 256;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpolygon points='128,48.907 0,176.907 30.187,207.093 128,109.28 225.813,207.093 256,176.907 '/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
@@ -111,7 +122,10 @@
     border: 2px solid $green-1;
     margin-top: 19px;
     cursor: pointer;
-    right: 10px;
-    bottom: 15%;
     z-index: 993;
+}
+
+.b24-widget-button-position-bottom-right { 
+	right: 0.5rem!important; 
+	bottom: 1rem!important;
 }

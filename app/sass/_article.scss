@@ -444,11 +444,9 @@
 		background-color: $green-3;
 		flex: 3;
 		&-item {
-			display: flex;
-    		flex-direction: column;
-			font-size: 20px;
-			line-height: 23px;
-			margin-bottom: 15px;
+			font-size: 18px;
+    		line-height: 21px;
+    		margin-bottom: 15px;
 			img {
         		width: 84px;
         		margin: 10px 0 0 10px;
@@ -551,7 +549,7 @@
 			display: flex;
 			
 			img {
-				max-width: 100%;
+				width: 100%;
 				height: auto;
 			}
 		}

@@ -95,11 +95,13 @@
 
 	&__warning {
 		display: flex;
-		gap: 25px;
+		gap: 15px;
+		height: 60px;
 
 		&__symbol {
 			img {
 				max-width: inherit;
+				height: 100%;
 			}
 		}
 		
@@ -109,7 +111,7 @@
 			line-height: 14px;
 			background: #F6F6F6;
 			color: #000;
-			padding: 12px;
+			padding: 10px;
 		}
 	}
 
@@ -258,8 +260,8 @@
 		//padding: 21px 18px;
 		&__inner {
 			background-color: $green-1;
-			padding: 16px 16px 0 16px;
-    		margin-bottom: 25px;
+			padding: 10px;
+    		margin-bottom: 15px;
 		}
 
 		p {
@@ -292,7 +294,7 @@
 			display: flex;
 			justify-content: center;
 			gap: 20px;
-			padding: 15px 0;
+			padding: 10px 0 0 0;
 
 			&__number {
 				padding: 0 0 0 6px;
@@ -324,6 +326,8 @@
 	}
 
 	&__form {
+		font-size: 18px;
+		line-height: 21px;
 		flex:1;
 
 		&__inner {
