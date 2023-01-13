@@ -1,21 +1,19 @@
 .about {
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 21px;
-    margin-bottom: 30px;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    margin-bottom: 2rem;
 }
 
 .card {
-    width: 270px;
+    width: 27rem;
     color: $green-1;
     text-align: center;
     margin-bottom: 1rem;
-    //box-shadow: 0 0 20px 5px rgb(0 121 167 / 13%);
 
     &__list {
         display: flex;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 2rem;
     }
 
     img {
@@ -29,7 +27,7 @@
     height: 100%;
     background-size: contain;
     filter: grayscale(100%);
-    min-height: 170px;
+    min-height: 17rem;
     
     &:hover { 
         filter: grayscale(0%);
@@ -38,9 +36,8 @@
 }
 
 .text-block {
-    margin-top: 30px;
+    margin-top: 2rem;
 }
-
 
 .slider-second .slick-track {
     display: flex;
@@ -50,8 +47,8 @@
     display: flex;
     justify-content: space-between;
     background: #E5F4F9;
-    padding: 15px 24px 30px 15px;
-    margin: 0 0 20px 0;
+    padding: 1.5rem 2.4rem 3rem 1.5rem;
+    margin: 0 0 2rem 0;
 }
 
 #second-slider .slider-second .item .col1 { 
@@ -59,64 +56,64 @@
 }
 
 #second-slider .slider-second .item .col1 .button {
-    height: 55px;
+    height: 5.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     font-weight: bold;
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 2rem;
+    line-height: 2.3rem;
     color: #FFFFFF;
     background: #ea4e28;
 }
 
 #second-slider .slider-second .item .col2 {
     width: 60%;
-    height: 325px;
+    height: 32.5rem;
     overflow-y: auto;
 }
 
 #second-slider .slider-second .item .text {
-    margin-left: 40px;
-    padding: 10px 0 15px 0;
+    margin-left: 4rem;
+    padding: 1rem 0 1.5rem 0;
 }
 
 #second-slider .slider-second .item .text p {
     color: #6A6A6A;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 #methodics,
 #contacts {
-    margin-top: 30px;
+    margin-top: 3rem;
 }
 
 .contacts_tel-text {
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 1;
-    color: #009b9d;
+    color: $green-1;
 }
 
 #contacts .title {
-    color: #009b9d;
+    color: $green-1;
     text-transform: uppercase;
 }
 
 #contacts .box .number {
     display: flex;
     align-items: center;
-    margin-bottom: 27px;
+    margin-bottom: 2.7rem;
 }
 
 #contacts .box .number p {
-    font-size: 26px;
+    font-size: 2.6rem;
     margin: 0;
-    line-height: 31px;
+    line-height: 3rem;
 }
 
 #contacts .box .number img {
-    margin-right: 8px;
+    margin-right: 0.8rem;
 }
 
 #contacts .box .number p span {
@@ -124,13 +121,13 @@
 }
 
 #contacts .big {
-    height: 385px;
+    height: 38.5rem;
     max-width: 100%;
 }
 
 #contacts .box .text h3 {
     color: #292929;
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 1.5;
     font-weight: 700;
     margin: 0;
@@ -147,15 +144,15 @@
 #contacts .specialists .box {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
 }
 #contacts .specialists .box .info h4 {
     font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
     text-transform: uppercase;
-    color: #009b9d;
-    margin-bottom: 8px;
+    color: $green-1;
+    margin-bottom: 0.8rem;
 }
 
 #contacts .specialists .box .info h4 span { 
@@ -165,10 +162,10 @@
 #contacts .specialists .box .info p {
     font-weight: normal;
     color: #6A6A6A;
-    margin: 15px 0;
+    margin: 1.5rem 0;
 }
 #contacts .specialists .box .img {
-    height: 320px;
+    height: 32rem;
     background-size: cover;
     background-position: top;
     display: flex;
@@ -179,15 +176,57 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 200px;
+    height: 24rem;
     flex: 1;
-    margin-left: 20px;
+    margin-left: 2rem;
 }
 
 #contacts .specialists .box .info .button {
     display: flex;
     justify-content: center;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 1.4rem;
     text-align: center;
+}
+
+.vacancy {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    &__input, 
+    &__content {
+        display: none;
+    }
+    &__label {
+        margin-top: 1rem;
+        cursor: pointer;
+        &:hover {
+            color: $green-1;
+        }
+        &-text {
+            text-transform: uppercase;
+            width: fit-content;
+        }
+        &-chevron {
+            &:after {
+                content: "";
+                width: 0.8rem;
+                height: 0.8rem;
+                border-right: 0.2rem solid;
+                border-bottom: 0.2rem solid;
+                transform: rotate(45deg);
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 0.2rem;
+                margin-top: -0.4rem;
+            }
+        }
+    }
+}
+
+.chevron__rotate {
+    &:after {
+        transform: rotate(-135deg);
+        margin-top: 0.5rem;
+    }
 }

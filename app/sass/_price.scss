@@ -58,7 +58,6 @@
 	}
 }
 
-
 @media screen and (max-width:991px) {
 	.price-item { margin: 0 }
 }
@@ -234,6 +233,8 @@
 
 	&__item {
     	user-select: none;
+		list-style-type: none;
+		padding: 0 1rem;
 	}
 	&__input {
     	position: absolute;

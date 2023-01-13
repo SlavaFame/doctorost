@@ -1,6 +1,7 @@
-var gulp         = require('gulp'), // Подключаем Gulp
-    sass         = require('gulp-sass'), //Подключаем Sass пакет
-    browserSync  = require('browser-sync'), // Подключаем Browser Sync
+var gulp = require('gulp');// Подключаем Gulp
+var sass = require('gulp-sass')(require('sass'));//Подключаем Sass пакет
+
+var browserSync  = require('browser-sync'), // Подключаем Browser Sync
     concat       = require('gulp-concat'), // Подключаем gulp-concat (для конкатенации файлов)
     uglify       = require('gulp-uglifyjs'), // Подключаем gulp-uglifyjs (для сжатия JS)
     cssnano      = require('gulp-cssnano'), // Подключаем пакет для минификации CSS
@@ -10,7 +11,6 @@ var gulp         = require('gulp'), // Подключаем Gulp
     pngquant     = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
     cache        = require('gulp-cache'), // Подключаем библиотеку кеширования
     autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
- 
 
 gulp.task('sass', function() { // Создаем таск Sass
     return gulp.src('app/sass/**/*.sass', 'app/sass/**/*.scss') // Берем источник
@@ -108,5 +108,6 @@ gulp.task('watch', function() {
     gulp.watch('app/*.html', gulp.parallel('code')); // Наблюдение за HTML файлами в корне проекта
 
 });
-gulp.task('default', gulp.parallel('css-libs', 'sass', 'browser-sync', 'watch'));
+gulp.task('default', gulp.parallel('css-libs', 'sass', 'clean', 'browser-sync'));
+
 gulp.task('build', gulp.parallel('prebuild', 'clean', 'img', 'sass'));

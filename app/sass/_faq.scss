@@ -1,21 +1,101 @@
-.faqWrap__photo {
-	float: left;
-	width: 320px;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	margin: 0 20px 15px 0;
-}
-
-.faq__head {
-	margin-bottom: 15px;
+.faqWrap {
+	&__header {
+		margin: 0 auto 3rem;
+		&__question {
+			float: left;
+			margin-right: 1.5rem;
+		}
+	}
+	&__photo {
+		float: left;
+		width: 320px;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin: 0 2rem 1.5rem 0;
+	}
+	&__pic {
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        height: 315px;
+		&-online {
+			position: absolute;
+			margin: 0 auto;
+			width: 100%;
+			bottom: 3%;
+		}
+    }
 }
 
 .faqPage {
+	font-size: 1.8rem;
+    line-height: 2.1rem;
+
+	&__sendQuestion {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2rem;
+		margin: 2rem auto;
+		padding: 0;
+		
+		&-text { 
+			background-color: $green-1;
+			color: $white;
+			padding: 2rem 0;
+			font-size: 2.5rem;
+    		line-height: 2.9rem;
+			flex: 1;
+			position: relative;
+
+			&:before {
+				content: '';
+				width: 99999px;
+				height: 100%;
+				position: absolute;
+				bottom: 0;
+				top: 0;
+				right: 0;
+				z-index: -1;
+				background-color: $green-1;
+			}
+			a {
+				color: $white;
+				text-decoration: underline;
+			}
+		}
+		&-btn {
+			background-color: $orange;
+			border: 0.3rem solid $orange;
+			color: $white;
+			text-transform: uppercase;
+			cursor: pointer;
+			font-size: 1.6rem;
+    		line-height: 1.9rem;
+			width: 11.3rem;
+			margin-right: -1.5rem; 
+			&:hover {
+				background-color: $white;
+				border: 0.3rem solid $orange;
+				color: $orange;
+			}
+		}
+	}
+
+	&__topic__counter {
+		margin-left: auto;
+		padding: 0 2rem 1.6rem 0;
+		font-weight: 700;
+		font-size: 2rem;
+		line-height: 2.3rem;
+	}
+
 	&__inner {
-		margin-top: 30px;
+		margin-top: 3rem;
 		background: linear-gradient(90deg, $green-3 0%, $green-1 75%, $green-1 100%);
 	}
+
 	&__block {
 		display: flex;
 		flex-wrap: wrap;
@@ -24,6 +104,7 @@
 		background-color: $white;
 		padding: 0;
 	}
+
 	&__question {
 		background-color: $green-1;
 		padding: 57px 0 20px 20px;
@@ -112,6 +193,7 @@
 			}
 		}
 	}
+
 	&__btn {
 		margin: 0 auto;
 		font-weight: bold;
@@ -128,8 +210,8 @@
 
 .faq__body {
 	font-weight: 300;
-	font-size: 18px;
-	line-height: 21px;
+	font-size: 1.8rem;
+	line-height: 2.1rem;
 	&-item {
 		margin-bottom: 43px;
 		h3 {
@@ -146,8 +228,8 @@
 		margin-left: 10px;
 		&:after {
 			content: '';
-			background: url(img/diagnostics/grey-arrow.svg) 0px 7px / contain no-repeat;
-			padding: 0px 3px;
+			background: url(img/diagnostics/grey-arrow.svg) 0 7px / contain no-repeat;
+			padding: 0 3px;
 			margin-left: 5px;
 		}
 	}
@@ -177,5 +259,32 @@
 				display: inline-flex;
 			}
 		}
+	}
+}
+
+@media screen and (max-device-width:768px) {
+	.faqPage__block {
+		gap: 0;
+	}
+	.faqPage__sendQuestion{
+		margin: 0 auto 2rem auto;
+	}
+	.faqPage__sendQuestion-text {
+		font-size: 1.8rem;
+    	line-height: 2.4rem;
+	}
+	.navBottom-item {
+		width: 22rem;
+	}
+}
+
+@media screen and (max-device-width:500px) {
+
+	.faqPage__sendQuestion {
+		margin: 0;
+	}
+
+	.faqPage__sendQuestion-btn {
+		width: 100%;
 	}
 }

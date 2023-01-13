@@ -1,15 +1,15 @@
 .content {
 	background-color: $grey;
-	margin-top: 30px;
+	margin-top: 3rem;
 	
 	&__inner {
 		font-weight: 300;
-    	font-size: 16px;
-    	line-height: 19px;
+    	font-size: 1.6rem;
+    	line-height: 1.9rem;
 	}
 
 	&__pagination {
-		margin: 15px 0 20px 0;
+		margin: 1.5rem 0 2rem 0;
 		display: flex;
 		flex-wrap: wrap;
 
@@ -21,8 +21,12 @@
 			}
 		}
 
+		p {
+			margin: 0;
+		}
+
 		&-item {
-			margin-right: 15px;
+			margin-right: 1.5rem;
 			color: #000;
 			&:hover {
 				color: $green-1;

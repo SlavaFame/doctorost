@@ -1,28 +1,28 @@
-.lazy:not(img) {
+.lazy:not(img){
   opacity: 0;
   visibility: hidden;
 }
 
-.lazy:not(img)[data-was-processed=true] {
+.lazy:not(img)[data-was-processed=true]{
   opacity: 1;
   visibility: visible;
   transition: opacity 1s ease;
 }
 
-.lazy  {
+.lazy{
  opacity: 0;
  visibility: hidden;
 }
 
-.lazy.loaded {
+.lazy.loaded{
   transition: 0.5s linear;
   opacity: 1;
   visibility: visible;
 }
 
-.slider {
+.slider{
   position: relative;
-  padding: 0 60px;
+  padding: 0 6rem;
 }
 
 .slider .slick-track{
@@ -32,6 +32,7 @@
 /*ограничивающая оболочка*/
 .slick-list {
   height: 100%;
+  width: 100%;
   overflow: hidden;
   z-index: 993;
   position: relative;
@@ -42,13 +43,16 @@
 .direction__slider__photo .slick-track,
 .method__procedure__sliderPhoto .slick-track,
 .reviews__mainslider .slick-track,
+.video__mainslider .slick-track,
 .topMain__slider .slick-track,
-.topMain__slider__about .slick-track  {
+.topMain__slider__about .slick-track {
   display: flex;
   height: 100%;
 }
 
-.topMain__slider__about {
+.topMain__slider__about, 
+.reviews__mainslider__photo, 
+.video__mainslider__photo {
   position: relative;
 }
 
@@ -66,23 +70,26 @@
 .regenerat__slider .slick-track,
 .medic__slider .slick-track,
 .hirurg__slider .slick-track,
+.reab__slider .slick-track,
 .diagnostics__slider .slick-track {
   display: flex;
-  gap: 30px;
+  gap: 3rem;
 }
 
 .newsMain__slider .slick-track {
   display: flex;
-  //flex-wrap: wrap;
-  gap: 30px;
-  top: 10px;
+  gap: 3rem;
   position: relative;
+  top: 1rem;
 }
 
 .method__procedure__sliderNav .slick-track,
 .reviews__navslider .slick-track,
+.video__navslider .slick-track,
 .doctor__slider__nav .slick-track,
-.doctorDetail__sertificates__nav .slick-track {
+.admin__slider__nav .slick-track,
+.doctorDetail__sertificates__nav .slick-track,
+.admin__slider__nav .slick-track {
   display: flex;
   align-items: flex-start;
   gap: 9px;
@@ -100,11 +107,7 @@
 }
 
 .method__procedure__sliderNav .slick-track {
-  max-width: 560px;
-}
-
-.method__procedure__sliderNav .slick-track .slick-current {
-  
+  max-width: 56rem;
 }
 
 .doctorDetail__sertificates__nav .slick-track {
@@ -115,11 +118,11 @@
 .direction__slider__nav .slick-track {
   display: flex;
   align-items: flex-start;
-  gap: 40px;
-  left: 2px;
-  top: 2px;
+  gap: 4rem;
+  left: 0.2rem;
+  top: 0.2rem;
   position: relative;
-  margin: 5px 0;
+  margin: 0.5rem 0;
 }
 
 .direction__slider__nav .slick-list {
@@ -128,19 +131,19 @@
 
 .methods__slider {
   position: relative;
-  margin: 30px 0 60px 0;
+  margin: 3rem 0 6rem 0;
 
   &-link {
     font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 2rem;
+    line-height: 2.3rem;
     color: #c4c4c4;
     
     &:after {
       content: "";
-      background: url(img/diagnostics/grey-arrow.svg) 0 7px / contain no-repeat;
-      padding: 0 3px;
-      margin-left: 5px;
+      background: url(img/diagnostics/grey-arrow.svg) 0 0.7rem / contain no-repeat;
+      padding: 0 0.3rem;
+      margin-left: 0.5rem;
     }
   }
 }
@@ -148,35 +151,38 @@
 .methods__slider .slick-dots,
 .sales-mainslider .slick-dots,
 .doctor__slider .slick-dots,
+.admin__slider .slick-dots,
 .newsMain__slider .slick-dots,
 .diagnostics__slider .slick-dots,
 .regenerat__slider .slick-dots,
 .phys__slider .slick-dots,
 .medic__slider .slick-dots,
-.hirurg__slider .slick-dots {
-  bottom: -30px;
+.hirurg__slider .slick-dots,
+.reab__slider .slick-track {
+  bottom: -3rem;
   margin: 0 auto;
 }
 
 .sectificates__slider-main__slide .slick-dots {
   position: absolute;
   flex-wrap: wrap;
-  bottom: -80px;
-  gap: 12px;
+  bottom: -8rem;
+  gap: 1.2rem;
 }
 
 .method__procedure__sliderPhoto .slick-dots {
   right: 25%;
-  bottom: 40px;
+  bottom: 4rem;
 }
 
-.reviews__mainslider .slick-dots{
+.reviews__mainslider .slick-dots, 
+.video__mainslider .slick-dots {
   position: relative;
-  bottom: -240px;
+  bottom: -24rem;
 }
 
 .topMain__slider .slick-list {
-    height: 425px;
+    height: 42.5rem;
 }
 
 .box .topMain__direction {
@@ -184,49 +190,52 @@
 }
 
 .topMain__slider .slick-dots {
-  bottom: 220px;
-  height: 20px;
+  bottom: 22rem;
+  height: 2rem;
   justify-content: flex-start;
 }
 
 .reviews__mainslider-nav .slick-dots,
+.video__mainslider-nav .slick-dots,
 .topMain__direction-nav .slick-dots,
 .sales-mainslider-nav .slick-dots,
 .topMain__slider__about .slick-dots,
 .doctor__slider-nav .slick-dots,
+.admin__slider-nav .slick-dots,
 .diagnostics__slider-nav .slick-dots,
 .regenerat__slider-nav .slick-dots,
-.hirurg__slider-nav .slick-dots {
+.hirurg__slider-nav .slick-dots,
+.reab__slider .slick-track {
   bottom: 0;
 }
 
 .method__slider__photo .slick-dots {
-  bottom: 40px;
+  bottom: 4rem;
 }
 
 .topMain__direction .slick-dots{
-  bottom: -40px;
+  bottom: -4rem;
 }
 
 .slick-slide .slick-active{
   background-color: $orange;
 }
 
-.slick-slide .slick-current{}
+/*.slick-slide .slick-current{}
 .slick-slide .slick-center{}
 
-/*слайд*/
+слайд
 .slick-arrow{}
 .slick-arrow .slick-prev{}
 .slick-arrow .slick-next{}
-.slick-arrow .slick-disabled{}
+.slick-arrow .slick-disabled{}*/
 
 /*точки*/
 .slick-dots {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 1rem;
   z-index: 993;
   order: 2;
   position: relative;
@@ -242,10 +251,10 @@
 
 .slick-dots button{
   font-size: 0;
-  width: 20px;
-  height: 20px;
+  width: 2rem;
+  height: 2rem;
   background-color: $white;
-  border:2px solid $orange;
+  border: 0.2rem solid $orange;
   outline:none;
 }
 
@@ -268,8 +277,8 @@
 .slick-arrow.slick-prev {
     z-index: 994;
     font-size: 0;
-    width: 18px;
-    height: 18px;
+    width: 1.8rem;
+    height: 1.8rem;
 }
 
 .methods__slider,
@@ -277,11 +286,12 @@
 .phys__slider,
 .regenerat__slider,
 .medic__slider,
-.hirurg__slider {
+.hirurg__slider,
+.reab__slider {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 30px 0;
+  margin: 3rem 0;
   position: relative;
   
   &-item {
@@ -291,10 +301,10 @@
     
     h4 {
       font-weight: 500;
-      font-size: 23px;
-      line-height: 26px;
+      font-size: 2.3rem;
+      line-height: 2.6rem;
       color: $green-1;
-      margin: 20px 0;
+      margin: 2rem 0;
       text-transform: uppercase;
     }
   }
@@ -310,8 +320,8 @@
     }
     &:after {
       content: '';
-      background: url(img/diagnostics/grey-arrow.svg) 0px 7px / contain no-repeat;
-      padding: 0px 3px;
+      background: url(img/diagnostics/grey-arrow.svg) 0 7px / contain no-repeat;
+      padding: 0 3px;
       margin-left: 5px;
     }
   }
@@ -334,15 +344,19 @@
 }
 
 // Arrows
-
 .reviews__mainslider-nav,
+.video__mainslider-nav,
 .topMain__direction-nav,
 .sales-mainslider-nav,
 .topMain__slider-nav,
 .doctor__slider-nav,
+.admin__slider-nav,
 .diagnostics__slider-nav,
 .hirurg__slider-nav,
+.phys__slider-nav,
+.medic__slider-nav,
 .regenerat__slider-nav,
+.reab__slider-nav,
 .methods__slider-nav,
 .newsMain__slider-nav,
 .direction__slider-nav,
@@ -357,7 +371,7 @@
     margin: 0 auto;
     position: relative;
     z-index: 994;
-    gap: 15px;
+    gap: 1.5rem;
     align-items: baseline;
 }
 
@@ -376,7 +390,8 @@
 .medic__slider__photo,
 .regenerat__slider__photo,
 .hirurg__slider__photo,
-.phys__slider__photo {
+.phys__slider__photo,
+.reab__slider-nav {
   background-position: center center; 
   background-size: cover;
   background-repeat: no-repeat;
@@ -388,10 +403,44 @@
 }
 
 .doctor__slider .slick-dots {
-    bottom: -50px;
-    flex-wrap: wrap;
+  bottom: -5rem;
+  flex-wrap: wrap;
 }
 
 .doctor__info__photo {
-    width: 215px;
+  width: 21.5rem;
+}
+
+
+/* слайдер специалисты в новостях */
+
+.slider_specialists__desc {
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  h3 {
+    text-transform: uppercase;
+    color: $green-1;
+    margin: 0 0 1rem 0;
+  }
+  ul {
+    margin-top: 1rem;
+  }
+}
+
+.slider_specialists__wrap .doctor__slider {
+  margin: 0;
+}
+
+.slider_specialists__wrap .doctor__slider-main .slick-track {
+  gap: 1rem;
+  flex-wrap: nowrap;
+}
+
+.slider_specialists__wrap .doctor__info__speciality {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+}
+
+.slider_specialists__wrap .doctor__info__photo {
+  width: 24rem;
 }

@@ -1,6 +1,7 @@
-.reviews {
+.reviews,
+.video {
 	&_head {
-		margin-bottom: 20px;
+		margin-bottom: 2rem;
 	}
 	&__slider {
 		h3 {
@@ -48,29 +49,29 @@
 			color: rgba(0, 0, 0, 0.56); 
 			&:after {
 				content: '';
-				background: url(img/diagnostics/grey-arrow.svg) 0px 7px / contain no-repeat;
-				padding: 0 3px;
-				margin-left: 5px;
+				background: url(img/diagnostics/grey-arrow.svg) 0 0.7rem / contain no-repeat;
+				padding: 0 0.3rem;
+				margin-left: 0.5rem;
 			}
 		}
 		&__photo {
 			width: 627px;
-			flex:1;
+			flex: 1;
 			img {
 				height: auto;
 				max-width: 100%;
 			}
 		}
 		&__desc {
-			flex:1;
-			padding: 0 25px;
+			flex: 1;
+			padding: 0 2.5rem;
 			text-align: left;
 		}
 	}
 	&__navslider {
 		display: flex;
 		flex-wrap: wrap;
-		margin-bottom: 50px;
+		margin-bottom: 1.5rem;
 		&-item {
 			display: flex;
 			flex-wrap: wrap;
@@ -82,8 +83,8 @@
 			color: rgba(0, 0, 0, 0.56); 
 			&:after {
 				content: '';
-				background: url(img/diagnostics/grey-arrow.svg) 0px 7px / contain no-repeat;
-				padding: 0px 3px;
+				background: url(img/diagnostics/grey-arrow.svg) 0 7px / contain no-repeat;
+				padding: 0 3px;
 				margin-left: 5px;
 			}
 		}
@@ -111,7 +112,7 @@
 		margin-bottom: 30px;
 		a {
 			color: $white;
-			text-decoration: underline
+			text-decoration: underline;
 			&:hover {
 				text-decoration: none;
 			}

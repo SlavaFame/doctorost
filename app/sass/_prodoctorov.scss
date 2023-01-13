@@ -102,7 +102,7 @@
     height: 16px;
     margin-left: 5px;
     display: block;
-    background-image: url("/bitrix/templates/doctor/images/icons/down-chevron.svg");
+    background-image: url(images/icons/down-chevron.svg);
     background-size: contain;
     background-position: center center;
 }
@@ -556,7 +556,7 @@
 
 .b-review-card__address::before {
     content: '';
-    background-image: url(/bitrix/templates/doctor/images/icons/addr_pin.svg);
+    background-image: url(images/icons/addr_pin.svg);
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
@@ -567,7 +567,7 @@
 }
 
 .ui-icon-octagon-alert {
-    background-image: url(/bitrix/templates/doctor/images/icons/alert.svg);
+    background-image: url(images/icons/alert.svg);
     background-position: center center;
     background-repeat: no-repeat;
     display: block;
@@ -734,7 +734,7 @@
     width: 18px;
     height: 18px;
     margin-right: 5px;
-    background-image: url(/bitrix/templates/doctor/images/icons/search_eye_icon.svg);
+    background-image: url(images/icons/search_eye_icon.svg);
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -808,7 +808,7 @@
     width: 20px;
     height: 18px;
     display: block;
-    background-image: url(/bitrix/templates/doctor/images/icons/web-site.svg);
+    background-image: url(images/icons/web-site.svg);
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -868,6 +868,7 @@
     right: 0;
     background: 50% / contain no-repeat url(images/icons/logo_prodoctorov.svg);
 }
+
 .b-review-card__comment img {
 	display: none;
 }
@@ -1027,7 +1028,6 @@
     width: calc(100% - 10px) 
 }
 
-
 .b-review-card__reply {
     -webkit-box-orient: horizontal;
     -ms-flex-flow: row nowrap;
@@ -1089,8 +1089,8 @@
 }
 
 .pro_doc {
-    height: 23px;
-    width: 255px;
+    height: 2rem;
+    width: 22rem;
     display: inline-flex;
     background: url(img/icons/prodoctorov2.svg) center center / contain no-repeat;
 }
