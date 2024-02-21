@@ -163,6 +163,7 @@ $(document).ready(function(){
 		fade: true,
 		autoplay: true,
 		autoplaySpeed: 3000,
+		adaptiveHeight: true,
 		arrows: true,
 		dots: true,
 		appendArrows: $(".topMain__slider-nav"),

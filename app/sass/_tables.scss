@@ -1,7 +1,7 @@
 .maintable {
-    margin: 1rem 0;
-    font-size: 18px;
-    line-height: 1.4;
+  margin: 1rem 0;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
     width: 100%;
     border-collapse: collapse;
     color: #000;
@@ -9,8 +9,8 @@
       padding: 1.2rem 1rem;
     }
     th {
-      background-color: #009c9d; 
-      color: #fff;
+      background-color: $green-1; 
+      color: $white;
       text-transform: uppercase;
     }
     &-green {
@@ -24,12 +24,12 @@
   
   @media screen and (max-width:600px) {
     .maintable {
-      font-size: 14px;
+      font-size: 1.4rem;
       thead {
         display: none;
       }
       tr {
-        margin-bottom: 15px;
+        margin-bottom: 1.5rem;
       }
       td {
         text-align: right;
@@ -40,8 +40,8 @@
           position: absolute;
           left:0;
           width: 50%;
-          padding-left: 15px;
-          font-size:15px;
+          padding-left: 1.5rem;
+          font-size: 1.5rem;
           font-weight: bold;
           text-align: left;
           text-transform: uppercase;

@@ -2,6 +2,10 @@
     font-size: 1.8rem;
     line-height: 2.1rem;
     margin-bottom: 2rem;
+    &-head {
+        font-size: 3rem;
+        line-height: 3.4rem;
+    }
 }
 
 .card {
@@ -64,8 +68,8 @@
     font-weight: bold;
     font-size: 2rem;
     line-height: 2.3rem;
-    color: #FFFFFF;
-    background: #ea4e28;
+    color: $white;
+    background: $orange;
 }
 
 #second-slider .slider-second .item .col2 {
@@ -146,6 +150,7 @@
     align-items: center;
     margin-bottom: 3rem;
 }
+
 #contacts .specialists .box .info h4 {
     font-weight: bold;
     font-size: 1.8rem;
@@ -164,9 +169,11 @@
     color: #6A6A6A;
     margin: 1.5rem 0;
 }
+
 #contacts .specialists .box .img {
-    height: 32rem;
-    background-size: cover;
+    height: 27.2rem;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: top;
     display: flex;
     flex: 1;

@@ -11,10 +11,6 @@
 	margin: 2rem 0;
 }
 
-.saleSecond__smsform__check {
-	padding: 2.5rem 0 1.3rem;
-}
-
 .sale {
 	display: flex;
 	flex-wrap: wrap;
@@ -22,25 +18,22 @@
 	padding: 0;
 	margin-bottom: 2rem;
 	
-	h3 {
-		color: $white;
-		text-align: center;
-		font-weight: 500;
-	}
-	
 	&__head {
 		background-color: $green-3;
 		padding: 1.4rem 1.3rem 0.9rem 1.3rem;
-		font-size: 2rem;
-		line-height: 2.3rem;
+		font-size: 1.8rem;
+		line-height: 2.1rem;
 		margin: 0;
 		text-align: center;
+		text-transform: uppercase;
+		color: $white;
+		font-weight: 500;
 	}
 	
 	&__counter {
 		display: flex;
 		flex-direction: column;
-		flex: 1 1 590px;
+		flex: 1;
 		
 		p {
 			font-size: 2.5rem;
@@ -58,7 +51,7 @@
 			color: $white;
 			text-align: center;
 			padding: 1rem;
-			margin-bottom: 2.5rem;
+			margin-bottom: 0;
 			font-weight: bold;
 			font-size: 2.5rem;
 			line-height: 2.9rem;
@@ -68,24 +61,21 @@
 			display: flex;
 			justify-content: center;
 			gap: 1.8rem;
-			margin-top: 1.2rem;
-			
-			&-item {
-			}
+			margin-top: 1.5rem;
 			
 			&__number {
 				padding: 0 0 0 0.6rem;
 				letter-spacing: 1rem;
 				font-weight: bold;
-				font-size: 6rem;
-				line-height: 6.9rem;
+				font-size: 5rem;
+				line-height: 6rem;
 				background-color: $white;
 				color: $green-1;
 				position: relative;
 				&:before {
 					content: '';
 					position: absolute;
-					height: 6.9rem;
+					height: 6rem;
 					width: 0.5rem;
 					background-color: $green-1;
 					left: 45%;
@@ -116,10 +106,10 @@
 		
 		&__text {
 			font-weight: 300;
-			font-size: 1.2rem;
-			line-height: 1.4rem;
+			font-size: 1.1rem;
+			line-height: 1.2rem;
 			background: #F6F6F6;
-			color: #000;
+			color: $black;
 			padding: 1rem;
 		}
 	}
@@ -129,19 +119,18 @@
 		flex-direction: column;
 		align-items: center;
 		background-color: $green-1;
-		
-		h3 {
-			color: $white;
-			text-align: center;
-			font-weight: 500;
-		}
-		
+		flex: 1;
+		width: 100%;
+				
 		&__head {
 			padding: 1.4rem 1.3rem 0.9rem 1.3rem;
 			margin: 0;
 			font-size: 2.2rem;
 			line-height: 2.5rem;
 			text-transform: uppercase;
+			color: $white;
+			text-align: center;
+			font-weight: 500;
 		}
 
 		.saleSecond__smsform__check {
@@ -159,7 +148,6 @@
 		flex-direction: column;
 		align-items: center;
 		padding: 2.5rem;
-		width: 300px;
 		
 		&-item {
 			font-weight: 300;
@@ -169,7 +157,7 @@
 			padding-left: 4.1rem;
 			margin-bottom: 1rem;
 			height: 3.5rem;
-			width: 300px;
+			width: 100%;
 			background-color: #fff;
 			background-repeat: no-repeat;
 			background-size: 2rem 2rem;
@@ -180,38 +168,36 @@
 			font-size: 1.8rem;
 			line-height: 2.1rem;
 			height: 3.5rem;
-			width: 300px;
+			width: 100%;
 			background-color: $orange;
 			color: $white;
-			border: 2px solid $white;
+			border: 0.2rem solid $white;
 			text-transform: uppercase;
 		}
 	}
 }
 
+.smsPhone {
+	// background-image: url(img/icons/form-phone.svg);
+}
+
+/*
 .smsName {
 	background-image: url(img/icons/form-login.svg);
 }
 
-.smsPhone {
-	background-image: url(img/icons/form-phone.svg);
-}
-
 .smsDate {
 	background-image: url(img/icons/form-clock.svg);
-}
+}*/
 
 .checkbox__outer {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	align-items: center;
-	color: $white;
 	margin-top: 1rem;
-	
-	a {
-		text-decoration: underline;
-	}
+	background-color: #DAF7F7;
+	padding: 0.8rem 0.8rem 0.8rem 1.1rem;
 	
 	input[type='checkbox']{
 		width: auto;
@@ -223,33 +209,33 @@
 		font-size: 1.1rem;
 		line-height: 1.2rem;
 		text-align: left;
+		color: #000;
 	}
 }
 
 .check {
-	a {
-		color: $white;
-	}
+
 	&__input {
 		opacity: 0;
 		position: absolute;
 		&:checked + .check__box-white {
-			background-image: url(img/icons/checkbox-on.svg);    
+			background-image: url("data:image/svg+xml,%3Csvg width='12' height='10' viewBox='0 0 12 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 9.4L0 5.4L1.4 4L4 6.6L10.6 0L12 1.4L4 9.4Z' fill='white'/%3E%3C/svg%3E%0A");
 		}
 		
 		&:checked + .check__box {
-			background-image: url(img/icons/checkbox-on.svg);
+			background-image: url("data:image/svg+xml,%3Csvg width='12' height='10' viewBox='0 0 12 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 9.4L0 5.4L1.4 4L4 6.6L10.6 0L12 1.4L4 9.4Z' fill='white'/%3E%3C/svg%3E%0A");
 		}
 	}
 	
 	&__box {
-		margin: 0.5rem 0 0 -2.6rem;
+		margin: 0.2rem 0 0 0;
 		position: absolute;
 		width: 1.6rem;
 		height: 1.6rem;
 		cursor: pointer;
-		background-image: url(img/icons/checkbox-off.svg); 
-		background-repeat: no-repeat;   
+		background-repeat: no-repeat;
+		background-color: $green-1;
+		background-position: center;
 	}
 }
 
@@ -259,35 +245,30 @@
 	background: linear-gradient(90deg, $green-3 0%, $green-1 75%, $green-1 100%);
 	text-align: left;
 	font-weight: normal;
-	
-	h3, h4 {
-		color: #fff;
-		margin: 0;
-		text-transform: uppercase;
-	}
-	
+		
 	&__inner {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 2rem;
 		background-color: $white;
-		padding: 0;
+		padding: 0!important;
 	}
 	
 	&__counter {
 		flex: 1;
 		width: 100%;
+		background-color: $green-1;
 		
 		&__inner {
 			background-color: $green-1;
 			padding: 1rem;
-			margin-bottom: 1.5rem;
+			margin-bottom: 0;
 		}
 		
 		p {
 			font-weight: 500;
-			font-size: 2.5rem;
-			line-height: 2.8rem;
+			font-size: 2rem;
+			line-height: 2.3rem;
 			text-align: center;
 		}
 		&-head {
@@ -307,6 +288,14 @@
 				line-height: 3.4rem;
 				text-transform: uppercase;
 			}
+		}
+
+		&__text {
+			font-size: 1.7rem; 
+			line-height: 2rem; 
+			font-weight: 400;
+			text-align: center;
+			margin-bottom: 1rem;
 		}
 		
 		&__datetime {
@@ -345,13 +334,11 @@
 	}
 	
 	&__form {
-		font-size: 1.8rem;
-		line-height: 2.1rem;
 		flex: 1;
-		
+
 		&__inner {
 			background-color: $green-3;
-			padding: 2.1rem 1.8rem 0 2.1rem;
+			padding: 1.5rem;
 			height: 100%;
 		}
 		
@@ -359,11 +346,11 @@
 			font-size: 1.2rem;
 		}
 		
-		h3 {
-			font-size: 2.2rem;
-			line-height: 2.5rem;
-			font-weight: 700;
+		&-head {
+			font-size: 2rem;
+			font-weight: 500;
 			text-transform: uppercase;
+			text-align: center;
 		}
 		a {
 			color: $white;
@@ -371,7 +358,7 @@
 	}
 	
 	&__smsform {
-		padding: 2.5rem 0 1.3rem 0;
+		padding: 1rem 0;
 		
 		p {
 			font-weight: normal;
@@ -383,31 +370,30 @@
 		&-inner {
 			display: flex;
 			flex-wrap: wrap;
-			align-items: center;
+			align-items: flex-start;
 			justify-content: center;
-			
-			.checkbox__outer {
-				padding-left: 2.5rem;
-			}
 		}
 		
 		&-item {
-			font-size: 2rem;
+			font-size: 1.6rem;
+			line-height: 2rem;
 			border: none;
 			padding-left: 4.1rem;
-			margin-bottom: 1.5rem;
-			height: 4rem;
+			height: 5.6rem;
 			width: 100%;
-			background-repeat: no-repeat;
-			background-size: 2rem 2rem;
-			background-position: 0.9rem;
+			background-color: #ebebeb;
+			//background-repeat: no-repeat;
+			//background-size: 2rem 2rem;
+			//background-position: 0.9rem;
+			
 		}
+		
 		&__btn {
-			font-weight: bold;
+			font-weight: 700;
 			font-size: 1.8rem;
+			line-height: 2rem;
 			width: 100%;
-			height: 5rem;
-			border: 2px solid $white;
+			height: 5.6rem;
 			background-color: $orange;
 			color: $white;
 			text-transform: uppercase;
@@ -415,13 +401,18 @@
 			justify-content: center;
 			align-items: center;
 		}
-	}
-}
 
-.saleSecond__smsform__check {
-	display: none;
-	flex-wrap: wrap;
-	gap: 1.5rem;
+		&__check {
+			display: none;
+			flex-wrap: wrap;
+			gap: 1.5rem;
+			padding: 2.5rem 0 1.3rem;
+		}
+	}
+	
+	&__section {
+		margin-bottom: 3rem;
+	}
 }
 
 .b24-form-btn {
@@ -480,13 +471,17 @@
 	border-radius:0!important;
 }
 
+.b24-form-state-container .b24-form-success { background-color: #009c9d!important }
+.b24-form-success .b24-form-state-text { color:#fff!important }
+.b24-form-state-container .b24-form-loader, .b24-form-state-container .b24-form-state { border-radius: 0!important }
+
 /*убирает паддинг который добавляет форма Битрикс24*/
 body {
 	padding-right: 0 !important;
 }
 
 .b24-form-header {
-	padding: 10px 0px 0px!important;
+	padding: 10px 0 0!important;
 }
 
 .b24-form-header-description {
@@ -497,5 +492,320 @@ body {
 	.b24-window-close {
 		top: 4px!important;
 		right: 10px!important;
+	}
+}
+
+.promo {
+	display: flex;
+	flex-wrap: wrap;
+
+	z-index: 994;
+    position: relative;
+    background-color: #fff;
+
+	&__info {
+		flex: 0 52.6rem;
+		background-color: $green-1;
+		color: $white;
+		padding: 2rem 1.8rem;
+
+		&-h {
+			font-weight: 500;
+			font-size: 2.4rem;
+			line-height: 2.8rem;
+			text-transform: uppercase;
+		}
+
+		&-restrict {
+			font-size: 1.4rem;
+			font-weight: 400;
+			line-height: 2rem;
+			margin-top: 2rem;
+		}
+
+		&-h2 {
+			font-size: 1.4rem;
+			font-weight: 500;
+			line-height: 2rem;
+			margin-top: 2rem;
+			margin-bottom: 0.8rem;
+			text-transform: uppercase;
+		}
+
+		&-cities {
+			font-size: 1.2rem;
+			font-weight: 400;
+			line-height: 1.2rem;
+			opacity: 0.6;
+			margin-top: 2rem;
+			max-width: 47.3rem;
+		}
+		&-link {
+			font-size: 1.4rem;
+			font-weight: 700;
+			line-height: 1.6rem;
+			letter-spacing: 0.02em;
+			color: $white;
+			text-transform: uppercase;
+			display: flex;
+			align-items: end;
+			&:hover {
+				color: $white;
+			}
+			&:after {
+				content: '';
+				width: 2rem;
+				height: 2rem;
+				background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_193_1195)'%3E%3Cmask id='mask0_193_1195' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='24' height='24'%3E%3Crect width='24' height='24' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_193_1195)'%3E%3Cpath d='M16 12L9.51351 18L8 16.6L12.973 12L8 7.4L9.51351 6L16 12Z' fill='white'/%3E%3C/g%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_193_1195'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+			}
+		}
+	}
+
+	&__counter {
+		background-color: $green-3;
+		padding: 0.8rem 1.2rem 0.4rem 1.2rem;
+		margin-top: 0.8rem;
+		display: flex;
+		gap: 2.7rem;
+		max-width: 47.3rem;
+		&-item {
+			position: relative;
+			&:not(:last-child) {
+				&:after {
+					content:':';
+					font-size: 4rem;
+					line-height: 4rem;
+					color: #000;
+					position: absolute;
+					right: -1.8rem;
+					top: 0.5rem;
+				}
+			}
+		}
+		&__num {
+			width: 9.2rem;
+			font-size: 4rem;
+			font-weight: 500;
+			line-height: 4rem;
+			letter-spacing: 2.3rem;
+			//color: #292929;
+			color: $green-1;
+			background-color: $white;
+			padding: 0.6rem 1.05rem;
+			position: relative;
+			&:before {
+				content: "";
+				position: absolute;
+				height: 5.2rem;
+				width: 0.5rem;
+				background-color: $green-3;
+				left: 47%;
+				top: 0;
+			}
+		}
+		&__text {
+			font-size: 1.2rem;
+			font-weight: 400;
+			line-height: 1.6rem;
+			color: $white;
+			text-align: center;
+		}
+	}
+
+	&__form {
+		max-width: 51rem;
+		height: 100%;
+
+		&-outer {
+			flex: 1;
+			padding: 1.6rem 2.2rem;
+			border: 0.2rem solid $green-1;
+		}
+
+		&-privacy {
+			margin-left: 2.5rem;
+		}
+
+		&-inner {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 1rem;
+			position: relative;
+		}
+
+		&-phone {
+			font-size: 1.6rem;
+			font-weight: 400;
+			line-height: 2rem;
+			height: 5.6rem;
+			width: 30.6rem;
+			padding: 0.8rem 1.6rem;
+			background-color: $grey-2;
+			border: 0.1rem solid $grey-2;
+			cursor: text;
+
+			&:focus,
+			&:valid {
+				background-color: $white;
+				border: 0.1rem solid $green-1;
+
+				& + .promo__form-label {
+					font-size: 1.2rem;
+					top: 0.5rem;
+				}
+			}
+		}
+
+		&-label {
+			position: absolute;
+			left: 2rem;
+			top: 2rem;
+			font-size: 1.6rem;
+			font-weight: 400;
+			line-height: 2rem;
+			cursor: text;
+			&:focus, 
+			&:valid {
+				top: 0.25rem;
+				font-size: 1.2rem;
+			}
+		}
+
+		&-btn {
+			height: 5.6rem;
+			width: 19.4rem;
+			background-color: $orange;
+			color: $white;
+			font-size: 1.8rem;
+			font-weight: 700;
+			line-height: 2rem;
+			letter-spacing: 0.02em;
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		&-dialog {
+			font-size: 1.2rem;
+			font-weight: 400;
+			line-height: 1.6rem;
+			margin-top: 0.8rem;
+			display: flex;
+			align-items: center;
+			&:before {
+				content:'';
+				width: 2.8rem;
+				height: 2.6rem;
+				margin-right: 0.8rem;
+				background-color: #DAF7F7;
+				background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.416504 1.75644V15.1987L3.03188 12.5833H14.2434C14.6185 12.5833 14.9356 12.4538 15.1946 12.1948C15.4536 11.9357 15.5831 11.6187 15.5831 11.2436V1.75644C15.5831 1.38133 15.4536 1.06426 15.1946 0.805229C14.9356 0.546201 14.6185 0.416687 14.2434 0.416687H1.75625C1.38114 0.416687 1.06407 0.546201 0.805046 0.805229C0.546018 1.06426 0.416504 1.38133 0.416504 1.75644ZM4.99982 7C5.5521 7 5.99982 6.55228 5.99982 6C5.99982 5.44772 5.5521 5 4.99982 5C4.44753 5 3.99982 5.44772 3.99982 6C3.99982 6.55228 4.44753 7 4.99982 7ZM8.99982 6C8.99982 6.55228 8.5521 7 7.99982 7C7.44753 7 6.99982 6.55228 6.99982 6C6.99982 5.44772 7.44753 5 7.99982 5C8.5521 5 8.99982 5.44772 8.99982 6ZM10.9998 7C11.5521 7 11.9998 6.55228 11.9998 6C11.9998 5.44772 11.5521 5 10.9998 5C10.4475 5 9.99982 5.44772 9.99982 6C9.99982 6.55228 10.4475 7 10.9998 7Z' fill='%23009C9D'/%3E%3C/svg%3E%0A");
+				background-size: 1.5rem 1.4rem;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+		}
+	}
+}
+
+.promo__form-phone:focus+.promo__form-label, .promo__form-phone:valid+.promo__form-label {
+    top: 0.25rem!important;
+}
+
+.promocode__check {
+	display: none;
+}
+
+.overlay {
+	display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(34, 34, 34, 0.25);
+    z-index: 994;
+}
+
+.modal {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+	width: 46.5rem;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    top: 25%;
+	background-color: $white;
+	box-shadow: 0.5rem 0.5rem 0.6rem 0 rgba(225,225,225,.2509803922);
+	font-size: 1.8rem;
+	font-weight: 400;
+	line-height: 2.4rem;
+	text-align: center;
+	z-index: 1100001;
+	&-pic {
+		background-color: #DFF5F5;
+		height: 17.6rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&-head {
+		font-size: 2.6rem;
+		font-weight: 500;
+		line-height: 3.2rem;
+		text-align: center;
+		color: $green-1;
+		margin: 2rem 0;
+	}
+	&-text {
+		margin: 2rem 0 0 0;
+		font-size: 1.6rem;
+		font-weight: 400;
+		line-height: 2rem;
+		text-align: center;
+		color: #5C5C5C;
+	}
+	.btn__orange {
+		margin: 3.2rem auto 3.6rem auto;
+		width: 15.6rem;
+	}
+}
+
+@media (max-width:600px) {
+	.modal {
+		width: 97%;
+	}
+}
+
+@media (max-width:425px) {
+	.promo {
+		&__counter {
+			gap: 1.6rem;
+			justify-content: center;
+			&-item:not(:last-child):after {
+				content: ":";
+				font-size: 3rem;
+				line-height: 3rem;
+				top: 0.2rem;
+				right: -1.2rem;
+			}
+			&__num {
+				width: auto;
+				letter-spacing: 0.5rem;
+				padding: 0;
+				font-size: 3.2rem;
+				line-height: 3.2rem;
+				&:before {
+					height: 3.2rem;
+					width: 0.3rem;
+					left: 43%;
+				}
+			}
+		}
+		&__form {
+			&-phone {
+				width: 100%;
+			}
+			&-btn {
+				width: 100%;
+			}
+		}
 	}
 }

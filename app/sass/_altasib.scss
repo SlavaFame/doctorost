@@ -11,37 +11,35 @@
 .altasib_geobase_mb_link .altasib_geobase_mb_link_city {
 	text-transform: uppercase;
 	border-bottom: none;
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 
 	&:hover {
 		color: $orange;
-    &:after {
-      background: url(img/icons/orange-arrow-down.svg) center no-repeat;
-    }
+    	&:after {
+      		background: url(img/icons/orange-arrow-down.svg) center no-repeat;
+    	}
 	}
-  &:after {
-    content: '';
-    background: url(img/icons/green-arrow-down.svg) center no-repeat;
-    width: 1.2rem;
-    height: 0.6rem;
-    display: flex;
-    margin-left: 0.5rem;
-  }
+  	&:after {
+    	content: '';
+    	background: url(img/icons/green-arrow-down.svg) center no-repeat;
+    	width: 1.2rem;
+    	height: 0.6rem;
+    	display: flex;
+    	margin-left: 0.5rem;
+  	}
 }
-
-/* standart plugin CSS */
 
 .altasib_geobase_link {
 	display:block;
-	line-height:1.6rem;
-	text-decoration:none
-}
-
-.altasib_geobase_link .altasib_geobase_link_city {
-	cursor:pointer;
-	font-weight:700;
-	white-space:normal;
+	font-size: 1.5rem;
+	line-height: 1.6rem;
+	text-decoration: none;
+	.altasib_geobase_link_city {
+		cursor:pointer;
+		font-weight:700;
+		white-space:normal;
+	}
 }
 
 #altasib_geobase_info {
@@ -52,20 +50,18 @@
 	border: 0;
 	background-color:$white;
 	max-height:50.6rem;
-	overflow-y:scroll!important
-}
-
-#altasib_geobase_info div {
-	padding: 0.8rem 0.6rem;
-	font-size: 1.4rem;
-	font-weight: normal;
-	color:#8c8c8c;
-	border-bottom: 0.1rem solid #eaeaea
-}
-
-#altasib_geobase_info div:hover {
-	background-color:#e6ecef;
-	cursor:pointer
+	overflow-y:scroll!important;
+	div {
+		padding: 0.8rem 0.6rem;
+		font-size: 1.4rem;
+		font-weight: normal;
+		color:#8c8c8c;
+		border-bottom: 0.1rem solid #eaeaea;
+		&:hover {
+			background-color:#e6ecef;
+			cursor:pointer
+		}
+	}
 }
 
 div.altasib_geobase_focus {
@@ -74,31 +70,24 @@ div.altasib_geobase_focus {
 
 #altasib_geobase_close {
 	float:right;
-	position:relative
-}
-
-#altasib_geobase_close a {
-	background:url(images/close.png) no-repeat;
-	position:absolute;
-	right:-15px;
-	top:-13px;
-	display:block;
-	font-size:1px;
-	height:30px;
-	line-height:1px;
-	width:30px
+	position:relative;
+	a {
+		background:url(images/close.png) no-repeat;
+		position:absolute;
+		right:-15px;
+		top:-13px;
+		display:block;
+		font-size:1px;
+		height:30px;
+		line-height:1px;
+		width:30px
+	}
 }
 
 strong.altasib_geobase_light {
 	font-size: 1.4rem;
 	font-weight: bold;
 	color:#333
-}
-
-#altasib_geobase_popup .altasib_geobase_pu_i {
-	color:#444!important;
-	margin:0 20px;
-	padding:23px 0 5px
 }
 
 .altasib_geobase_city .altasib_geobase_clear {
@@ -112,13 +101,18 @@ strong.altasib_geobase_light {
 	width:300px;
 	border:0 solid $white;
 	box-shadow: 0 1px 10px #969696;
+	.altasib_geobase_pu_i {
+		color:#444!important;
+		margin: 0 20px;
+		padding: 20px 0 0 0;
+	}
 }
 
 .altasib_geobase_city .altasib_geobase_ttl {
 	color:#333;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: bold;
-	margin:0 0 16px;
+	margin:0 0 15px;
 }
 
 .altasib_geobase_city .altasib_geobase_title2 {
@@ -129,10 +123,7 @@ strong.altasib_geobase_light {
 }
 
 .altasib_geobase_city .altasib_geobase_find {
-	border-radius:3px;
 	margin:2px 135px 35px 0;
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
 	box-sizing:border-box
 }
 
@@ -142,7 +133,6 @@ strong.altasib_geobase_light {
 	width:99%;
 	background:none repeat scroll 0 0 #F7F7F7;
 	border:1px solid gray;
-	border-radius:2px;
 	box-shadow:0 1px 1px rgba(0,0,0,.075) inset;
 	color:#363636;
 	font-size:13px;
@@ -151,9 +141,7 @@ strong.altasib_geobase_light {
 	line-height:16px;
 	padding:4px 8px;
 	transition:border .2s linear 0s,box-shadow .2s linear 0;
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	box-sizing:border-box
+	box-sizing:border-box;
 }
 
 .altasib_geobase_city .altasib_geobase_find input:focus {
@@ -170,9 +158,7 @@ strong.altasib_geobase_light {
 
 @media (max-width:400px) {
 	.altasib_geobase_city .altasib_geobase_cities ul {
-		column-count:1;
-		-moz-column-count:1;
-		-webkit-column-count:1
+		column-count: 1;
 	}
 }
 
@@ -193,19 +179,15 @@ strong.altasib_geobase_light {
 }
 
 .altasib_geobase_city .altasib_geobase_cities ul li {
-	margin-bottom:6px;
 	padding:0
 }
 
 .altasib_geobase_city .altasib_geobase_cities ul li a {
-	display:block;
-	padding-right:10px;
 	display:inline-block;
-	border-bottom:1px solid transparent
 }
 
 .altasib_geobase_city .altasib_geobase_cities ul li,.altasib_geobase_city .altasib_geobase_cities ul li a {
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: normal;
 	text-decoration:none
 }
@@ -279,8 +261,6 @@ a#altasib_geobase_btn {
 	text-align:center;
 	text-decoration:none;
 	height:27px;
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
 	box-sizing:border-box
 }
 
@@ -295,8 +275,6 @@ a#altasib_geobase_btn.altasib_geobase_disabled,a#altasib_geobase_btn.altasib_geo
 	color:#8d8d8d;
 	text-shadow:1px 1px $white;
 	height:30px;
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
 	box-sizing:border-box
 }
 
@@ -318,17 +296,11 @@ a#altasib_geobase_btn.altasib_geobase_disabled,a#altasib_geobase_btn.altasib_geo
 	display:none;
 	height:100%;
 	left:0;
-	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=30);
-	-moz-opacity:.3;
-	-khtml-opacity:.3;
 	opacity:.3;
 	position:fixed;
 	top:0;
 	width:100%;
 	z-index:9999;
-	-webkit-transition:opacity 400ms;
-	-moz-transition:opacity 400ms;
-	-o-transition:opacity 400ms;
 	transition:opacity 400ms
 }
 
@@ -351,20 +323,20 @@ a#altasib_geobase_btn.altasib_geobase_disabled,a#altasib_geobase_btn.altasib_geo
 #altasib_geobase_mb_info {
 	position:absolute;
 	display:none;
-	width:372px;
-	max-height:340px;
+	width:37.2rem;
+	max-height:38rem;
 	z-index:999;
 	border:0;
 	background-color:$white;
-	overflow-y:scroll
+	overflow-y:scroll;
 }
 
 #altasib_geobase_mb_info div {
 	padding: 8px 6px;
-	font-size: 14px;
+	font-size: 1.4rem;
 	font-weight: normal;
 	color:#8c8c8c;
-	border-bottom:1px solid #eaeaea
+	border-bottom: 0.1rem solid #eaeaea
 }
 
 div.altasib_geobase_mb_focus {
@@ -379,54 +351,47 @@ div.altasib_geobase_mb_focus {
 #altasib_geobase_mb_close a {
 	background:url(images/close.png) no-repeat;
 	position:absolute;
-	right:10px;
-	top:9px;
+	right:1rem;
+	top:1rem;
 	display:block;
-	font-size:1px;
-	height:30px;
-	line-height:1px;
-	width:30px;
+	font-size:0.1rem;
+	height:3rem;
+	line-height:0.1rem;
+	width:3rem;
 	z-index: 99999999;
 }
 
 strong.altasib_geobase_mb_light {
-	font-size: 14px;
+	font-size: 1.4rem;
 	font-weight: bold;
 	color:#333
 }
 
 #altasib_geobase_mb_popup .altasib_geobase_mb_pu_i {
 	color:#444!important;
-	padding-bottom:5px
-}
-
-.altasib_geobase_mb_city .altasib_geobase_mb_clear {
-	clear:both
+	padding-bottom: 0.5rem;
 }
 
 #altasib_geobase_mb_popup {
 	top:0;
 	margin:0 auto;
 	background:none repeat scroll 0 0 $white;
-	width:521px;
-	border:0 solid $white;
-	border-radius:5px;
+	width: 52.1rem;
+	height: 47rem;
 	box-shadow:0 1px 10px #969696;
-	-moz-box-shadow:0 1px 10px #969696;
-	-webkit-box-shadow:0 1px 10px #969696
 }
 
 .altasib_geobase_mb_ttl {
 	color:#333;
-	font-size: 14px;
+	font-size: 1.4rem;
 	font-weight: bold;
 	margin:0 0 16px;
-	padding:23px 20px 0
+	padding:23px 20px 0;
 }
 
 .altasib_geobase_mb_city .altasib_geobase_mb_title2 {
 	color:#333;
-	font-size: 14px;
+	font-size: 1.4rem;
 	padding:0 0 12px
 }
 
@@ -437,11 +402,9 @@ strong.altasib_geobase_mb_light {
 
 .altasib_geobase_mb_city .altasib_geobase_mb_find input {
 	color:gray;
-	font-size: 16px;
 	width:99%;
 	background:none repeat scroll 0 0 #F5F5F5;
 	border:1px solid #eaeaea;
-	border-radius:5px;
 	box-shadow:0 1px 1px rgba(0,0,0,.075) inset;
 	color:#363636;
 	font-size:13px;
@@ -460,9 +423,9 @@ strong.altasib_geobase_mb_light {
 }
 
 .altasib_geobase_mb_city .altasib_geobase_mb_cities {
-	margin:0 0 20px;
-	height:320px;
-	overflow-y:scroll
+	margin: 0 0 2rem;
+	height: 41rem;
+	overflow-y: scroll;
 }
 
 .altasib_geobase_mb_city .altasib_geobase_mb_cities ul {
@@ -553,21 +516,6 @@ strong.altasib_geobase_mb_light {
 	display:none
 }
 
-a#altasib_geobase_mb_btn,a#all_cities_button_mobile {
-	background:#e05222;
-	color:$white;
-	cursor:pointer;
-	display:block;
-	font-family: Ubuntu,sans-serif;
-	font-size: 14px;
-	width: 150px;
-	padding: 0.5rem;
-	margin-left: 0.5rem;
-	text-align:center;
-	text-decoration:none;
-	text-transform:uppercase
-}
-
 a#altasib_geobase_mb_btn.altasib_geobase_mb_disabled,a#altasib_geobase_mb_btn.altasib_geobase_mb_disabled:active {
 	display:none
 }
@@ -591,32 +539,20 @@ a#altasib_geobase_mb_btn.altasib_geobase_mb_disabled,a#altasib_geobase_mb_btn.al
 	height:100%;
 	left:0;
 	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=30);
-	-moz-opacity:.3;
-	-khtml-opacity:.3;
 	opacity:.3;
 	position:fixed;
 	top:0;
 	width:100%;
 	z-index:9999;
-	-webkit-transition:opacity 400ms;
-	-moz-transition:opacity 400ms;
-	-o-transition:opacity 400ms;
-	transition:opacity 400ms
+	transition:opacity 400ms;
 }
 
 @media screen and (max-height:480px) and (orientation:landscape) {
-	a#all_cities_button_mobile {
-		display:none
-	}
 	
 	#altasib_geobase_mb_info {
 		width:372px
 	}
 	
-	.altasib_geobase_mb_city .altasib_geobase_mb_cities {
-		height:80px;
-		overflow-y:scroll
-	}
 }
 
 @media screen and (max-width:480px) {
@@ -652,7 +588,7 @@ a#altasib_geobase_mb_btn.altasib_geobase_mb_disabled,a#altasib_geobase_mb_btn.al
 	}
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+@media screen and (min-device-width: 320px) and (max-device-width: 500px) {
 	#altasib_geobase_popup {
 		top:0!important;
 		width:280px

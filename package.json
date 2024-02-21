@@ -8,7 +8,8 @@
   "author": "Vyacheslav Nikitin",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.27.4",
+    "@fancyapps/fancybox": "^3.5.7",
+    "browser-sync": "^2.29.3",
     "del": "^5.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
@@ -22,6 +23,7 @@
     "gutil": "^1.6.4",
     "imagemin-pngquant": "^8.0.0",
     "jquery": "^3.6.0",
+    "magnific-popup": "^1.1.0",
     "sass": "^1.44.0",
     "vinyl-ftp": "^0.6.1"
   },

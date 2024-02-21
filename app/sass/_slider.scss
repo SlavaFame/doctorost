@@ -1,53 +1,34 @@
-.lazy:not(img){
-  opacity: 0;
-  visibility: hidden;
-}
-
-.lazy:not(img)[data-was-processed=true]{
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 1s ease;
-}
-
-.lazy{
- opacity: 0;
- visibility: hidden;
-}
-
-.lazy.loaded{
-  transition: 0.5s linear;
-  opacity: 1;
-  visibility: visible;
-}
-
-.slider{
+.slider {
   position: relative;
   padding: 0 6rem;
+  .slick-track{
+    display: block;
+  }
 }
 
-.slider .slick-track{
-  display: block;
-}
-
-/*ограничивающая оболочка*/
+/* ограничивающая оболочка */
 .slick-list {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  z-index: 993;
+  z-index: 3;
   position: relative;
+  margin: 0;
+  padding: 0
 }
 
-/*лента слайдов*/
-.method__slider__photo .slick-track,
-.direction__slider__photo .slick-track,
-.method__procedure__sliderPhoto .slick-track,
-.reviews__mainslider .slick-track,
-.video__mainslider .slick-track,
-.topMain__slider .slick-track,
-.topMain__slider__about .slick-track {
-  display: flex;
-  height: 100%;
+/* лента слайдов */
+.method__slider__photo,
+.direction__slider__photo,
+.method__procedure__sliderPhoto,
+.reviews__mainslider,
+.video__mainslider,
+.topMain__slider,
+.topMain__slider__about {
+  .slick-track {
+    display: flex;
+    height: 100%;
+  }
 }
 
 .topMain__slider__about, 
@@ -56,24 +37,30 @@
   position: relative;
 }
 
-.faqPage__slider .slick-track {
-  display: flex;
-  flex-wrap: wrap;
+.faqPage__slider {
+  .slick-track {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
-.methods__slider .slick-track,
-.doctor__slider-treat .slick-track,
-.doctor__slider-main .slick-track,
-.sales-mainslider .slick-track,
-.doctorDetail__sertificates__slider .slick-track,
-.phys__slider .slick-track,
-.regenerat__slider .slick-track,
-.medic__slider .slick-track,
-.hirurg__slider .slick-track,
-.reab__slider .slick-track,
-.diagnostics__slider .slick-track {
-  display: flex;
-  gap: 3rem;
+.methods__slider,
+.doctor__slider-treat,
+.doctor__slider-main,
+.sales-mainslider,
+.doctorDetail__sertificates__slider,
+.phys__slider,
+.regenerat__slider,
+.medic__slider,
+.hirurg__slider,
+.reab__slider,
+.diagnostics__slider,
+.reflex__slider,
+.robot__slider {
+  .slick-track {
+    display: flex;
+    gap: 3rem;
+  }
 }
 
 .newsMain__slider .slick-track {
@@ -83,30 +70,40 @@
   top: 1rem;
 }
 
-.method__procedure__sliderNav .slick-track,
-.reviews__navslider .slick-track,
-.video__navslider .slick-track,
-.doctor__slider__nav .slick-track,
-.admin__slider__nav .slick-track,
-.doctorDetail__sertificates__nav .slick-track,
-.admin__slider__nav .slick-track {
-  display: flex;
-  align-items: flex-start;
-  gap: 9px;
-  position: relative;
-  margin: 5px 2px;
+.method__procedure__sliderNav,
+.reviews__navslider,
+.video__navslider,
+.doctor__slider__nav,
+.admin__slider__nav,
+.doctorDetail__sertificates__nav {
+  .slick-track {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.9rem;
+    position: relative;
+    margin: 0;
+  }
 }
 
-.topMain__direction .slick-track {  
-  display: flex;
-  align-items: flex-start;
-  gap: 18px;
-  left: 2px;
-  top: 2px;
-  position: relative;
+.reviews__navslider {
+  .slick-track {
+    gap: 0;
+  }
+  .slick-current {
+    display: none;
+  }
+}
+
+.reviews, .video {
+  &__navslider {
+    &__desc {
+      color: #000;
+    }
+  }
 }
 
 .method__procedure__sliderNav .slick-track {
+  width: 100%;
   max-width: 56rem;
 }
 
@@ -114,15 +111,20 @@
   flex-direction: column;
 }
 
-.method__slider__nav .slick-track,
-.direction__slider__nav .slick-track {
-  display: flex;
-  align-items: flex-start;
-  gap: 4rem;
-  left: 0.2rem;
-  top: 0.2rem;
-  position: relative;
-  margin: 0.5rem 0;
+.method,
+.direction {
+  &__slider {
+    &__nav {
+      .slick-track {
+        display: flex;
+        align-items: flex-start;
+        gap: 4rem;
+        left: 0.2rem;
+        top: 0.2rem;
+        position: relative;
+      }      
+    }
+  }
 }
 
 .direction__slider__nav .slick-list {
@@ -132,93 +134,51 @@
 .methods__slider {
   position: relative;
   margin: 3rem 0 6rem 0;
-
   &-link {
-    font-weight: 400;
-    font-size: 2rem;
-    line-height: 2.3rem;
     color: #c4c4c4;
     
     &:after {
       content: "";
-      background: url(img/diagnostics/grey-arrow.svg) 0 0.7rem / contain no-repeat;
+      background: url(img/diagnostics/grey-arrow.svg) 0 0.4rem / contain no-repeat;
       padding: 0 0.3rem;
       margin-left: 0.5rem;
     }
+    &:hover {
+			&:after {
+				content: '';
+				background: url(img/diagnostics/orange-arrow.svg) 0 0.4rem / contain no-repeat;
+				padding: 0 0.3rem;
+				margin-left: 0.5rem;
+			}
+		}
   }
 }
 
-.methods__slider .slick-dots,
-.sales-mainslider .slick-dots,
-.doctor__slider .slick-dots,
-.admin__slider .slick-dots,
-.newsMain__slider .slick-dots,
-.diagnostics__slider .slick-dots,
-.regenerat__slider .slick-dots,
-.phys__slider .slick-dots,
-.medic__slider .slick-dots,
-.hirurg__slider .slick-dots,
-.reab__slider .slick-track {
-  bottom: -3rem;
-  margin: 0 auto;
+.reab__slider .slick-track,
+.reflex__slider .slick-track,
+.robot__slider .slick-track {
+  bottom: 0;
+  margin: 0;
 }
 
-.sectificates__slider-main__slide .slick-dots {
-  position: absolute;
-  flex-wrap: wrap;
-  bottom: -8rem;
-  gap: 1.2rem;
-}
-
-.method__procedure__sliderPhoto .slick-dots {
-  right: 25%;
-  bottom: 4rem;
-}
-
-.reviews__mainslider .slick-dots, 
-.video__mainslider .slick-dots {
-  position: relative;
-  bottom: -24rem;
-}
-
-.topMain__slider .slick-list {
-    height: 42.5rem;
+.sectificates__slider-main__slide {
+  .lazy {
+    width: 100%;
+    height: 41.5rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .box .topMain__direction {
     top: 0;
 }
 
-.topMain__slider .slick-dots {
-  bottom: 22rem;
-  height: 2rem;
-  justify-content: flex-start;
-}
-
-.reviews__mainslider-nav .slick-dots,
-.video__mainslider-nav .slick-dots,
-.topMain__direction-nav .slick-dots,
-.sales-mainslider-nav .slick-dots,
-.topMain__slider__about .slick-dots,
-.doctor__slider-nav .slick-dots,
-.admin__slider-nav .slick-dots,
-.diagnostics__slider-nav .slick-dots,
-.regenerat__slider-nav .slick-dots,
-.hirurg__slider-nav .slick-dots,
-.reab__slider .slick-track {
-  bottom: 0;
-}
-
-.method__slider__photo .slick-dots {
-  bottom: 4rem;
-}
-
-.topMain__direction .slick-dots{
-  bottom: -4rem;
-}
-
-.slick-slide .slick-active{
-  background-color: $orange;
+.topMain__slider {
+  .slick-list {
+    height: 42.5rem;
+  }
 }
 
 /*.slick-slide .slick-current{}
@@ -229,57 +189,59 @@
 .slick-arrow .slick-prev{}
 .slick-arrow .slick-next{}
 .slick-arrow .slick-disabled{}*/
+/*
+.slick-slide .slick-active {
+  background-color: $orange;
+}
 
-/*точки*/
 .slick-dots {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  z-index: 993;
+  z-index: 4;
   order: 2;
   position: relative;
-}
-
-.slick-dots .slick-active button {
-  background-color: $orange;
-}
-
-.slick-dots li { 
-  list-style-type: none;
-}
-
-.slick-dots button{
-  font-size: 0;
-  width: 2rem;
-  height: 2rem;
-  background-color: $white;
-  border: 0.2rem solid $orange;
-  outline:none;
+  .slick-active button {
+    background-color: $orange;
+  }
+  li { 
+    list-style-type: none;
+  }
+  button {
+    font-size: 0;
+    width: 2rem;
+    height: 2rem;
+    background-color: $white;
+    border: 0.2rem solid $orange;
+    outline: none;
+  }
 }
 
 .slick-arrow.slick-prev {
-  //background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 492.004 492.004' width='512' height='512'%3E%3Cpath d='M382.678 226.804L163.73 7.86C158.666 2.792 151.906 0 144.698 0s-13.968 2.792-19.032 7.86l-16.124 16.12c-10.492 10.504-10.492 27.576 0 38.064L293.398 245.9l-184.06 184.06c-5.064 5.068-7.86 11.824-7.86 19.028 0 7.212 2.796 13.968 7.86 19.04l16.124 16.116c5.068 5.068 11.824 7.86 19.032 7.86s13.968-2.792 19.032-7.86L382.678 265c5.076-5.084 7.864-11.872 7.848-19.088.016-7.244-2.772-14.028-7.848-19.108z' data-original='%23000000' class='active-path' data-old_color='%23000000' fill='%23E54D28'/%3E%3C/svg%3E") 0 0/100% no-repeat;
-  background: url(img/icons/grey-arrow.svg);
-  background-repeat: no-repeat;
+  background: url(img/icons/grey-arrow.svg) no-repeat;
   transform: rotate(180deg);
-  order:1
+  order: 1;
+  &:hover {
+    background: url(img/icons/orange-arrow.svg) no-repeat;
+  }
 }
 
 .slick-arrow.slick-next {
-  //background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 492.004 492.004' width='512' height='512'%3E%3Cpath d='M382.678 226.804L163.73 7.86C158.666 2.792 151.906 0 144.698 0s-13.968 2.792-19.032 7.86l-16.124 16.12c-10.492 10.504-10.492 27.576 0 38.064L293.398 245.9l-184.06 184.06c-5.064 5.068-7.86 11.824-7.86 19.028 0 7.212 2.796 13.968 7.86 19.04l16.124 16.116c5.068 5.068 11.824 7.86 19.032 7.86s13.968-2.792 19.032-7.86L382.678 265c5.076-5.084 7.864-11.872 7.848-19.088.016-7.244-2.772-14.028-7.848-19.108z' data-original='%23000000' class='active-path' data-old_color='%23000000' fill='%23E54D28'/%3E%3C/svg%3E") 0 0/100% no-repeat;
-  background: url(img/icons/grey-arrow.svg);
-  background-repeat: no-repeat;
-  order:3
+  background: url(img/icons/grey-arrow.svg) no-repeat;
+  order: 3;
+  &:hover {
+    background: url(img/icons/orange-arrow.svg) no-repeat;
+  }
 }
 
 .slick-arrow.slick-next, 
 .slick-arrow.slick-prev {
-    z-index: 994;
+    z-index: 4;
     font-size: 0;
     width: 1.8rem;
     height: 1.8rem;
-}
+}*/
 
 .methods__slider,
 .diagnostics__slider,
@@ -287,7 +249,9 @@
 .regenerat__slider,
 .medic__slider,
 .hirurg__slider,
-.reab__slider {
+.reab__slider,
+.reflex__slider,
+.robot__slider {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -295,22 +259,21 @@
   position: relative;
   
   &-item {
-    width: 360px;
+    width: 36rem;
     display: flex;
     flex-wrap: wrap;
-    
-    h4 {
-      font-weight: 500;
-      font-size: 2.3rem;
-      line-height: 2.6rem;
-      color: $green-1;
-      margin: 2rem 0;
-      text-transform: uppercase;
-    }
+  }
+  &__head {
+    font-weight: 500;
+    font-size: 2.3rem;
+    line-height: 2.6rem;
+    color: $green-1;
+    margin: 2rem 0;
+    text-transform: uppercase;
   }
   &__text {
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
   }
   
   &__link {
@@ -320,27 +283,27 @@
     }
     &:after {
       content: '';
-      background: url(img/diagnostics/grey-arrow.svg) 0 7px / contain no-repeat;
-      padding: 0 3px;
-      margin-left: 5px;
+      background: url(img/diagnostics/grey-arrow.svg) 0 0.7rem / contain no-repeat;
+      padding: 0 0.3rem;
+      margin-left: 0.5rem;
     }
   }
 
   &__photo {
-    width: 361px;
-    height: 243px;
+    width: 36.1rem;
+    height: 24.3rem;
   }
 }
 
-.doctor__slider-treat .slick-track {
-  display: flex;
-}
-
-.method__slider__nav .slick-track .slick-current,
-.direction__slider__nav .slick-track .slick-current,
-.method__procedure__sliderNav .slick-track .slick-current {
-  outline: 2px solid #e05222;
-  display: flex;
+.method__slider__nav,
+.direction__slider__nav,
+.method__procedure__sliderNav {
+  .slick-track {
+    .slick-current {
+      outline: 0.2rem solid $orange;
+      display: flex;
+    }
+  } 
 }
 
 // Arrows
@@ -356,6 +319,8 @@
 .phys__slider-nav,
 .medic__slider-nav,
 .regenerat__slider-nav,
+.reflex__slider-nav,
+.robot__slider-nav,
 .reab__slider-nav,
 .methods__slider-nav,
 .newsMain__slider-nav,
@@ -370,23 +335,27 @@
     justify-content: center;
     margin: 0 auto;
     position: relative;
-    z-index: 994;
+    z-index: 4;
     gap: 1.5rem;
     align-items: baseline;
 }
 
-.sectificates__slider-main-nav .slick-dots {
-  flex-wrap: wrap;
+.sectificates__slider-main .slick-track {
+  display: flex;
 }
 
-.topMain__slider-nav,
-.direction__slider__photo-nav,
-.method__slider__photo-nav {
-  bottom: 40px;
+.topMain__slider,
+.direction__slider__photo,
+.method__slider__photo {
+  &-nav {
+    margin: 1.5rem 0;
+  }
 }
 
 .methods__slider__photo,
 .diagnostics__slider__photo,
+.reflex__slider__photo,
+.robot__slider__photo,
 .medic__slider__photo,
 .regenerat__slider__photo,
 .hirurg__slider__photo,
@@ -398,22 +367,19 @@
   cursor: pointer;
 }
 
-.method__procedure__slider {
-  max-width: 100%;
-}
-
-.doctor__slider .slick-dots {
-  bottom: -5rem;
-  flex-wrap: wrap;
+.doctor__slider-item--last {
+  flex: 1;
+  img {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .doctor__info__photo {
   width: 21.5rem;
 }
 
-
 /* слайдер специалисты в новостях */
-
 .slider_specialists__desc {
   font-size: 1.5rem;
   line-height: 1.6rem;
@@ -427,20 +393,62 @@
   }
 }
 
-.slider_specialists__wrap .doctor__slider {
-  margin: 0;
-}
-
-.slider_specialists__wrap .doctor__slider-main .slick-track {
-  gap: 1rem;
-  flex-wrap: nowrap;
-}
-
-.slider_specialists__wrap .doctor__info__speciality {
+.slider_specialists__wrap {
+  .doctor__slider {
+    margin: 0;
+  }
+  .doctor__slider-main .slick-track {
+    gap: 1rem;
+    flex-wrap: nowrap;
+  }
+  .doctor__info__speciality {
     font-size: 1.6rem;
     line-height: 1.8rem;
+  }
+  .doctor__info__photo {
+    width: 24rem;
+  }
 }
 
-.slider_specialists__wrap .doctor__info__photo {
-  width: 24rem;
+.slick-arrow {
+  background-color: $grey-2;
+  height: 6.1rem;
+  width: 8rem;
+  font-size: 0;
+  &:hover {
+    background-color: $orange;
+    cursor: pointer
+  }
+}
+
+.slick-prev {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("data:image/svg+xml,%3Csvg width='41' height='16' viewBox='0 0 41 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.292893 8.70711C-0.0976295 8.31659 -0.0976296 7.68342 0.292892 7.2929L6.65685 0.928935C7.04738 0.538411 7.68054 0.538411 8.07107 0.928935C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292893 8.70711ZM41 9L1 9L1 7L41 7L41 9Z' fill='%23676767'/%3E%3C/svg%3E%0A")
+}
+
+.slick-prev:hover {
+  background-image: url("data:image/svg+xml,%3Csvg width='41' height='16' viewBox='0 0 41 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.292893 8.70711C-0.0976295 8.31659 -0.0976296 7.68342 0.292892 7.2929L6.65685 0.928935C7.04738 0.538411 7.68054 0.538411 8.07107 0.928935C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292893 8.70711ZM41 9L1 9L1 7L41 7L41 9Z' fill='white'/%3E%3C/svg%3E%0A")
+}
+
+.slick-next {
+  background-repeat: no-repeat;
+  background-position: center center;
+  transform: rotateY(180deg);
+  background-image: url("data:image/svg+xml,%3Csvg width='41' height='16' viewBox='0 0 41 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.292893 8.70711C-0.0976295 8.31659 -0.0976296 7.68342 0.292892 7.2929L6.65685 0.928935C7.04738 0.538411 7.68054 0.538411 8.07107 0.928935C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292893 8.70711ZM41 9L1 9L1 7L41 7L41 9Z' fill='%23676767'/%3E%3C/svg%3E%0A")
+}
+
+.slick-next:hover {
+  background-image: url("data:image/svg+xml,%3Csvg width='41' height='16' viewBox='0 0 41 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.292893 8.70711C-0.0976295 8.31659 -0.0976296 7.68342 0.292892 7.2929L6.65685 0.928935C7.04738 0.538411 7.68054 0.538411 8.07107 0.928935C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292893 8.70711ZM41 9L1 9L1 7L41 7L41 9Z' fill='white'/%3E%3C/svg%3E%0A")
+}
+
+.slick-dots {
+  display: none!important;
+}
+
+@media (min-width: 320px) and (max-width: 1200px) {
+  .results-arrows {
+    position: relative;
+    gap: 3.5rem;
+  }
 }

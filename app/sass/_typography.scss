@@ -1,16 +1,18 @@
-$green-1: #009C9D; //rgba(0, 156, 157, 0,88);
+$green-1: #009C9D;
 $green-2: #42C9C5;
 $green-3: #0BBBB9;
 $green-4: #48D1CC;
 $green-5: #27D0CC;
 $green-6: #32C8C3;
-$green-7: #33C5C0; //rgba(51, 197, 192, 0,9);
+$green-7: #33C5C0;
 $green-8: #32B6C0;
 
 $orange: #E05222;
 $black: #000000;
 $white: #FFFFFF;
 $grey: #F5F5F5;
+$grey-2: #EBEBEB;
+$grey-3: #555454;
 
 $telegram: #61A8DE;
 $viber: #7D3DAF;
@@ -42,6 +44,11 @@ address {
 	font-style: normal;
 }
 
+iframe { 
+	width: 100%; 
+	border: none; 
+}
+
 html {
 	font-size: 10px;
 	width: 100%;
@@ -58,6 +65,10 @@ body {
 	width: 100%;
     max-width: 100%;
     overflow-x: hidden;
+}
+
+b {
+	font-weight: 700;
 }
 
 button {
@@ -93,11 +104,11 @@ h2, h3, h4, h5 {
 	font-weight: 300;
 	font-size: 1.8rem;
 	line-height: 2rem;
-	margin-bottom: 3rem;
 	
 	h1 { 
 		margin-bottom: 1.5rem; 
-	} 
+	}
+
 	img {
 		max-width: 100%;
 	}
@@ -107,11 +118,34 @@ h2, h3, h4, h5 {
 	font-weight: 300;
 	font-size: 1.8rem;
 	line-height: 2rem;
-	h2, h3, h4, h5 {
-		margin: 0 0 1.5rem 0 0;
-	}
 }
 
-.pageDetail-head, .saleSecond__section {
-	margin-bottom: 3rem;
+.orange_text {
+    color: $orange;
+}
+
+.black__font {
+	color: $black;
+}
+	
+.none, .hide {
+	display: none;
+}
+
+.active {
+	display: flex!important;
+}
+
+.orange {
+	border: 0.6rem solid $orange!important;
+	.navBottom__pic {
+		background-color: $orange;
+	}
+	&:hover {
+		border: 0.6rem solid #0079a7!important;
+		color: #0079a7!important;
+		.navBottom__pic {
+			background-color: #0079a7!important;
+		}
+	}
 }

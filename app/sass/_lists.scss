@@ -1,5 +1,5 @@
 .doctorDetail__head {
-	margin: 60px 0 20px;
+	margin: 6rem 0 2rem;
 }
 
 .vertebra__orange li,
@@ -14,6 +14,7 @@
 .checkMarks li {
 	list-style: none;
     padding: 0 0 1.5rem 0;
+	font-weight: 400;
 }
 
 .vertebra__orange {
@@ -36,7 +37,7 @@
 			background-image: url(img/lists/green_cube.svg);
     		background-size: contain;
     		background-repeat: no-repeat;
-    		margin-right: 15px;
+    		margin-right: 1.5rem;
     		padding: 0 1rem;
 		}
 	}
@@ -48,9 +49,9 @@
 			content: '';
 			background-image: url(img/lists/orange_cube.svg);
     		background-size: contain;
-    		height: 12px;
-    		width: 12px;
-    		margin-right: 10px;
+    		height: 1.2rem;
+    		width: 1.2rem;
+    		margin-right: 1rem;
     		display: inline-flex;
 		}
 	}
@@ -63,7 +64,7 @@
 			background-image: url(img/lists/contraindication.svg);
     		background-size: contain;
     		background-repeat: no-repeat;
-    		margin-right: 15px;
+    		margin-right: 1.5rem;
     		padding: 0 1rem;
 		}
 	}
@@ -76,8 +77,8 @@
 			background-image: url(img/lists/edu_green.svg);
     		background-size: contain;
     		background-repeat: no-repeat;
-    		margin-right: 15px;
-    		padding: 0px 10px;
+    		margin-right: 1.5rem;
+    		padding: 0 1rem;
 		}
 	}
 }
@@ -89,8 +90,8 @@
 			background-image: url(img/lists/edu_orange.svg);
     		background-size: contain;
     		background-repeat: no-repeat;
-    		margin-right: 15px;
-    		padding: 0px 10px;
+    		margin-right: 1.5rem;
+    		padding: 0 1rem;
 		}
 	}
 }
@@ -102,8 +103,8 @@
 			background-image: url(img/lists/achievements.svg);
     		background-size: contain;
     		background-repeat: no-repeat;
-    		margin-right: 15px;
-    		padding: 0px 10px;
+    		margin-right: 1.5rem;
+    		padding: 0 1rem;
 		}
 	}
 }
@@ -115,8 +116,8 @@
 			background-image: url(img/lists/courses.svg);
     		background-size: contain;
     		background-repeat: no-repeat;
-    		margin-right: 15px;
-    		padding: 0px 10px;
+    		margin-right: 1.5rem;
+    		padding: 0 1rem;
 		}
 	}
 }
@@ -128,8 +129,8 @@
 			background-image: url(img/lists/articles.svg);
     		background-size: contain;
     		background-repeat: no-repeat;
-    		margin-right: 15px;
-    		padding: 0px 10px;
+    		margin-right: 1.5rem;
+    		padding: 0 1rem;
 		}
 	}
 }

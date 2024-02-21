@@ -1,15 +1,65 @@
 .sectificates .sectificates__slider { 
     display: flex;
     flex-wrap: wrap;
+    &-main {
+        width: calc(100% - 16.5rem);
+        padding: 0 3rem 0 0;
+        img { 
+            max-height: 45rem;
+            margin: 0 auto;
+        }
+    }
+    &-nav {
+        height: 53rem;
+        width: 15rem;
+        overflow: hidden;
+        &__slide {
+            margin-bottom: 1rem;
+            background: $white;
+            border: 0.3rem solid $green-1;
+            cursor: pointer;
+            height: 15rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
 
-.sectificates .sectificates__slider-main{
-    width: calc(100% - 16.5rem);
-    padding: 0 3rem 0 0;
+.sectificates__slider-main .slick-track {
+    height: 47rem;
+}
+
+.sectificates__slider-main__slide {
+    position: relative;
+    .lazy {
+        height:auto!important;
+    }
+    img {
+        height: 45rem;
+        object-fit: contain;
+    }
+}
+
+.sectificates__slider-nav .slick-current {
+    border: 0.3rem solid $orange;
+}
+
+.sectificates__slider-nav__slide img {
+    padding: 3.6rem 1.6rem;
+    height: 100%;
+}
+
+.sectificates__slider-nav__slide .mini-images {
+    width: 12rem; 
+    height: 10rem;
+    background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat;
 }
 
 @media screen and (max-width:991px){
-    .sectificates .sectificates__slider-main{
+    .sectificates .sectificates__slider-main {
         width: 100%;
     }
 }
@@ -19,55 +69,4 @@
     .sectificates .sectificates__slider {
         padding: 0;
     }
-}
-
-.sectificates .sectificates__slider-main img { 
-    max-height: 45rem;
-    margin: 0 auto;
-}
-
-.sectificates__slider-main .slick-track {
-    height: 47rem;
-}
-
-.sectificates__slider-main__slide {
-    position: relative;
-    img {
-        height: 45rem;
-        object-fit: contain;
-    }
-}
-
-.sectificates .sectificates__slider-nav {
-    height: 53rem;
-    width: 15rem;
-    overflow: hidden;
-}
-
-.sectificates .sectificates__slider-nav__slide {
-    margin-bottom: 1rem;
-    background: #FFFFFF;
-    border: 0.3rem solid $green-1;
-    cursor: pointer;
-    height: 15rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.sectificates__slider-nav__slide img {
-    padding: 3.6rem 1.6rem;
-    height: 100%;
-}
-
-.sectificates__slider-nav .slick-current {
-    border: 0.3rem solid $orange;
-}
-
-.sectificates__slider-nav__slide .mini-images {
-    width: 12rem; 
-    height: 10rem;
-    background-position: center; 
-    background-size: cover; 
-    background-repeat: no-repeat;
 }

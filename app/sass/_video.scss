@@ -1,3 +1,10 @@
+
+iframe {
+	aspect-ratio: 16 / 9;
+	width: 100%;
+	height: auto!important;
+}
+
 .video,
 .methodsWrap,
 .articlesWrap,
@@ -28,7 +35,7 @@
 		&-item {
 			display: flex;
 			flex-direction: column;
-			width: 342px;
+			width: 34.2rem;
 			cursor: pointer;
 
 			h2 {
@@ -45,17 +52,17 @@
 			position: relative;
 			background-size: cover;
 			width: 100%;
-			height: 247px;
+			height: 24.7rem;
 		}
 		&__label {
 			background: url(img/mainnews/icon_news.svg) 50% / cover no-repeat;
-			width: 111px;
-			height: 41px;
+			width: 11.1rem;
+			height: 4.1rem;
 			position: absolute;
 			top: -1rem;
 
 			p {
-				color: #fff;
+				color: $white;
 				text-transform: uppercase;
 				text-align: center;
 				font-size: 1.6rem;
@@ -68,16 +75,24 @@
 
 	&__announce {
 		&-link {
-			font-weight: normal;
 			font-size: 2rem;
 			line-height: 2.3rem;
 			color: #C4C4C4;
+			font-weight: 400;
 			&:after {
 				content: '';
-				background: url(img/diagnostics/grey-arrow.svg) 0 7px / contain no-repeat;
-				padding: 0px 3px;
-				margin-left: 5px;
+				background: url(img/diagnostics/grey-arrow.svg) 0 0.6rem / contain no-repeat;
+				padding: 0 0.3rem;
+				margin-left: 0.5rem;
 			}
+			&:hover {
+				&:after {
+					content: '';
+					background: url(img/diagnostics/orange-arrow.svg) 0 0.6rem / contain no-repeat;
+					padding: 0 0.3rem;
+					margin-left: 0.5rem;
+				}
+			} 
 		}
 	}
 }
@@ -89,20 +104,73 @@
 .articles__header,
 .faqWrap__header {
 	color: $white;
-	font-weight: 500;
+	font-weight: 400;
 	background-color: $green-1;
-	padding: 22px 0 20px 0;
+	padding: 2.2rem 0 2rem 0;
 	a {
 		color: $white;
 		text-decoration: underline;
 	}
 }
 
-.faqWrap__header,
+.round-tg {
+	fill: $white;
+}
+
+.icon-tg {
+	fill: $green-1;
+}
+
+.news {
+	&__header {
+   		margin: 2rem auto 3rem;
+		&__text {
+        	display: flex;
+        	align-items: center;
+    	}
+	}
+	&__tgbot {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        border: 0.2rem solid;
+        margin: 0 1rem;
+        text-decoration: none!important;
+
+		&:hover {
+			background-color: $white;
+			transition: .5s ease;
+			.round-tg {
+				fill: $orange;
+				transition: .5s ease;
+			}
+			.icon-tg {
+				fill: $white;
+				transition: .5s ease;
+			}
+		}
+		
+		&-pic {
+			width: 3.2rem;
+			height: 3.2rem;
+			margin-left: 1rem;			
+		}
+    }
+}
+
 .methodsWrap__header,
 .salesWrap__header {
 	margin: 3rem auto;
 }
+
+.faqWrap__header {
+	margin: 0 0 3rem 0;
+	&__question {
+		img {
+			width: 5rem;
+		}
+	}
+}	
 
 .reviews__header,
 .video__header {
@@ -116,14 +184,14 @@
 		color: $white;
 		font-weight: 500;
 		background-color: $green-1;
-		padding: 22px 0 20px 0;
+		padding: 2.2rem 0 2rem 0;
 		position: relative;
 		&:before {
 			content: '';
 			background-color: $green-1;
 			width: 100%;
 			height: 100%;
-			left: -912px;
+			left: -91.2rem;
 			top: 0;
 			position: absolute;
 			z-index: -1;
@@ -144,27 +212,38 @@
 .play {
 	z-index: 10;
 	position: absolute;
-	top: 35%;
-	left: 40%;
-	border: none;
-	background-color: transparent;
-	height: 76px;
-	width: 76px;
+	top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+	height: 7.6rem!important;
+	width: 7.6rem!important;
+	opacity: 0.6;
 }
 
-.reviews__link {
-	color: $white;
-}
-
-.reviews__btn {
-	&:hover {
-		.reviews__link {
-			color: $green-1;
+.reviews {
+	&__link {
+		color: $white;
+	}
+	
+	&__btn {
+		&:hover {
+			.reviews__link {
+				color: $green-1;
+			}
 		}
 	}
 }
 
 .salesWrap {
+	&-head {
+		margin-bottom: 1.5rem;
+		color: $green-1;
+		font-weight: 500;
+		font-size: 2rem;
+		line-height: 2.3rem;
+		text-transform: uppercase;
+	}
 	&__type {
 		width: 100%;
 		text-align: center;
@@ -175,61 +254,62 @@
 		line-height: 2.3rem;
 		text-transform: uppercase;
 		background-color: $green-1;
-		color: #fff;
+		color: $white;
 	}
 	&__label {
 		background: url(img/icons/sale_wrap.svg) center center / cover no-repeat;
-		width: 66px;
-		height: 55px;
+		width: 6.6rem;
+		height: 5.5rem;
 		position: relative;
 		top: -1rem;
 		img {
-			max-width: 28px;
+			max-width: 2.8rem;
 			margin: 1rem 1.8rem;
 		}
 	}
 }
 
-.advantage_box__outer {
-	min-height: 209px;
-	height: 100%;
-}
+.video {
+	margin: 1rem auto!important;
 
-.video__other {
+	&__other {
 	font-size: 1.8rem;
 	line-height: 2.1rem;
-	&-content {
-		a {
+
+		&-content {
+			a {
+				text-transform: uppercase;
+			}
+		}
+	
+		&-video {
+			width: 100%;
+			height: 223px;
+		}
+
+		&-title {
+			font-size: 2rem;
+			line-height: 2.1rem;
+			color: $green-1;
+			margin-bottom: 1.5rem;
 			text-transform: uppercase;
 		}
-	}
-	&-video {
-		width: 100%;
-		height: 223px;
-	}
-
-	&-title {
-		font-size: 2rem;
-		line-height: 2.1rem;
-		color: $green-1;
-		margin-bottom: 1.5rem;
-		text-transform: uppercase;
-	}
-	&-item,
-	&-text {
-		margin-top: 1.5rem;
-	}
-
-	&-item {
-		cursor: pointer;
-		img {
-			max-width: 100%;
-			height: auto;
+		&-item,
+		&-text {
+			margin-top: 1.5rem;
 		}
-	}
 
-	&-list {
-		display: flex;
-		flex-wrap: wrap;
+		&-item {
+			cursor: pointer;
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+		}
+
+		&-list {
+			display: flex;
+			flex-wrap: wrap;
+		}
 	}
 }

@@ -3,10 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Главная</title>
-	<link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/">
-	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+	<title>Медицинский центр «Доктор ОСТ» — официальный сайт клиники</title>
+	<!--<link rel="apple-touch-icon" sizes="180x180" href="/img/favicons4/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicons4/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicons4/favicon-16x16.png">-->
+
+	<link rel="icon" href="/img/favicons6/favicon.ico" sizes="any">
+<link rel="icon" href="/img/favicons6/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/img/favicons6/apple-touch-icon.png">
+<link rel="manifest" href="/img/favicons6/site.webmanifest">
+
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -54,7 +60,7 @@
 	<header class="head">
 		<div class="head__container">
 			<a class="head__logo" href="#">
-				<img class="head__logo-img" src="img/logos/logo2.svg" alt="Лого Доктор Ост">
+				<img class="head__logo-img" src="img/logos/logo_DO.svg" alt="Лого Доктор Ост">
 			</a>
 			<div class="head__location">
 				<a class="head__location-city" href="#">Челябинск</a>
@@ -170,37 +176,36 @@
 			</div>
 			<div class="container">
 				<div class="topMain__direction">
-					<div class="topMain__direction-item">
-						<a href="#">
-							<img src="img/direction/1.svg" alt="">
-							<p>Лечение позвоночника</p>
-						</a>
-					</div>
-					<div class="topMain__direction-item">
+					<a class="topMain__direction-item" href="#">
+						<img src="img/direction/1.svg" alt="">
+						<p>Лечение позвоночника</p>
+					</a>
+					<a class="topMain__direction-item" href="#">
 						<img src="img/direction/2.svg" alt="">
 						<p>Лечение суставов</p>
-					</div>
-					<div class="topMain__direction-item">
+					</a>
+					<a class="topMain__direction-item" href="#">
 						<img src="img/direction/3.svg" alt="">
 						<p>Лечение головной боли</p>
-					</div>
-					<div class="topMain__direction-item">
+					</a>
+					<a class="topMain__direction-item" href="#">
 						<img src="img/direction/4.svg" alt="">
 						<p>Реабилитация после протезирования</p>
-					</div>
-					<div class="topMain__direction-item">
+					</a>
+					<a class="topMain__direction-item" href="#">
 						<img src="img/direction/5.svg" alt="">
 						<p>Спортивная медицина</p>
-					</div>
-					<div class="topMain__direction-item">
+					</a>
+					<a class="topMain__direction-item" href="#">
 						<img src="img/direction/4.svg" alt="">
 						<p>Реабилитация после протезирования</p>
-					</div>
-					<div class="topMain__direction-item">
+					</a>
+					<a class="topMain__direction-item" href="#">
 						<img src="img/direction/5.svg" alt="">
 						<p>Спортивная медицина</p>
-					</div>
+					</a>
 				</div>
+				<div class="topMain__direction-nav"></div>
 			</div>
 		</section>
 
@@ -265,6 +270,7 @@
 					</div>
 				</div>	
 			</div>
+			<div class="sales-mainslider-nav"></div>
 		</section>
 
 		<section class="doctorsMain container">
@@ -279,7 +285,7 @@
 							<div class="doctor__info__photo-online"></div>
 						</div>
 						<div class="doctor__info__desc">
-							<h3>Останин Александр Олегович</h3>
+							<div class="doctor__info__desc-head"><span class="doctor__info__bigtext">Останин</span> АЛЕКСАНДР ОЛЕГОВИЧ</div>
 							<span class="doctor__info__rating">
 								<div class="doctor__info__prodoctorov"></div>
 								<div class="doctor__info__stars">
@@ -314,7 +320,7 @@
 							<div class="doctor__info__photo-online"></div>
 						</div>
 						<div class="doctor__info__desc">
-							<h3><span class="doctor__info__bigtext">Никиточкина</span> Надежда Юрьевна</h3>
+							<div class="doctor__info__desc-head"><span class="doctor__info__bigtext">Никиточкина</span> НАДЕЖДА ЮРЬЕВНА</div>
 							<span class="doctor__info__rating">
 								<div class="doctor__info__prodoctorov"></div>
 								<div class="doctor__info__stars">
@@ -347,7 +353,7 @@
 						<div class="doctor__info__photo" style="background:url(img/doctors/Семенов.png) center center / cover no-repeat;">
 						</div>
 						<div class="doctor__info__desc">
-							<h3><span class="doctor__info__bigtext">Семёнов</span> Артём Борисович</h3>
+							<div class="doctor__info__desc-head"><span class="doctor__info__bigtext">Семёнов</span> Артём Борисович</div>
 							<span class="doctor__info__rating">
 								<div class="doctor__info__prodoctorov"></div>
 								<div class="doctor__info__stars">
@@ -368,13 +374,13 @@
 								<button class="doctor__info__detail">Подробнее</button>	
 							</div>
 						</div>
-					</div>
-					<div class="doctor__slider-item">
+				</div>
+				<div class="doctor__slider-item">
 						<div class="doctor__info">
 							<div class="doctor__info__photo" style="background:url(img/doctors/Корыткин.png) center center / cover no-repeat;">
 							</div>
 							<div class="doctor__info__desc">
-								<h3><div class="doctor__info__bigtext">Корыткин</div> Андрей Владимирович</h3>
+								<div class="doctor__info__desc-head"><span class="doctor__info__bigtext">Семёнов</span> Артём Борисович</div>
 								<span class="doctor__info__rating">
 									<div class="doctor__info__prodoctorov"></div>
 									<div class="doctor__info__stars">
@@ -394,9 +400,10 @@
 								<button class="doctor__info__detail">Подробнее</button>	
 							</div>
 						</div>
-					</div>
 				</div>
-			</section>
+			</div>
+			<div class="doctor__slider-nav"></div>
+		</section>
 
 			<section class="greenInfo">
 				<div class="greenInfo__list">
@@ -427,7 +434,7 @@
 				<div class="methods__slider">
 					<div class="methods__slider-item">
 						<div class="methods__slider__photo" style="background:url(img/diagnostics/1.jpg) center center / contain no-repeat;"></div>
-						<h4>Препарат Аллоплант</h4>
+						<div class="methods__slider__head">Препарат Аллоплант</div>
 						<div class="methods__slider__text">
 							Есть над чем задуматься: активно развивающиеся страны третьего мира ограничены исключительно образом мышления. Значимость этих проблем настолько очевидна...
 							<a href="#">Подробнее</a>
@@ -435,7 +442,7 @@
 					</div>
 					<div class="methods__slider-item">
 						<div class="methods__slider__photo" style="background:url(img/diagnostics/2.jpg) center center / contain no-repeat;"></div>
-						<h4>Интенсивный лазер HILP</h4>
+						<div class="methods__slider__head">Интенсивный лазер HILP</div>
 						<div class="methods__slider__text">
 							Есть над чем задуматься: активно развивающиеся страны третьего мира ограничены исключительно образом мышления. Значимость этих проблем настолько очевидна...
 							<a href="#">Подробнее</a>
@@ -443,7 +450,7 @@
 					</div>
 					<div class="methods__slider-item">
 						<div class="methods__slider__photo" style="background:url(img/diagnostics/3.jpg) center center / contain no-repeat;"></div>
-						<h4>PRP-терапия</h4>
+						<div class="methods__slider__head">PRP-терапия</div>
 						<div class="methods__slider__text">
 							Есть над чем задуматься: активно развивающиеся страны третьего мира ограничены исключительно образом мышления. Значимость этих проблем настолько очевидна...
 							<a href="#">Подробнее</a>
@@ -451,7 +458,7 @@
 					</div>
 					<div class="methods__slider-item">
 						<div class="methods__slider__photo" style="background:url(img/diagnostics/3.jpg) center center / contain no-repeat;"></div>
-						<h4>PRP-терапия</h4>
+						<div class="methods__slider__head">PRP-терапия</div>
 						<div class="methods__slider__text">
 							Есть над чем задуматься: активно развивающиеся страны третьего мира ограничены исключительно образом мышления. Значимость этих проблем настолько очевидна...
 							<a href="#">Подробнее</a>
@@ -662,7 +669,7 @@
 				<div class="method__statistics">
 					<div class="method__statistics-item">
 						<div class="method__statistics-item__odd">
-							<h4>39 780 <span>пациентам</span></h4>
+							<h3>39 780 <span>пациентам</span></h3>
 							<b>удалось избежать хирургического вмешательства</b>
 						</div>
 					</div>

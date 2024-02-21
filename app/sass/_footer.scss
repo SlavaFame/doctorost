@@ -53,12 +53,13 @@
 		display: flex;
     	flex-wrap: wrap;
     	justify-content: space-between;
-    	flex:1;
+		align-items: flex-start;
+    	flex: 1;
 	}
 
 	&__license {
 		flex: 1;
-		margin-bottom: 1.5rem;
+		margin: 0 1.5rem 1.5rem 0;
 		&__link {
 			display: flex;
 			flex-direction: column;
@@ -69,19 +70,24 @@
 
 	&__button {
 		display: flex;
-		flex-direction: column;
-		flex: 1;
+		flex: 2;
+		flex-wrap: wrap;
+		align-items: baseline;
+		justify-content: space-between;
 
 		&-error,
-		&-suggest {
+		&-suggest,
+		&-vacancies,
+		&-appointment {
 			text-transform: uppercase;
 			background-color: $green-3;
 			color: $white;
 			font-size: 1.6rem;
 			border: 0.1rem solid $white;
-			padding: 2rem 0 1.8rem 0;
-    		margin-bottom: 3.1rem;
-    		width: 25.8rem;
+			width: 25.8rem;
+			height: 5.5rem;
+			padding: 0;
+			margin-bottom: 1.5rem;
 
 			&:hover {
 				background-color: $white;
@@ -104,6 +110,7 @@
 		flex-direction: column;
 		margin: 0 2rem 2rem 2rem;
 		width: 29rem;
+		flex: 1;
 		&__link {
 			color: $white;
 			text-decoration: underline;
@@ -115,33 +122,31 @@
 	text-transform: uppercase;
 }
 
-.alphabet__block {
-	font-weight: 300;
-	font-size: 1.8rem;
-	line-height: 2.1rem;
-	margin: 6rem 0 8rem 0;
-
-	h2 {
-		padding-bottom: 1.7rem;
-		border-bottom: 0.1rem solid $green-1;
-		position: relative;
-		&:after {
-			content: '';
-			border-bottom: 0.1rem solid $green-1;
-			width: 100%;
-			height: 0.1rem;
-			position: absolute;
-			bottom: -0.1rem;
-			left: 100%;
-		}
-	}
-}
-
 .alphabet {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: flex-start;
 	margin-top: 3.6rem;
+	
+	&__head {
+		padding-bottom: 1.7rem;
+		border-bottom: 0.1rem solid $green-1;
+		position: relative;
+		margin: 1.5rem 0;
+		font-size: 2.5rem;
+		font-weight: 400;
+		line-height: 2.9rem;
+		color: $green-1;
+		text-transform: uppercase;
+	}
+
+	&__block {
+		font-weight: 300;
+		font-size: 1.8rem;
+		line-height: 2.1rem;
+		margin: 6rem 0 8rem 0;
+	}
+
 	&__text {
 		margin-top: 1.3rem;
 		color: $green-1;
@@ -173,10 +178,11 @@
 		color: $green-1;
 		text-decoration: none;
 		font-size: 1.8rem;
-		padding: 1rem;
-
+		padding: 0.5rem 1rem;
+		
 		&:hover{
-			color: $orange;
+			color: $white;
+			background-color: $orange;
 		}
 	}
 }
@@ -208,11 +214,16 @@
 	bottom: 1rem!important;
 }
 
+.online:hover .groupFastBtn-tooltip { 
+	display: block; 
+	color: $white; 
+}
+
 .groupFastBtn {
     position: fixed;
     right: 1.5rem;
     bottom: 33%;
-	z-index: 994;
+	z-index: 4;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -227,6 +238,19 @@
 		cursor: pointer;
 		font-size: 0;
 	}
+	&-tooltip {
+		width: 22rem;
+		height: auto;
+		display: none;
+		background-color: #009c9d;
+		color: #fff;
+		position: absolute;
+		right: 4rem;
+		font-size: 1.8rem;
+		line-height: 2rem;
+		padding: 0 1rem;
+		top: 5rem;
+	}
 }
 
 .groupFastBtn-item.callback {
@@ -240,4 +264,68 @@
 }
 .groupFastBtn-item.top {
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg fill='%23009C9D' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath d='M128 48.907l-128 128 30.187 30.186L128 109.28l97.813 97.813L256 176.907z'/%3E%3C/svg%3E");
+}
+
+.groupFastBtn-item.bonus { 
+	background-size: cover;
+	border: none;
+}
+    
+.modalview {
+    width: 40rem;
+    height: 48rem;
+    box-shadow: 0 0.5rem 1rem 0.2rem rgba(34, 60, 80, 0.35);
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1100001;
+    top: calc(30% - 10rem);
+    left: calc(50% - 20rem);
+	&-body {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		position: relative;
+	}
+	&-close {
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 1100002;
+		display: block;
+		border: 0.3rem solid $orange;
+		width: 3rem;
+		height: 3rem;
+		background-color: $white;
+		cursor: pointer;
+	}
+	&-line {
+		height: 0.3rem;
+		width: 1.6rem;
+		display: block;
+		background-color: $orange;
+
+		&:nth-child(1) {
+			transform: rotate(45deg);
+			position: relative;
+			top: 1.1rem;
+			left: 0.4rem;
+		}
+		
+		&:nth-child(2) {
+			transform: rotate(135deg);
+			position: relative;
+			top: 0.8rem;
+			left: 0.4rem;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+    .modalview {
+        width: 20rem;
+        height: 40rem;
+        left: calc(70% - 20rem);
+    }
 }

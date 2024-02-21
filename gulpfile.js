@@ -27,7 +27,8 @@ gulp.task('scripts', function() {
         'app/libs/jquery/dist/jquery.min.js',
         'app/libs/vanilla-lazyload/dist/lazyload.min.js',
         'app/libs/slick/dist/slick.min.js',
-        'app/libs/jquery-spincrement-master/jquery-spincrement-master/jquery.spincrement.min.js'
+        'app/libs/jquery-spincrement-master/jquery-spincrement-master/jquery.spincrement.min.js',
+        'app/libs/fancybox/dist/jquery.fancybox.min.js'
         ])
         .pipe(concat('libs.js')) // Собираем их в кучу в новом файле libs.min.js
         .pipe(uglify()) // Сжимаем JS файл
@@ -58,7 +59,7 @@ gulp.task('css-libs', function() {
 });
 
 gulp.task('css-min', function() {
-    return gulp.src(['dist/css/libs.min.css', 'dist/css/main.css']) // Выбираем файл для минификации
+    return gulp.src(['dist/css/main.css', 'dist/css/libs.min.css']) // Выбираем файл для минификации
         .pipe(cssnano()) // Сжимаем
         .pipe(concat('template_styles.css'))
         .pipe(gulp.dest('dist/css')); // Выгружаем в папку app/css

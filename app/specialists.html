@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Специалисты</title>
-	<link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/">
-	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+	<link rel="icon" href="/img/favicons6/favicon.ico" sizes="any">
+	<link rel="icon" href="/img/favicons6/icon.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="/img/favicons6/apple-touch-icon.png">
+	<link rel="manifest" href="/img/favicons6/site.webmanifest">
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -14,7 +15,7 @@
 	<header class="head">
 		<div class="head__container">
 			<a class="head__logo" href="#">
-				<img class="head__logo-img" src="img/logos/logo2.svg" alt="Лого Доктор Ост">
+				<img class="head__logo-img" src="img/logos/logo.svg" alt="Лого Доктор Ост">
 			</a>
 			<div class="head__location">
 				<a class="head__location-city" href="#">Челябинск</a>
@@ -150,134 +151,234 @@
 
 	<main class="doctor">
 		<section class="container">
-			<h1>Наши специалисты</h1>
+			<h1>Специалисты</h1>
+
+			<div class="doctor__navigation">
+				<div class="custom-select">
+					<button
+					  class="select-button"
+					  role="combobox"
+					  aria-labelledby="select button"
+					  aria-haspopup="listbox"
+					  aria-expanded="false"
+					  aria-controls="select-dropdown">
+					  <span class="selected-value">Выберите специальность</span>
+					  <span class="arrow"></span>
+					</button>
+	
+					<ul class="select-dropdown" role="listbox" id="select-dropdown">
+					  <li role="option">
+						<input type="radio" id="doctor-1" name="social-account">
+						<label for="doctor-1" class="option-label">
+							Все
+						</label>
+						<span class="option-number">299</span>
+					  </li>
+					  <li role="option">
+						<input type="radio" id="doctor-2" name="social-account">
+						<label for="doctor-2" class="option-label">
+							Невролог
+						</label>
+						<span class="option-number">35</span>
+					  </li>
+					  <li role="option">
+						<input type="radio" id="doctor-3" name="social-account">
+						<label for="doctor-3" class="option-label">
+							Травматолог
+						</label>
+						<span class="option-number">29</span>
+					  </li>
+					  <li role="option">
+						<input type="radio" id="doctor-4" name="social-account">
+						<label for="doctor-4" class="option-label">
+							Вертебролог
+						</label>
+						<span class="option-number">3</span>
+					  </li>
+					  <li role="option">
+						<input type="radio" id="doctor-5" name="social-account">
+						<label for="doctor-5" class="option-label">
+							Иглорефлексотерапевт
+						</label>
+						<span class="option-number">3</span>
+					  </li>
+					  <li role="option">
+						<input type="radio" id="doctor-6" name="social-account">
+						<label for="doctor-6" class="option-label">
+							Кистевой хирург
+						</label>
+						<span class="option-number">1</span>
+					  </li>
+					</ul>
+				</div>
+
+				<div class="doctor__online">
+					Ведут онлайн-приём
+					<label class="doctor__online-switcher">
+						<input type="checkbox">
+						<span class="btn__switch rounded"></span>
+					</label>
+				</div>
+			</div>
+
+			<div class="doctor__block">
+				<p><a href="#">СПРАВОЧНИК СПЕЦИАЛЬНОСТЕЙ</a> подскажет, какой специалист поможет вам в конкретном случае.</p>
+			</div>
+
 			<div class="doctor__slider">
 				<div class="doctor__slider-item">
 					<div class="doctor__info">
-						<div class="doctor__info__photo" style="background:url(img/doctors/Останин.png) center center / cover no-repeat;">
-							<div class="doctor__info__photo-online"></div>
+						<div class="doctor__info__photo" style="background-image:url(https://dr-ost.ru/upload/resize_cache/iblock/763/300_370_1/7637bd5dcf9519f4055ac1cd3ff2bfc1.jpg)">
+							<div class="doctor__info__photo-online" title="Консультирует онлайн"></div>
 						</div>
 						<div class="doctor__info__desc">
-							<h3>Останин Александр Олегович</h3>
-							<span class="doctor__info__rating">
-								<div class="doctor__info__prodoctorov"></div>
-								<div class="doctor__info__stars">
-									<input type="radio" name="rating" value="5" id="star5">
-									<label for="star5"></label>
-									<input type="radio" name="rating" value="4" id="star4">
-									<label for="star4"></label>
-									<input type="radio" name="rating" value="3" id="star3">
-									<label for="star3"></label>
-									<input type="radio" name="rating" value="2" id="star2">
-									<label for="star2"></label>
-									<input type="radio" name="rating" value="1" id="star1">
-									<label for="star1"></label>
-								</div>
-							</span>
+							<h2 class="doctor__info__desc-head">
+								Останин Александр Олегович
+							</h2>
 
-							<div class="doctor__info__speciality">Главный врач, хирург <br> высшей категории</div>
-							<div class="doctor__info__online">онлайн-приём по <br> челябинскому времени: <br><b>с 7:00 до 22:00</b></div>
-							<div class="doctor__socials">
-								<div class="doctor__socials-item tg"></div>
-								<div class="doctor__socials-item viber"></div>
-								<div class="doctor__socials-item skype"></div>
-								<div class="doctor__socials-item whatsapp"></div>
+							<div class="doctor__info__speciality">
+								Главный врач, хирург высшей категории
 							</div>
-							<button class="doctor__info__detail">Подробнее</button>	
+
+							<div class="doctor__info__onbottom">
+								<div class="doctor__medal__komsomolka">
+									<div class="doctor__medal__respect">
+										<div class="doctor__medal__respect-img"></div>
+										<div class="doctor__medal__respect-text">
+											Лауреат премии <br>
+											ПРОФЕССИОНАЛЬНОЕ ПРИЗНАНИЕ
+										</div>
+									</div>
+								</div>
+	
+								<div class="doctor__info__online">
+									<div class="doctor__info__city">Новосибирск</div>
+									<div class="doctor__info__telemedicine">
+										<div class="doctor__info__telemedicine-pic">
+											онлайн-приём по местному времени:
+										</div>
+										<div class="doctor__info__telemedicine-time">
+											с 7:00 до 22:00
+										</div>
+									</div>
+								</div>
+	
+								<div class="doctor__info__buttons">
+									<form action="./specialist.html" method="POST">
+										<button class="doctor__info__detail">О враче</button>
+									</form>
+									<button class="btn__orange">Записаться</button>
+								</div>
+							</div>
+
 						</div>
 					</div>
 				</div>
 				<div class="doctor__slider-item">
 					<div class="doctor__info">
-						<div class="doctor__info__photo" style="background:url(img/doctors/Никиточкина.png) center center / cover no-repeat;">
+						<div class="doctor__info__photo" style="background-image:url(https://dr-ost.ru/upload/resize_cache/iblock/813/300_370_1/q824jxs2aocahzfwppz2ueygs0e1kbxu.jpg)">
+							<div class="doctor__info__photo-online">									
+							</div>
+						</div>
+						<div class="doctor__info__desc">
+							<h2 class="doctor__info__desc-head">Никиточкина Надежда Юрьевна</h2>
+							
+							<div class="doctor__info__speciality">
+								Невролог, иглорефлексотерапевт, гирудотерапевт
+							</div>
+
+							<div class="doctor__info__onbottom">
+								<div class="doctor__medal__komsomolka">
+									<div class="doctor__medal__respect">
+										<div class="doctor__medal__respect-img"></div>
+										<div class="doctor__medal__respect-text">
+											Лауреат премии <br>
+											ВРАЧ ГОДА
+										</div>
+									</div>
+								</div>
+	
+								<div class="doctor__info__online">
+									<div class="doctor__info__city">Новосибирск</div>
+									<div class="doctor__info__telemedicine">
+										<div class="doctor__info__telemedicine-pic">
+											онлайн-приём по местному времени:
+										</div>
+										<div class="doctor__info__telemedicine-time">
+											с 7:00 до 22:00
+										</div>
+									</div>
+								</div>
+								
+								<div class="doctor__info__buttons">
+									<form action="../app/disease.html" method="POST">
+										<button class="doctor__info__detail">О враче</button>
+									</form>
+									<button class="btn__orange">Записаться</button>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="doctor__slider-item">
+					<div class="doctor__info">
+						<div class="doctor__info__photo" style="background-image:url(https://dr-ost.ru/upload/iblock/698/4un48areorbm795dsit28rvxvob7n9bt.jpg)">
+						</div>
+						<div class="doctor__info__desc">
+							<h2 class="doctor__info__desc-head">Фризен Констатин Андреевич</h2>
+
+							<div class="doctor__info__speciality">
+								Невролог <br> первой категории
+							</div>
+							
+							<div class="doctor__info__buttons">
+								<form action="../app/disease.html" method="POST">
+									<button class="doctor__info__detail">О специалисте</button>
+								</form>
+							</div>	
+						</div>
+					</div>
+				</div>
+				<div class="doctor__slider-item">
+					<div class="doctor__info">
+						<div class="doctor__info__photo" style="background-image:url(https://dr-ost.ru/upload/resize_cache/iblock/4af/300_370_1/ycdh3npw03mrrq5uvrhcewotimou7vlc.jpg)">
 							<div class="doctor__info__photo-online"></div>
 						</div>
 						<div class="doctor__info__desc">
-							<h3><span class="doctor__info__bigtext">Никиточкина</span> Надежда Юрьевна</h3>
-							<span class="doctor__info__rating">
-								<div class="doctor__info__prodoctorov"></div>
-								<div class="doctor__info__stars">
-									<input type="radio" name="rating2" value="5" id="star10">
-									<label for="star10"></label>
-									<input type="radio" name="rating2" value="4" id="star9">
-									<label for="star9"></label>
-									<input type="radio" name="rating2" value="3" id="star8">
-									<label for="star8"></label>
-									<input type="radio" name="rating2" value="2" id="star7">
-									<label for="star7"></label>
-									<input type="radio" name="rating2" value="1" id="star6">
-									<label for="star6"></label>
-								</div>
-							</span>
-							<div class="doctor__info__speciality">Невролог,<br> иглорефлексотерапевт,<br> гирудотерапевт</div>
-							<p class="doctor__info__online">онлайн-приём по <br> челябинскому времени: <br> <b>с 7:00 до 22:00</b></p>
-							<div class="doctor__socials">
-								<div class="doctor__socials-item tg"></div>
-								<div class="doctor__socials-item viber"></div>
-								<div class="doctor__socials-item skype"></div>
-								<div class="doctor__socials-item whatsapp"></div>
+							<h2 class="doctor__info__desc-head">Коротеев Михаил Вячеславович</h2>
+
+							<div class="doctor__info__speciality">Травматолог-ортопед</div>
+
+							<div class="doctor__medal__prodoctorov">
+								<div class="doctor__medal__prodoctorov-img--silver"></div>
+								<div class="doctor__medal__prodoctorov-text">Лучший ортопед</div>
+								<div class="doctor__medal__prodoctorov-logo"></div>
 							</div>
-							<button class="doctor__info__detail orange__btn">Подробнее</button>	
-						</div>
-					</div>
-				</div>
-				<div class="doctor__slider-item">
-					<div class="doctor__info">
-						<div class="doctor__info__photo" style="background:url(img/doctors/Семенов.png) center center / cover no-repeat;">
-						</div>
-						<div class="doctor__info__desc">
-							<h3><span class="doctor__info__bigtext">Семёнов</span> Артём Борисович</h3>
-							<span class="doctor__info__rating">
-								<div class="doctor__info__prodoctorov"></div>
-								<div class="doctor__info__stars">
-									<input type="radio" name="rating" value="5" id="star15">
-									<label for="star5"></label>
-									<input type="radio" name="rating" value="4" id="star14">
-									<label for="star4"></label>
-									<input type="radio" name="rating" value="3" id="star13">
-									<label for="star3"></label>
-									<input type="radio" name="rating" value="2" id="star12">
-									<label for="star2"></label>
-									<input type="radio" name="rating" value="1" id="star11">
-									<label for="star1"></label>
+
+							<div class="doctor__info__online">
+								<div class="doctor__info__city">Новосибирск</div>
+								<div class="doctor__info__telemedicine">
+									<div class="doctor__info__telemedicine-pic">
+										онлайн-приём по местному времени:
+									</div>
+									<div class="doctor__info__telemedicine-time">
+										с 7:00 до 22:00
+									</div>
 								</div>
-							</span>
-							<div class="doctor__info__speciality">
-								<p style="font-size: 25px;">Невролог</p></div>
-							<button class="doctor__info__detail">Подробнее</button>	
-						</div>
-					</div>
-				</div>
-				<div class="doctor__slider-item">
-					<div class="doctor__info">
-						<div class="doctor__info__photo" style="background:url(img/doctors/Корыткин.png) center center / cover no-repeat;">
-						</div>
-						<div class="doctor__info__desc">
-							<h3><div class="doctor__info__bigtext">Корыткин</div> Андрей Владимирович</h3>
-							<span class="doctor__info__rating">
-								<div class="doctor__info__prodoctorov"></div>
-								<div class="doctor__info__stars">
-									<input type="radio" name="rating2" value="5" id="star20">
-									<label for="star10"></label>
-									<input type="radio" name="rating2" value="4" id="star19">
-									<label for="star9"></label>
-									<input type="radio" name="rating2" value="3" id="star18">
-									<label for="star8"></label>
-									<input type="radio" name="rating2" value="2" id="star17">
-									<label for="star7"></label>
-									<input type="radio" name="rating2" value="1" id="star16">
-									<label for="star6"></label>
-								</div>
-							</span>
-							<div class="doctor__info__speciality">Травматолог-ортопед<br> мануальный терапевт,<br>врач УЗД</div>
-							<button class="doctor__info__detail">Подробнее</button>	
+							</div>
+
+							<div class="doctor__info__buttons">
+								<form action="../app/disease.html" method="POST">
+									<button class="doctor__info__detail">О враче</button>
+								</form>
+								<button class="btn__orange">Записаться</button>
+							</div>	
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-
-
 		
 		<section class="navBottom">
 			<div class="container">
@@ -420,4 +521,48 @@
 		</div>
 	</footer>
 </body>
+
+<script src="js/libs.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+$('.doctor__select').on('click', function(){
+    $('.doctor__selectList').toggle();
+});
+
+const customSelect = document.querySelector(".custom-select");
+const selectBtn = document.querySelector(".select-button");
+
+const selectedValue = document.querySelector(".selected-value");
+const optionsList = document.querySelectorAll(".select-dropdown li");
+
+// add click event to select button
+selectBtn.addEventListener("click", () => {
+  // add/remove active class on the container element
+  customSelect.classList.toggle("active");
+  // update the aria-expanded attribute based on the current state
+  selectBtn.setAttribute(
+    "aria-expanded",
+    selectBtn.getAttribute("aria-expanded") === "true" ? "false" : "true"
+  );
+});
+
+optionsList.forEach((option) => {
+  function handler(e) {
+    // Click Events
+    if (e.type === "click" && e.clientX !== 0 && e.clientY !== 0) {
+      selectedValue.textContent = this.children[1].textContent;
+      customSelect.classList.remove("active");
+    }
+    // Key Events
+    if (e.key === "Enter") {
+      selectedValue.textContent = this.textContent;
+      customSelect.classList.remove("active");
+    }
+  }
+
+  option.addEventListener("keyup", handler);
+  option.addEventListener("click", handler);
+});
+</script>
 </html>

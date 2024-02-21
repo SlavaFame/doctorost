@@ -12,22 +12,82 @@
 </head>
 <body>
 	<header class="head">
-		<a class="head__logo" href="#"><img src="img/logos/logo.svg" alt="Лого Доктор Ост"></a>
-		<div class="head__location">
-			<a class="head__location-city" href="#">Челябинск</a>
-			<span>Университетская набережная, 34</span>
-		</div>
-		<div class="head__time">
-			<span>Пн-Пт: 8:00-22:00</span>
-			<span>Сб-Вс: 8:00-21:00</span>
-		</div>
-		<div class="head__appointment">
-			<div class="head__phoneNumber">
-				<span class="head__phoneNumber-item">8 (351) 225-29-29</span>
-				<span class="head__phoneNumber-item">8 (800) 2019-911</span>
+		<div class="head__container">
+			<a class="head__logo" href="#">
+				<img class="head__logo-img" src="img/logos/logo2.svg" alt="Лого Доктор Ост">
+			</a>
+			<div class="head__location">
+				<a class="head__location-city" href="#">Челябинск</a>
+				<span>Университетская набережная, 34</span>
 			</div>
-			<button class="head__btn">Записаться на прием</button>
+			<div class="head__time">
+				<span>Пн-Пт: 8:00-22:00</span>
+				<span>Сб-Вс: 8:00-21:00</span>
+			</div>
+			<div class="head__appointment">
+				<div class="head__phoneNumber">
+					<a href="tel:83512252929" class="head__phoneNumber-item">8 (351) 
+						<span class="head__phoneNumber-showText">показать телефон</span>
+						<span class="head__phoneNumber-showNum">225-29-29</span>
+					</a>
+					<a href="tel:88002019911" class="head__phoneNumber-item">8 (800) 
+						<span class="head__phoneNumber-showText">показать телефон</span>
+						<span class="head__phoneNumber-showNum">2019-911</span>
+					</a>
+				</div>
+				<button href="modal3" class="head__btn open_modal">Записаться на прием</button>
+			</div>
 		</div>
+		<nav class="menu">
+			<div class="menu-button">
+				<span class="menu-button__lines">
+					<span class="menu-button__line"></span>
+					<span class="menu-button__line"></span>
+					<span class="menu-button__line"></span>
+				</span>
+			</div>
+
+			<ul class="menu__list">
+				<li class="menu__list-item"><a class="menu__link" href="#">О Доктор Ост</a></li>
+				<li class="menu__list-item">
+					<a class="menu__link menu__sub" href="#">Направления</a>
+
+					<div class="menu__subwrap">
+						<div class="container">	
+							<ul class="menu__sublist">
+								<li class="menu__sublist-item">
+									<a href="#">Лечение позвоночника</a>
+								</li>
+								<li class="menu__sublist-item">
+									<a href="#">Лечение суставов</a>
+								</li>
+								<li class="menu__sublist-item">
+									<a href="#">Лечение головной боли</a>
+								</li>
+								<li class="menu__sublist-item">
+									<a href="#">Реабилитация после протезирования</a>
+								</li>
+								<li class="menu__sublist-item">
+									<a href="#">Спортивная медицина</a>
+								</li>
+								<li class="menu__sublist-item">
+									<a href="#">Реабилитация после инсульта</a>
+								</li>							
+							</ul>	
+						</div>
+					</div>
+				</li>
+				<li class="menu__list-item"><a class="menu__link" href="chto-lechim.html">Что лечим</a></li>
+				<li class="menu__list-item"><a class="menu__link" href="methods.html">Методики</a></li>
+				<li class="menu__list-item"><a class="menu__link" href="specialists.html">Специалисты</a></li>
+				<li class="menu__list-item"><a class="menu__link" href="#">Отзывы</a></li>
+				<li class="menu__list-item"><a class="menu__link" href="#">Акции</a></li>
+				<li class="menu__list-item"><a class="menu__link" href="#">Цены</a></li>
+				<li class="menu__list-item"><a class="menu__link" href="#">Новости</a></li>
+				<li class="menu__list-item"><a class="menu__link" href="faq.html">Вопрос-ответ</a></li>
+				<li class="menu__list-item"><a class="menu__link" href="#">Статьи</a></li>
+			</ul>
+		</nav>
 	</header>
 	<nav class="menu">
 		<ul class="menu__list">
