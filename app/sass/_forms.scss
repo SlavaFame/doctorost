@@ -657,13 +657,14 @@ body {
 		}
 
 		&-label {
+			cursor: text;
 			position: absolute;
 			left: 2rem;
 			top: 2rem;
 			font-size: 1.6rem;
 			font-weight: 400;
 			line-height: 2rem;
-			cursor: text;
+			
 			&:focus, 
 			&:valid {
 				top: 0.25rem;

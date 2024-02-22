@@ -787,8 +787,8 @@
 	position: absolute;
 	list-style: none;
 	width: 100%;
-	background-color: #fff;
-	border: 0.2rem solid #009C9D;
+	background-color: $white;
+	border: 0.2rem solid $green-1;
 	margin-top: 6.4rem;
 	max-height: 39rem;
 	overflow-y: auto;
@@ -796,30 +796,21 @@
 	transform: scaleY(0);
 	opacity: 0;
 	visibility: hidden;
-  }
-  
-  .select-dropdown li {
-	position: relative;
-	cursor: pointer;
-	display: flex;
-	gap: 1rem;
-	align-items: center;
-  }
-  
-  .select-dropdown li label {
-	width: 100%;
-	padding: 1.6rem;
-	cursor: pointer;
-	display: flex;
-	font-weight: 400;
-	gap: 1rem;
-	align-items: center;
+	li {
+		position: relative;
+		cursor: pointer;
+		label {
+			font-weight: 400;
+		}
+	}
   }
 
   .option {
 	&-label {
 		display: flex;
 		justify-content: space-between;
+		width: 100%;
+		padding: 1.6rem;
 	}
 	&-number {
 		position: absolute;
@@ -828,7 +819,7 @@
   }
   
   .select-dropdown::-webkit-scrollbar {
-	width: 7px;
+	width: 0.7rem;
   }
   .select-dropdown::-webkit-scrollbar-track {
 	background: #f1f1f1;
@@ -844,32 +835,30 @@
 	color: $orange;
   }
 
-  .select-dropdown li:hover,
-  .select-dropdown input:checked ~ span {
+.select-dropdown li:hover,
+.select-dropdown input:checked ~ span {
 	color: $orange;
-  }
+}
   
-  
-  .select-dropdown input:focus ~ label {
+.select-dropdown input:focus ~ label {
 	background-color: $grey-2;
 	color: $orange;
-  }
+}
   
-  .select-dropdown input[type="radio"] {
+.select-dropdown input[type="radio"] {
 	position: absolute;
 	left: 0;
 	opacity: 0;
-  }
+}
   
-  /* interactivity */
-  
-  .custom-select.active .arrow {
+/* interactivity */
+
+.custom-select.active .arrow {
 	transform: rotate(180deg);
-  }
+}
   
-  .custom-select.active .select-dropdown {
+.custom-select.active .select-dropdown {
 	opacity: 1;
 	visibility: visible;
 	transform: scaleY(1);
-  }
-  
+}
