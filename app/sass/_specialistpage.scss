@@ -223,21 +223,14 @@
             font-weight: 500;
             line-height: 2.8rem;
             color: $green-1;
-            padding: 1.2rem;
+            padding: 1.2rem 0;
             border-bottom: 0.2rem solid $green-1;
             margin-bottom: 2.4rem;
             text-transform: uppercase;
             display: flex;
             align-items: center;
-            &:before {
-                content:'';
-                background: url("data:image/svg+xml,%3Csvg width='22' height='19' viewBox='0 0 22 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13 1.00024L0 1.00032V19.0002H18V13.0002H15V16.0002H3V4.0003L13 4.00024V1.00024Z' fill='%23009C9D'/%3E%3Cpath d='M10 14L4 8.04255L6.1 5.95745L10 9.82979L19.9 0L22 2.08511L10 14Z' fill='%23E05222'/%3E%3C/svg%3E%0A") center / contain no-repeat;
-                margin-right: 1.2rem;
-                display: block;
-                width: 2.2rem;
-                height: 1.9rem;
-            }
         }
+
         &__list {
             li {
                 padding: 1.6rem 0;
@@ -251,6 +244,123 @@
             b {
                 flex:none;
             }
+        }
+    }
+
+    &__competention {
+        &__head {
+            &:before {
+                content:'';
+                background: url("data:image/svg+xml,%3Csvg width='22' height='19' viewBox='0 0 22 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13 1.00024L0 1.00032V19.0002H18V13.0002H15V16.0002H3V4.0003L13 4.00024V1.00024Z' fill='%23009C9D'/%3E%3Cpath d='M10 14L4 8.04255L6.1 5.95745L10 9.82979L19.9 0L22 2.08511L10 14Z' fill='%23E05222'/%3E%3C/svg%3E%0A") center / contain no-repeat;
+                margin-right: 1.2rem;
+                display: block;
+                width: 2.2rem;
+                height: 1.9rem;
+            }
+        }
+    }
+
+    &__education, &__extend {
+        &__head {
+            &:before {
+                content:'';
+                background: url("data:image/svg+xml,%3Csvg width='24' height='22' viewBox='0 0 24 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.4938 14.9311V7.46631L21.0874 7.93511V14.9311C20.6491 15.0789 20.2681 15.3604 19.9981 15.7359C19.728 16.1114 19.5824 16.5622 19.5818 17.0247V20.7903C19.5818 21.1791 19.8962 21.4943 20.2842 21.4943H23.297C23.4835 21.4941 23.6624 21.4198 23.7942 21.2878C23.9261 21.1558 24.0002 20.9769 24.0002 20.7903V17.0247C24.0002 16.0527 23.3682 15.2247 22.4938 14.9311ZM11.333 10.7415L4.51855 8.47031V13.2591C4.51866 13.4458 4.5929 13.6248 4.72495 13.7567C5.67815 14.7151 6.81194 15.4749 8.06073 15.9922C9.30951 16.5094 10.6485 16.7739 12.0002 16.7703C14.749 16.7703 17.3322 15.6999 19.2754 13.7567C19.3408 13.6914 19.3927 13.6138 19.4281 13.5285C19.4635 13.4431 19.4817 13.3515 19.4818 13.2591V8.47031L12.6674 10.7423C12.2343 10.8867 11.766 10.8867 11.333 10.7423V10.7415Z' fill='%23009C9D'/%3E%3Cpath d='M12.0003 9.444C12.0759 9.44402 12.151 9.43186 12.2227 9.408L23.5195 5.6424C23.6596 5.59577 23.7814 5.50623 23.8678 5.38648C23.9541 5.26673 24.0006 5.12284 24.0006 4.9752C24.0006 4.82756 23.9541 4.68367 23.8678 4.56392C23.7814 4.44417 23.6596 4.35463 23.5195 4.308L12.2227 0.5424C12.0783 0.49433 11.9223 0.49433 11.7779 0.5424L0.481087 4.308C0.341009 4.35463 0.219161 4.44417 0.132814 4.56392C0.0464667 4.68367 0 4.82756 0 4.9752C0 5.12284 0.0464667 5.26673 0.132814 5.38648C0.219161 5.50623 0.341009 5.59577 0.481087 5.6424L11.7779 9.408C11.8496 9.43186 11.9247 9.44402 12.0003 9.444Z' fill='%23009C9D'/%3E%3C/svg%3E%0A") center / contain no-repeat;
+                margin-right: 1.2rem;
+                display: block;
+                width: 2.2rem;
+                height: 1.9rem;
+            }
+        }
+    }
+
+    &__sertificates {
+        &__head {
+            &:before {
+                content:'';
+                background: url("data:image/svg+xml,%3Csvg width='16' height='20' viewBox='0 0 16 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 20C1.45 20 0.979167 19.8042 0.5875 19.4125C0.195833 19.0208 0 18.55 0 18V2C0 1.45 0.195833 0.979167 0.5875 0.5875C0.979167 0.195833 1.45 0 2 0H10L16 6V18C16 18.55 15.8042 19.0208 15.4125 19.4125C15.0208 19.8042 14.55 20 14 20H2ZM9 7H14L9 2V7Z' fill='%23009C9D'/%3E%3C/svg%3E%0A") center / contain no-repeat;
+                margin-right: 1.2rem;
+                display: block;
+                width: 2.2rem;
+                height: 1.9rem;
+            }
+        }
+    }
+
+    &__reviews {
+        &__head {
+            &:before {
+                content:'';
+                background: url("data:image/svg+xml,%3Csvg width='21' height='19' viewBox='0 0 21 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 17H18V18.5H12V17ZM12 14H21V15.5H12V14ZM12 11H21V12.5H12V11Z' fill='%23009C9D'/%3E%3Cpath d='M12.3607 7.25735H20L17.5 9.25735H11L10 6.46563L9.09191 9.25735H6.1609L8.53213 10.9782L7.62494 13.7672L10 12.0435V14.5147L3.81966 19L6.18034 11.7426L0 7.25735H7.63932L10 0L12.3607 7.25735Z' fill='%23E05222'/%3E%3C/svg%3E%0A") center / contain no-repeat;
+                margin-right: 1.2rem;
+                display: block;
+                width: 2.2rem;
+                height: 1.9rem;
+            }
+        }
+        &__list {
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+
+            &-item {
+                background-color: $grey;
+                margin-bottom: 2.4rem;
+                padding: 2rem;
+            }
+        }
+        &__top {
+            display: flex;
+            align-items: flex-end;
+            gap: 2.4rem;
+            margin-bottom: 2rem;
+        }
+        &__photo {
+            width: 14.4rem;
+            height: 12rem;
+            flex: 1;
+        }
+        &__info {
+            flex: 4;
+        }
+        &__h {
+            color: $green-1;
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 2.4rem;
+            margin-bottom: 0.8rem;
+            text-transform: uppercase;
+        }
+        &__author {
+            color: #5C5C5C;
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 2rem;
+            margin-bottom: 1.2rem;
+            text-transform: uppercase;
+        }
+        &__hashtags {
+            display: flex;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+            &-item {
+                border: 0.1rem solid $green-1;
+                color: $green-1;
+                padding: 0.8rem;
+                text-transform: uppercase;
+                font-size: 1.2rem;
+                font-weight: 400;
+                line-height: 1.6rem;
+                letter-spacing: 0.02em;
+            }
+        }
+        &__text {
+            font-size: 1.8rem;
+            line-height: 2.4rem;
+            margin-bottom: 0.8rem;
+        }
+        &__link {
+            font-weight: 500;
+            text-transform: uppercase;
         }
     }
 }

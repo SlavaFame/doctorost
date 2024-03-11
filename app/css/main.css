@@ -5717,9 +5717,6 @@ h2, h3, h4, h5 {
 .select-items {
   background-color: #FFFFFF;
   z-index: 99;
-  font-size: 2rem;
-  line-height: 2.4rem;
-  margin-top: 0.8rem;
 }
 
 /* style the items (options), including the selected item: */
@@ -6944,7 +6941,7 @@ h2, h3, h4, h5 {
   font-weight: 500;
   line-height: 2.8rem;
   color: #009C9D;
-  padding: 1.2rem;
+  padding: 1.2rem 0;
   border-bottom: 0.2rem solid #009C9D;
   margin-bottom: 2.4rem;
   text-transform: uppercase;
@@ -6954,14 +6951,6 @@ h2, h3, h4, h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.doctorCard__competention__head:before, .doctorCard__education__head:before, .doctorCard__extend__head:before, .doctorCard__sertificates__head:before, .doctorCard__reviews__head:before {
-  content: "";
-  background: url("data:image/svg+xml,%3Csvg width='22' height='19' viewBox='0 0 22 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13 1.00024L0 1.00032V19.0002H18V13.0002H15V16.0002H3V4.0003L13 4.00024V1.00024Z' fill='%23009C9D'/%3E%3Cpath d='M10 14L4 8.04255L6.1 5.95745L10 9.82979L19.9 0L22 2.08511L10 14Z' fill='%23E05222'/%3E%3C/svg%3E%0A") center/contain no-repeat;
-  margin-right: 1.2rem;
-  display: block;
-  width: 2.2rem;
-  height: 1.9rem;
 }
 .doctorCard__competention__list li, .doctorCard__education__list li, .doctorCard__extend__list li, .doctorCard__sertificates__list li, .doctorCard__reviews__list li {
   padding: 1.6rem 0;
@@ -6978,6 +6967,118 @@ h2, h3, h4, h5 {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
+}
+.doctorCard__competention__head:before {
+  content: "";
+  background: url("data:image/svg+xml,%3Csvg width='22' height='19' viewBox='0 0 22 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13 1.00024L0 1.00032V19.0002H18V13.0002H15V16.0002H3V4.0003L13 4.00024V1.00024Z' fill='%23009C9D'/%3E%3Cpath d='M10 14L4 8.04255L6.1 5.95745L10 9.82979L19.9 0L22 2.08511L10 14Z' fill='%23E05222'/%3E%3C/svg%3E%0A") center/contain no-repeat;
+  margin-right: 1.2rem;
+  display: block;
+  width: 2.2rem;
+  height: 1.9rem;
+}
+.doctorCard__education__head:before, .doctorCard__extend__head:before {
+  content: "";
+  background: url("data:image/svg+xml,%3Csvg width='24' height='22' viewBox='0 0 24 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.4938 14.9311V7.46631L21.0874 7.93511V14.9311C20.6491 15.0789 20.2681 15.3604 19.9981 15.7359C19.728 16.1114 19.5824 16.5622 19.5818 17.0247V20.7903C19.5818 21.1791 19.8962 21.4943 20.2842 21.4943H23.297C23.4835 21.4941 23.6624 21.4198 23.7942 21.2878C23.9261 21.1558 24.0002 20.9769 24.0002 20.7903V17.0247C24.0002 16.0527 23.3682 15.2247 22.4938 14.9311ZM11.333 10.7415L4.51855 8.47031V13.2591C4.51866 13.4458 4.5929 13.6248 4.72495 13.7567C5.67815 14.7151 6.81194 15.4749 8.06073 15.9922C9.30951 16.5094 10.6485 16.7739 12.0002 16.7703C14.749 16.7703 17.3322 15.6999 19.2754 13.7567C19.3408 13.6914 19.3927 13.6138 19.4281 13.5285C19.4635 13.4431 19.4817 13.3515 19.4818 13.2591V8.47031L12.6674 10.7423C12.2343 10.8867 11.766 10.8867 11.333 10.7423V10.7415Z' fill='%23009C9D'/%3E%3Cpath d='M12.0003 9.444C12.0759 9.44402 12.151 9.43186 12.2227 9.408L23.5195 5.6424C23.6596 5.59577 23.7814 5.50623 23.8678 5.38648C23.9541 5.26673 24.0006 5.12284 24.0006 4.9752C24.0006 4.82756 23.9541 4.68367 23.8678 4.56392C23.7814 4.44417 23.6596 4.35463 23.5195 4.308L12.2227 0.5424C12.0783 0.49433 11.9223 0.49433 11.7779 0.5424L0.481087 4.308C0.341009 4.35463 0.219161 4.44417 0.132814 4.56392C0.0464667 4.68367 0 4.82756 0 4.9752C0 5.12284 0.0464667 5.26673 0.132814 5.38648C0.219161 5.50623 0.341009 5.59577 0.481087 5.6424L11.7779 9.408C11.8496 9.43186 11.9247 9.44402 12.0003 9.444Z' fill='%23009C9D'/%3E%3C/svg%3E%0A") center/contain no-repeat;
+  margin-right: 1.2rem;
+  display: block;
+  width: 2.2rem;
+  height: 1.9rem;
+}
+.doctorCard__sertificates__head:before {
+  content: "";
+  background: url("data:image/svg+xml,%3Csvg width='16' height='20' viewBox='0 0 16 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 20C1.45 20 0.979167 19.8042 0.5875 19.4125C0.195833 19.0208 0 18.55 0 18V2C0 1.45 0.195833 0.979167 0.5875 0.5875C0.979167 0.195833 1.45 0 2 0H10L16 6V18C16 18.55 15.8042 19.0208 15.4125 19.4125C15.0208 19.8042 14.55 20 14 20H2ZM9 7H14L9 2V7Z' fill='%23009C9D'/%3E%3C/svg%3E%0A") center/contain no-repeat;
+  margin-right: 1.2rem;
+  display: block;
+  width: 2.2rem;
+  height: 1.9rem;
+}
+.doctorCard__reviews__head:before {
+  content: "";
+  background: url("data:image/svg+xml,%3Csvg width='21' height='19' viewBox='0 0 21 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 17H18V18.5H12V17ZM12 14H21V15.5H12V14ZM12 11H21V12.5H12V11Z' fill='%23009C9D'/%3E%3Cpath d='M12.3607 7.25735H20L17.5 9.25735H11L10 6.46563L9.09191 9.25735H6.1609L8.53213 10.9782L7.62494 13.7672L10 12.0435V14.5147L3.81966 19L6.18034 11.7426L0 7.25735H7.63932L10 0L12.3607 7.25735Z' fill='%23E05222'/%3E%3C/svg%3E%0A") center/contain no-repeat;
+  margin-right: 1.2rem;
+  display: block;
+  width: 2.2rem;
+  height: 1.9rem;
+}
+.doctorCard__reviews__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.4rem;
+}
+.doctorCard__reviews__list-item {
+  background-color: #F5F5F5;
+  margin-bottom: 2.4rem;
+  padding: 2rem;
+}
+.doctorCard__reviews__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 2.4rem;
+  margin-bottom: 2rem;
+}
+.doctorCard__reviews__photo {
+  width: 14.4rem;
+  height: 12rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.doctorCard__reviews__info {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+}
+.doctorCard__reviews__h {
+  color: #009C9D;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+}
+.doctorCard__reviews__author {
+  color: #5C5C5C;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+}
+.doctorCard__reviews__hashtags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.8rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.doctorCard__reviews__hashtags-item {
+  border: 0.1rem solid #009C9D;
+  color: #009C9D;
+  padding: 0.8rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  letter-spacing: 0.02em;
+}
+.doctorCard__reviews__text {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  margin-bottom: 0.8rem;
+}
+.doctorCard__reviews__link {
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .doctorCard__stars > input:checked ~ label,
@@ -7912,32 +8013,33 @@ h2, h3, h4, h5 {
   margin-top: 0.5rem;
 }
 
-.sectificates .sectificates__slider {
+.sectificates {
+  width: 100%;
+}
+.sectificates .sectificates__slider-main {
+  width: 100%;
+}
+.sectificates .sectificates__slider-main img {
+  max-height: 52.8rem;
+}
+.sectificates .sectificates__slider-nav {
+  overflow: hidden;
+}
+.sectificates .sectificates__slider-nav .slick-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-.sectificates .sectificates__slider-main {
-  width: calc(100% - 16.5rem);
-  padding: 0 3rem 0 0;
-}
-.sectificates .sectificates__slider-main img {
-  max-height: 45rem;
-  margin: 0 auto;
-}
-.sectificates .sectificates__slider-nav {
-  height: 53rem;
-  width: 15rem;
-  overflow: hidden;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1rem;
 }
 .sectificates .sectificates__slider-nav__slide {
-  margin-bottom: 1rem;
-  background: #FFFFFF;
-  border: 0.3rem solid #009C9D;
+  background: #F5F5F5;
+  border: 0.2rem solid #F5F5F5;
   cursor: pointer;
-  height: 15rem;
+  height: 7.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7952,7 +8054,6 @@ h2, h3, h4, h5 {
 .sectificates__slider-main .slick-track {
   height: 47rem;
 }
-
 .sectificates__slider-main__slide {
   position: relative;
 }
@@ -7961,19 +8062,19 @@ h2, h3, h4, h5 {
 }
 .sectificates__slider-main__slide img {
   height: 45rem;
-  -o-object-fit: contain;
-     object-fit: contain;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .sectificates__slider-nav .slick-current {
-  border: 0.3rem solid #E05222;
+  border: 0.2rem solid #E05222;
 }
-
 .sectificates__slider-nav__slide img {
-  padding: 3.6rem 1.6rem;
+  padding: 0.8rem;
   height: 100%;
+  width: 100%;
 }
-
 .sectificates__slider-nav__slide .mini-images {
   width: 12rem;
   height: 10rem;
@@ -7982,17 +8083,6 @@ h2, h3, h4, h5 {
   background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 991px) {
-  .sectificates .sectificates__slider-main {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .sectificates .sectificates__slider-main,
-.sectificates .sectificates__slider {
-    padding: 0;
-  }
-}
 .text {
   margin: 2rem 0 0 0;
   display: block;
@@ -11416,7 +11506,7 @@ a#altasib_geobase_mb_btn.altasib_geobase_mb_disabled, a#altasib_geobase_mb_btn.a
     width: 0;
   }
 
-  .pageblock__logo, .sectificates .sectificates__slider-nav, .reviews__navslider,
+  .pageblock__logo, .reviews__navslider,
 .navBottom, .groupFastBtn-item.search, .groupFastBtn-item.callback, .groupFastBtn-item.repost {
     display: none;
   }
@@ -12882,11 +12972,26 @@ a#altasib_geobase_mb_btn.altasib_geobase_mb_disabled, a#altasib_geobase_mb_btn.a
     font-size: 1.4rem;
     font-weight: 700;
     line-height: 1.6rem;
-    letter-spacing: 0.02em;
   }
 
   .doctorCard__buttons {
     display: none;
+  }
+
+  .doctorCard__online {
+    margin-bottom: 0;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 2.8rem;
+  }
+
+  .doctorCard__speciality {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2rem;
   }
 }
 @media (max-width: 600px) {

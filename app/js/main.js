@@ -797,11 +797,11 @@ $(".sectificates__slider-main__slide").slick({
 }),
 
 $(".sectificates__slider-nav").slick({
-	slidesToShow: 3,
+	slidesToShow: 9,
 	slidesToScroll: 1,
 	asNavFor: ".sectificates__slider-main__slide",
 	dots: !1,
-	vertical: !0,
+	//vertical: !0,
 	centerMode: !1,
 	infinite: !0,
 	arrows: !1,
@@ -810,20 +810,20 @@ $(".sectificates__slider-nav").slick({
 	responsive: [{
 		breakpoint: 1024,
 		settings: {
-			slidesToShow: 4,
+			slidesToShow: 7,
 			slidesToScroll: 1,
 			vertical: !1
 		}
 	}, {
 		breakpoint: 768,
 		settings: {
-			slidesToShow: 3,
+			slidesToShow: 5,
 			vertical: !1
 		}
 	}, {
 		breakpoint: 0,
 		settings: {
-			slidesToShow: 2,
+			slidesToShow: 5,
 			vertical: !1
 		}
 	}]
