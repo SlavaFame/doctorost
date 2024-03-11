@@ -1466,7 +1466,7 @@ $(".diagnostics__slider").on('afterChange', function (event, slick, currentSlide
 	}
 });
 
-var x, i, j, l, ll, selElmnt, a, b, c;
+let x, i, j, l, ll, selElmnt, a, b, c;
 x = document.getElementsByClassName("faq-custom-select");
 l = x.length;
 for (i = 0; i < l; i++) {
@@ -1483,7 +1483,10 @@ for (i = 0; i < l; i++) {
   for (j = 1; j < ll; j++) {
     /*for each option in the original select element,
     create a new DIV that will act as an option item:*/
-    c = document.createElement("DIV");
+    c = document.createElement("a");
+	c.setAttribute("class", "faqPage__question-item");
+	jk = j + 1;
+	c.setAttribute("data-slide", jk);
     c.innerHTML = selElmnt.options[j].innerHTML;
     c.addEventListener("click", function(e) {
         /*when an item is clicked, update the original select box,

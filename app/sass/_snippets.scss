@@ -19,6 +19,38 @@
     padding: 0 1rem 0 0;
 }
 
+.btn__green {
+	background-color: $green-1;
+	color: $white;
+	border: 0.3rem solid $green-1;
+	text-transform: uppercase;
+	padding: 1rem;
+	font-size: 1.8rem;
+	line-height: 2.1rem;
+	font-weight: 500;
+	&:hover {
+		background-color: $white;
+		color: $green-1;
+		border: 0.3rem solid $green-1;
+	}
+}
+
+.btn__white {
+	background-color: $white;
+	color: $green-1;
+	border: 0.3rem solid $green-1;
+	text-transform: uppercase;
+	padding: 1rem;
+	font-size: 1.8rem;
+	line-height: 2.1rem;
+	font-weight: 500;
+	&:hover {
+		background-color: $green-1;
+		color: $white;
+		border: 0.3rem solid $green-1;
+	}
+}
+
 .btn_orange, 
 .btn__orange {
 	background-color: $orange;

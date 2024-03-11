@@ -219,3 +219,69 @@
 		}
 	}
 }
+
+/* The container must be positioned relative: */
+.faq-custom-select {
+	position: relative;
+	select {
+		display: none; /*hide original SELECT element: */
+	}
+}
+						  						  
+					  
+/* Style items (options): */
+.select-items {
+	background-color: $white;
+	z-index: 99;
+	font-size: 2rem;
+	line-height: 2.4rem;
+	margin-top: 0.8rem;
+}
+
+/* style the items (options), including the selected item: */
+.select-items a,.select-selected {
+	color: $green-1;
+	padding: 1.4rem 1.6rem;
+	border: 0.1rem solid transparent;
+	border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+	cursor: pointer;
+	display: block;
+}
+
+.select-items a:hover, .same-as-selected {
+	background-color: $grey-2;
+}
+						  
+/* Hide the items when the select box is closed: */
+.select-hide {
+	display: none;
+}
+
+.select-selected {
+	background-color: $white;
+	font-size: 2rem;
+	line-height: 2.4rem;
+	&:after {
+		position: absolute;
+		content: "";
+		top: 2rem;
+		right: 1rem;
+		width: 0;
+		height: 0;
+		border: 0.6rem solid transparent;
+		border-color: $green-1 transparent transparent transparent;
+	}
+	&.select-arrow-active:after {
+		border-color: transparent transparent $green-1 transparent;
+		top: 1.5rem;
+	}
+}
+
+@media (min-width:768px) {
+	.select-selected {
+		display: none;
+	}
+	.select-hide {
+		display: block;
+	}
+}

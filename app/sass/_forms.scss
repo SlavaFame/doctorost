@@ -214,7 +214,6 @@
 }
 
 .check {
-
 	&__input {
 		opacity: 0;
 		position: absolute;
@@ -498,10 +497,9 @@ body {
 .promo {
 	display: flex;
 	flex-wrap: wrap;
-
 	z-index: 994;
     position: relative;
-    background-color: #fff;
+    background-color: $white; 
 
 	&__info {
 		flex: 0 52.6rem;
@@ -613,8 +611,6 @@ body {
 	}
 
 	&__form {
-		max-width: 51rem;
-		height: 100%;
 
 		&-outer {
 			flex: 1;
@@ -630,6 +626,7 @@ body {
 			display: flex;
 			flex-wrap: wrap;
 			gap: 1rem;
+			justify-content: space-between;
 			position: relative;
 		}
 
@@ -674,7 +671,7 @@ body {
 
 		&-btn {
 			height: 5.6rem;
-			width: 19.4rem;
+			width: 24rem;
 			background-color: $orange;
 			color: $white;
 			font-size: 1.8rem;
@@ -694,12 +691,12 @@ body {
 			align-items: center;
 			&:before {
 				content:'';
-				width: 2.8rem;
+				width: 3.6rem; //2.8rem 
 				height: 2.6rem;
 				margin-right: 0.8rem;
 				background-color: #DAF7F7;
 				background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.416504 1.75644V15.1987L3.03188 12.5833H14.2434C14.6185 12.5833 14.9356 12.4538 15.1946 12.1948C15.4536 11.9357 15.5831 11.6187 15.5831 11.2436V1.75644C15.5831 1.38133 15.4536 1.06426 15.1946 0.805229C14.9356 0.546201 14.6185 0.416687 14.2434 0.416687H1.75625C1.38114 0.416687 1.06407 0.546201 0.805046 0.805229C0.546018 1.06426 0.416504 1.38133 0.416504 1.75644ZM4.99982 7C5.5521 7 5.99982 6.55228 5.99982 6C5.99982 5.44772 5.5521 5 4.99982 5C4.44753 5 3.99982 5.44772 3.99982 6C3.99982 6.55228 4.44753 7 4.99982 7ZM8.99982 6C8.99982 6.55228 8.5521 7 7.99982 7C7.44753 7 6.99982 6.55228 6.99982 6C6.99982 5.44772 7.44753 5 7.99982 5C8.5521 5 8.99982 5.44772 8.99982 6ZM10.9998 7C11.5521 7 11.9998 6.55228 11.9998 6C11.9998 5.44772 11.5521 5 10.9998 5C10.4475 5 9.99982 5.44772 9.99982 6C9.99982 6.55228 10.4475 7 10.9998 7Z' fill='%23009C9D'/%3E%3C/svg%3E%0A");
-				background-size: 1.5rem 1.4rem;
+				background-size: 1.6rem;
 				background-position: center;
 				background-repeat: no-repeat;
 			}
