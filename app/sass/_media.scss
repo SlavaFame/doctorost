@@ -1486,7 +1486,7 @@
 	}
 
 	.howMuch__head h2 {
-		padding:0;
+		padding: 0;
 	}
 
 	.phys__head h2, 
@@ -1689,13 +1689,24 @@
 	}
 }
 
-@media (max-width: 996px){
-	.doctor__navigation {
-		gap: 1.5rem;
-	}
-}
-
 @media (max-width: 768px) {
+	.doctor__navigation {
+		gap: 0.8rem;
+		padding: 0.4rem;
+	}
+
+	.custom-select  {
+		width: 100%;
+		.arrow {
+			margin-left: 1.6rem;
+		}
+	}
+	.doctor__online {
+		padding-left: 1.2rem;
+	}
+	.doctor__slider {
+		gap: 2.4rem;
+	}
 	.navBottom-item {
 		width: 22rem;
 	}
@@ -1719,6 +1730,16 @@
 	.faqPage__slider-item {
 		margin-bottom: 0;
 	}
+	h1 {
+		font-size: 2.2rem;
+		font-weight: 500;
+		line-height: 2.8rem;
+	}
+	.doctorCard__speciality {
+		font-size: 1.6rem;
+		font-weight: 500;
+		line-height: 2rem;
+	}
 
 	.doctorCard__main {
 		font-size: 1.6rem;
@@ -1734,7 +1755,6 @@
 			font-size: 1.4rem;
 			font-weight: 700;
 			line-height: 1.6rem;
-			//letter-spacing: 0.02em;
 		}
 	}
 	.doctorCard__buttons {
@@ -1743,15 +1763,62 @@
 	.doctorCard__online {
 		margin-bottom: 0;
 	}
-	h1 {
-		font-size: 2.2rem;
-		font-weight: 500;
-		line-height: 2.8rem;
+	.doctorCard__photo {
+        height: 28rem;
+    }
+    .doctorCard__online {
+        padding: 0.6rem;
+    }
+    .doctorCard__speciality {
+        margin: 0.8rem 0 1.2rem 0;
+    }
+    .doctorCard__reviews__top {
+        flex-direction: column;
+    }
+    .doctorCard__info {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+    .doctorCard__competention, .doctorCard__education, .doctorCard__extend, .doctorCard__sertificates, .doctorCard__reviews {
+        margin-top: 3.2rem;
+    }
+    .doctorCard__competention__head, .doctorCard__education__head, .doctorCard__extend__head, .doctorCard__sertificates__head, .doctorCard__reviews__head {
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 2.4rem;
+    }
+    .doctorCard__reviews__photo {
+        width: 100%;
+        min-height: 15rem;
+        background-size: cover;
+        background-position: center;
+    }
+    .doctorCard__sertificates-main {
+        margin-bottom: 1.6rem;
+    }
+    .doctorCard__sertificates-nav__slide {
+        height: 4.8rem;
+    }
+
+	.doctorCard__sertificates-main__slide {
+		max-height: 23.6rem;
+		img {
+			max-width: 100%;
+		}
 	}
-	.doctorCard__speciality {
-		font-size: 1.6rem;
-		font-weight: 500;
+	
+
+	.doctorCard__reviews__h {
+		font-size: 1.4rem;
 		line-height: 2rem;
+	}
+
+	.doctorCard__reviews__author, .doctorCard__reviews__link {
+		font-size: 1.2rem;
+		line-height: 1.6rem;
+	}
+	.doctorCard__reviews__list-item {
+		padding: 1.2rem;
 	}
 }
 
@@ -1759,6 +1826,12 @@
 	.topMain__direction-name {
 		width: 110% //113
 	}
+	.floatLeft {
+        float:none;
+        width:100%;
+        margin: 0 1rem 0 0;
+        height: auto;
+    }
 }
 
 @media (max-width: 500px){

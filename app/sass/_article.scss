@@ -187,7 +187,6 @@
 .reviews,
 .video,
 .faq,
-.howMuch,
 .goodKnow {
 	font-weight: 300;
 	font-size: 1.8rem;
@@ -288,50 +287,35 @@
 }
 
 .howMuch {
+	margin-top:1.5rem;
 	&__head {
-		padding: 0;
+		background-color: $green-1;
 		display: flex;
 		align-items: center;
+		padding: 2rem;
 
-		&:after {
-			content: '';
-			width: 100%;
-			height: 2rem;
-			background-color: $green-1;
-			position: absolute;
-		}
 		h2 {
-			display: flex;
-			align-items: center;
-			flex-wrap: nowrap;
-			background-color: $white;
-			margin: 1.5rem 0;
-			padding: 0 3rem 0 0;
-			z-index: 1;
-			font-weight: 500;
-			font-size: 2.5rem;
-			line-height: 2.9rem;
+			color: $white;
+			margin: 0;
 		}
 	}
 	&__desc {
-		font-weight: 300;
-		font-size: 1.8rem;
-		line-height: 2.1rem;
-		padding: 2.5rem 0;
+		font-weight: 500;
+		padding: 2rem;
 		background-color: #F6F6F6;
 		&__inner {
 			display: flex;
 			align-items: center;
 			img {
-				margin-right: 3.7rem;
-				padding-left: 1.5rem;
+				margin-right: 2.4rem;
+				width: 6rem;
 			}
 		}
 	}
 	p {
-		font-weight: 300;
-		font-size: 2rem;
-		line-height: 2.3rem;
+		font-size: 1.8rem;
+		line-height: 2.1rem;
+		margin-bottom: 0!important;
 	}
 	&__link {
 		color: rgba(0, 0, 0, 0.56);
@@ -452,8 +436,9 @@
 				width: 100%;
 			}
 		}
+		
 		&__desc {
-			padding: 0;
+			padding: 0 1rem 1rem 1rem;
 			color: $grey-3;
 			b {
 				font-size: 1.7rem;
@@ -547,7 +532,7 @@
 	}
 
 	&__city {
-		padding: 3.3rem;
+		padding: 3.3rem 0;
 		background-color: $green-3;
 		flex: 3;
 		&-item {

@@ -97,7 +97,7 @@
 .reviews, .video {
   &__navslider {
     &__desc {
-      color: #000;
+      color: $black;
     }
   }
 }
@@ -180,6 +180,21 @@
     height: 42.5rem;
   }
 }
+
+.doctor__slider {
+  &-main {
+    .slick-track {
+      justify-content: space-between;
+    }
+  }
+  &-treat {
+    .slick-track {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}
+
 
 /*.slick-slide .slick-current{}
 .slick-slide .slick-center{}

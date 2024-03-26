@@ -1073,6 +1073,9 @@ h2.last span {
 	font-size: 1.8rem;
 	line-height: 2.1rem;
 	color: $white;
+	height: 100%;
+    display: flex;
+    flex-wrap: wrap;
 	h3 {
 		margin: 0!important;
 		display: inline;
@@ -1122,13 +1125,19 @@ h2.last span {
 		margin-right: 16rem;
 	}
 }
+
+.floatLeft {
+	float:left;
+	margin: 0 1rem 1rem 0;
+}	
 	
 .pic {
 	background-repeat: no-repeat; 
 	background-position: center;
 	background-size: contain;
-	width: 19rem;
-	height: 27rem;
+	width: 12rem;
+	height: 12rem;
+	margin-right: 2rem;
 
 	img {
 		width: 100%;
@@ -1168,6 +1177,75 @@ h2.last span {
 	}
 	&_10 {
 		background-image: url(img/icons/direction/10.png);
+	}
+}
+
+.drx-pic {
+    height: 27rem;
+	img {
+		width:100%;
+	}
+}
+
+.tabs {
+	overflow: hidden;
+}
+
+.tab {
+	border-bottom: 0.1rem solid #CCCCCC;
+	input {
+		position: absolute;
+		opacity: 0;
+		z-index: -1;
+	}
+	&__content {
+		max-height: 0;
+		overflow: hidden;
+		transition: all 0.35s;
+		p {
+			padding: 0 1rem;
+			margin-bottom:0;
+		}
+	}
+	&__label,
+	&__close {
+		display: flex;
+		color: $green-1;
+		cursor: pointer;
+	}
+	&__label {
+		justify-content: space-between;
+		padding: 1.2rem;
+		&:after {
+			content: "\276F";
+			width: 1em;
+			height: 1em;
+			text-align: center;
+			transform: rotate(90deg);
+			transition: all 0.35s;
+		}
+	}
+}
+
+.tab input:checked ~ .tab__content {
+	max-height: 12rem;
+}
+
+.tab input:checked + .tab__label::after {
+	transform: rotate(270deg);
+}
+  
+/* Arrow animation */
+.tab input:not(:checked) + .tab__label:hover::after {
+	animation: bounce .5s infinite;
+}
+
+@keyframes bounce {
+	25% {
+	  transform: rotate(90deg) translate(.25rem);
+	}
+	75% {
+	  transform: rotate(90deg) translate(-.25rem);
 	}
 }
 

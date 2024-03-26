@@ -1,275 +1,318 @@
-.disease_nav {
-	display: flex;
-	flex-flow: wrap row;
-	justify-content: space-between;
-	flex: 1 1 auto;
-	margin: 1rem 0;
-	font-size: 1.8rem;
-	line-height: 2.1rem;
-
-	&__item {
-		font-weight: bold;
-		border: 1px solid $green-1;
-		color: $green-1;
-		background-color: $white;
-		text-align: center;
-		text-transform: uppercase;
-		text-decoration: none;
-
-		&:hover, &.active {
-			color: $white;
-			background-color: $green-1;
-			cursor: pointer;
-		}
-
-		&:focus{
-			color: $white;
-			background-color: $green-1;
-		}
-	}
-}
-
-.disease__tooltip {
-    position: relative;
-    border-bottom: 0.1rem dotted #000;
-
-	&:hover .disease__tooltiptext {
-    	visibility: visible;
-	}
-
-	.disease__tooltiptext {
-		visibility: hidden;
-		width: 12rem;
-		background: url(img/mainnews/icon_news.svg) bottom / cover no-repeat;
-		color: $white;
-		text-align: left;
-		padding: 0 0.5rem;
-		margin-left: 1rem;
-		font-size: 1.2rem;
-		position: absolute;
-		z-index: 1;
-		height: 2.9rem;
-	}
-}
-
-.disease_list {
-	h2 {
-		text-transform: uppercase;
-		text-align: center;
-		color: $green-1;
-		margin-bottom: 1rem;
-		font-size: 1.75rem;
-		width: 100%;
-	}
-}
-
-.disease_search {
-	position: relative;
-	display: flex;
-	width: 100%;
-	margin-bottom: 4rem;
-	input {
-		width: 100%;
-		height: 3rem;
-		padding: 2rem 0 2rem 5rem;
-		font-weight: 300;
-		font-size: 2rem;
-		line-height: 2.3rem;
-		border: 0.2rem solid $green-1;
-		position: relative;
-		background: url(img/icons/search.svg) 2rem / 2rem no-repeat;
-    	&:focus {
-    		box-shadow: 0 0.4rem 0.6rem 0 rgba(32,33,36,0.28);
-    		border: 0.2rem solid $white;
-    	}
-    	&::placeholder {
-    		color: #A19F9F;
-    	}
-	}
-}
-
-.disease_info {
-	font-size: 1.8rem;
-	line-height: 2.1rem;
-	padding: 0;
-	position: relative;
-	align-items: flex-start;
-	margin-bottom: 50px;
-
-	h2 {
-		color: $green-1;
-    	margin: 5rem 0 3rem;
-    	font-size: 3rem;
-    	line-height: 3.4rem;
-    	text-transform: none;
-
-		&:first-letter {
-			color: $orange;
-		}
-	}
-	h4 {
-		color: $green-1;
-		font-size: 2rem;
-		line-height: 2.3rem;
-		font-weight: 400;
-		text-transform: uppercase;
-		border-bottom: 0.2rem solid $green-1;
-		padding: 1rem 0 1.6rem 0;
-	}
-	p {
-		line-height: 1;
-		margin-bottom: 1rem;
-	}
-
-	&__desc{
-		a {
-			color: $green-1;
-			text-decoration: none;
-
-			&:after{
-				content: '>';
-				padding-left: 0.25rem;
-			}
-			&:hover{
-				color: $green-1;
-			}
-		}
-
-		button {
-			width: 215px;
-			height: 54px;
-			color: #fff;
-			background-color: $green-1;
-			padding: 15px 20px;
-			text-transform: uppercase;
-			font-weight: 500;
-			font-size: 2rem;
-			line-height: 2.3rem;
-
-			&:hover {
-				background-color: $orange;
-				transition: all 0.35s ease-in-out;
-				cursor: pointer;
-			}
-			&:focus {
-				outline: none;
-				background-color: $orange;
-			}
-		}
-	}
-}
-
-.disease_symthom {
-	ul {
-		display: flex;
-		flex-flow: wrap column;
-		justify-content: center;
-		padding: 3.8rem 0;
-	}
-
-	li {
-		font-weight: 300;
-		font-size: 2rem;
-		line-height: 2.3rem;
-		padding-bottom: 15px;
-		list-style-type: none;
-	}
-
+.select_disease {
 	a {
-		color: #000;
-		text-decoration: none;
-		display: block;
-
-		&:hover, &:first-letter, &:focus {
-			color: $orange;
-		}
-	}
-}
-
-.disease_recomendation {
-	ul {
-		padding: 3.8rem 0;
-	}
-	li {
-		font-weight: 300;
-		font-size: 2rem;
-		line-height: 2.3rem;
-		padding-bottom: 15px;
-		list-style-type: none;
-	}
-	a {
-		color: #000;
-		text-decoration: none;
-		&:hover, &:focus{
-			color: $orange;
-
-		}
-	}
-}
-
-.select_disease__list {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-	top: 48px;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    background-color: #fff;
-    box-shadow: 0 4px 6px 0 rgba(32,33,36,0.28);
-}
-
-.select_disease a {
-	font-size: 18px;
-	line-height: 21px;
-    color: $green-1;
-    width: 100%;
-    display: flex;
-    padding: 6px 0 6px 0.5rem;
+		font-size: 1.8rem;
+		line-height: 2.1rem;
+    	color: $green-1;
+    	width: 100%;
+    	display: flex;
+    	padding: 0.6rem 0 0.6rem 0.5rem;
     
     &:before {
     	content: '';
-    	width: 20px;
-    	height: 20px;
+    	width: 2rem;
+    	height: 2rem;
     	background: url(img/icons/search.svg) no-repeat;
     	background-size: contain;
-    	margin-right: 13px;
+    	margin-right: 1.3rem;
+	}
+}
+	&__list {
+    	display: flex;
+    	flex-direction: column;
+    	position: absolute;
+		top: 4.8rem;
+    	left: 0;
+    	right: 0;
+    	z-index: 1;
+    	background-color: $white;
+    	box-shadow: 0 0.4rem 0.6rem 0 rgba(32,33,36,0.28);
 	}
 }
 
 .alphabet_disease {
-	margin: 0 0 4rem 0;
+	margin: 0 0 3.2rem 0;
+
+	p {
+		font-size: 2rem;
+		line-height: 2.4rem;
+		margin: 2.8rem 0 1.2rem 0;
+		text-transform: uppercase;
+	}
+
 	&-item{
+		display: flex;
+		justify-content: center;
 		list-style-type: none;
+		width: 3.2rem;
+		height: 3.2rem;
+		
 		&.active{
 			a {
-				color:$orange;
+				background-color: $orange;
+				color: $white;
+				padding: 0.4rem 0.9rem;
 				&:hover {
-					color:$orange;
+					color: $white;
 				}
 			}
-		}
-		&:focus{
-			color: #fff;
-			background-color: $orange;
 		}
 	}
 
 	ul {
 		display: flex;
 		flex-flow: wrap row;
-		justify-content: center;
-		gap: 4rem;
+		gap: 2.5rem;
 	}
 
 	a {
 		color: $green-1;
 		text-decoration: none;
-		font-size: 2.5rem;
-    	line-height: 2.7rem;
+		font-size: 2rem;
+    	line-height: 2.4rem;
+		padding: 0.4rem 0;
 
-		&:hover{
+		&:hover {
 			color: $orange;
+		}
+	}
+}
+
+.disease {
+	&_head {
+		font-size: 1.2rem;
+		line-height: 1.6rem;
+		text-transform: uppercase;
+		padding: 0.8rem 0;
+	}
+	&_nav {
+		display: flex;
+		flex-flow: wrap row;
+		justify-content: space-between;
+		flex: 1 1 auto;
+		margin: 1rem 0;
+		font-size: 1.8rem;
+		line-height: 2.1rem;
+	
+		&__item {
+			font-weight: bold;
+			border: 1px solid $green-1;
+			color: $green-1;
+			background-color: $white;
+			text-align: center;
+			text-transform: uppercase;
+			text-decoration: none;
+	
+			&:hover, &.active {
+				color: $white;
+				background-color: $green-1;
+				cursor: pointer;
+			}
+	
+			&:focus{
+				color: $white;
+				background-color: $green-1;
+			}
+		}
+	}
+	
+	&__tooltip {
+		position: relative;
+		border-bottom: 0.1rem dotted $black;
+	
+		&:hover .disease__tooltiptext {
+			visibility: visible;
+		}
+	
+		.disease__tooltiptext {
+			visibility: hidden;
+			width: 12rem;
+			background: url(img/mainnews/icon_news.svg) bottom / cover no-repeat;
+			color: $white;
+			text-align: left;
+			padding: 0 0.5rem;
+			margin-left: 1rem;
+			font-size: 1.2rem;
+			position: absolute;
+			z-index: 1;
+			height: 2.9rem;
+		}
+	}
+	
+	&_search {
+		position: relative;
+		display: flex;
+		width: 100%;
+		margin-bottom: 3.2rem;
+		input {
+			width: 100%;
+			height: 3rem;
+			padding: 2rem 0 2rem 5rem;
+			font-size: 2rem;
+			line-height: 2.3rem;
+			border: 0.2rem solid $green-1;
+			position: relative;
+			background: url(img/icons/search.svg) 2rem / 2rem no-repeat;
+			&:focus {
+				box-shadow: 0 0.4rem 0.6rem 0 rgba(32,33,36,0.28);
+				border: 0.2rem solid $white;
+			}
+			&::placeholder {
+				color: #A19F9F;
+			}
+		}
+	}
+	
+	&_info {
+		font-size: 1.8rem;
+		line-height: 2.1rem;
+		padding: 0;
+		position: relative;
+		align-items: flex-start;
+		margin-bottom: 1.2rem;
+		background-color: $grey;
+		&-head {
+			cursor: pointer;
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+			width: max-content;
+			&.active {
+				h2 {
+					&:after {
+						transform: rotate(180deg);
+					}
+				}
+			}
+		}
+		&-body {
+			display: none;
+		}
+	
+		h2 {
+			color: $green-1;
+			font-size: 2.2rem;
+			font-weight: 500;
+			line-height: 2.8rem;
+			margin: 0.8rem 0 1.2rem 0;
+			text-transform: none;
+			display: flex;
+			align-items: center;
+			&:after {
+				content: "";
+				background: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 8L0 1.51351L1.4 0L6 4.97297L10.6 1.86789e-06L12 1.51352L6 8Z' fill='%23009C9D'/%3E%3C/svg%3E%0A") center / cover no-repeat;
+				width: 1.2rem;
+				height: 0.8rem;
+				display: block;
+				margin-left: 1rem;
+			}
+		}
+		p {
+			font-size: 1.6rem;
+			line-height: 2rem;
+			margin-bottom: 1.6rem;
+		}
+	
+		&__desc {
+			a {
+				color: $green-1;
+				text-decoration: none;
+	
+				&:after{
+					content: '>';
+					padding-left: 0.25rem;
+				}
+				&:hover{
+					color: $green-1;
+				}
+			}
+	
+			button {
+				width: 21.5rem;
+				height: 4.4rem;
+				color: $green-1;
+				border: 0.2rem solid $green-1;
+				text-transform: uppercase;
+				font-size: 1.4rem;
+				font-weight: 700;
+				line-height: 1.6rem;
+				letter-spacing: 0.02em;
+	
+				&:hover {
+					background-color: $green-1;
+					color: $white;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+	
+	&_symthom {
+		margin-bottom: 1.6rem;
+		ul {
+			display: flex;
+			flex-flow: wrap column;
+			justify-content: center;
+		}
+	
+		li {
+			font-size: 1.6rem;
+			line-height: 2rem;
+			padding: 1.4rem;
+			list-style-type: none;
+			border-bottom: 0.1rem solid #CCCCCC;
+		}
+	
+		a {
+			text-decoration: none;
+			display: block;
+	
+			&:hover, &:focus {
+				color: $orange;
+			}
+		}
+	}
+	
+	&_recomendation {
+		margin-bottom: 1.6rem;
+		li {
+			font-size: 1.6rem;
+			line-height: 2rem;
+			padding: 1.4rem;
+			list-style-type: none;
+			border-bottom: 0.1rem solid #CCCCCC;
+		}
+		a {
+			text-decoration: none;
+			&:hover, &:focus{
+				color: $orange;
+			}
+		}
+	}
+	&_collapse {
+		display: flex;
+		align-items: center;
+		color: $green-1;
+		cursor: pointer;
+		font-size: 1.2rem;
+		font-weight: 700;
+		line-height: 1.6rem;
+		letter-spacing: 0.02em;
+		margin: 2.4rem 2.4rem 2.4rem auto;
+		text-transform: uppercase;
+		width: max-content;
+		&:after {
+			content: "";
+			background: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 8L0 1.51351L1.4 0L6 4.97297L10.6 1.86789e-06L12 1.51352L6 8Z' fill='%23009C9D'/%3E%3C/svg%3E%0A") center / cover no-repeat;
+			width: 1.2rem;
+			height: 0.8rem;
+			display: block;
+			margin-left: 1rem;
+			transform: rotate(180deg);
+		}
+		&:hover {
+			color: $orange;
+			&:after {
+				background: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 8L0 1.51351L1.4 0L6 4.97297L10.6 1.86789e-06L12 1.51352L6 8Z' fill='%23E05222'/%3E%3C/svg%3E%0A") center / cover no-repeat;
+			}
 		}
 	}
 }

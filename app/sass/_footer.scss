@@ -233,7 +233,7 @@
 		background-position: 50%;
 		width: 4rem;
 		height: 4rem;
-		background-color: #fff;
+		background-color: $white;
 		border: 0.2rem solid $green-1;
 		cursor: pointer;
 		font-size: 0;
@@ -242,14 +242,14 @@
 		width: 22rem;
 		height: auto;
 		display: none;
-		background-color: #009c9d;
-		color: #fff;
+		background-color: $green-1;
+		color: $white;
 		position: absolute;
+		top: 0;
 		right: 4rem;
 		font-size: 1.8rem;
 		line-height: 2rem;
 		padding: 0 1rem;
-		top: 5rem;
 	}
 }
 

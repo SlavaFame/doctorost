@@ -611,15 +611,18 @@ body {
 	}
 
 	&__form {
-
 		&-outer {
-			flex: 1;
-			padding: 1.6rem 2.2rem;
 			border: 0.2rem solid $green-1;
+			flex: 1;
+			max-width: 62rem;
+			padding: 1.6rem 2.2rem;
 		}
 
 		&-privacy {
 			margin-left: 2.5rem;
+			a {
+				color: $green-1;
+			}
 		}
 
 		&-inner {
@@ -635,7 +638,7 @@ body {
 			font-weight: 400;
 			line-height: 2rem;
 			height: 5.6rem;
-			width: 30.6rem;
+			width: 27rem;
 			padding: 0.8rem 1.6rem;
 			background-color: $grey-2;
 			border: 0.1rem solid $grey-2;
@@ -654,6 +657,7 @@ body {
 		}
 
 		&-label {
+			color: $black;
 			cursor: text;
 			position: absolute;
 			left: 2rem;

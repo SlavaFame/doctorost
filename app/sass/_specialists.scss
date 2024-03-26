@@ -7,7 +7,7 @@
 		gap: 6.6rem;
 		display: flex;
 		flex-wrap: wrap;
-		position: relative; 
+		position: relative;
 
 		&-item {
 			max-width: 33.6rem;
@@ -20,6 +20,7 @@
 				margin-bottom: 0;
 			}
 		}
+
 		&__nav {
 			display: flex;
 			flex-wrap: wrap;
@@ -92,6 +93,9 @@
 		flex-wrap: wrap;
 		margin: 2.8rem 0 1.6rem 0;
 		gap: 6.6rem;
+		padding: 1.6rem;
+		background-color: $green-1;
+		justify-content: space-between;
 	}
 
 	&__block {
@@ -107,7 +111,7 @@
 	}
 
 	&__online {
-		border-bottom: 0.2rem solid $grey-2;
+		color: $white;
 		font-size: 1.2rem;
 		font-weight: 400;
 		line-height: 1.6rem;
@@ -115,19 +119,18 @@
 		justify-content: space-between;
 		align-items: center;
 		max-width: 33.6rem;
-		width: calc(100% - 3rem);
 		text-transform: uppercase;
 
 		&-switcher {
 			display: inline-block;
-			width: 5.6rem;
-			height: 3.2rem;
-			padding: 0.2rem 0.4rem;
-			border-radius: 10rem;
-			background-color: #999999;
-			margin: 0.8rem;
-			cursor: pointer;
-			position: relative;
+    		width: 5.6rem;
+    		height: 3.2rem;
+    		padding: 0.2rem 0.4rem;
+    		border-radius: 10rem;
+    		background-color: #999999;
+    		margin: 0.8rem 0.8rem 0.8rem 1.6rem;
+    		cursor: pointer;
+    		position: relative;
 			input {
 				opacity: 0;
 				width: 0;
@@ -137,26 +140,28 @@
 				position: absolute;
 				cursor: pointer;
 				inset: 0;
-				background-color: #ccc;
+				background-color: $green-1;
+				border: 0.2rem solid $white;
 				transition: .4s;
 				&:before {
 					position: absolute;
 					content: "";
-					height: 2.6rem;
-					width: 2.6rem;
-					left: 0.2rem;
-					bottom: 0.3rem;
-					background-color: white;
+					height: 1.8rem;
+					width: 1.8rem;
+					left: 0.4rem;
+					bottom: 0.5rem;
+					background-color: $white;
 					transition: .4s;
 				  }
 			  }
 			  
 			  input:checked + .btn__switch {
-				background-color: $green-1;
+				background-color: $white;
 			  }
 			  
 			  input:checked + .btn__switch:before {
 				transform: translateX(2.6rem);
+				background-color: $green-1;
 			  }
 			  
 			  .btn__switch.rounded {
@@ -174,6 +179,7 @@
 		flex-direction: column;
 	
 		&__photo {
+			cursor: pointer;
 			background-position: top center;
 			background-size: cover;
 			background-repeat: no-repeat;

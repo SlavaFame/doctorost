@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Медицинский центр «Доктор ОСТ» — официальный сайт клиники</title>
+	<!--<link rel="apple-touch-icon" sizes="180x180" href="/img/favicons4/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicons4/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicons4/favicon-16x16.png">-->
+
+	<link rel="icon" href="/img/favicons6/favicon.ico" sizes="any">
+<link rel="icon" href="/img/favicons6/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/img/favicons6/apple-touch-icon.png">
+<link rel="manifest" href="/img/favicons6/site.webmanifest">
+
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="modal-wrap">
+		<div id="overlay"></div>
+		<div href="#modal3" class="modal_div form-bars__wrapper">
+			<div class="form-bars__title">
+				Записаться на прием
+				<div class="modal_close"></div>
+			</div>
+			<form id="form_39" class="form-bars">
+				<input type="hidden" name="SID" value="39">
+				<input type="hidden" name="user_page" value="Методики — «Доктор ОСТ»">
+				<input type="hidden" name="user_city" value="Челябинск">
+				
+				<fieldset class="form__fieldset user_name">
+					<span>Здорово, если оставите имя:</span>
+					<input type="text" placeholder="Введите ваше имя" name="NAME" autocomplete="name" required="">
+				</fieldset>
+
+				<fieldset class="form__fieldset user_phone">
+					<span>Обязательно оставьте номер телефона:</span>
+					<input type="tel" class="telmask" placeholder="Введите номер контактного телефона" name="PHONE" autocomplete="tel" required="">
+				</fieldset>
+
+				<fieldset class="form__fieldset user_text">
+					<span>Сообщение:</span>
+					<textarea name="MESSAGE" placeholder="К какому специалисту или с какой проблемой вы обращаетесь" cols="30" rows="10"></textarea>
+				</fieldset>
+
+				
+				<div class="checkbox__outer">
+					<label class="check option">
+						<input type="checkbox" class="check__input" required="">
+						<span class="check__box"></span>
+						Я даю свое согласие на <a href="https://dr-ost.ru/o-tsentre/reglamentiruyushchie-dokumenty/">обработку персональных данных</a> <br>Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!
+					</label>
+					<button type="submit" class="form__submit">Отправить</button>
+				</div>
+			</form>
+		</div>
+	</div>	
+
+	<header class="head">
+		<div class="head__container">
+			<a class="head__logo" href="#">
+				<img class="head__logo-img" src="img/logos/logo_DO.svg" alt="Лого Доктор Ост">
+			</a>
+			<div class="head__location">
+				<a class="head__location-city" href="#">Челябинск</a>
+				<span>Университетская набережная, 34</span>
+			</div>
+			<div class="head__time">
+				<span>Пн-Пт: 8:00-22:00</span>
+				<span>Сб-Вс: 8:00-21:00</span>
+			</div>
+			<div class="head__appointment">
+				<div class="head__phoneNumber">
+					<a href="tel:83512252929" class="head__phoneNumber-item">8 (351) 
+						<span class="head__phoneNumber-showText">показать телефон</span>
+						<span class="head__phoneNumber-showNum">225-29-29</span>
+					</a>
+					<a href="tel:88002019911" class="head__phoneNumber-item">8 (800) 
+						<span class="head__phoneNumber-showText">показать телефон</span>
+						<span class="head__phoneNumber-showNum">2019-911</span>
+					</a>
+				</div>
+				<button href="modal3" class="head__btn open_modal">Записаться на прием</button>
+			</div>
+		</div>
+		<nav class="menu">
+			<div class="menu-button">
+				<span class="menu-button__lines">
+					<span class="menu-button__line"></span>
+					<span class="menu-button__line"></span>
+					<span class="menu-button__line"></span>
+				</span>
+			</div>
+
+			<ul class="menu__list">
+				<li class="menu__list-item"><a class="menu__link" href="#">О Доктор Ост</a></li>
+				<li class="menu__list-item">
+					<a class="menu__link menu__sub" href="#">Направления</a>
+
+					<div class="menu__subwrap">
+						<div class="container">	
+							<ul class="menu__sublist">
+								<li class="menu__sublist-item">
+									<a href="#">Лечение позвоночника</a>
+								</li>
+								<li class="menu__sublist-item">
+									<a href="#">Лечение суставов</a>
+								</li>
+								<li class="menu__sublist-item">
+									<a href="#">Лечение головной боли</a>
+								</li>
+								<li class="menu__sublist-item">
+									<a href="#">Реабилитация после протезирования</a>
+								</li>
+								<li class="menu__sublist-item">
+									<a href="#">Спортивная медицина</a>
+								</li>
+								<li class="menu__sublist-item">
+									<a href="#">Реабилитация после инсульта</a>
+								</li>							
+							</ul>	
+						</div>
+					</div>
+				</li>
+				<li class="menu__list-item"><a class="menu__link" href="chto-lechim.html">Что лечим</a></li>
+				<li class="menu__list-item"><a class="menu__link" href="methods.html">Методики</a></li>
+				<li class="menu__list-item"><a class="menu__link" href="specialists.html">Специалисты</a></li>
+				<li class="menu__list-item"><a class="menu__link" href="#">Отзывы</a></li>
+				<li class="menu__list-item"><a class="menu__link" href="#">Акции</a></li>
+				<li class="menu__list-item"><a class="menu__link" href="#">Цены</a></li>
+				<li class="menu__list-item"><a class="menu__link" href="#">Новости</a></li>
+				<li class="menu__list-item"><a class="menu__link" href="faq.html">Вопрос-ответ</a></li>
+				<li class="menu__list-item"><a class="menu__link" href="#">Статьи</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="container">
+		<div class="navigation">
+			<div class="navigation__search">
+				<form class="navigation__search__form" action="/search/index.php">
+					<input class="navigation__search__field" placeholder="Поиск..." name="q" autocomplete="off" type="text">
+					<input class="navigation__search__btn" name="s" type="submit" value="">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<main>
+		<section class="topMain">
+			<div class="topMain__slider container">
+				<div class="topMain__slider-item" style="background:url(img/main/11.jpg) top right / contain no-repeat;">
+					<div class="topMain__slider__main">
+						<h1><span style="color: #E05222;">Родной сустав,</span><br> вместо протеза!</h1>
+						
+
+						<p>PRP-терапия, современная альтернатива <br> эндопротезированию.</p>
+						<button class="topMain__slider__btn">Подробнее</button>
+					</div>
+				</div>
+				<div class="topMain__slider-item" style="background:url(img/main/2.jpg) top right / contain no-repeat;">
+					<div class="topMain__slider__main">
+						<h1><span style="color: #E05222;">Родной сустав,</span><br> вместо протеза!</h1>
+						<p>PRP-терапия, современная альтернатива <br> эндопротезированию.</p>
+						<button class="topMain__slider__btn">Подробнее</button>
+					</div>
+				</div>
+				<div class="topMain__slider-item" style="background:url(img/main/3.jpg) top right / contain no-repeat;">
+					<div class="topMain__slider__main">
+						<h1><span style="color: #E05222;">Родной сустав,</span><br> вместо протеза!</h1>
+						<p>PRP-терапия, современная альтернатива <br> эндопротезированию.</p>
+						<button class="topMain__slider__btn">Подробнее</button>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="topMain__direction">
+					<a class="topMain__direction-item" href="#">
+						<img src="img/direction/1.svg" alt="">
+						<p>Лечение позвоночника</p>
+					</a>
+					<a class="topMain__direction-item" href="#">
+						<img src="img/direction/2.svg" alt="">
+						<p>Лечение суставов</p>
+					</a>
+					<a class="topMain__direction-item" href="#">
+						<img src="img/direction/3.svg" alt="">
+						<p>Лечение головной боли</p>
+					</a>
+					<a class="topMain__direction-item" href="#">
+						<img src="img/direction/4.svg" alt="">
+						<p>Реабилитация после протезирования</p>
+					</a>
+					<a class="topMain__direction-item" href="#">
+						<img src="img/direction/5.svg" alt="">
+						<p>Спортивная медицина</p>
+					</a>
+					<a class="topMain__direction-item" href="#">
+						<img src="img/direction/4.svg" alt="">
+						<p>Реабилитация после протезирования</p>
+					</a>
+					<a class="topMain__direction-item" href="#">
+						<img src="img/direction/5.svg" alt="">
+						<p>Спортивная медицина</p>
+					</a>
+				</div>
+				<div class="topMain__direction-nav"></div>
+			</div>
+		</section>
+
+		<section class="salesMain container">
+			<div class="salesMain__head">
+				<h2>Акции и скидки</h2>
+				<span class="salesMain__counter"></span>
+			</div>
+			<div class="salesWrap__list sales-mainslider">
+				<div class="salesWrap__list-item">
+					<div class="salesWrap__list__pic" style="background:url(img/main/sale1.jpg);">
+						<div class="salesWrap__label">
+							<img src="img/icons/giftbox.svg" alt="иконка">
+						</div>
+						<div class="salesWrap__type">Подарок</div>
+					</div>
+					<h2>Название заголовка может быть в две строки</h2>
+					<div class="salesWrap__announce">
+						<p>Не стоит откладывать визит в "Доктор Ост", тем более, если консультацию неврологаили ортопеда можно получить с 50% скидкой!</p>
+						<a class="salesWrap__announce-link" href="#">Подробнее</a>
+					</div>
+				</div>
+				<div class="salesWrap__list-item">
+					<div class="salesWrap__list__pic" style="background:url(img/main/sale1.jpg);">
+						<div class="salesWrap__label">
+							<img src="img/icons/megaphone2.svg" alt="иконка">
+						</div>
+						<div class="salesWrap__type">Специальное предложение</div>
+					</div>
+					<h2>Lorem ipsum dolor sit amet.</h2>
+					<div class="salesWrap__announce">
+						<p>Не стоит откладывать визит в "Доктор Ост", тем более, если консультацию неврологаили ортопеда можно получить с 50% скидкой!</p>
+						<a class="salesWrap__announce-link" href="#">Подробнее</a>
+					</div>
+				</div>	
+				<div class="salesWrap__list-item">
+					<div class="salesWrap__list__pic" style="background:url(img/main/sale1.jpg);">
+						<div class="salesWrap__label">
+							<img src="#" alt="иконка">
+						</div>
+						<div class="salesWrap__type">Скидка</div>
+					</div>
+					<h2>Lorem ipsum dolor sit amet.</h2>
+					<div class="salesWrap__announce">
+						<p>Lorem, ipsum dolor sit amet consectetur.</p>
+						<a class="salesWrap__announce-link" href="#">Подробнее</a>
+					</div>
+				</div>
+				<div class="salesWrap__list-item">
+					<div class="salesWrap__list__pic" style="background:url(img/main/sale1.jpg);">
+						<div class="salesWrap__label">
+							<img src="#" alt="иконка">
+						</div>
+						<div class="salesWrap__type">Подарок</div>
+						<div class="salesWrap__type">Специальное предложение</div>
+						<div class="salesWrap__type">Скидка</div>
+					</div>
+					<p>Не стоит откладывать визит в "Доктор Ост", тем более, если консультацию неврологаили ортопеда можно получить с 50% скидкой!</p>
+					<div class="salesWrap__announce">
+						<p>Lorem, ipsum dolor sit amet consectetur.</p>
+						<a class="salesWrap__announce-link" href="#">Подробнее</a>
+					</div>
+				</div>	
+			</div>
+			<div class="sales-mainslider-nav"></div>
+		</section>
+
+		<section class="doctorsMain container">
+			<div class="doctorsMain__head">
+				<h2>"Доктор Ост" специалисты</h2>
+				<span class="doctorsMain__counter"></span>
+			</div>
+			<div class="doctor__slider doctor__slider-main">
+				<div class="doctor__slider-item">
+					<div class="doctor__info">
+						<div class="doctor__info__photo" style="background:url(img/doctors/Останин.png) center center / cover no-repeat;">
+							<div class="doctor__info__photo-online"></div>
+						</div>
+						<div class="doctor__info__desc">
+							<div class="doctor__info__desc-head"><span class="doctor__info__bigtext">Останин</span> АЛЕКСАНДР ОЛЕГОВИЧ</div>
+							<span class="doctor__info__rating">
+								<div class="doctor__info__prodoctorov"></div>
+								<div class="doctor__info__stars">
+									<input type="radio" name="rating" value="5" id="star5">
+									<label for="star5"></label>
+									<input type="radio" name="rating" value="4" id="star4">
+									<label for="star4"></label>
+									<input type="radio" name="rating" value="3" id="star3">
+									<label for="star3"></label>
+									<input type="radio" name="rating" value="2" id="star2">
+									<label for="star2"></label>
+									<input type="radio" name="rating" value="1" id="star1">
+									<label for="star1"></label>
+								</div>
+							</span>
+
+							<div class="doctor__info__speciality">Главный врач, хирург <br> высшей категории</div>
+							<div class="doctor__info__online">онлайн-приём по <br> челябинскому времени: <br><b>с 7:00 до 22:00</b></div>
+							<div class="doctor__socials">
+								<div class="doctor__socials-item tg"></div>
+								<div class="doctor__socials-item viber"></div>
+								<div class="doctor__socials-item skype"></div>
+								<div class="doctor__socials-item whatsapp"></div>
+							</div>
+							<button class="doctor__info__detail">Подробнее</button>	
+						</div>
+					</div>
+				</div>
+				<div class="doctor__slider-item">
+					<div class="doctor__info">
+						<div class="doctor__info__photo" style="background:url(img/doctors/Никиточкина.png) center center / cover no-repeat;">
+							<div class="doctor__info__photo-online"></div>
+						</div>
+						<div class="doctor__info__desc">
+							<div class="doctor__info__desc-head"><span class="doctor__info__bigtext">Никиточкина</span> НАДЕЖДА ЮРЬЕВНА</div>
+							<span class="doctor__info__rating">
+								<div class="doctor__info__prodoctorov"></div>
+								<div class="doctor__info__stars">
+									<input type="radio" name="rating2" value="5" id="star10">
+									<label for="star10"></label>
+									<input type="radio" name="rating2" value="4" id="star9">
+									<label for="star9"></label>
+									<input type="radio" name="rating2" value="3" id="star8">
+									<label for="star8"></label>
+									<input type="radio" name="rating2" value="2" id="star7">
+									<label for="star7"></label>
+									<input type="radio" name="rating2" value="1" id="star6">
+									<label for="star6"></label>
+								</div>
+							</span>
+							<div class="doctor__info__speciality">Невролог,<br> иглорефлексотерапевт,<br> гирудотерапевт</div>
+							<p class="doctor__info__online">онлайн-приём по <br> челябинскому времени: <br> <b>с 7:00 до 22:00</b></p>
+							<div class="doctor__socials">
+								<div class="doctor__socials-item tg"></div>
+								<div class="doctor__socials-item viber"></div>
+								<div class="doctor__socials-item skype"></div>
+								<div class="doctor__socials-item whatsapp"></div>
+							</div>
+							<button class="doctor__info__detail orange__btn">Подробнее</button>	
+						</div>
+					</div>
+				</div>
+				<div class="doctor__slider-item">
+					<div class="doctor__info">
+						<div class="doctor__info__photo" style="background:url(img/doctors/Семенов.png) center center / cover no-repeat;">
+						</div>
+						<div class="doctor__info__desc">
+							<div class="doctor__info__desc-head"><span class="doctor__info__bigtext">Семёнов</span> Артём Борисович</div>
+							<span class="doctor__info__rating">
+								<div class="doctor__info__prodoctorov"></div>
+								<div class="doctor__info__stars">
+									<input type="radio" name="rating" value="5" id="star15">
+									<label for="star5"></label>
+									<input type="radio" name="rating" value="4" id="star14">
+									<label for="star4"></label>
+									<input type="radio" name="rating" value="3" id="star13">
+									<label for="star3"></label>
+									<input type="radio" name="rating" value="2" id="star12">
+									<label for="star2"></label>
+									<input type="radio" name="rating" value="1" id="star11">
+									<label for="star1"></label>
+								</div>
+							</span>
+							<div class="doctor__info__speciality">
+								<p style="font-size: 25px;">Невролог</p></div>
+								<button class="doctor__info__detail">Подробнее</button>	
+							</div>
+						</div>
+				</div>
+				<div class="doctor__slider-item">
+						<div class="doctor__info">
+							<div class="doctor__info__photo" style="background:url(img/doctors/Корыткин.png) center center / cover no-repeat;">
+							</div>
+							<div class="doctor__info__desc">
+								<div class="doctor__info__desc-head"><span class="doctor__info__bigtext">Семёнов</span> Артём Борисович</div>
+								<span class="doctor__info__rating">
+									<div class="doctor__info__prodoctorov"></div>
+									<div class="doctor__info__stars">
+										<input type="radio" name="rating2" value="5" id="star20">
+										<label for="star10"></label>
+										<input type="radio" name="rating2" value="4" id="star19">
+										<label for="star9"></label>
+										<input type="radio" name="rating2" value="3" id="star18">
+										<label for="star8"></label>
+										<input type="radio" name="rating2" value="2" id="star17">
+										<label for="star7"></label>
+										<input type="radio" name="rating2" value="1" id="star16">
+										<label for="star6"></label>
+									</div>
+								</span>
+								<div class="doctor__info__speciality">Травматолог-ортопед<br> мануальный терапевт,<br>врач УЗД</div>
+								<button class="doctor__info__detail">Подробнее</button>	
+							</div>
+						</div>
+				</div>
+			</div>
+			<div class="doctor__slider-nav"></div>
+		</section>
+
+			<section class="greenInfo">
+				<div class="greenInfo__list">
+					<div class="greenInfo-item">
+						<div>13</div>
+						ЛЕТ АКТИВНЫХ НАУЧНЫХ ПОИСКОВ И РАБОТЫ
+					</div>
+					<div class="greenInfo-item">
+						<div>2</div>
+						ПАТЕНТА НА АВТОРСКИЕ ТЕХНОЛОГИИ ЛЕЧЕНИЯ
+					</div>
+					<div class="greenInfo-item">
+						<div>17</div>
+						ЛЕТ СРЕДНИЙ СТАЖ СОТРУДНИКОВ
+					</div>
+					<div class="greenInfo-item">
+						<div>10</div>
+						ФИЛИАЛОВ В ДЕСЯТИ ГОРОДАХ РОССИИ!
+					</div>
+				</div>
+			</section>
+
+			<section class="methodsMain container">
+				<div class="methodsMain__head">
+					<h2>Методы лечения</h2>
+					<span class="methodsMain__counter"></span>
+				</div>
+				<div class="methods__slider">
+					<div class="methods__slider-item">
+						<div class="methods__slider__photo" style="background:url(img/diagnostics/1.jpg) center center / contain no-repeat;"></div>
+						<div class="methods__slider__head">Препарат Аллоплант</div>
+						<div class="methods__slider__text">
+							Есть над чем задуматься: активно развивающиеся страны третьего мира ограничены исключительно образом мышления. Значимость этих проблем настолько очевидна...
+							<a href="#">Подробнее</a>
+						</div>
+					</div>
+					<div class="methods__slider-item">
+						<div class="methods__slider__photo" style="background:url(img/diagnostics/2.jpg) center center / contain no-repeat;"></div>
+						<div class="methods__slider__head">Интенсивный лазер HILP</div>
+						<div class="methods__slider__text">
+							Есть над чем задуматься: активно развивающиеся страны третьего мира ограничены исключительно образом мышления. Значимость этих проблем настолько очевидна...
+							<a href="#">Подробнее</a>
+						</div>
+					</div>
+					<div class="methods__slider-item">
+						<div class="methods__slider__photo" style="background:url(img/diagnostics/3.jpg) center center / contain no-repeat;"></div>
+						<div class="methods__slider__head">PRP-терапия</div>
+						<div class="methods__slider__text">
+							Есть над чем задуматься: активно развивающиеся страны третьего мира ограничены исключительно образом мышления. Значимость этих проблем настолько очевидна...
+							<a href="#">Подробнее</a>
+						</div>	
+					</div>
+					<div class="methods__slider-item">
+						<div class="methods__slider__photo" style="background:url(img/diagnostics/3.jpg) center center / contain no-repeat;"></div>
+						<div class="methods__slider__head">PRP-терапия</div>
+						<div class="methods__slider__text">
+							Есть над чем задуматься: активно развивающиеся страны третьего мира ограничены исключительно образом мышления. Значимость этих проблем настолько очевидна...
+							<a href="#">Подробнее</a>
+						</div>	
+					</div>
+				</div>
+			</section>
+
+			<section class="newsMain container">
+				<div class="newsMain__head">
+					<h2>"Доктор Ост" Новости</h2>
+					<span class="newsMain__counter"></span>
+				</div>
+				<div class="newsMain__slider">
+					<div class="newsMain__slider-item">
+						<div class="newsMain__label">
+							<p>Новое!</p>
+						</div>
+						<div class="newsMain__slider__photo">
+							<img src="img/mainnews/1.jpg" alt="">
+						</div>
+						<div class="newsMain__slider__desc">
+							<h3>бИОИМПЛАНТ В СУСТАВ В ДЕНЬ ОБРАЩЕНИЯ!</h3>
+							<p>Если боль в суставах не дает покоя, а врачи разводят руками и предлагают операцию, не торопитесь ставить протез! Поспешите в “Доктор Ост”!</p>
+							<a class="newsMain__link" href="#">Подробнее</a>
+						</div>
+					</div>
+					<div class="newsMain__slider-item">
+						<div class="newsMain__slider__photo">
+							<img src="img/mainnews/2.jpg" alt="">
+						</div>
+						<div class="newsMain__slider__desc">
+							<h3>Cупермагнит уже в нашем городе!</h3>
+							<p>Только до конца этого лета! Успейте пройти курс лечения на современном аппарате для магнитотерапии. Мы можем помочь избавиться от головной боли, боли в суставах и пояснице!</p>
+							<a class="newsMain__link" href="#">Подробнее</a>
+						</div>
+					</div>
+					<div class="newsMain__slider-item">
+						<div class="newsMain__slider__photo">
+							<img src="img/mainnews/2.jpg" alt="">
+						</div>
+						<div class="newsMain__slider__desc">
+							<h3>Cупермагнит уже в нашем городе!</h3>
+							<p>Только до конца этого лета! Успейте пройти курс лечения на современном аппарате для магнитотерапии. Мы можем помочь избавиться от головной боли, боли в суставах и пояснице!</p>
+							<a class="newsMain__link" href="#">Подробнее</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="container">
+				<h2>О Доктор Ост</h2> 
+				<div class="aboutMain">
+					<div class="aboutMain__col">
+						<img src="img/aboutmain/1.jpg" alt="">
+						<div class="aboutMain__col__textleft">
+							<p>Федеральная сеть клиник «Доктор ОСТ» работает с 2008 г. и уже представлена в 10 российских городах. Это медцентр, оснащенный передовыми технологиями, многие из которых уникальны или довольно редки на территории России. Это команда увлеченных своим дело профессионалов,посвятивших себя поиску эффективных решений в лечении самых сложных патологий опорно-двигательной системы. Многие специалисты имеют ученую степень.</p>
+							<div class="aboutMain__infographic">
+								<div class="aboutMain__infographic-item">
+									<div class="spin">96</div>
+									<p>эффективность лечения!</p>
+								</div>
+								<div class="aboutMain__infographic-item">
+									<div class="spin">39780</div>
+									<p>отмененных операций!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="aboutMain__col">
+						<div class="aboutMain__col__textright">
+							<h3>Лучшая клиника 2018-2021 гг.</h3>
+							<!-- <div class="aboutMain__prints">
+								<div class="aboutMain__prints-item">
+									<img src="img/prints/1.png" alt="">
+								</div>
+								<div class="aboutMain__prints-item">
+									<img src="img/prints/2.png" alt=""> 
+								</div>
+								<div class="aboutMain__prints-item">
+									<img src="img/prints/3.png" alt="">
+								</div>
+								<div class="aboutMain__prints-item">
+									<img src="img/prints/4.png" alt="">
+								</div>
+								<div class="aboutMain__prints-item">
+									<img src="img/prints/5.png" alt="">
+								</div>
+							</div> -->
+							<div class="aboutMain__infographic">
+								<div class="aboutMain__infographic-item">
+									<div class="spin">13</div>
+									<p>лет</p>
+								</div>
+								<div class="aboutMain__infographic-item">
+									<div class="spin">10</div>
+									<p>филиалов</p>
+								</div>
+								<div class="aboutMain__infographic-item">
+									<div class="spin">2</div>
+									<p>патента</p>
+								</div>
+							</div>
+						</div>
+
+						<img src="img/aboutmain/2.jpg" alt="">
+					</div>
+				</div>
+			</section>
+
+			<section class="method__results container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="method__results__box">
+							<div class="method__results__line">
+								<div class="method__results__line-dot">
+									<div class="method__results__line-dot--orange"></div>
+								</div>
+								<div class="method__results__dashed"></div>
+							</div>
+							<div class="method__results__info">
+								<br>
+								<p>“Доктор ОСТ” работает при поддержке научного центра реабилитации Минздрава РФ.</p>
+							</div>
+						</div>
+						<div class="method__results__box">
+							<div class="method__results__line">
+								<div class="method__results__line-dot">
+									<div class="method__results__line-dot--green"></div>
+								</div>
+								<div class="method__results__dashed"></div>
+							</div>
+							<div class="method__results__info">
+								<br>
+								<p>Налажено сотрудничество с исследовательскими институтами для изучения опыта коллег по всему миру.</p>
+							</div>
+						</div>
+						<div class="method__results__box">
+							<div class="method__results__line">
+								<div class="method__results__line-dot">
+									<div class="method__results__line-dot--green"></div>
+								</div>
+							</div>
+							<div class="method__results__info">
+								<br>
+								<p>За 12 лет удалось спасти от необходимости сложного хирургического вмешательства более 39 780 пациентов,</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="method__results__box">
+							<div class="method__results__line">
+								<div class="method__results__line-dot">
+									<div class="method__results__line-dot--green"></div>
+								</div>
+								<div class="method__results__dashed"></div>
+							</div>
+							<div class="method__results__info third">
+								<br>
+								<p>1 261 пациента удалось вернуть в полной трудоспособности.</p>
+							</div>
+						</div>
+						<div class="method__results__box">
+							<div class="method__results__line">
+								<div class="method__results__line-dot">
+									<div class="method__results__line-dot--green"></div>
+								</div>
+
+							</div>
+							<div class="method__results__info">
+								<br>
+								<p>“Доктор ОСТ” предлагает лечение самых тяжелых заболеваний позвоночника и суставов по собственной, не имеющей аналогов безоперационной схеме, доказавшей свою высокую эффективность.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="advantagesWrap container">
+				<h2>Доктор Ост преимущества</h2>
+				<div class="advantages">
+					<div class="advantages-item" style="background-image: url(/img/advantages/1.jpg);">
+						<div class="advantages__text advantages__text-1">Высокое оснащение <br> инновационными <br>методами лечения</div>
+					</div>
+					<div class="advantages-item" style="background-image: url(/img/advantages/2.jpg);">
+						<div class="advantages__text advantages__text-2">Опыт и соотрудничество с крупнейшими институтами мира</div>
+					</div>
+					<div class="advantages-item" style="background-image: url(/img/advantages/3.jpg);">
+						<div class="advantages__text advantages__text-3">Консультация специалиста в ходе лечения бесплатна!</div>
+					</div>
+					<div class="advantages-item" style="background-image: url(/img/advantages/4.jpg);">
+						<div class="advantages__text advantages__text-4">Разрушаем мифы и несем ответственность за результат</div>
+					</div>
+					<div class="advantages-item" style="background-image: url(/img/advantages/5.jpg);">
+						<div class="advantages__text advantages__text-5">Эффективность лечения свыше 96%</div>
+					</div>
+					<div class="advantages-item" style="background-image: url(/img/advantages/6.jpg);">
+						<div class="advantages__text advantages__text-6">Лечим иногородних!</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="method__statistics__section">
+				<div class="method__statistics__desc container">
+					<p>В МЦ «ДОКТОР ОСТ» ПОЛУЧИЛИ ЛЕЧЕНИЕ <span>72 715 ПАЦИЕНТОВ</span> С БОЛЬЮ В СПИНЕ И В СУСТАВАХ</p>
+				</div>
+				
+				<div class="method__statistics">
+					<div class="method__statistics-item">
+						<div class="method__statistics-item__odd">
+							<h3>39 780 <span>пациентам</span></h3>
+							<b>удалось избежать хирургического вмешательства</b>
+						</div>
+					</div>
+					<div class="method__statistics-item">
+						<div class="method__statistics-item__even">
+							<h4>19 656 <span>пациентам</span></h4>
+							<b>снят диагноз "межпозвоночная грыжа"</b>
+						</div>
+					</div>
+					<div class="method__statistics-item">
+						<div class="method__statistics-item__odd">
+							<h4>18 992 <span>пациентам</span></h4>
+							<b>сохранили родной сустав, отказавшись от протезирования</b>
+						</div>
+					</div>
+					<div class="method__statistics-item">
+						<div class="method__statistics-item__even">
+							<h4>1 261 <span>пациентам</span></h4>
+							<b>с инвалидностью удалось вернуть трудоспособность</b>
+						</div>
+					</div>
+					<div class="method__statistics-item">
+						<div class="method__statistics-item__odd">
+							<h4>72 715 <span>пациентам</span></h4>
+							<b>на август 2020 года!</b>
+						</div>
+					</div>
+					<div class="method__statistics-item">
+						<div class="method__statistics-item__even">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="availability">
+				<div class="container">
+					<h2>Филиалы "Доктор Ост"</h2>
+				</div>
+				<div class="availability__inner">
+					<div class="availability__block container">
+						<div class="availability__city">
+							<div class="availability__city-item col-lg-4">
+								<a class="availability__city__link" href="#">Екатеринбург</a>
+							</div>
+							<div class="availability__city-item col-lg-4">
+								<a class="availability__city__link" href="#">Казань</a>
+							</div>
+							<div class="availability__city-item col-lg-4">
+								<a class="availability__city__link" href="#">Краснодар</a>
+							</div>
+							<div class="availability__city-item col-lg-4">
+								<a class="availability__city__link" href="#">Челябинск</a>
+							</div>
+							<div class="availability__city-item col-lg-4">
+								<a class="availability__city__link" href="#">Красноярск</a>
+							</div>
+							<div class="availability__city-item col-lg-4">
+								<a class="availability__city__link" href="#">Новосибирск</a>
+							</div>
+							<div class="availability__city-item col-lg-4">
+								<a class="availability__city__link" href="#">Пермь</a>
+							</div>
+							<div class="availability__city-item col-lg-4">
+								<a class="availability__city__link" href="#">Нижний
+								 Новгород</a></div>
+							<div class="availability__city-item col-lg-4">
+								<a class="availability__city__link" href="#">Самара</a>
+							</div>
+							<div class="availability__city-item col-lg-4">
+								<a class="availability__city__link" href="#">Тюмень</a>
+							</div>
+						</div>
+						<div class="availability__otherCity">
+							<p>Я из другого города! <br> Как начать лечение?</p>
+							<button class="availability__btn">Узнать</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="reviews">
+				<div class="reviews__head container">
+					<h2>"Доктор Ост" отзывы</h2>
+					<span class="reviews__counter"></span>
+				</div>
+				<div class="reviews__slider container">
+					<div class="reviews__mainslider">
+						<div class="reviews__mainslider-item">
+							<div class="reviews__mainslider__photo">
+								<img class="lazy" data-src="img/reviews/slidermain.jpg" alt="">
+							</div>
+							<div class="reviews__mainslider__desc">
+								<h3>Лечение гонартроза</h3>
+								Весь персонал добрый, отзывчивый и внимательный ко своим пациентам. Хочу выразить свою благодарность молодому, но уже опытному специалисту своего дела, массажисту – Ивану Николаевичу. Очень чуткий, внимательный, любящий свою профессию и с большим удовольствием четко применяющий современные технологии, работающий человек, Человек с большой буквы!!! Желаю ему счастья в личной жизни, успехов в работе! 
+								<a href="#">Подробнее</a><br>
+								<button class="reviews__btn">Все отзывы</button>
+							</div>
+						</div>
+					</div>
+					<div class="reviews__navslider">
+						<div class="reviews__navslider-item">
+							<div class="reviews__navslider__photo">
+								<img class="lazy" data-src="img/reviews/nav1.jpg" alt="">
+							</div>
+							<div class="reviews__navslider__desc">
+								<h4>Плазмогель помог даже при переломах позвоночника!</h4>
+								Мама прикована к постели из-за перелома позвоночника, боли у нее были жуткие. Узнали что в нашем случае может помочь метод...
+								<a href="#">Читать полностью</a>
+							</div>
+						</div>
+						<div class="reviews__navslider-item">
+							<div class="reviews__navslider__photo">
+								<img class="lazy" data-src="img/reviews/nav2.jpg" alt="">
+							</div>
+							<div class="reviews__navslider__desc">
+								<h4>В "Доктор ОСТ" избавили от боли мгновенно</h4>
+								Колено болело давно, но я не обращала внимания. А недавно его прихватило так, что не разогнуть. Обратилась в "Доктор Ост...
+								<a href="#">Читать полностью</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="navBottom">
+				<div class="container">
+					<div class="navBottom__inner">
+						<a href="#" class="navBottom-item">
+							<div class="navBottom__pic">
+								<img src="img/nav/call.svg" alt="">
+							</div>
+							Заказать <br> звонок
+						</a>
+						<a href="#" class="navBottom-item">
+							<div class="navBottom__pic">
+								<img src="img/nav/question.svg" alt="">
+							</div>
+							Задать вопрос специалисту
+						</a>
+						<a href="#" class="navBottom-item">
+							<div class="navBottom__pic">
+								<img src="img/nav/faces.svg" alt="">
+							</div>
+							Отзывы пациентов
+						</a>
+						<a href="#" class="navBottom-item">
+							<div class="navBottom__pic">
+								<img src="img/nav/appointment.svg" alt="">
+							</div>
+							Записаться <br>на прием
+						</a>
+
+						<a href="#" class="navBottom-item">
+							<div class="navBottom__pic">
+								<img src="img/nav/briefcase.svg" alt="">
+							</div>
+							Смотреть вакансии
+						</a>
+
+						<a href="#" class="navBottom-item">
+							<div class="navBottom__pic">
+								<img src="img/nav/specialist.svg" alt="">
+							</div>
+							Выбрать специалиста
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="disclaimer">
+				<div class="container">
+					<div class="disclaimer__inner">
+						<div class="disclaimer__pic">
+							<img src="img/icons/warning.svg" alt="">
+						</div>
+						<div class="disclaimer__text">
+							Приведенные на сайте обзоры не являются заменой профессионального совета врача и не должны служить руководством к самодиагностике или самолечению.
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="alphabet__block">
+				<div class="container">
+					<h2>Что лечим?</h2>
+					<div class="alphabet__text">Поиск заболеваний по алфавиту</div>
+					<ul class="alphabet">
+						<li class="alphabet-item active"><a href="#">А</a></li>
+						<li class="alphabet-item"><a href="#">Б</a></li>
+						<li class="alphabet-item"><a href="#">В</a></li>
+						<li class="alphabet-item"><a href="#">Г</a></li>
+						<li class="alphabet-item"><a href="#">Д</a></li>
+						<li class="alphabet-item"><a href="#">Е</a></li>
+						<li class="alphabet-item"><a href="#">Ж</a></li>
+						<li class="alphabet-item"><a href="#">З</a></li>
+						<li class="alphabet-item"><a href="#">И</a></li>
+						<li class="alphabet-item"><a href="#">К</a></li>
+						<li class="alphabet-item"><a href="#">Л</a></li>
+						<li class="alphabet-item"><a href="#">М</a></li>
+						<li class="alphabet-item"><a href="#">Н</a></li>
+						<li class="alphabet-item"><a href="#">О</a></li>
+						<li class="alphabet-item"><a href="#">П</a></li>
+						<li class="alphabet-item"><a href="#">Р</a></li>
+						<li class="alphabet-item"><a href="#">С</a></li>
+						<li class="alphabet-item"><a href="#">Т</a></li>
+						<li class="alphabet-item"><a href="#">У</a></li>
+						<li class="alphabet-item"><a href="#">Ф</a></li>
+						<li class="alphabet-item"><a href="#">Э</a></li>
+						<li class="alphabet-item"><a href="#">Ю</a></li>
+						<li class="alphabet-item"><a href="#">Я</a></li>
+					</ul>
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="footer">
+			<nav class="menuBottom">
+				<ul class="menuBottom__list">
+					<li class="menuBottom__list-item"><a class="menuBottom__link" href="#">О Доктор Ост</a></li>
+					<li class="menuBottom__list-item"><a class="menuBottom__link" href="#">Направления</a></li>
+					<li class="menuBottom__list-item"><a class="menuBottom__link" href="#">Что лечим</a></li>
+					<li class="menuBottom__list-item"><a class="menuBottom__link" href="#">Методики</a></li>
+					<li class="menuBottom__list-item"><a class="menuBottom__link" href="#">Специалисты</a></li>
+					<li class="menuBottom__list-item"><a class="menuBottom__link" href="#">Отзывы</a></li>
+					<li class="menuBottom__list-item"><a class="menuBottom__link" href="#">Акции</a></li>
+					<li class="menuBottom__list-item"><a class="menuBottom__link" href="#">Цены</a></li>
+					<li class="menuBottom__list-item"><a class="menuBottom__link" href="#">Новости</a></li>
+					<li class="menuBottom__list-item"><a class="menuBottom__link" href="#">Вопрос-ответ</a></li>
+					<li class="menuBottom__list-item"><a class="menuBottom__link" href="#">Статьи</a></li>
+				</ul>
+			</nav>
+			<div class="container">
+				<div class="footer__info">
+					<div class ="footer__license">
+						МЕДИЦИНСКИЙ ЦЕНТР «ДОКТОР ОСТ» <br>
+						ООО «Челябинск «ДОКТОР ОСТ» <br>
+						<a href="#" class="footer__license__link">Лицензия ЛО-24-01-004119 от 13.09.2018 <br>
+							выдана Министерством <br>
+						здравоохранения Красноярского края.</a>
+					</div>
+					<div class="footer__button">
+						<button class="footer__button-error">Увидели ошибку?</button>
+						<button class="footer__button-suggest">Жалобы и предложения</button>
+					</div>
+					<address class="footer__address">
+						<span>Адрес: Челябинск ул. Университетская набережная, д.34</span>
+						<span>Телефон: +7 351 225-29-29</span>
+						<span>Часы работы: 8:00-20:00</span>
+						<a class="footer__address__link" href="#">Схема проезда</a>
+						<div class="footer__socialx">
+							<div class="footer__socialx-item">
+								<div class="footer__socialx__ig"></div>
+							</div>
+							<div class="footer__socialx-item">
+								<div class="footer__socialx__vk"></div>
+							</div>
+							<div class="footer__socialx-item">
+								<div class="footer__socialx__ok"></div>
+							</div>
+						</div>
+					</address>
+					<button id="btnScrollTop" class="btn__scrollTop">Наверх</button> 
+				</div>
+			</div>
+			<div class="footer__disclaimer">
+				<div class="container">
+					<div class="row">
+						Имеются противопоказания. Необходимо получить консультацию специалиста
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/libs.js"></script>
+		<script src="js/main.js"></script>
+
+	</body>
+	</html>

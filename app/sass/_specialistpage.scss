@@ -39,7 +39,7 @@
             margin-bottom: 1.2rem;
             &:before {
                 content: "";
-                background: url("/img/icons/pin-green.svg") center center / contain no-repeat;
+                background: url(img/icons/pin-green.svg) center center / contain no-repeat;
                 margin-right: 1.8rem;
                 height: 1.8rem;
                 width: 1.3rem;
@@ -235,14 +235,12 @@
             li {
                 padding: 1.6rem 0;
                 border-bottom: 0.1rem solid #CCCCCC;
-                display: flex;
-                gap: 1rem;
                 &:before {
                     content: none;
                 }
             }
             b {
-                flex:none;
+                flex: none;
             }
         }
     }
@@ -256,6 +254,14 @@
                 display: block;
                 width: 2.2rem;
                 height: 1.9rem;
+            }
+        }
+        &__list {
+            ul {
+                margin-left: 1.5rem;
+            }
+            li {
+                list-style: disc!important;
             }
         }
     }
@@ -282,6 +288,15 @@
                 display: block;
                 width: 2.2rem;
                 height: 1.9rem;
+            }
+        }
+        &-main {
+            &__slide {
+                img {
+                    display: block;
+                    height: 52rem;
+                    margin: 0 auto;
+                }
             }
         }
     }
@@ -354,8 +369,6 @@
             }
         }
         &__text {
-            font-size: 1.8rem;
-            line-height: 2.4rem;
             margin-bottom: 0.8rem;
         }
         &__link {
