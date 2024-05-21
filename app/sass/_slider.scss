@@ -171,10 +171,6 @@
   }
 }
 
-.box .topMain__direction {
-    top: 0;
-}
-
 .topMain__slider {
   .slick-list {
     height: 42.5rem;
@@ -322,49 +318,42 @@
 }
 
 // Arrows
-.reviews__mainslider-nav,
-.video__mainslider-nav,
-.topMain__direction-nav,
-.sales-mainslider-nav,
-.topMain__slider-nav,
-.doctor__slider-nav,
-.admin__slider-nav,
-.diagnostics__slider-nav,
-.hirurg__slider-nav,
-.phys__slider-nav,
-.medic__slider-nav,
-.regenerat__slider-nav,
-.reflex__slider-nav,
-.robot__slider-nav,
-.reab__slider-nav,
-.methods__slider-nav,
-.newsMain__slider-nav,
-.direction__slider-nav,
-.method__slider-nav,
-.method__procedure__sliderPhoto-nav,
-.direction__slider__photo-nav,
-.method__slider__photo-nav,
-.sectificates__slider-main-nav,
-.slider__filials-nav {
+.reviews__mainslider,
+.video__mainslider,
+.sales-mainslider,
+.topMain__slider,
+.doctor__slider,
+.admin__slider,
+.diagnostics__slider,
+.hirurg__slider,
+.phys__slider,
+.medic__slider,
+.regenerat__slider,
+.reflex__slider,
+.robot__slider,
+.reab__slider,
+.methods__slider,
+.newsMain__slider,
+.direction__slider,
+.method__slider,
+.method__procedure__sliderPhoto,
+.direction__slider__photo,
+.method__slider__photo,
+.sectificates__slider-main,
+.slider__filials {
+  &-nav {
     display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    position: relative;
-    z-index: 4;
+    justify-content: flex-end;
     gap: 1.5rem;
-    align-items: baseline;
+    position: relative;
+    top: -7rem;
+    left: -1rem;
+    z-index: 4;
+  }
 }
 
 .sectificates__slider-main .slick-track {
   display: flex;
-}
-
-.topMain__slider,
-.direction__slider__photo,
-.method__slider__photo {
-  &-nav {
-    margin: 1.5rem 0;
-  }
 }
 
 .methods__slider__photo,
@@ -426,35 +415,25 @@
 }
 
 .slick-arrow {
-  background-color: $grey-2;
-  height: 6.1rem;
-  width: 8rem;
+  background-color: $white;
+  border: 0.2rem solid $green-1;
+  height: 4rem;
+  width: 4rem;
   font-size: 0;
   &:hover {
-    background-color: $orange;
-    cursor: pointer
+    cursor: pointer;
   }
 }
 
-.slick-prev {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-image: url("data:image/svg+xml,%3Csvg width='41' height='16' viewBox='0 0 41 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.292893 8.70711C-0.0976295 8.31659 -0.0976296 7.68342 0.292892 7.2929L6.65685 0.928935C7.04738 0.538411 7.68054 0.538411 8.07107 0.928935C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292893 8.70711ZM41 9L1 9L1 7L41 7L41 9Z' fill='%23676767'/%3E%3C/svg%3E%0A")
-}
-
-.slick-prev:hover {
-  background-image: url("data:image/svg+xml,%3Csvg width='41' height='16' viewBox='0 0 41 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.292893 8.70711C-0.0976295 8.31659 -0.0976296 7.68342 0.292892 7.2929L6.65685 0.928935C7.04738 0.538411 7.68054 0.538411 8.07107 0.928935C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292893 8.70711ZM41 9L1 9L1 7L41 7L41 9Z' fill='white'/%3E%3C/svg%3E%0A")
-}
-
+.slick-prev, 
 .slick-next {
   background-repeat: no-repeat;
   background-position: center center;
-  transform: rotateY(180deg);
-  background-image: url("data:image/svg+xml,%3Csvg width='41' height='16' viewBox='0 0 41 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.292893 8.70711C-0.0976295 8.31659 -0.0976296 7.68342 0.292892 7.2929L6.65685 0.928935C7.04738 0.538411 7.68054 0.538411 8.07107 0.928935C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292893 8.70711ZM41 9L1 9L1 7L41 7L41 9Z' fill='%23676767'/%3E%3C/svg%3E%0A")
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='12' viewBox='0 0 8 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6L6.48649 0L8 1.4L3.02703 6L8 10.6L6.48648 12L0 6Z' fill='%23009C9D'/%3E%3C/svg%3E%0A");
 }
 
-.slick-next:hover {
-  background-image: url("data:image/svg+xml,%3Csvg width='41' height='16' viewBox='0 0 41 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.292893 8.70711C-0.0976295 8.31659 -0.0976296 7.68342 0.292892 7.2929L6.65685 0.928935C7.04738 0.538411 7.68054 0.538411 8.07107 0.928935C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292893 8.70711ZM41 9L1 9L1 7L41 7L41 9Z' fill='white'/%3E%3C/svg%3E%0A")
+.slick-next {
+  transform: rotateY(180deg);
 }
 
 .slick-dots {

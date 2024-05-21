@@ -154,7 +154,7 @@ $(document).ready(function(){
 		$(".head__phoneNumber-showText").hide();
 	});
 
-	/* ************** */
+	/* 
 	$(".topMain__slider").on('init', function (event, slick, currentSlide, nextSlide){
 	var i = (currentSlide ? currentSlide : 0) + 1;
     if (!($('.topMain__slider .slick-slide').length > 1)) {
@@ -164,7 +164,7 @@ $(document).ready(function(){
   			$('.topMain__slider-nav .slick-dots').hide();
 		}
     }
-	});
+	}); */
 
 	$(".topMain__slider").slick({
 		slidesToShow: 1,
@@ -172,91 +172,11 @@ $(document).ready(function(){
 		infinite: true,
 		fade: true,
 		autoplay: true,
-		autoplaySpeed: 3000,
+		autoplaySpeed: 5000,
 		adaptiveHeight: true,
 		arrows: true,
-		dots: true,
-		appendArrows: $(".topMain__slider-nav"),
-		appendDots: $(".topMain__slider-nav"),
-		responsive: [
-		{
-			breakpoint:1200,
-			settings: {
-				dots: true
-			}
-		},
-		{
-			breakpoint:992,
-			settings: {
-				dots: true
-			}
-		},
-		{
-			breakpoint:768,
-			settings: {
-				dots: false,
-				arrows: false
-			}
-		},
-		{
-			breakpoint:576,
-			settings: {
-				dots: false,
-				arrows: false
-			}
-		},
-		]
-	});
-
-	$(".topMain__direction").on('init', function (event, slick, currentSlide, nextSlide){
-	var i = (currentSlide ? currentSlide : 0) + 1;
-    // remove dots
-    if (!($('.topMain__direction .slick-slide').length > 5)) {
-    	if (window.matchMedia("(max-width: 400px)").matches) {
-  			$('.topMain__direction-nav .slick-dots').show();
-		} else {
-  			$('.topMain__direction-nav .slick-dots').hide();
-		}
-    }
-	});
-
-	$(".topMain__direction").slick({
-		slidesToShow: 5,
-		slidesToScroll: 1,
-		fade: false,
-		focusOnSelect: !0,
-		infinite: !1,
-		arrows: true,
-		dots: true,
-		appendArrows: $(".topMain__direction-nav"),
-		appendDots: $(".topMain__direction-nav"),
-		
-		responsive: [
-		{
-			breakpoint:1200,
-			settings: {
-				slidesToShow: 5
-			}
-		},
-		{
-			breakpoint:992,
-			settings: {
-				slidesToShow: 4
-			}
-		},
-		{
-			breakpoint:768,
-			settings: {
-				slidesToShow: 3
-			}
-		},
-		{
-			breakpoint:576,
-			settings: {
-				slidesToShow: 2
-			}
-		},
-		]
+		dots: false,
+		appendArrows: $(".topMain__slider-nav")
 	});
 
 	$(".sales-mainslider").on('init', function (event, slick, currentSlide, nextSlide){

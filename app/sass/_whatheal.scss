@@ -32,13 +32,6 @@
 .alphabet_disease {
 	margin: 0 0 3.2rem 0;
 
-	p {
-		font-size: 2rem;
-		line-height: 2.4rem;
-		margin: 2.8rem 0 1.2rem 0;
-		text-transform: uppercase;
-	}
-
 	&-item{
 		display: flex;
 		justify-content: center;
@@ -48,7 +41,7 @@
 		
 		&.active{
 			a {
-				background-color: $orange;
+				background-color: $green-1;
 				color: $white;
 				padding: 0.4rem 0.9rem;
 				&:hover {
@@ -58,10 +51,17 @@
 		}
 	}
 
+	p {
+		font-size: 2rem;
+		line-height: 2.4rem;
+		margin: 2.8rem 0 1.2rem 0;
+		text-transform: uppercase;
+	}
+
 	ul {
 		display: flex;
 		flex-flow: wrap row;
-		gap: 2.5rem;
+		gap: 2rem;
 	}
 
 	a {
@@ -117,9 +117,9 @@
 	
 	&__tooltip {
 		position: relative;
-		border-bottom: 0.1rem dotted $black;
+		//border-bottom: 0.1rem dotted $black;
 	
-		&:hover .disease__tooltiptext {
+		/*&:hover .disease__tooltiptext {
 			visibility: visible;
 		}
 	
@@ -135,7 +135,7 @@
 			position: absolute;
 			z-index: 1;
 			height: 2.9rem;
-		}
+		}*/
 	}
 	
 	&_search {
@@ -281,7 +281,6 @@
 			border-bottom: 0.1rem solid #CCCCCC;
 		}
 		a {
-			text-decoration: none;
 			&:hover, &:focus{
 				color: $orange;
 			}

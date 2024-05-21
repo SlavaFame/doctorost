@@ -11,6 +11,7 @@
 	margin: 2rem 0;
 }
 
+/*
 .sale {
 	display: flex;
 	flex-wrap: wrap;
@@ -83,10 +84,10 @@
 				}
 			}
 			&__text {
+				color: $white;
 				font-weight: 500;
 				font-size: 1.8rem;
 				line-height: 2.1rem;
-				color: $white;
 				text-align: center;
 			}
 		}
@@ -105,32 +106,32 @@
 		}
 		
 		&__text {
+			background: #F6F6F6;
+			color: $black;
 			font-weight: 300;
 			font-size: 1.1rem;
 			line-height: 1.2rem;
-			background: #F6F6F6;
-			color: $black;
 			padding: 1rem;
 		}
 	}
 	
 	&__form {
+		background-color: $green-1;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		background-color: $green-1;
 		flex: 1;
 		width: 100%;
 				
 		&__head {
-			padding: 1.4rem 1.3rem 0.9rem 1.3rem;
-			margin: 0;
+			color: $white;
 			font-size: 2.2rem;
+			font-weight: 500;
 			line-height: 2.5rem;
 			text-transform: uppercase;
-			color: $white;
 			text-align: center;
-			font-weight: 500;
+			margin: 0;
+			padding: 1.4rem 1.3rem 0.9rem 1.3rem;
 		}
 
 		.saleSecond__smsform__check {
@@ -140,7 +141,7 @@
 		}
 		
 	}
-}
+}*/
 
 .sms {
 	&__form {
@@ -150,18 +151,18 @@
 		padding: 2.5rem;
 		
 		&-item {
-			font-weight: 300;
-			font-size: 2rem;
-			line-height: 2.3rem;
-			border: none;
-			padding-left: 4.1rem;
-			margin-bottom: 1rem;
-			height: 3.5rem;
-			width: 100%;
-			background-color: #fff;
-			background-repeat: no-repeat;
+			background-color: $white;
 			background-size: 2rem 2rem;
 			background-position: 0.9rem;
+			background-repeat: no-repeat;
+			border: none;
+			font-weight: 300;
+			font-size: 2rem;
+			height: 3.5rem;
+			width: 100%;
+			line-height: 2.3rem;
+			margin-bottom: 1rem;
+			padding-left: 4.1rem;
 		}
 		&__btn {
 			font-weight: bold;
@@ -176,19 +177,6 @@
 		}
 	}
 }
-
-.smsPhone {
-	// background-image: url(img/icons/form-phone.svg);
-}
-
-/*
-.smsName {
-	background-image: url(img/icons/form-login.svg);
-}
-
-.smsDate {
-	background-image: url(img/icons/form-clock.svg);
-}*/
 
 .checkbox__outer {
 	display: flex;
@@ -205,11 +193,12 @@
 	}
 	
 	label {
+		color: $black;
 		cursor: pointer;
+		display: flex;
 		font-size: 1.1rem;
 		line-height: 1.2rem;
 		text-align: left;
-		color: #000;
 	}
 }
 
@@ -227,23 +216,23 @@
 	}
 	
 	&__box {
+		background-repeat: no-repeat;
+		background-color: $green-1;
+		background-position: center;
+		cursor: pointer;
 		margin: 0.2rem 0 0 0;
 		position: absolute;
 		width: 1.6rem;
 		height: 1.6rem;
-		cursor: pointer;
-		background-repeat: no-repeat;
-		background-color: $green-1;
-		background-position: center;
 	}
 }
 
+/*
 .saleSecond {
-	margin-top: 2rem;
-	color: $white;
 	background: linear-gradient(90deg, $green-3 0%, $green-1 75%, $green-1 100%);
+	color: $white;
+	margin-top: 2rem;
 	text-align: left;
-	font-weight: normal;
 		
 	&__inner {
 		display: flex;
@@ -254,9 +243,9 @@
 	}
 	
 	&__counter {
+		background-color: $green-1;
 		flex: 1;
 		width: 100%;
-		background-color: $green-1;
 		
 		&__inner {
 			background-color: $green-1;
@@ -314,12 +303,12 @@
 				position: relative;
 				&:before {
 					content: '';
-					position: absolute;
-					height: 6.9rem;
-					width: 5px;
 					background-color: $green-1;
+					position: absolute;
 					left: 44%;
 					top: 0;
+					height: 6.9rem;
+					width: 0.5rem;
 				}
 			}
 			&__text {
@@ -380,21 +369,17 @@
 			padding-left: 4.1rem;
 			height: 5.6rem;
 			width: 100%;
-			background-color: #ebebeb;
-			//background-repeat: no-repeat;
-			//background-size: 2rem 2rem;
-			//background-position: 0.9rem;
-			
+			background-color: #ebebeb;			
 		}
 		
 		&__btn {
+			background-color: $orange;
+			color: $white;
 			font-weight: 700;
 			font-size: 1.8rem;
 			line-height: 2rem;
 			width: 100%;
 			height: 5.6rem;
-			background-color: $orange;
-			color: $white;
 			text-transform: uppercase;
 			display: flex;
 			justify-content: center;
@@ -413,6 +398,8 @@
 		margin-bottom: 3rem;
 	}
 }
+*/
+
 
 .b24-form-btn {
 	background-color: #e05222 !important;
@@ -433,7 +420,7 @@
 	content: "";
 	width: 16px !important;
 	height: 3px !important;
-	background: #fff;
+	background: $white;
 	position: absolute;
 }
 
@@ -443,18 +430,10 @@
 
 .b24-form-header-title {
 	text-transform: uppercase;
-	color: #fff !important;
+	color: $white !important;
 	letter-spacing: 0!important;
 	font-family: Ubuntu,sans-serif !important;
 	font-size: 1.6rem!important;
-}
-
-.form-bars__title {
-	font-size: 1.8rem;
-}
-
-.form__fieldset textarea {
-	height:auto!important;
 }
 
 .b24-window-panel-pos-right {
@@ -471,7 +450,7 @@
 }
 
 .b24-form-state-container .b24-form-success { background-color: #009c9d!important }
-.b24-form-success .b24-form-state-text { color:#fff!important }
+.b24-form-success .b24-form-state-text { color:$white!important }
 .b24-form-state-container .b24-form-loader, .b24-form-state-container .b24-form-state { border-radius: 0!important }
 
 /*убирает паддинг который добавляет форма Битрикс24*/
@@ -484,10 +463,10 @@ body {
 }
 
 .b24-form-header-description {
-	color:#fff !important;
+	color:$white !important;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 1024px){
+@media (min-width: 320px) and (max-width: 1024px){
 	.b24-window-close {
 		top: 4px!important;
 		right: 10px!important;
@@ -495,16 +474,16 @@ body {
 }
 
 .promo {
+	background-color: $white;
 	display: flex;
 	flex-wrap: wrap;
-	z-index: 994;
     position: relative;
-    background-color: $white; 
+	z-index: 994; 
 
 	&__info {
-		flex: 0 52.6rem;
 		background-color: $green-1;
 		color: $white;
+		flex: 0 52.6rem;
 		padding: 2rem 1.8rem;
 
 		&-h {
@@ -586,7 +565,6 @@ body {
 			font-weight: 500;
 			line-height: 4rem;
 			letter-spacing: 2.3rem;
-			//color: #292929;
 			color: $green-1;
 			background-color: $white;
 			padding: 0.6rem 1.05rem;
@@ -602,10 +580,10 @@ body {
 			}
 		}
 		&__text {
+			color: $white;
 			font-size: 1.2rem;
 			font-weight: 400;
 			line-height: 1.6rem;
-			color: $white;
 			text-align: center;
 		}
 	}
@@ -615,14 +593,7 @@ body {
 			border: 0.2rem solid $green-1;
 			flex: 1;
 			max-width: 62rem;
-			padding: 1.6rem 2.2rem;
-		}
-
-		&-privacy {
-			margin-left: 2.5rem;
-			a {
-				color: $green-1;
-			}
+			padding: 1.6rem 2rem;
 		}
 
 		&-inner {
@@ -633,16 +604,24 @@ body {
 			position: relative;
 		}
 
+		&-privacy {
+			margin-left: 2.5rem;
+			a {
+				color: $green-1;
+			}
+		}
+
 		&-phone {
+			background-color: $grey-2;
+			border: 0.1rem solid $grey-2;
+			cursor: text;
 			font-size: 1.6rem;
 			font-weight: 400;
 			line-height: 2rem;
 			height: 5.6rem;
-			width: 27rem;
-			padding: 0.8rem 1.6rem;
-			background-color: $grey-2;
-			border: 0.1rem solid $grey-2;
-			cursor: text;
+			//width: 27rem;
+			flex: 1;
+			padding: 0.8rem 1rem;
 
 			&:focus,
 			&:valid {
@@ -659,12 +638,12 @@ body {
 		&-label {
 			color: $black;
 			cursor: text;
-			position: absolute;
-			left: 2rem;
-			top: 2rem;
 			font-size: 1.6rem;
 			font-weight: 400;
 			line-height: 2rem;
+			position: absolute;
+			left: 1rem;
+			top: 1.75rem;
 			
 			&:focus, 
 			&:valid {
@@ -674,14 +653,15 @@ body {
 		}
 
 		&-btn {
-			height: 5.6rem;
-			width: 24rem;
 			background-color: $orange;
 			color: $white;
+			flex: 1;
 			font-size: 1.8rem;
 			font-weight: 700;
 			line-height: 2rem;
 			letter-spacing: 0.02em;
+			height: 5.6rem;
+			width: 17.4rem;
 			text-align: center;
 			text-transform: uppercase;
 		}
@@ -725,20 +705,20 @@ body {
 }
 
 .modal {
+	background-color: $white;
+	box-shadow: 0.5rem 0.5rem 0.6rem 0 rgba(225,225,225,.2509803922);
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    position: fixed;
-	width: 46.5rem;
-    margin: 0 auto;
-    right: 0;
-    left: 0;
-    top: 25%;
-	background-color: $white;
-	box-shadow: 0.5rem 0.5rem 0.6rem 0 rgba(225,225,225,.2509803922);
 	font-size: 1.8rem;
 	font-weight: 400;
 	line-height: 2.4rem;
+	width: 46.5rem;
+    margin: 0 auto;
+	position: fixed;
+    right: 0;
+    left: 0;
+    top: 25%;
 	text-align: center;
 	z-index: 1100001;
 	&-pic {
@@ -749,20 +729,20 @@ body {
 		align-items: center;
 	}
 	&-head {
+		color: $green-1;
 		font-size: 2.6rem;
 		font-weight: 500;
 		line-height: 3.2rem;
-		text-align: center;
-		color: $green-1;
 		margin: 2rem 0;
+		text-align: center;
 	}
 	&-text {
-		margin: 2rem 0 0 0;
+		color: #5C5C5C;
 		font-size: 1.6rem;
 		font-weight: 400;
 		line-height: 2rem;
+		margin: 2rem 0 0 0;
 		text-align: center;
-		color: #5C5C5C;
 	}
 	.btn__orange {
 		margin: 3.2rem auto 3.6rem auto;
@@ -789,11 +769,11 @@ body {
 				right: -1.2rem;
 			}
 			&__num {
-				width: auto;
-				letter-spacing: 0.5rem;
-				padding: 0;
 				font-size: 3.2rem;
 				line-height: 3.2rem;
+				letter-spacing: 0.5rem;
+				width: auto;
+				padding: 0;
 				&:before {
 					height: 3.2rem;
 					width: 0.3rem;

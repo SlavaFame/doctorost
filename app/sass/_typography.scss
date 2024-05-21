@@ -139,6 +139,13 @@ h2, h3, h4, h5 {
 
 .orange {
 	border: 0.6rem solid $orange!important;
+
+	&__box {
+		background-color: $orange;
+		color: $white;
+		padding: 0.8rem 2.2rem;
+		width: fit-content;
+	}
 	.navBottom__pic {
 		background-color: $orange;
 	}

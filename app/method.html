@@ -4,11 +4,17 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Инъекция стромально-васкулярной фракции</title>
+
+	<link rel="icon" href="/img/favicons6/favicon.ico" sizes="any">
+	<link rel="icon" href="/img/favicons6/icon.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="/img/favicons6/apple-touch-icon.png">
+	<link rel="manifest" href="/img/favicons6/site.webmanifest">
+
 	<link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/">
 	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
 	<link rel="stylesheet" href="css/libs.min.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/app.min.css">
 </head>
 <body>
 	<header class="head">
@@ -26,10 +32,16 @@
 			</div>
 			<div class="head__appointment">
 				<div class="head__phoneNumber">
-					<span class="head__phoneNumber-item">8 (351) 225-29-29</span>
-					<span class="head__phoneNumber-item">8 (800) 2019-911</span>
+					<a href="tel:83512252929" class="head__phoneNumber-item">8 (351) 
+						<span class="head__phoneNumber-showText">показать телефон</span>
+						<span class="head__phoneNumber-showNum">225-29-29</span>
+					</a>
+					<a href="tel:88002019911" class="head__phoneNumber-item">8 (800) 
+						<span class="head__phoneNumber-showText">показать телефон</span>
+						<span class="head__phoneNumber-showNum">2019-911</span>
+					</a>
 				</div>
-				<button class="head__btn">Записаться на прием</button>
+				<button href="modal3" class="head__btn open_modal">Записаться на прием</button>
 			</div>
 		</div>
 		<nav class="menu">
@@ -78,7 +90,7 @@
 				<li class="menu__list-item"><a class="menu__link" href="#">Акции</a></li>
 				<li class="menu__list-item"><a class="menu__link" href="#">Цены</a></li>
 				<li class="menu__list-item"><a class="menu__link" href="#">Новости</a></li>
-				<li class="menu__list-item"><a class="menu__link" href="#">Вопрос-ответ</a></li>
+				<li class="menu__list-item"><a class="menu__link" href="faq.html">Вопрос-ответ</a></li>
 				<li class="menu__list-item"><a class="menu__link" href="#">Статьи</a></li>
 			</ul>
 		</nav>
@@ -138,7 +150,7 @@
 					</div>
 					<div class="method__slider__nav">
 						<div class="method__slider__nav-item">
-							<img src="https://test.dr-ost.ru/upload/iblock/4e8/4e8f516863854456ce305f0add75cd84.jpg" alt="">
+							<img src="img/methods/method_main.jpg" alt="">
 						</div>
 						<div class="method__slider__nav-item">
 							<img src="img/methods/method_nav2.jpg" alt="">
@@ -1045,53 +1057,6 @@
 					</div>
 				</div>
 
-				<div class="saleSecond">
-					<div class="saleSecond__inner container">
-						<div class="saleSecond__counter">
-							<span class="saleSecond__counter__head">До конца акции осталось:</span>
-							<div class="saleSecond__counter__datetime">
-								<div class="saleSecond__counter__datetime-item">
-									<div class="saleSecond__counter__datetime__number" style="color: #E05222;">10</div>
-									<div class="saleSecond__counter__datetime__text">дней</div>
-								</div>
-								<div class="saleSecond__counter__datetime-item">
-									<div class="saleSecond__counter__datetime__number">10</div>
-									<div class="saleSecond__counter__datetime__text">часов</div>
-								</div>
-								<div class="saleSecond__counter__datetime-item">
-									<div class="saleSecond__counter__datetime__number">10</div>
-									<div class="saleSecond__counter__datetime__text">минут</div>
-								</div>
-								<div class="saleSecond__counter__datetime-item">
-									<div class="saleSecond__counter__datetime__number">10</div>
-									<div class="saleSecond__counter__datetime__text">секунд</div>
-								</div>
-							</div>
-							<p>Ваша скидка по промокоду будет действовать <br> 14 дней с момента получения!</p>
-						</div>
-						<div class="saleSecond__form">
-							<form class="saleSecond__smsform" id="smsForm__second">
-								<div class="saleSecond__smsform-inner row">
-									<div class="col-lg-5">
-										<input type="tel" class="saleSecond__smsform-item smsPhone" placeholder="+7" required>
-									</div>
-									<div class="col-lg-6">
-										<button type="submit" class="saleSecond__smsform__btn">Записаться</button>
-
-										<div class="checkbox__outer">
-											<label class="check option">
-												<input type="checkbox" class="check__input" required="">
-												<span class="check__box"></span>
-												Я даю свое согласие на <a href="https://dr-ost.ru/o-tsentre/reglamentiruyushchie-dokumenty/">обработку персональных данных</a>. Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!
-											</label>
-										</div>
-									</div>
-								</div>
-							</form>
-							<p>Как получить <b><a href="#">промокод</a></b> на бесплатную онлайн консультацию?</p>
-						</div>
-					</div>
-				</div>
 			</section>
 
 			<section class="availability">
@@ -1334,31 +1299,64 @@
 			</div>
 		</footer>
 
-		<div class="overlay"></div>
-		<div class="modal">
-            <div class="modal-body">
-				<div class="modal-pic">
-					<svg width="122" height="80" viewBox="0 0 122 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M113.464 79.7255H8.59131V7.36102H113.464V79.7255Z" fill="#008081"/>
-						<path d="M61.0275 31.5203L8.59131 79.7254H113.464L61.0275 31.5203Z" fill="#009C9D"/>
-						<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M112.854 11.4455L61.0276 59.1901L8.62148 10.9116L8.59131 7.36102H112.854V11.4455Z" fill="#005152"/>
-						<path d="M61.0275 55.0359L8.59131 7.36102H113.464L61.0275 55.0359Z" fill="#0BBBB9"/>
-						<path d="M103.061 37.3713C113.478 37.3713 121.924 29.0055 121.924 18.6857C121.924 8.36585 113.478 0 103.061 0C92.6427 0 84.1973 8.36585 84.1973 18.6857C84.1973 29.0055 92.6427 37.3713 103.061 37.3713Z" fill="white"/>
-						<path d="M99.8616 26.2737L92.7328 19.3069L94.7755 17.3107L99.8616 22.2812L112.773 9.66371L114.816 11.6599L99.8616 26.2737Z" fill="#0BBBB9"/>
-					</svg>						
+		<footer class="footer">
+			<nav class="menuBottom">
+				<ul class="menuBottom__list">
+					<li class="menuBottom__list-item"><a class="menuBottom__link" href="#">О Доктор Ост</a></li>
+					<li class="menuBottom__list-item"><a class="menuBottom__link" href="#">Направления</a></li>
+					<li class="menuBottom__list-item"><a class="menuBottom__link" href="#">Что лечим</a></li>
+					<li class="menuBottom__list-item"><a class="menuBottom__link" href="#">Методики</a></li>
+					<li class="menuBottom__list-item"><a class="menuBottom__link" href="#">Специалисты</a></li>
+					<li class="menuBottom__list-item"><a class="menuBottom__link" href="#">Отзывы</a></li>
+					<li class="menuBottom__list-item"><a class="menuBottom__link" href="#">Акции</a></li>
+					<li class="menuBottom__list-item"><a class="menuBottom__link" href="#">Цены</a></li>
+					<li class="menuBottom__list-item"><a class="menuBottom__link" href="#">Новости</a></li>
+					<li class="menuBottom__list-item"><a class="menuBottom__link" href="#">Вопрос-ответ</a></li>
+					<li class="menuBottom__list-item"><a class="menuBottom__link" href="#">Статьи</a></li>
+				</ul>
+			</nav>
+			<div class="container">
+				<div class="footer__info">
+					<div class ="footer__license">
+						МЕДИЦИНСКИЙ ЦЕНТР «ДОКТОР ОСТ» <br>
+						ООО «Челябинск «ДОКТОР ОСТ» <br>
+						<a href="#" class="footer__license__link">Лицензия ЛО-24-01-004119 от 13.09.2018 <br>
+							выдана Министерством <br>
+						здравоохранения Красноярского края.</a>
+					</div>
+					<div class="footer__button">
+						<button class="footer__button-error">Увидели ошибку?</button>
+						<button class="footer__button-suggest">Жалобы и предложения</button>
+					</div>
+					<address class="footer__address">
+						<span>Адрес: Челябинск ул. Университетская набережная, д.34</span>
+						<span>Телефон: +7 351 225-29-29</span>
+						<span>Часы работы: 8:00-20:00</span>
+						<a class="footer__address__link" href="#">Схема проезда</a>
+						<div class="footer__socialx">
+							<div class="footer__socialx-item">
+								<div class="footer__socialx__ig"></div>
+							</div>
+							<div class="footer__socialx-item">
+								<div class="footer__socialx__vk"></div>
+							</div>
+							<div class="footer__socialx-item">
+								<div class="footer__socialx__ok"></div>
+							</div>
+						</div>
+					</address>
+					<button id="btnScrollTop" class="btn__scrollTop">Наверх</button> 
 				</div>
-                <div class="modal-head">
-					Спасибо!
+			</div>
+			<div class="footer__disclaimer">
+				<div class="container">
+					<div class="row">
+						Имеются противопоказания. Необходимо получить консультацию специалиста
+					</div>
 				</div>
-				<div class="modal-text">
-					Ваша заявка успешно отправлена. <br> 
-					Ждите звонка от оператора Доктор ОСТ
-				</div>
-				<button class="btn__orange modal-close">Хорошо</button>
-            </div>
-        </div>
-
-		<script src="js/libs.js"></script>
+			</div>
+		</footer>
+		<script src="js/app.min.js"></script>
 		<script src="js/main.js"></script>
 
 		<script>

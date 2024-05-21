@@ -28,7 +28,9 @@
     "vinyl-ftp": "^0.6.1"
   },
   "dependencies": {
-    "flatpickr": "^4.6.3"
+    "flatpickr": "^4.6.3",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-uglify-es": "^3.0.0"
   },
   "repository": {
     "type": "git",
