@@ -179,29 +179,28 @@ $(document).ready(function(){
 		appendArrows: $(".topMain__slider-nav")
 	});
 
-	$(".sales-mainslider").on('init', function (event, slick, currentSlide, nextSlide){
-		var i = (currentSlide ? currentSlide : 0) + 1; // + 3
-		var j = slick.slideCount - 2;
-		$('.salesMain__counter').text(i + ' из ' + j);
-		if (!($('.sales-mainslider .slick-slide').length > 3)) {
-			if (window.matchMedia("(max-width: 400px)").matches) {
-				  $('.sales-mainslider-nav .slick-dots').show();
-			} else {
-				  $('.sales-mainslider-nav .slick-dots').hide();
-			}
-		}
-		});
+	$(".methodsMain__slider").slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		infinite: true,
+		autoplaySpeed: 5000,
+		adaptiveHeight: true,
+		arrows: true,
+		dots: false,
+		appendArrows: $(".methodsMain__sliderArrows")
+	});
 	
-	$(".sales-mainslider").slick({
+	$(".salesMain__slider").slick({
 		focusOnSelect: false,
 		fade:false,
+		adaptiveHeight: true,
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		infinite: false,
 		dots: true,
 		arrows: true,
-		appendArrows: $(".sales-mainslider-nav"),
-		appendDots: $(".sales-mainslider-nav"),
+		appendArrows: $(".salesMain__sliderArrows"),
+		appendDots: $(".salesMain__sliderNav"),
 	
 		responsive: [
 		{
@@ -235,16 +234,90 @@ $(document).ready(function(){
 		]
 	});
 	
-	$(".sales-mainslider").on('beforeChange', function (event, slick, currentSlide, nextSlide){
-		var i = (currentSlide ? currentSlide : 0) + 1; // + 3
-		var j = slick.slideCount - 2;
-		$('.salesMain__counter').text(i + ' из ' + j);
-	});
+	$(".newsWrap__list").slick({
+		focusOnSelect: false,
+		fade:false,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		infinite: false,
+		dots: true,
+		arrows: true,
+		appendArrows: $(".newsMain__sliderArrows"),
+		appendDots: $(".newsMain__sliderNav"),
 	
-	$(".sales-mainslider").on('afterChange', function (event, slick, currentSlide){
-		var i = (currentSlide ? currentSlide : 0) + 1; // + 3
-		var j = slick.slideCount - 2;
-		$('.salesMain__counter').text(i + ' из ' + j);
+		responsive: [
+		{
+			breakpoint:1200,
+			settings: {
+				slidesToShow: 3
+			}
+		},
+		{
+			breakpoint:992,
+			settings: {
+				slidesToShow: 2
+			}
+		},
+		{
+			breakpoint:768,
+			settings: {
+				slidesToShow: 1,
+				dots: false,
+				arrows: true
+			}
+		},
+		{
+			breakpoint:576,
+			settings: {
+				slidesToShow: 1,
+				dots: false,
+				arrows: true
+			}
+		},
+		]
+	});
+
+	$(".reviews__slider").slick({
+		focusOnSelect: false,
+		fade:false,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		infinite: false,
+		dots: true,
+		arrows: true,
+		appendArrows: $(".reviews__sliderArrows"),
+		appendDots: $(".reviews__sliderNav"),
+	
+		responsive: [
+		{
+			breakpoint:1200,
+			settings: {
+				slidesToShow: 3
+			}
+		},
+		{
+			breakpoint:992,
+			settings: {
+				slidesToShow: 2
+			}
+		},
+		{
+			breakpoint:768,
+			settings: {
+				slidesToShow: 1,
+				dots: false,
+				arrows: true
+			}
+		},
+		{
+			breakpoint:576,
+			settings: {
+				slidesToShow: 1,
+				dots: false,
+				arrows: true
+			}
+		},
+		]
 	});
 	
 
@@ -548,22 +621,17 @@ $(".faqPage__slider").on('afterChange', function (event, slick, currentSlide){
 	$('.faqPage__topic__counter').text(i + ' из ' + slick.slideCount);
 });
 
-$(".doctor__slider-main").on('init', function (event, slick, currentSlide, nextSlide){
-	var i = (currentSlide ? currentSlide : 0) + 1; // + 3
-	var j = slick.slideCount - 1;
-	$('.doctorsMain__counter').text(i + ' из ' + j);
-});
 
 $(".doctor__slider-main").slick({
 	focusOnSelect: false,
 	fade: false,
 	slidesToShow: 2,
 	slidesToScroll: 1,
-	infinite: false,
+	infinite: true,
 	arrows: true,
 	dots: true,
-	appendArrows: $(".doctor__slider-nav"),
-	appendDots: $(".doctor__slider-nav"),
+	appendArrows: $(".doctor__sliderArrows"),
+	appendDots: $(".doctor__sliderNav"),
 
 	responsive: [
 	{
@@ -595,18 +663,6 @@ $(".doctor__slider-main").slick({
 		}
 	},
 	]
-});
-
-$(".doctor__slider-main").on('beforeChange', function (event, slick, currentSlide, nextSlide){
-	var i = (currentSlide ? currentSlide : 0) + 1; // + 3
-	var j = slick.slideCount - 1;
-	$('.doctorsMain__counter').text(i + ' из ' + j);
-});
-
-$(".doctor__slider-main").on('afterChange', function (event, slick, currentSlide){
-	var i = (currentSlide ? currentSlide : 0) + 1; // + 3
-	var j = slick.slideCount - 1;
-	$('.doctorsMain__counter').text(i + ' из ' + j);
 });
 
 $(".method__slider__photo").slick({

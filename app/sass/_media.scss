@@ -1,5 +1,61 @@
 @media (min-width: 300px) and (max-width: 768px){
 
+
+	.topMain__direction {
+		margin-bottom: 0!important;
+	}
+
+	.doctor__sliderNav {
+		margin-top: 2rem;
+	}
+
+	.methodsMain__slider-item {
+		height: auto;
+	}
+
+	.methodsMain__slider__photo {
+		flex: 1 100%;
+		height: 22rem;
+		background-size: cover;
+	}
+
+	.methodsMain__slider__inner {
+		padding: 1.2rem;
+	}
+
+	.methodsMain__slider__outer {
+		padding: 0.8rem;
+	}
+
+	.methodsMain__slider__head {
+		margin-bottom: 2.4rem;
+	}
+
+	.methodsMain__sliderNav {
+		margin: 3.2rem 0 0 0;
+		flex-wrap: nowrap;
+	}
+
+	.methodsMain__slider .btn_orange {
+		margin-top: 2.4rem;
+		width: 100%;
+	}
+
+	.methodsMain__slider__outer p {
+		font-size: 1.6rem;
+		line-height: 2rem;
+		font-weight: 500;
+	}
+
+	.methodsMain__slider__text {
+		font-size: 2rem;
+		line-height: 2.4rem;
+	}
+
+	.topMain__direction .promo__info {
+		flex: 1;
+	}
+
 	.newsMain__slider__desc-head, 
 	.testimonials_slider__item-text p {
 		font-size: 1.6rem;
@@ -256,10 +312,10 @@
 	}
 
 	.advantages {
-		justify-content: center;
-		margin: 0 -1.5rem;
+
 		&__text {
-			font-size: 1.7rem;
+			font-size: 1.6rem;
+			line-height: 2rem;
 		}
 		&-item {
 			margin: 0 auto;
@@ -379,14 +435,24 @@
 		width: 100%;
 	}
 
+	.aboutMain__head h2 {
+		font-size: 1.8rem;
+		line-height: 2.4rem;
+		margin: 0 0 3.2rem 0;
+	}
+
 	.topMain {
+
+		&__direction {
+			margin-bottom: 6rem;
+		}
 
 		&__directionWrap {
 			h2 {
 				font-size: 2.2rem;
 				font-weight: 500;
 				line-height: 2.8rem;
-				margin: 6rem 0 2rem 0;
+				margin: 0 0 2rem 0;
 			}
 		}
 
@@ -430,6 +496,60 @@
 				height: auto;
 			}
 		}
+	}
+
+	.aboutMain__bestClinic {
+		margin-bottom: 6rem;
+	}
+
+	.aboutMain__head {
+		margin: 6rem auto 0 0;
+	}
+
+	.methodsMain__header,
+	.doctorsMain__head {
+		margin: 6rem 0 3.2rem 0;
+	}
+
+	.salesMain__head {
+		margin: 6rem 0 2rem 0;
+	}
+
+	.newsMain__head h2,
+	.reviews__head h2,
+	.salesMain__head h2,
+	.doctorsMain__head h2,
+	.methodsMain__header h2,
+	.aboutMain__bestClinic-h,
+	.advantagesWrap h2 {
+		font-size: 2.2rem;
+		line-height: 2.8rem; 
+	}
+
+	.newsMain__head,
+	.reviews__head h2 {
+		margin: 6rem 0 2rem 0;
+	}
+
+	.methodsMain__header-col {
+		flex: 1 100%;
+	}
+
+	.advantagesWrap {
+		margin-top: 3.2rem;
+	}
+
+	.aboutMain__bestClinic-text {
+		margin-top: 4rem;
+	}
+
+	.aboutMain__bestClinic-text,
+	.aboutMain__bestClinic-pic {
+		flex:1 1 100%
+	}
+
+	.aboutMain__bestClinic-text {
+		padding: 2.4rem 1.2rem;
 	}
 
 	.leaderMain {
@@ -604,8 +724,11 @@
 	.articlesWrap, .catalogSpecWrap, .methodsWrap, .newsWrap, .reviewsWrap, .salesWrap, .video {
 		&__announce {
 			&-link {
-				font-size: 1.8rem;
-				line-height: 2rem;
+				font-size: 1.2rem;
+				line-height: 1.6rem;
+				margin-top: 3rem;
+				position: relative;
+				text-align: right;
 			}
 		}
 	}
@@ -666,6 +789,7 @@
 
 	.doctor__info {
 		min-height: 31rem;
+		flex-wrap: wrap;
 	}
 
 	.aboutMain__col {
@@ -693,17 +817,21 @@
 		}
 	}
 
+	
+
 	.aboutMain__infographic {
-		gap: 0;
 		margin: 0;
 		&-item {
-			font-size: 1.8rem;
-			line-height: 2.2rem;
-			padding: 1rem 0;
+			font-size: 1.2rem;
+			line-height: 1.6rem;
+			padding: 2rem;
 			div {		
 				font-size: 4rem;
 				line-height: 5rem;
 			}
+		}
+		&-num {
+			padding-bottom: 1.6rem;
 		}
 	}
 
@@ -715,6 +843,10 @@
 	.blue-box {
 		margin: 1.5rem -1.5rem;
 		width: auto;
+	}
+
+	.reviews__slider, .video__slider {
+		gap: 0;
 	}
 
 	.reviews__slider h3 {
@@ -1229,9 +1361,6 @@
 }
 
 @media (min-width: 320px) and (max-width: 370px){
-	.advantages-item {
-		height: 36.5rem;
-	}
 
 	.head {
 		font-size: 1.4rem;
@@ -1357,22 +1486,6 @@
 		} 
 	}
 
-	.reflex__head, .salesMain__head, .doctorsMain__head,  .methodsMain__head,  .newsMain__head, .author__head, .diagnostics__head, .faq__head, 
-	.goodKnow__head, .hirurg__head, .howMuch__head, .medic__head, .methods__head, .phys__head, .regenerat__head, .reviews__head, 
-	.direction__future__head, .direction__procedure__head, .method__future__head, .method__procedure__head, .important__head {
-		margin: 2rem 0 1rem 0;
-		padding-left: 0;
-		padding-right: 0;
-		font-size: 1.6rem;
-
-		&:after {
-			width: auto;
-			height: 2.5rem;
-			left: -99999px;
-			position: relative;
-		}
-	}
-
 	.direction, .method {
 		&__future, 
 		&__procedure {
@@ -1471,7 +1584,6 @@
 	.methods__head h2,
 	.method__text, 
 	.diagnostics__head h2, 
-	.reviews__head h2, 
 	.faq__head h2, 
 	.author__head h2, 
 	.howMuch__head h2, 
@@ -1485,12 +1597,18 @@
 	.methodsWrap__list-item h2, 
 	.newsWrap__list-item h2, 
 	.reviewsWrap__list-item h2, 
-	.salesWrap__list-item h2, 
 	.video__list-item h2,
 	.important__head h2,
 	.faq__body-item h3 {
 		font-size: 1.8rem;
 		line-height: 2.1rem;
+	}
+
+	.newsWrap__list-item h2,
+	.salesWrap__list-item h2 {
+		font-size: 1.6rem;
+		line-height: 2rem;
+		margin: 0.8rem 0 1.2rem 0;
 	}
 
 	.howMuch__head h2 {
@@ -1618,6 +1736,9 @@
 		&__list {
 			justify-content: space-between;
 			gap: 0;
+			&-item {
+				min-height: auto;
+			}
 		}
 	}
 

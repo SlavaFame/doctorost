@@ -17,13 +17,13 @@
 		position: relative;
 	}
 	&__dropdownList {
+		background-color: $white;
 		display: none;
 		flex-direction: column;
     	gap: 1rem;
     	left: 0;
-    	z-index: 1;
-    	background-color: $white;
 		margin-bottom: 3rem;
+		z-index: 1;
     	
 		&.show {
 			display: flex;
@@ -40,12 +40,12 @@
 		}
 	}
 	&__btnSelect {
+		background-color: transparent;
+		color: $green-1;
 		font-weight: 500;
 		font-size: 2rem;
     	line-height: 3rem;
     	margin: 2rem 0;
-		color: $green-1;
-		background-color: transparent;
 		text-transform: uppercase;
 
 		&:before {
@@ -200,51 +200,31 @@
 	}
 
 	&__head {
-		padding: 0;
-		display: flex;
-		align-items: center;
-
-		&:after {
-			content: '';
-			width: 100%;
-			height: 2rem;
-			background-color: $green-1;
-			position: absolute;
-		}
 		h2 {
-			display: flex;
-			align-items: center;
-			flex-wrap: nowrap;
-			background-color: $white;
-			margin: 1.5rem 0;
-			padding: 0 3rem 0 0;
-			z-index: 1;
 			font-weight: 500;
 			font-size: 2.5rem;
 			line-height: 2.9rem;
+			margin: 10rem 0 3.2rem 0;
 		}
-	}
-
-	&__counter {
-		color: $white;
-		display: flex;
-		align-items: center;
-		margin-left: auto;
-		padding-right: 1.5rem;
-		font-size: 1.5rem;
-		z-index: 1;
 	}
 
 	&__slider {
 		&__link {
 			&:after {
-				background: url(img/diagnostics/grey-arrow.svg) 0 0.5rem / contain no-repeat;
-				&:hover {
-					&:after {
-						background: url(img/diagnostics/orange-arrow.svg) 0 0.5rem / contain no-repeat;
-					}
+				content: '';
+				display: block;
+				height: 1.2rem;
+				width: 0.8rem;
+				margin-left: 1.2rem;
+				background: url("data:image/svg+xml,%3Csvg width='8' height='12' viewBox='0 0 8 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 6L1.51351 12L0 10.6L4.97297 6L1.46575e-06 1.4L1.51351 0L8 6Z' fill='%23009C9D'/%3E%3C/svg%3E%0A") center / contain no-repeat;
+			  
+			  }
+			  &:hover {
+				color: $orange;
+				&:after {
+				  background: url("data:image/svg+xml,%3Csvg width='8' height='12' viewBox='0 0 8 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 6L1.51351 12L0 10.6L4.97297 6L1.46575e-06 1.4L1.51351 0L8 6Z' fill='%23E05222'/%3E%3C/svg%3E%0A") center / contain no-repeat;
 				}
-			}
+			  }
 		}
 	}
 }
