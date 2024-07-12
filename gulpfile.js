@@ -44,7 +44,7 @@ function styles() {
 }
 
 function cssmin(){
-	return src(['app/css/app.min.css']) // Выбираем файл для минификации
+	return src(['app/css/libs.min.css', 'app/css/app.min.css']) // Выбираем файл для минификации
 	.pipe(cleancss( { level: { 1: { specialComments: 0 } }/* , format: 'beautify' */ } )) // Минифицируем стили
 	.pipe(concat('template_styles.css'))
 	.pipe(dest('dist/css')); // Выгружаем в папку app/css

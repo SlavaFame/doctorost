@@ -372,6 +372,7 @@
 	&__head {
 		display: flex;
 		align-items: center;
+		padding-left: 0;
 
 		&:after {
 			content: '';

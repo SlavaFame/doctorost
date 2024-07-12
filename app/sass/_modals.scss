@@ -165,13 +165,88 @@
     }
 
     &__box {
-        margin: 5px 0 0 -26px;
+        margin: 0.5rem 0 0 -2.6rem;
         position: absolute;
-        width: 16px;
-        height: 16px;
+        width: 1.6rem;
+        height: 1.6rem;
         cursor: pointer;
         background-image: url(img/icons/checkbox-off.svg); 
         background-repeat: no-repeat;
-        border: 1px solid $green-1;
+        border: 0.1rem solid $green-1;
+    }
+}
+
+
+.modalview {
+    width: 40rem;
+    height: 48rem;
+    box-shadow: 0 0.5rem 1rem 0.2rem rgba(34, 60, 80, 0.35);
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1100001;
+    top: calc(30% - 10rem);
+    left: calc(50% - 20rem);
+	&-body {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		position: relative;
+	}
+	&-close {
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 1100002;
+		display: block;
+		border: 0.3rem solid $orange;
+		width: 3rem;
+		height: 3rem;
+		background-color: $white;
+		cursor: pointer;
+	}
+	&-line {
+		height: 0.3rem;
+		width: 1.6rem;
+		display: block;
+		background-color: $orange;
+
+		&:nth-child(1) {
+			transform: rotate(45deg);
+			position: relative;
+			top: 1.1rem;
+			left: 0.4rem;
+		}
+		
+		&:nth-child(2) {
+			transform: rotate(135deg);
+			position: relative;
+			top: 0.8rem;
+			left: 0.4rem;
+		}
+	}
+}
+
+.modal-tele {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1100001;
+    top: calc(50% - 10rem);
+    left: calc(50% - 20rem);
+}
+
+@media (max-width: 600px) {
+    .modalview {
+        width: 20rem;
+        height: 40rem;
+        left: calc(70% - 20rem);
+    }
+
+    .modal-tele {
+        left: 0;
+        top: calc(50% - 7rem);
     }
 }

@@ -1822,16 +1822,19 @@
 			margin-left: 1.6rem;
 		}
 	}
-	.doctor__navigation {
-		gap: 0.8rem;
-		padding: 0.4rem;
+	.doctor {
+		&__navigation {
+			gap: 0.8rem;
+			padding: 0.4rem;
+		}
+		&__online {
+			padding-left: 1.2rem;
+		}
+		&__slider {
+			gap: 2.4rem;
+		}
 	}
-	.doctor__online {
-		padding-left: 1.2rem;
-	}
-	.doctor__slider {
-		gap: 2.4rem;
-	}
+
 	.navBottom-item {
 		width: 22rem;
 	}
@@ -1958,12 +1961,10 @@
 		width: 100%;
 	}
 
-	/*
-	.sale__counter { 
-		padding-left: 0!important;
-		padding-right: 0!important;
-	}*/
-
+	.howeverBlock {
+		max-width: 100%;
+	}
+	
 	.topMain {
 		&__slider {
 			&-item {
