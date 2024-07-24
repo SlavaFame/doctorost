@@ -33,13 +33,14 @@ iframe {
 		gap: 5.7rem;
 
 		&-item {
+			border-bottom: 0.2rem solid $green-1;
 			color: $black;
 			cursor: pointer;
 			display: flex;
 			flex-direction: column;
+			min-height: 44.6rem; //42.6rem;
 			width: 34.2rem;
-			min-height: 42.6rem;
-			border-bottom: 0.2rem solid $green-1;
+			position: relative;
 
 			&:hover {
 				color: $black;
@@ -92,9 +93,10 @@ iframe {
 			font-weight: 500;
 			line-height: 1.6rem;
 			letter-spacing: 0.02em;
-			text-transform: uppercase;
 			position: absolute;
 			bottom: 2rem;
+			left: 0;
+			text-transform: uppercase;
 
 			&:after {
 				content: '';
@@ -192,45 +194,45 @@ iframe {
 	}
 }	
 
-.reviews__header,
-.video__header {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
+.reviews, .video {
+	&__header {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
 
-	&__text {
-		flex: 5;
-		color: $white;
-		font-weight: 500;
-		background-color: $green-1;
-		padding: 2.2rem 0 2rem 0;
-		position: relative;
-		&:before {
-			content: '';
+		&__text {
 			background-color: $green-1;
-			width: 100%;
-			height: 100%;
-			left: -91.2rem;
-			top: 0;
-			position: absolute;
-			z-index: -1;
+			color: $white;
+			flex: 5;
+			font-weight: 500;
+			padding: 2.2rem 0 2rem 0;
+			position: relative;
+			&:before {
+				content: '';
+				background-color: $green-1;
+				width: 100%;
+				height: 100%;
+				left: -91.2rem;
+				top: 0;
+				position: absolute;
+				z-index: -1;
+			}
 		}
-	}
 
-	&__logo {
-		flex:1;
-		img {
-			height: auto;
-			max-width: 100%;
-			margin-left: auto;
-			display: block;
+		&__logo {
+			flex: 1;
+			img {
+				display: block;
+				height: auto;
+				max-width: 100%;
+				margin-left: auto;
+			}
 		}
 	}
 }
 
 .play {
-	z-index: 10;
 	position: absolute;
 	top: 50%;
     left: 50%;
@@ -239,6 +241,7 @@ iframe {
 	height: 7.6rem!important;
 	width: 7.6rem!important;
 	opacity: 0.6;
+	z-index: 10;
 }
 
 .reviews {
@@ -270,8 +273,8 @@ iframe {
 	margin: 1rem auto!important;
 
 	&__other {
-	font-size: 1.8rem;
-	line-height: 2.1rem;
+		font-size: 1.8rem;
+		line-height: 2.1rem;
 
 		&-content {
 			a {
@@ -285,9 +288,9 @@ iframe {
 		}
 
 		&-title {
+			color: $green-1;
 			font-size: 2rem;
 			line-height: 2.1rem;
-			color: $green-1;
 			margin-bottom: 1.5rem;
 			text-transform: uppercase;
 		}

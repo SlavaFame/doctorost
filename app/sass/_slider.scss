@@ -62,7 +62,7 @@
   }
 }
 
-.salesMain, .newsMain {
+.salesMain, .newsMain, .reviewsMain {
   &__slider {
     .slick-track{
       display: flex;
@@ -111,14 +111,6 @@
   }
   .slick-current {
     display: none;
-  }
-}
-
-.reviews, .video {
-  &__navslider {
-    &__desc {
-      color: $black;
-    }
   }
 }
 

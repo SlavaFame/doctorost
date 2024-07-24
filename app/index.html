@@ -17,46 +17,6 @@
 	<link rel="stylesheet" href="css/app.min.css">
 </head>
 <body>
-	<div class="modal-wrap">
-		<div id="overlay"></div>
-		<div href="#modal3" class="modal_div form-bars__wrapper">
-			<div class="form-bars__title">
-				Записаться на прием
-				<div class="modal_close"></div>
-			</div>
-			<form id="form_39" class="form-bars">
-				<input type="hidden" name="SID" value="39">
-				<input type="hidden" name="user_page" value="Методики — «Доктор ОСТ»">
-				<input type="hidden" name="user_city" value="Челябинск">
-				
-				<fieldset class="form__fieldset user_name">
-					<span>Здорово, если оставите имя:</span>
-					<input type="text" placeholder="Введите ваше имя" name="NAME" autocomplete="name" required="">
-				</fieldset>
-
-				<fieldset class="form__fieldset user_phone">
-					<span>Обязательно оставьте номер телефона:</span>
-					<input type="tel" class="telmask" placeholder="Введите номер контактного телефона" name="PHONE" autocomplete="tel" required="">
-				</fieldset>
-
-				<fieldset class="form__fieldset user_text">
-					<span>Сообщение:</span>
-					<textarea name="MESSAGE" placeholder="К какому специалисту или с какой проблемой вы обращаетесь" cols="30" rows="10"></textarea>
-				</fieldset>
-
-				
-				<div class="checkbox__outer">
-					<label class="check option">
-						<input type="checkbox" class="check__input" required="">
-						<span class="check__box"></span>
-						Я даю свое согласие на <a href="https://dr-ost.ru/o-tsentre/reglamentiruyushchie-dokumenty/">обработку персональных данных</a> <br>Ваши данные останутся конфиденциальными и не будут переданы третьим лицам!
-					</label>
-					<button type="submit" class="form__submit">Отправить</button>
-				</div>
-			</form>
-		</div>
-	</div>	
-
 	<header class="head">
 		<div class="head__container">
 			<a class="head__logo" href="#">
@@ -300,7 +260,8 @@
 					<div class="aboutMain__bestClinic-h">
 						Лучшая клиника за 2016-2023 гг
 					</div>
-					<img src="https://dr-ost.ru/upload/iblock/f2a/18xclqfiq806gt954uuafrtshkvbkvja.png" alt="медали за лучшую клинику">
+					<img src="./img/aboutmain/medals.png" alt="медали за лучшую клинику">
+					
 					<p>Медцентр «Доктор ОСТ» - оснащён передовыми технологиями, 
 						многие из которых уникальны или довольно редки на территории России и Казахстана. 
 						Здесь трудится команда профессионалов, посвятивших себя поиску эффективных решений 
@@ -340,27 +301,27 @@
 			<div class="advantages">
 				<div class="advantages-item">
 					<div class="advantages__text advantages__text-1">Высокое оснащение инновационными методами лечения</div>
-					<div class="advantages__pic lazy" data-bg="url(https://s3-alpha-sig.figma.com/img/b839/14d0/97ccbe8b6dc0ce8f5c4fe0ed61dedac4?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nYI~r-7AB5DVm8WPu8pTzUEqUriuBhd03FVwppfYK6DbfoQOZvOeqktTk2gOag4Q~2pt2GMDHjSUvBmEzW1-EDrmgr8jfZ5oPKojf1DIGwqxhkRZ-2uawmmkZaEZlCAkV3FeSHjXRpPgqIG5z3XpNl~YxJ2zHE7rCwfCZi-wju4lM2LES54wLmDKFRffhfnSfRJm~XTBsCvmqFykhI2yLWhKKrG7f3E77qr36fBJNUzL5q7-vHOdHT-AMLhUzsqtHC-Z~Pq7GrBaRw6pgb6KhHyxgLC2BvL4sEU1ektM7LCekkQQh5KhD9A31StAQuwGFKhVrjvrkHzuaIg4jfic0g__)"></div>
+					<div class="advantages__pic lazy" data-bg="url(./img/advantages/01.jpg)"></div>
 				</div>
 				<div class="advantages-item">
 					<div class="advantages__text advantages__text-2">ОПЫТ И СОТРУДНИЧЕСТВО С КРУПНЕЙШИМИ ИНСТИТУТАМИ В МИРЕ</div>
-					<div class="advantages__pic lazy" data-bg="url(https://s3-alpha-sig.figma.com/img/0a21/88e3/cea5f0279c1e6736cdf64cfb592c11a1?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PvSw4mEO4WK-JjyFC39b5h5ribaohIXpeF4et~P9oPcxPBr9g4PIIxLvagmZpRIaG6Su~xY44pINikgYQ9w-hjiIZ2XVzVvpKzoO6JnjrIjVS2q1gTkxbQ3l4~2qPo8MG3PIZzOVasRjvZ5O2jAduCtX9tleJavkjDuQhqApHjoIOBE5iCg8HMaMiRAiaSaHyoXhUtXNvSgZoJS0mtaFjm0S-cZF5hisUN8xUX7fdo2t9BRi1a-jfvTkM5y4HJbfjbLz-gvCwS5l69HlQDjuLljPdpEW5fbhcLUC53kENaizT26-Y9iDeUsmataSbaoO3ImWw1lZe8ZicxNxEYf-xw__)"></div>
+					<div class="advantages__pic lazy" data-bg="url(./img/advantages/02.jpg)"></div>
 				</div>
 				<div class="advantages-item">
 					<div class="advantages__text advantages__text-3">КОНСУЛЬТАЦИЯ ВРАЧА В ХОДЕ ВСЕГО КУРСА ЛЕЧЕНИЯ БЕСПЛАТНО</div>
-					<div class="advantages__pic lazy" data-bg="url(https://s3-alpha-sig.figma.com/img/1062/9243/2d7436beee5333f4b3ccfcd4ff234327?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IMoGNbxEfKiT8-EPSLDreRmIMKS3XlLOAq4rQJKrS3M7FLSThK0dOkh2fWUAsWJ-jdwaNC1Hv1DzrxsfgFb-iWaduqFUaeTjpYtOBDhTeiI5rXc1I9nPNlY2pRWJ6nmtsMbDojGV8z7AoRcbWHuQu1SKFLJWMj2yYLx-83D0oPsbOYecCONnpps7ZDB6JNfYmd6e3xHybRg4fkL1xux-oly1OhMnwGuAyfhk1w4DI7wePggORRvDHno9OeZINTnsxgAipY3O5f1MVVYvHwxPKuljBxJq07tTyVvLEsw8fcFeJJk8jSoCuZzmcOebiJTAl94eE2NkPvLsqVOjZxFMMg__)"></div>
+					<div class="advantages__pic lazy" data-bg="url(./img/advantages/03.jpg)"></div>
 				</div>
 				<div class="advantages-item">
 					<div class="advantages__text advantages__text-4">РАЗРУШАЕМ МИФЫ И НЕСЁМ ОТВЕТСТВЕННОСТЬ ЗА РЕЗУЛЬТАТ</div>
-					<div class="advantages__pic lazy" data-bg="url(https://s3-alpha-sig.figma.com/img/754a/e5af/2865ac124b9f6168b3fcbc494a4c512d?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cMCMt4SchTgq9A9QngF05LB5MxEF9Y7hewxqwaFdToC3eUbprVqEyJ9PNeUBFiJWAJl-0xMTiEiXwEU5Hr~w22xQce0x5r2Sgh~1-GZKTQNDHnrqDJCIFjYHHUfTNhoLRUyyopN7tCcpNYIG7lE3aWhaC~kNVgcejSQHA66ZF7ugXFctzkiuX2daogirb7EikQUFev0QIT7aXYIzTVuCV7-H9FckgB0luMH0LBBcW6fxWtifhLrLPLI6~039MqwWRe4Ozl4tNPVb76qbg2KP2LW3fnvi~UmGxPAeGHfOEZGRqrCysp7ZHXO12KtKQQ683BhYM4OSqADActG4DzPlmQ__)"></div>
+					<div class="advantages__pic lazy" data-bg="url(./img/advantages/04.jpg)"></div>
 				</div>
 				<div class="advantages-item">
 					<div class="advantages__text advantages__text-5">ЭФФЕКТИВНОСТЬ ЛЕЧЕНИЯ ДОСТИГАЕТ СВЫШЕ 96%</div>
-					<div class="advantages__pic lazy" data-bg="url(https://s3-alpha-sig.figma.com/img/3a06/e90b/a823905377e1c278e653b38f48da011e?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IWc7NpVNHJfWoFZQD-dMpqFAVUhjlTqf0EYX~cL5~mWFIVGDdqtSIe2AgTfxhDkF2DNnZ13HaoFxcQZKwcuKKs34uszfg6wukR1TXDpeB8PH5vOgXqLxgBt8LblOJbH45UNUcvsqTkSbR1sOl91Po541EvhIoIRQoMvZ8IjAADw2s8Wumt~yD47DKAp2QAYFKAe7jHrDGK0hdVfqprbqZpi9ao8MnRh-v2EsVJ13dwAbLp8EfeNNSo9JR-U0w35EiMXtjQVWr~9fqCC6PBpXn-yZfRE0HwZROd~tbRJpUkVR2g9IsmIlsM-z1i7OsdtxCl3IZ80bUuUv8QLtTloFmA__)"></div>
+					<div class="advantages__pic lazy" data-bg="url(./img/advantages/05.jpg)"></div>
 				</div>
 				<div class="advantages-item">
 					<div class="advantages__text advantages__text-6">ЛЬГОТНЫЕ УСЛОВИЯ ЛЕЧЕНИЯ ИНОГОРОДНИМ</div>
-					<div class="advantages__pic lazy" data-bg="url(https://s3-alpha-sig.figma.com/img/990d/6c9e/12cb11043b0bc3fd59275b140aedaa24?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pf0FkjFmhnbqiCem0qsUirWLjacs~VxG1uDaVHb4O2S3Nu7mx5GsX14NWGT1wznp9kgnoTvU3B2HXy6PXMKe3H3PzpTNmAk-K6uyjQmxlsnacCwey2LEsVmGLhYGMdUfUc1sRw5p0nQHUoc2Gx1YeP92BVJCf7~6ySR0OZLNIfRgaGNqwn1-8D2hPravtnmYzSfSxlyH~V463JFuZ8t8y27IYX47~dunMa0v4D3wh7jVvgwXuJkLINA3bZpThkuYEFKAmfmTInCDDCB9WdInh0HTlC7ncEHewbFtKWMEZCupUrlvxDhi-XmCFt0P-zMDpkAgOSsrAeGBuOL81H2-8w__)"></div>
+					<div class="advantages__pic lazy" data-bg="url(./img/advantages/06.jpg)"></div>
 				</div>
 			</div>
 		</section>
@@ -527,31 +488,37 @@
 			</div>
 			<div class="salesWrap__list salesMain__slider">
 				<a class="salesWrap__list-item" href="#">
-					<div class="salesWrap__list__pic" style="background:url(img/main/sale1.jpg);"></div>
-					<h2>Название заголовка может быть в две строки</h2>
+					<div class="salesWrap__list__pic lazy" data-bg="url(./img/sales/1.jpg)"></div>
+					<h2>ДАРИМ СКИДКУ 50% НА ПРИЁМ НЕВРОЛОГА И ТРАВМАТОЛОГА!</h2>
 					<div class="salesWrap__announce">
-						<p>Не стоит откладывать визит в "Доктор Ост", тем более, если консультацию неврологаили ортопеда можно получить с 50% скидкой!</p>
+						<p>
+							Успейте воспользоваться выгодным предложением, пока консультацию ведущих специалистов Доктор ОСТ можно получить вдвое дешевле!
+						</p>
 						<div class="salesWrap__announce-link">Подробнее</div>
 					</div>
 				</a>
 				<a class="salesWrap__list-item" href="#">
-					<div class="salesWrap__list__pic" style="background:url(img/main/sale1.jpg);"></div>
-					<h2>Название заголовка</h2>
+					<div class="salesWrap__list__pic lazy" data-bg="url(./img/sales/2.jpg)"></div>
+					<h2>ПРИГЛАШАЕМ ПАЦИЕНТОВ ИЗ ХМАО!</h2>
 					<div class="salesWrap__announce">
-						<p>Не стоит откладывать!</p>
+						<p>
+							Получите второе экспертное мнение от ведущих специалистов Доктор ОСТ!
+						</p>
 						<div class="salesWrap__announce-link" href="#">Подробнее</div>
 					</div>
 				</a>
 				<a class="salesWrap__list-item" href="#">
-					<div class="salesWrap__list__pic" style="background:url(img/main/sale1.jpg);"></div>
-					<h2>Название заголовка может быть в две строки</h2>
+					<div class="salesWrap__list__pic lazy" data-bg="url(./img/sales/3.jpg);"></div>
+					<h2>ПРИЕМ ТРАВМАТОЛОГА-ОРТОПЕДА + УЗИ СУСТАВОВ ПО ВЫГОДНОЙ ЦЕНЕ!</h2>
 					<div class="salesWrap__announce">
-						<p>Не стоит откладывать визит в "Доктор Ост", тем более, если консультацию неврологаили ортопеда можно получить с 50% скидкой!</p>
+						<p>
+							Прием травматолога-ортопеда вместе с УЗ-диагностикой обойдутся дешевле. Торопитесь записаться!
+						</p>
 						<div class="salesWrap__announce-link">Подробнее</div>
 					</div>
 				</a>
 				<a class="salesWrap__list-item" href="#">
-					<div class="salesWrap__list__pic" style="background:url(img/main/sale1.jpg);"></div>
+					<div class="salesWrap__list__pic lazy" data-bg="url(img/main/sale1.jpg);"></div>
 					<h2>Название заголовка может быть в две строки</h2>
 					<div class="salesWrap__announce">
 						<p>Не стоит откладывать визит в "Доктор Ост", тем более, если консультацию неврологаили ортопеда можно получить с 50% скидкой!</p>
@@ -569,19 +536,32 @@
 
 		</section>
 
-		<section class="reviews">
-			<div class="reviews__head container">
+		<section class="reviewsMain container">
+			<div class="reviewsMain__head">
 				<h2>Отзывы пациентов</h2>
 			</div>
-			<div class="reviews__slider container">
+			<div class="reviews__slider">
 				<a href="#" class="reviews__slider-item">
 					<div class="reviews__slider__photo">
 						<img class="lazy" data-src="img/reviews/slidermain.jpg" alt="">
+						<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect x="1.75" y="1.75" width="52.5" height="52.5" fill="white" stroke="#009C9D" stroke-width="2"/>
+							<path d="M40.4709 28.0362L19.9634 40.0304V16.042L40.4709 28.0362Z" fill="#009C9D"/>
+						</svg>	
 					</div>
 					<div class="reviews__slider__desc">
-						<div class="reviews__slider__desc-h">Лечение гонартроза</div>
-						Весь персонал добрый, отзывчивый и внимательный ко своим пациентам. Хочу выразить свою благодарность молодому, но уже опытному специалисту своего дела, массажисту – Ивану Николаевичу. Очень чуткий, внимательный, любящий свою профессию и с большим удовольствием четко применяющий современные технологии, работающий человек, Человек с большой буквы!!! Желаю ему счастья в личной жизни, успехов в работе! 
-						<div class="reviews__link">Подробнее</div>
+						<div class="reviews__slider__desc-h">ГОНАРТРОЗ 4 СТЕПЕНИ, ОСЛОЖНЕНИЯ ПОСЛЕ ОПЕРАЦИИ</div>
+						<div class="reviews__slider__patient">
+							<div class="reviews__slider__patient-name">Любовь, 72 года</div>
+							<div class="reviews__slider__patient-diag">Диагноз: <span>Межпозвоночная грыжа</span></div>
+						</div>
+						<div class="reviews__slider__hashtags">
+							<div class="reviews__slider__hashtags-item">Внутрикостная терапия</div>
+							<div class="reviews__slider__hashtags-item">Лазер</div>
+							<div class="reviews__slider__hashtags-item">Магнитотерапия</div>
+						</div>
+						Воспаление после эндопротезирование — явление частое. В Доктор ОСТ знают как помочь таким пациентам снять боль быстро и безопасно.
+						<div class="reviews__slider__link">Подробнее</div>
 					</div>
 				</a>
 				<a href="#" class="reviews__slider-item">
@@ -589,8 +569,17 @@
 						<img class="lazy" data-src="img/reviews/slidermain.jpg" alt="">
 					</div>
 					<div class="reviews__slider__desc">
-						<div class="reviews__slider__desc-h">Лечение гонартроза</div>
-						Весь персонал добрый, отзывчивый и внимательный ко своим пациентам. Хочу выразить свою благодарность молодому, но уже опытному специалисту своего дела, массажисту – Ивану Николаевичу. Очень чуткий, внимательный, любящий свою профессию и с большим удовольствием четко применяющий современные технологии, работающий человек, Человек с большой буквы!!! Желаю ему счастья в личной жизни, успехов в работе! 
+						<div class="reviews__slider__desc-h">БЫСТРОЕ КУПИРОВАНИЕ БОЛИ ПРИ ПЕРЕЛОМЕ РЕБЕР</div>
+						<div class="reviews__slider__patient">
+							<div class="reviews__slider__patient-name">Оксана Владимировна</div>
+							<div class="reviews__slider__patient-diag">Диагноз: <span>Межпозвоночная грыжа</span></div>
+						</div>
+						<div class="reviews__slider__hashtags">
+							<div class="reviews__slider__hashtags-item">Лазер</div>
+							<div class="reviews__slider__hashtags-item">Магнитотерапия</div>
+							<div class="reviews__slider__hashtags-item">УВТ</div>
+						</div>
+						Основатель сети медцентров «Доктор ОСТ» прошла сеанс внутрикостной терапии и распрощалась с болью всего за 10 минут!
 						<div class="reviews__slider__link">Подробнее</div>
 					</div>
 				</a>
@@ -603,13 +592,18 @@
 						</svg>							
 					</div>
 					<div class="reviews__slider__desc">
-						<div class="reviews__slider__desc-h">Лечение гонартроза</div>
-						<div class="reviews__slider__hashtags">
-							<div class="reviews__slider__hashtag-item">Внутрикостная терапия</div>
-							<div class="reviews__slider__hashtag-item">Лазер</div>
-							<div class="reviews__slider__hashtag-item">Магнитотерапия</div>
+						<div class="reviews__slider__desc-h">НОЮЩАЯ БОЛЬ В ТАЗОБЕДРЕННОМ И КОЛЕННОМ СУСТАВАХ, ОГРАНИЧЕНИЕ ПОДВИЖНОСТИ</div>
+						<div class="reviews__slider__patient">
+							<div class="reviews__slider__patient-name">Эльвира, 42 года</div>
+							<div class="reviews__slider__patient-diag">Диагноз: <span>Межпозвоночн</span></div>
 						</div>
-						Lorem ipsum dolor sit amet.
+						<div class="reviews__slider__hashtags">
+							<div class="reviews__slider__hashtags-item">Магнитотерапия</div>
+							<div class="reviews__slider__hashtags-item">Внутрикостная терапия</div>
+							<div class="reviews__slider__hashtags-item">Лазер</div>
+							<div class="reviews__slider__hashtags-item">УВТ</div>
+						</div>
+						Не могла спать, не могла ходить, боль просто выматывала. Но в «Доктор ОСТ» нашли решение проблемы и избавили от боли с помощью комплексного лечения!
 						<div class="reviews__slider__link">Подробнее</div>
 					</div>
 				</a>
@@ -621,9 +615,9 @@
 						<div class="reviews__slider__desc-h">ГОНАРТРОЗ 4 СТЕПЕНИ, ОСЛОЖНЕНИЯ ПОСЛЕ ОПЕРАЦИИ</div>
 
 						<div class="reviews__slider__hashtags">
-							<div class="reviews__slider__hashtag-item">Внутрикостная терапия</div>
-							<div class="reviews__slider__hashtag-item">Лазер</div>
-							<div class="reviews__slider__hashtag-item">Магнитотерапия</div>
+							<div class="reviews__slider__hashtags-item">Внутрикостная терапия</div>
+							<div class="reviews__slider__hashtags-item">Лазер</div>
+							<div class="reviews__slider__hashtags-item">Магнитотерапия</div>
 						</div>
 
 						Воспаление после эндопротезирование — явление частое. В Доктор ОСТ знают как помочь таким пациентам снять боль быстро и безопасно.
@@ -631,6 +625,12 @@
 						<div class="reviews__slider__link">Подробнее</div>
 					</div>
 				</a>
+			</div>
+			<div class="reviewsMain__sliderNav">
+				<div class="reviewsMain__sliderArrows"></div>
+				<form action="#" method="POST">
+					<button class="btn__white">Все отзывы</button>
+				</form>
 			</div>
 		</section>
 
@@ -715,7 +715,7 @@
 			</div> -->
 
 		</section>
-
+<!--
 			<section class="greenInfo">
 				<div class="greenInfo__list">
 					<div class="greenInfo-item">
@@ -806,49 +806,6 @@
 				</div>
 			</section>
 
-			<section class="method__statistics__section">
-				<div class="method__statistics__desc container">
-					<p>В МЦ «ДОКТОР ОСТ» ПОЛУЧИЛИ ЛЕЧЕНИЕ <span>72 715 ПАЦИЕНТОВ</span> С БОЛЬЮ В СПИНЕ И В СУСТАВАХ</p>
-				</div>
-				
-				<div class="method__statistics">
-					<div class="method__statistics-item">
-						<div class="method__statistics-item__odd">
-							<h3>39 780 <span>пациентам</span></h3>
-							<b>удалось избежать хирургического вмешательства</b>
-						</div>
-					</div>
-					<div class="method__statistics-item">
-						<div class="method__statistics-item__even">
-							<h4>19 656 <span>пациентам</span></h4>
-							<b>снят диагноз "межпозвоночная грыжа"</b>
-						</div>
-					</div>
-					<div class="method__statistics-item">
-						<div class="method__statistics-item__odd">
-							<h4>18 992 <span>пациентам</span></h4>
-							<b>сохранили родной сустав, отказавшись от протезирования</b>
-						</div>
-					</div>
-					<div class="method__statistics-item">
-						<div class="method__statistics-item__even">
-							<h4>1 261 <span>пациентам</span></h4>
-							<b>с инвалидностью удалось вернуть трудоспособность</b>
-						</div>
-					</div>
-					<div class="method__statistics-item">
-						<div class="method__statistics-item__odd">
-							<h4>72 715 <span>пациентам</span></h4>
-							<b>на август 2020 года!</b>
-						</div>
-					</div>
-					<div class="method__statistics-item">
-						<div class="method__statistics-item__even">
-						</div>
-					</div>
-				</div>
-			</section>
-
 			<section class="availability">
 				<div class="container">
 					<h2>Филиалы "Доктор Ост"</h2>
@@ -893,7 +850,9 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> 
+
+		-->
 
 			<section class="navBottom">
 				<div class="container">
