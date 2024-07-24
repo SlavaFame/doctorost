@@ -1,4 +1,4 @@
-#overlay {
+/*#overlay {
     background: rgba(0,0,0,.5);
     width: 100vw;
     height: 100vh;
@@ -27,7 +27,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
 }
-
+*/
 .form-bars,
 .result_form {
     p {
@@ -35,7 +35,7 @@
         line-height: 2.1rem;
     }
 }
-    
+    /*
 .ya-share2__container {
     padding: 1rem;
     display: flex;
@@ -121,7 +121,7 @@
         background-color: $white;
     }
 }
-
+*/ 
 .thanks-form {
     font-size: 1.8rem; 
     line-height: 2.1rem;
@@ -131,48 +131,6 @@
     }
     p {
         margin: 1rem 0 0 0;
-    }
-}
-
-.checkbox__outer__green {
-    width: 86%;
-    margin: 0 auto;
-
-    input[type='checkbox']{
-        width: auto;
-        cursor: pointer;
-    }
-
-    label {
-        cursor: pointer;
-        font-size: 1.1rem;
-        line-height: 1.2rem;
-        text-align: left;
-    }
-}
-
-.check__green {
-    a {
-        color: $green-1;
-    }
-    &__input {
-        opacity: 0;
-        position: absolute;
-
-        &:checked + .check__green__box {
-            background-image: url(img/icons/checkbox-on.svg);
-        }
-    }
-
-    &__box {
-        margin: 0.5rem 0 0 -2.6rem;
-        position: absolute;
-        width: 1.6rem;
-        height: 1.6rem;
-        cursor: pointer;
-        background-image: url(img/icons/checkbox-off.svg); 
-        background-repeat: no-repeat;
-        border: 0.1rem solid $green-1;
     }
 }
 
