@@ -3,11 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Специалисты</title>
+	<title>Медицинский центр «Доктор ОСТ» — официальный сайт клиники</title>
+	<!--<link rel="apple-touch-icon" sizes="180x180" href="/img/favicons4/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicons4/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicons4/favicon-16x16.png">-->
+
 	<link rel="icon" href="/img/favicons6/favicon.ico" sizes="any">
 	<link rel="icon" href="/img/favicons6/icon.svg" type="image/svg+xml">
 	<link rel="apple-touch-icon" href="/img/favicons6/apple-touch-icon.png">
 	<link rel="manifest" href="/img/favicons6/site.webmanifest">
+	
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/app.min.css">
 </head>
@@ -15,7 +20,7 @@
 	<header class="head">
 		<div class="head__container">
 			<a class="head__logo" href="#">
-				<img class="head__logo-img" src="img/logos/logo.svg" alt="Лого Доктор Ост">
+				<img class="head__logo-img" src="img/logos/logo2.svg" alt="Лого Доктор Ост">
 			</a>
 			<div class="head__location">
 				<a class="head__location-city" href="#">Челябинск</a>
@@ -36,7 +41,7 @@
 						<span class="head__phoneNumber-showNum">2019-911</span>
 					</a>
 				</div>
-				<button href="modal3" class="head__btn open_modal">Записаться на прием</button>
+				<button class="head__btn open_modal">Записаться на прием</button>
 			</div>
 		</div>
 		<nav class="menu">
@@ -49,7 +54,9 @@
 			</div>
 
 			<ul class="menu__list">
-				<li class="menu__list-item"><a class="menu__link" href="#">О Доктор Ост</a></li>
+				<li class="menu__list-item">
+					<a class="menu__link" href="#">О Доктор Ост</a>
+				</li>
 				<li class="menu__list-item">
 					<a class="menu__link menu__sub" href="#">Направления</a>
 
@@ -138,7 +145,7 @@
 		<div class="navigation">
 			<div class="navigation__breadcrumbs">
 				<div class="navigation__breadcrumbs-item active">Главная</div>
-				<div class="navigation__breadcrumbs-item">Специалисты</div>
+				<div class="navigation__breadcrumbs-item">Видео</div>
 			</div>
 			<div class="navigation__search">
 				<form class="navigation__search__form" action="/search/index.php">
@@ -149,247 +156,104 @@
 		</div>
 	</div>
 
-	<main class="doctor">
+	<main>
+		<section class="video container">
+			<div class="video__wrap row">
+				<div class="col-lg-5"><h1>ВИДЕО О ЛЕЧЕНИИ ПОЗВОНОЧНИКА</h1></div>
+				<div class="video__text col-lg-7">
+					В этом разделе понятно и простыми словами врачи МЦ «Доктор Ост» рассказывают о передовых технологиях лечения заболеваний позвоночника.
+				</div>
+			</div>
+		</section>
+
 		<section class="container">
-			<h1>Специалисты</h1>
-
-			<div class="doctor__navigation">
-				<div class="custom-select">
-					<button
-					  class="select-button"
-					  role="combobox"
-					  aria-labelledby="select button"
-					  aria-haspopup="listbox"
-					  aria-expanded="false"
-					  aria-controls="select-dropdown">
-					  <span class="selected-value">Выберите специальность</span>
-					  <span class="arrow"></span>
-					</button>
-	
-					<ul class="select-dropdown" role="listbox" id="select-dropdown">
-					  <li role="option">
-						<input type="radio" id="doctor-1" name="social-account">
-						<label for="doctor-1" class="option-label">
-							Все
-						</label>
-						<span class="option-number">299</span>
-					  </li>
-					  <li role="option">
-						<input type="radio" id="doctor-2" name="social-account">
-						<label for="doctor-2" class="option-label">
-							Невролог
-						</label>
-						<span class="option-number">35</span>
-					  </li>
-					  <li role="option">
-						<input type="radio" id="doctor-3" name="social-account">
-						<label for="doctor-3" class="option-label">
-							Травматолог
-						</label>
-						<span class="option-number">29</span>
-					  </li>
-					  <li role="option">
-						<input type="radio" id="doctor-4" name="social-account">
-						<label for="doctor-4" class="option-label">
-							Вертебролог
-						</label>
-						<span class="option-number">3</span>
-					  </li>
-					  <li role="option">
-						<input type="radio" id="doctor-5" name="social-account">
-						<label for="doctor-5" class="option-label">
-							Иглорефлексотерапевт
-						</label>
-						<span class="option-number">3</span>
-					  </li>
-					  <li role="option">
-						<input type="radio" id="doctor-6" name="social-account">
-						<label for="doctor-6" class="option-label">
-							Кистевой хирург
-						</label>
-						<span class="option-number">1</span>
-					  </li>
-					</ul>
-				</div>
-
-				<div class="doctor__online">
-					Ведут онлайн-приём
-					<label class="doctor__online-switcher">
-						<input type="checkbox">
-						<span class="btn__switch rounded"></span>
-					</label>
-				</div>
-			</div>
-
-			<div class="doctor__block">
-				<p><a href="#">СПРАВОЧНИК СПЕЦИАЛЬНОСТЕЙ</a> подскажет, какой специалист поможет вам в конкретном случае.</p>
-			</div>
-
-			<div class="doctor__slider">
-				<div class="doctor__slider-item">
-					<div class="doctor__info">
-						<div class="doctor__info__photo" style="background-image:url(https://dr-ost.ru/upload/resize_cache/iblock/763/300_370_1/7637bd5dcf9519f4055ac1cd3ff2bfc1.jpg)">
-							<div class="doctor__info__photo-online" title="Консультирует онлайн"></div>
-						</div>
-						<div class="doctor__info__desc">
-							<h2 class="doctor__info__desc-head">
-								Останин Александр Олегович
-							</h2>
-
-							<div class="doctor__info__speciality">
-								Главный врач, хирург высшей категории
-							</div>
-
-							<div class="doctor__info__onbottom">
-								<div class="doctor__medal__komsomolka">
-									<div class="doctor__medal__respect">
-										<div class="doctor__medal__respect-img"></div>
-										<div class="doctor__medal__respect-text">
-											Лауреат премии <br>
-											ПРОФЕССИОНАЛЬНОЕ ПРИЗНАНИЕ
-										</div>
-									</div>
-								</div>
-	
-								<div class="doctor__info__online">
-									<div class="doctor__info__city">Новосибирск</div>
-									<div class="doctor__info__telemedicine">
-										<div class="doctor__info__telemedicine-pic">
-											онлайн-приём по местному времени:
-										</div>
-										<div class="doctor__info__telemedicine-time">
-											с 7:00 до 22:00
-										</div>
-									</div>
-								</div>
-	
-								<div class="doctor__info__buttons">
-									<form action="./specialist.html">
-										<button class="doctor__info__detail">О враче</button>
-									</form>
-									<button class="btn__orange">Записаться</button>
-								</div>
-							</div>
-
-						</div>
+			<div class="video__list">
+				<div class="video__list-item">
+					<div class="video__list__pic" style="background-image: url(img/video/video1.jpg);">
+						<img class="play" src="img/icons/video.svg" alt="">
+					</div>
+					
+					<div class="video__announce">
+						<h2>КОГДА В ДОКТОР ОСТ НЕ СМОГУТ ПОМОЧЬ?</h2>
+						В каких случаях авторская схема лечения межпозвонковой грыжи будет бессильна?
 					</div>
 				</div>
-				<div class="doctor__slider-item">
-					<div class="doctor__info">
-						<div class="doctor__info__photo" style="background-image:url(https://dr-ost.ru/upload/resize_cache/iblock/813/300_370_1/q824jxs2aocahzfwppz2ueygs0e1kbxu.jpg)">
-							<div class="doctor__info__photo-online">									
-							</div>
-						</div>
-						<div class="doctor__info__desc">
-							<h2 class="doctor__info__desc-head">Никиточкина Надежда Юрьевна</h2>
-							
-							<div class="doctor__info__speciality">
-								Невролог, иглорефлексотерапевт, гирудотерапевт
-							</div>
 
-							<div class="doctor__info__onbottom">
-								<div class="doctor__medal__komsomolka">
-									<div class="doctor__medal__respect">
-										<div class="doctor__medal__respect-img"></div>
-										<div class="doctor__medal__respect-text">
-											Лауреат премии <br>
-											ВРАЧ ГОДА
-										</div>
-									</div>
-								</div>
-	
-								<div class="doctor__info__online">
-									<div class="doctor__info__city">Новосибирск</div>
-									<div class="doctor__info__telemedicine">
-										<div class="doctor__info__telemedicine-pic">
-											онлайн-приём по местному времени:
-										</div>
-										<div class="doctor__info__telemedicine-time">
-											с 7:00 до 22:00
-										</div>
-									</div>
-								</div>
-								
-								<div class="doctor__info__buttons">
-									<form action="../app/disease.html" method="POST">
-										<button class="doctor__info__detail">О враче</button>
-									</form>
-									<button class="btn__orange">Записаться</button>
-								</div>
-							</div>
-
-						</div>
+				<div class="video__list-item">
+					<div class="video__list__pic" style="background-image: url(img/video/video2.jpg);">
+						<img class="play" src="img/icons/video.svg" alt="">
+					</div>
+					
+					<div class="video__announce">
+						<h2>ПОЧЕМУ ГРЫЖА ВОЗВРАЩАЕТСЯ ПОСЛЕ ОПЕРАЦИИ?</h2>
+						Когда операция на позвоночник может оказаться губительной для здоровья?
 					</div>
 				</div>
-				<div class="doctor__slider-item">
-					<div class="doctor__info">
-						<div class="doctor__info__photo" style="background-image:url(https://dr-ost.ru/upload/iblock/698/4un48areorbm795dsit28rvxvob7n9bt.jpg)">
-						</div>
-						<div class="doctor__info__desc">
-							<h2 class="doctor__info__desc-head">Фризен Констатин Андреевич</h2>
-
-							<div class="doctor__info__speciality">
-								Невролог <br> первой категории
-							</div>
-							
-							<div class="doctor__info__buttons">
-								<form action="../app/disease.html" method="POST">
-									<button class="doctor__info__detail">О специалисте</button>
-								</form>
-							</div>	
-						</div>
+				<div class="video__list-item">
+					<div class="video__list__pic" style="background-image: url(img/video/video3.jpg);">
+						<img class="play" src="img/icons/video.svg" alt="">
+					</div>
+					
+					<div class="video__announce">
+						<h2>ЧЕГО ВЫ НЕ ЗНАЛИ О КОСТЯХ?</h2>
+						Невролог с 20-летним стажем рассказал, почему внутрикостная терапия является уникальным способом лечения болевых синдромов практически любого происхождения
 					</div>
 				</div>
-				<div class="doctor__slider-item">
-					<div class="doctor__info">
-						<div class="doctor__info__photo" style="background-image:url(https://dr-ost.ru/upload/resize_cache/iblock/4af/300_370_1/ycdh3npw03mrrq5uvrhcewotimou7vlc.jpg)">
-							<div class="doctor__info__photo-online"></div>
-						</div>
-						<div class="doctor__info__desc">
-							<h2 class="doctor__info__desc-head">Коротеев Михаил Вячеславович</h2>
-
-							<div class="doctor__info__speciality">Травматолог-ортопед</div>
-
-							<div class="doctor__medal__prodoctorov">
-								<div class="doctor__medal__prodoctorov-img--silver"></div>
-								<div class="doctor__medal__prodoctorov-text">Лучший ортопед</div>
-								<div class="doctor__medal__prodoctorov-logo"></div>
-							</div>
-
-							<div class="doctor__info__online">
-								<div class="doctor__info__city">Новосибирск</div>
-								<div class="doctor__info__telemedicine">
-									<div class="doctor__info__telemedicine-pic">
-										онлайн-приём по местному времени:
-									</div>
-									<div class="doctor__info__telemedicine-time">
-										с 7:00 до 22:00
-									</div>
-								</div>
-							</div>
-
-							<div class="doctor__info__buttons">
-								<form action="../app/disease.html" method="POST">
-									<button class="doctor__info__detail">О враче</button>
-								</form>
-								<button class="btn__orange">Записаться</button>
-							</div>	
-						</div>
+				<div class="video__list-item">
+					<div class="video__list__pic" style="background-image: url(img/video/video4.jpg);">
+						<img class="play" src="img/icons/video.svg" alt="">
+					</div>
+					
+					<div class="video__announce">
+						<h2>ЛЕЧЕНИЕ ПОЯСНИЦЫ ПЛАЗМОГЕЛЕМ</h2>
+						Плазмогель при спондилоартрозе поясничного отдела позвоночника.
+					</div>
+				</div>
+				<div class="video__list-item">
+					<div class="video__list__pic" style="background-image: url(img/video/video5.jpg);">
+						<img class="play" src="img/icons/video.svg" alt="">
+					</div>
+					
+					<div class="video__announce">
+						<h2>ЧЕМ ОПАСНА МЕЖПОЗВОНКОВАЯ ГРЫЖА?</h2>
+						Думаете, что межпозвонковая грыжа грозит спине только в старости? А вот и нет! По статистике уже к 30 годам грыжу в позвоночнике можно обнаружить у 80% населения.
+					</div>
+				</div>
+				<div class="video__list-item">
+					<div class="video__list__pic" style="background-image: url(img/video/video6.jpg);">
+						<img class="play" src="img/icons/video.svg" alt="">
+					</div>
+					<div class="video__announce">
+						<h2>ПЕРВАЯ ПОМОЩЬ ПРИ ЗАЩЕМЛЕНИИ НЕРВА</h2>
+						Внезапная боль в спине может подкосить любого. Рассказываем, как с этим бороться.
+					</div>
+				</div>
+				<div class="video__list-item">
+					<div class="video__list__pic" style="background-image: url(img/video/video6.jpg);">
+						<img class="play" src="img/icons/video.svg" alt="">
+					</div>
+					<div class="video__announce">
+						<h2>КАК НЕ ЗАСТЫТЬ НА РАБОЧЕМ МЕСТЕ С БОЛЬЮ В СПИНЕ?</h2>
+						Несколько упражнений на рабочем месте, чтобы избежать сокрушительный урон, какой приносит здорвью долгое просиживание в неподвижной и неестественной позе.
+					</div>
+				</div>
+				<div class="video__list-item">
+					<div class="video__list__pic" style="background-image: url(img/video/video6.jpg);">
+						<img class="play" src="img/icons/video.svg" alt="">
+					</div>
+					<div class="video__announce">
+						<h2>ИГЛОРЕФЛЕКСОТЕРАПИЯ ОТ ВСЕХ БОЛЕЗНЕЙ?</h2>
+						Метод родом из древней восточной медицины активно используют в лечении заболеваний опорно-двигательного аппарата.	
 					</div>
 				</div>
 			</div>
-
-			<div class="paginator">
-				<button class="paginator__prev">Предыдущая</button>
-				<div class="paginator__currentPage">Страница 2 из 8</div>
-				<button class="paginator__next">Следующая</button>
-			</div>
+			
 		</section>
 		
 		<section class="navBottom">
 			<div class="container">
 				<div class="navBottom__inner">
-					<script data-b24-form="click/186/o546z2" data-skip-moving="true" data-b24-loaded="true"> 
+					<script data-b24-form="click/186/o546z2" data-skip-moving="true"> 
 					(function (w, d, u) {
 						var s = d.createElement('script');
 						s.async = true;
@@ -405,7 +269,7 @@
 						Задать вопрос <br> специалисту
 					</a>
 
-					<script data-b24-form="click/184/a96lev" data-skip-moving="true" data-b24-loaded="true"> 
+					<script data-b24-form="click/184/a96lev" data-skip-moving="true"> 
 					(function (w, d, u) {
 						var s = d.createElement('script');
 						s.async = true;
@@ -443,7 +307,7 @@
 					</a>
 
 
-					<script data-b24-form="click/183/9rixut" data-skip-moving="true" data-b24-loaded="true"> (function (w, d, u) {
+					<script data-b24-form="click/183/9rixut" data-skip-moving="true"> (function (w, d, u) {
 						var s = d.createElement('script');
 						s.async = true;
 						s.src = u + '?' + (Date.now() / 180000 | 0);
@@ -460,7 +324,7 @@
 
 				</div>
 			</div>
-		</section>
+		</section>		
 
 		<section class="disclaimer">
 			<div class="container">
@@ -566,48 +430,4 @@
 		</div>
 	</footer>
 </body>
-
-<script src="js/libs.js"></script>
-<script src="js/main.js"></script>
-
-<script>
-$('.doctor__select').on('click', function(){
-    $('.doctor__selectList').toggle();
-});
-
-const customSelect = document.querySelector(".custom-select");
-const selectBtn = document.querySelector(".select-button");
-
-const selectedValue = document.querySelector(".selected-value");
-const optionsList = document.querySelectorAll(".select-dropdown li");
-
-// add click event to select button
-selectBtn.addEventListener("click", () => {
-  // add/remove active class on the container element
-  customSelect.classList.toggle("active");
-  // update the aria-expanded attribute based on the current state
-  selectBtn.setAttribute(
-    "aria-expanded",
-    selectBtn.getAttribute("aria-expanded") === "true" ? "false" : "true"
-  );
-});
-
-optionsList.forEach((option) => {
-  function handler(e) {
-    // Click Events
-    if (e.type === "click" && e.clientX !== 0 && e.clientY !== 0) {
-      selectedValue.textContent = this.children[1].textContent;
-      customSelect.classList.remove("active");
-    }
-    // Key Events
-    if (e.key === "Enter") {
-      selectedValue.textContent = this.textContent;
-      customSelect.classList.remove("active");
-    }
-  }
-
-  option.addEventListener("keyup", handler);
-  option.addEventListener("click", handler);
-});
-</script>
 </html>

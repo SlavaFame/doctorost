@@ -285,8 +285,8 @@ $(document).ready(function(){
 		infinite: false,
 		dots: true,
 		arrows: true,
-		appendArrows: $(".reviews__sliderArrows"),
-		appendDots: $(".reviews__sliderNav"),
+		appendArrows: $(".reviewsMain__sliderArrows"),
+		appendDots: $(".reviewsMain__sliderNav"),
 	
 		responsive: [
 		{
