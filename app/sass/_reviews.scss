@@ -1,10 +1,8 @@
 .video {
-	margin-bottom: 6rem;
-
-	&__wrap {
-		border-bottom: 0.1rem solid $green-1;
+	border-bottom: 0.1rem solid $green-1;
+	&__category {
+		margin-top: 6rem;
 	}
-	
 	&__text {
 		font-size: 1.8rem;
 		font-weight: 400;
@@ -128,7 +126,7 @@
 			color: #292929;
 			padding: 1.6rem;
 			display: block;
-			min-height: 63rem; 
+			min-height: 57.6rem; 
 			max-width: 41.6rem;
 			position: relative;
 			&:hover {
@@ -171,6 +169,7 @@
 			color: #5C5C5C;
 			font-size: 1.4rem;
 			line-height: 2rem;
+			font-weight: 400;
 
 			&-name {
 				flex: 1 auto;
@@ -182,9 +181,12 @@
 			}
 
 			&-diag {
+
 				flex: 1 auto;
 				span {
 					color: $green-1;
+					font-size: 1.2rem;
+					line-height: 1.6rem;
 					text-transform: uppercase;
 				}
 			}

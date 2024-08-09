@@ -44,9 +44,13 @@
   }
 }
 
+.doctor__slider .slick-track{
+  display: flex;
+  gap: 2.4rem;
+}
+
 .methods__slider,
 .doctor__slider-treat,
-.doctor__slider-main,
 .doctorDetail__sertificates__slider,
 .phys__slider,
 .diagnostics__slider,
@@ -81,13 +85,6 @@
     justify-content: space-between;
     margin-top: 3.2rem;
   }
-}
-
-.newsMain__slider .slick-track {
-  display: flex;
-  gap: 2.4rem;
-  position: relative;
-  top: 1rem;
 }
 
 .method__procedure__sliderNav,
@@ -380,9 +377,6 @@
   }
 }
 
-.doctor__info__photo {
-  width: 21.5rem;
-}
 
 /* слайдер специалисты в новостях */
 .slider_specialists__desc {

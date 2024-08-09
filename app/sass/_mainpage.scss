@@ -4,6 +4,12 @@
 		&__main {
 			display: flex;
 			flex-direction: column;
+			.orange__box {
+				font-size: 2.4rem;
+				font-weight: 500;
+				line-height: 2.8rem;
+				text-transform: uppercase;
+			}
 		}
 		&-item {
 			color: #292929;
@@ -58,12 +64,12 @@
 		display: flex;
 		flex-wrap: wrap;
 		gap: 2.4rem;
-		margin-bottom: 10rem;
+		margin: 3.2rem 0 10rem 0;
 
 		.promo {
 			flex:1;
 			&__info {
-				flex: 0 41rem;
+				flex: 0 38.5rem;
 				padding: 4rem 2.4rem;
 			}
 		}
@@ -114,6 +120,9 @@
 		}
 
 		&-link {
+			font-size: 1.4rem;
+			font-weight: 500;
+			line-height: 1.6rem;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
@@ -144,6 +153,13 @@
 				display: flex;
 				justify-content: center;
 			}
+		}
+	}
+	&__directionWrap {
+		h2 {
+			font-size: 3.2rem;
+			font-weight: 500;
+			line-height: 3.6rem;
 		}
 	}
 }
@@ -177,8 +193,8 @@
 		align-items: center;
 		margin: 10rem auto 6rem auto;
 		h2 {
-			font-size: 2.8rem;
-			line-height: 3.2rem;
+			font-size: 3.2rem;
+			line-height: 3.6rem;
 		}
 		&-col {
 			flex: 1 1 50%;
@@ -375,15 +391,16 @@
 .aboutMain {
 	font-weight: 400;
 	font-size: 1.8rem;
-	line-height: 2rem;
+	line-height: 2.4rem;
 
 	&__head {
-		max-width: 71.6rem;
+		max-width: 85.6rem;
 		//text-align: center;
 		margin: 10rem auto 0 0;
 		h2 {
-			font-size: 2.8rem;
-			line-height: 3.2rem;
+			font-size: 3.2rem;
+			font-weight: 500;
+			line-height: 3.6rem;
 		}
 	}
 	&__infographic {
@@ -395,13 +412,18 @@
 		&-item {
 			background-color: $green-1;
 			color: $white;
-			font-size: 1.8rem;
+			font-size: 1.4rem;
 			font-weight: 500;
-			line-height: 2.4rem;
+			line-height: 1.6rem;
 			padding: 3.2rem 2.8rem;
 			width: 100%;
 			flex:1;
 			text-transform: uppercase;
+			p {
+				font-size: 1.8rem;
+				font-weight: 500;
+				line-height: 2.4rem;
+			}
 		}
 		&-num {
 			font-size: 6.8rem;
@@ -413,22 +435,21 @@
 	&__bestClinic {
 		display: flex;
 		flex-wrap: wrap;
-		margin-bottom: 10rem;
 
 		&-text {
 			background-color: $grey;
-			flex: 1 1 48%;
-			padding: 3.2rem;
+			flex: 1 1 49%;
+			padding: 2.8rem;
 
 			img {
-				margin: 1rem 0 2rem 0;
+				margin: 1.6rem 0 2rem 0;
 				max-width: 100%;
 				width: 31.2rem;
 			}
 		}
 
 		&-pic {
-			flex: 1 1 50%;
+			flex: 1 1 47%;
 			img {
 				height: 100%;
 				width: 100%;
@@ -438,17 +459,18 @@
 		&-h {
 			color: $green-1;
 			font-size: 2.8rem;
-			font-weight: 500;
-			line-height: 3.2rem;
+    		font-weight: 500;
+    		line-height: 3.2rem;
 			text-transform: uppercase;
 		}
 	}
 }
 
 .advantagesWrap {
+	margin: 4rem auto 0 auto;
 	h2 {
-		font-size: 2.8rem;
-		line-height: 3.2rem;
+		font-size: 3.2rem;
+		line-height: 3.6rem;
 	}
 }
 

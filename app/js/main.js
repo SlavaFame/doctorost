@@ -154,24 +154,12 @@ $(document).ready(function(){
 		$(".head__phoneNumber-showText").hide();
 	});
 
-	/* 
-	$(".topMain__slider").on('init', function (event, slick, currentSlide, nextSlide){
-	var i = (currentSlide ? currentSlide : 0) + 1;
-    if (!($('.topMain__slider .slick-slide').length > 1)) {
-    	if (window.matchMedia("(max-width: 400px)").matches) {
-  			$('.topMain__slider-nav .slick-dots').show();
-		} else {
-  			$('.topMain__slider-nav .slick-dots').hide();
-		}
-    }
-	}); */
-
 	$(".topMain__slider").slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		infinite: true,
 		fade: true,
-		autoplay: true,
+		//autoplay: true,
 		autoplaySpeed: 5000,
 		adaptiveHeight: true,
 		arrows: true,
@@ -190,49 +178,6 @@ $(document).ready(function(){
 		appendArrows: $(".methodsMain__sliderArrows")
 	});
 	
-	$(".salesMain__slider").slick({
-		focusOnSelect: false,
-		fade:false,
-		adaptiveHeight: true,
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		infinite: false,
-		dots: true,
-		arrows: true,
-		appendArrows: $(".salesMain__sliderArrows"),
-		appendDots: $(".salesMain__sliderNav"),
-	
-		responsive: [
-		{
-			breakpoint:1200,
-			settings: {
-				slidesToShow: 3
-			}
-		},
-		{
-			breakpoint:992,
-			settings: {
-				slidesToShow: 2
-			}
-		},
-		{
-			breakpoint:768,
-			settings: {
-				slidesToShow: 1,
-				dots: false,
-				arrows: true
-			}
-		},
-		{
-			breakpoint:576,
-			settings: {
-				slidesToShow: 1,
-				dots: false,
-				arrows: true
-			}
-		},
-		]
-	});
 	
 	$(".newsWrap__list").slick({
 		focusOnSelect: false,
@@ -320,7 +265,6 @@ $(document).ready(function(){
 		]
 	});
 	
-
 });
 
 function salesTimer(){
@@ -625,9 +569,10 @@ $(".faqPage__slider").on('afterChange', function (event, slick, currentSlide){
 $(".doctor__slider-main").slick({
 	focusOnSelect: false,
 	fade: false,
+	adaptiveHeight: true,
 	slidesToShow: 2,
 	slidesToScroll: 1,
-	infinite: true,
+	infinite: false,
 	arrows: true,
 	dots: true,
 	appendArrows: $(".doctor__sliderArrows"),
@@ -660,6 +605,49 @@ $(".doctor__slider-main").slick({
 			slidesToShow: 1,
 			dots: false,
 			arrows:true
+		}
+	},
+	]
+});
+
+$(".salesMain__slider").slick({
+	focusOnSelect: false,
+	fade:false,
+	slidesToShow: 3,
+	slidesToScroll: 1,
+	infinite: false,
+	arrows: true,
+	dots: true,
+	appendArrows: $(".salesMain__sliderArrows"),
+	appendDots: $(".salesMain__sliderNav"),
+
+	responsive: [
+	{
+		breakpoint:1200,
+		settings: {
+			slidesToShow: 3
+		}
+	},
+	{
+		breakpoint:992,
+		settings: {
+			slidesToShow: 2
+		}
+	},
+	{
+		breakpoint:768,
+		settings: {
+			slidesToShow: 1,
+			dots: false,
+			arrows: true
+		}
+	},
+	{
+		breakpoint:576,
+		settings: {
+			slidesToShow: 1,
+			dots: false,
+			arrows: true
 		}
 	},
 	]
@@ -1392,6 +1380,7 @@ $(".diagnostics__slider").on('afterChange', function (event, slick, currentSlide
 		asNavFor: ".reviews__navslider",
 		arrows: true,
 		dots: true,
+		adaptiveHeight: true,
 		appendArrows: $(".reviews__mainslider-nav"),
 		appendDots: $(".reviews__mainslider-nav"),
 

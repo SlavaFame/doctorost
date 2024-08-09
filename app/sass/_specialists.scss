@@ -1,7 +1,4 @@
 .doctor, .admin {
-	h1 {
-		text-transform: uppercase;
-	}
 	&__slider {
 		margin: 3.2rem 0 0 0;
 		gap: 2.4rem;
@@ -191,6 +188,7 @@
 			background-repeat: no-repeat;
 			cursor: pointer;
 			height: 33.6rem;
+			width: 21.5rem;
 			min-width: 24.8rem;
 			position: relative;
 	
@@ -219,6 +217,23 @@
 				font-weight: 500;
 				margin: 0 0 0.8rem 0;
 				text-transform: uppercase;
+			}
+		}
+
+		&__detail {
+			font-size: 1.3rem;
+			font-weight: 700;
+			line-height: 1.6rem;
+			color: $green-1;
+			text-transform: uppercase;
+			height: 4.5rem;
+			background: $white;
+			border: 0.2rem solid $green-1;
+			width: 100%;
+			&:hover {
+				border: 0.2rem solid $green-1;
+				background: $green-1;
+				color: $white;
 			}
 		}
 
@@ -313,24 +328,6 @@
 				letter-spacing: 0.02em;
 				width: 100%;
 				flex: 1;
-			}
-		}
-	
-		&__detail {
-			font-size: 1.4rem;
-			font-weight: 700;
-			line-height: 1.6rem;
-			letter-spacing: 0.02em;
-			color: $green-1;
-			text-transform: uppercase;
-			height: 4.5rem;
-			background: $white;
-			border: 0.2rem solid $green-1;
-			width: 100%;
-			&:hover {
-				border: 0.2rem solid $green-1;
-				background: $green-1;
-				color: $white;
 			}
 		}
 	

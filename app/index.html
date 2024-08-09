@@ -111,12 +111,12 @@
 	<main>
 		<section class="topMain">
 			<div class="topMain__slider container">
-				<div class="topMain__slider-item lazy" data-bg="url(https://dr-ost.ru/upload/resize_cache/iblock/169/1140_425_2/oakrtq4cp72bbsx1oej8fm6hnjxesiic.jpg.webp)">
+				<div class="topMain__slider-item lazy" data-bg="url(https://s3-alpha-sig.figma.com/img/eb33/ce93/c133a85b5ef56014539525112ec897f9?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=APwGcOP8~cwqplp0DOMva2RWxfjvmA7GFp~yEkh4u7wOmFe5CwuRaYmkIJ6WRKArQ-fUGuMLva-SI635SB-C1uBI~EsDOGF2yy5KNNOMe6Fw3jPoV1S-zetu3Uqt1-IvRx-8ngihzdv38WjywaBJPcevlZIjbm70OCAYIPaF3UZ0t3sSH3NpwtaP0XJhhu2e-kEn3um4dXlzoXnjGNAPd9PvsFZlobYNoPKNxAWw1QegDuwZ8knXzeWC7ghAwB2hrEhKMLTKi8H8ErYFwPq8L1BA4lnSGIB~VXSMRJvKMEscTqymJtsv~n8Te6INbKtzcgAtH-Wi3bWeLb98otmJIg__)">
 					<div class="topMain__slider__main">
 						<h1><span style="color: #E05222;">SMART-X</span><br> премиум инъекция</h1>
 						<b class="orange__box">ДО 5 ЛЕТ НЕПРЕРЫВНОГО ДЕЙСТВИЯ</b>
 						<br>
-						<p>ЧТОБЫ ОТОДВИНУТЬ ПОРОГ СТАРЕНИЯ И СОХРАНИТЬ <br> СУСТАВЫ МОЛОДЫМИ</p>
+						<p>Чтобы отодвинуть порог старения и сохранить суставы молодыми надолго</p>
 						<button class="topMain__slider__btn">Подробнее</button>
 					</div>
 				</div>
@@ -184,10 +184,10 @@
 				<div class="promo">
 					<div class="promo__info">
 						<div class="promo__info-h">
-							НЕ терпите БОЛЬ! ВОВРЕМЯ НАЧИНАЙТЕ ЛЕЧЕНИЕ.
+							Не терпите боль! <br> Вовремя начинайте лечение.
 						</div>
 						<div class="promo__info-restrict">
-							Подберем  удобное время для визита в клинику или для консультации-онлайн
+							Подберем  удобное время для визита <br> в клинику или для консультации-онлайн
 						</div>
 
 					</div>
@@ -243,17 +243,19 @@
 			<div class="aboutMain__infographic">
 				<div class="aboutMain__infographic-item">
 					<div class="aboutMain__infographic-num spin">16</div>
-					лет работы
+					<p>лет работы</p>
 				</div>
 				<div class="aboutMain__infographic-item">
-					<div class="aboutMain__infographic-num spin">12</div> филиалов
+					<div class="aboutMain__infographic-num spin">12</div> 
+					<p>филиалов</p>
 				</div>
 				<div class="aboutMain__infographic-item">
-					<div class="aboutMain__infographic-num"><span class="spin">96</span>%</div> эффективность лечения
+					<div class="aboutMain__infographic-num"><span class="spin">96</span>%</div>
+					<p>эффективность лечения</p>
 				</div>
 				<div class="aboutMain__infographic-item">
 					<div class="aboutMain__infographic-num spin">2</div>
-					патента
+					<p>патента</p>
 				</div>
 			</div>
 			<div class="aboutMain__bestClinic">
@@ -271,7 +273,7 @@
 					</p>
 				</div>
 				<div class="aboutMain__bestClinic-pic">
-					<img src="https://dr-ost.ru/upload/iblock/252/8134b914059k01u74v2qsu1us4fpa45c.png" alt="Коллектив Доктор ОСТ">
+					<img src="./img/aboutmain/team.jpg" alt="Коллектив Доктор ОСТ">
 				</div>
 			</div>
 			<div class="aboutMain__head">
@@ -298,7 +300,7 @@
 		</section>
 
 		<section class="advantagesWrap container">
-			<h2>Доктор Ост преимущества</h2>
+			<h2>Преимущества Доктор Ост</h2>
 			<div class="advantages">
 				<div class="advantages-item">
 					<div class="advantages__text advantages__text-1">Высокое оснащение инновационными методами лечения</div>
@@ -369,8 +371,12 @@
 				</div>
 			</div>
 			<div class="methodsMain__sliderNav">
-				<div class="methodsMain__sliderArrows"></div>
-				<form action="#" method="POST">
+				<div class="methodsMain__sliderArrows">
+					<form class="d-none" action="#" method="POST">
+						<button class="btn__white">Все методики</button>
+					</form>
+				</div>
+				<form class="md-none" action="#" method="POST">
 					<button class="btn__white">Смотреть все 57 методик лечения</button>
 				</form>
 			</div>
@@ -473,11 +479,38 @@
 						</div>
 					</div>
 				</div>
+				<div class="doctor__slider-item">
+					<div class="doctor__info">
+						<div class="doctor__info__photo" style="background:url(img/doctors/Семенов.png) center center / cover no-repeat;">
+						</div>
+						<div class="doctor__info__desc">
+							<div class="doctor__info__desc-head"><span class="doctor__info__bigtext">Семёнов</span> Артём Борисович</div>
+							<div class="doctor__info__speciality">
+								<p>Невролог</p>
+							</div>
 
+							<div class="doctor__info__onbottom">
+								
+								
+								<div class="doctor__info__buttons">
+									<form action="/spetsialisty/nevrolog/maksimova/" method="POST">
+										<button class="doctor__info__detail">О специалисте</button>
+									</form>
+									<button class="btn__orange openModal">Записаться</button>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="doctor__sliderNav">
-				<div class="doctor__sliderArrows"></div>
-				<form action="#" method="POST">
+				<div class="doctor__sliderArrows">
+					<form class="d-none" action="#" method="POST">
+						<button class="btn__white">Все специалисты</button>
+					</form>
+				</div>
+				<form class="md-none" action="#" method="POST">
 					<button class="btn__white">Все специалисты</button>
 				</form>
 			</div>
@@ -529,8 +562,12 @@
 			</div>
 			
 			<div class="salesMain__sliderNav">
-				<div class="salesMain__sliderArrows"></div>
-				<form action="#" method="POST">
+				<div class="salesMain__sliderArrows">
+					<form class="d-none" action="#" method="POST">
+						<button class="btn__white">Все акции</button>
+					</form>
+				</div>
+				<form class="md-none" action="#" method="POST">
 					<button class="btn__white">Все акции и скидки</button>
 				</form>
 			</div>
@@ -596,7 +633,7 @@
 						<div class="reviews__slider__desc-h">НОЮЩАЯ БОЛЬ В ТАЗОБЕДРЕННОМ И КОЛЕННОМ СУСТАВАХ, ОГРАНИЧЕНИЕ ПОДВИЖНОСТИ</div>
 						<div class="reviews__slider__patient">
 							<div class="reviews__slider__patient-name">Эльвира, 42 года</div>
-							<div class="reviews__slider__patient-diag">Диагноз: <span>Межпозвоночн</span></div>
+							<div class="reviews__slider__patient-diag">Диагноз: <span>Межпозвоночная грыжа</span></div>
 						</div>
 						<div class="reviews__slider__hashtags">
 							<div class="reviews__slider__hashtags-item">Магнитотерапия</div>
@@ -628,8 +665,12 @@
 				</a>
 			</div>
 			<div class="reviewsMain__sliderNav">
-				<div class="reviewsMain__sliderArrows"></div>
-				<form action="#" method="POST">
+				<div class="reviewsMain__sliderArrows">
+					<form class="d-none" action="#" method="POST">
+						<button class="btn__white">Все отзывы</button>
+					</form>
+				</div>
+				<form class="md-none" action="#" method="POST">
 					<button class="btn__white">Все отзывы</button>
 				</form>
 			</div>
@@ -637,32 +678,33 @@
 
 		<section class="newsMain container">
 			<div class="newsMain__head">
-				<h2>"Доктор Ост" Новости</h2>
+				<h2>Новости</h2>
 			</div>
 
 			<div class="newsWrap__list newsMain__slider">
 				<a class="newsWrap__list-item" href="#">
 					<div class="newsWrap__list__pic" style="background:url(img/main/sale1.jpg);"></div>
-					<h2>Название заголовка может быть в две строки</h2>
+					<h2>НУЖНА ВАША ПОДДЕРЖКА В НАРОДНОМ ГОЛОСОВАНИИ!</h2>
 					<div class="newsWrap__announce">
-						<p>Не стоит откладывать визит в "Доктор Ост", тем более, если консультацию неврологаили ортопеда можно получить с 50% скидкой!</p>
-						<div class="newsWrap__announce-link">Подробнее</div>
+						<p>Медцентр участвует в конкурсе «Клиника года». Доктор ОСТ Уфа работает в столице Башкортостана чуть меньше года, но уже за это время сумел завоевать доверие среди сотен благодарных пациентов!</p>
+						<div class="newsWrap__announce-link">Читать полностью</div>
 					</div>
 				</a>
 				<a class="newsWrap__list-item" href="#">
 					<div class="newsWrap__list__pic" style="background:url(img/main/sale1.jpg);"></div>
-					<h2>Название заголовка может быть в две строки</h2>
+					<h2>"ДОКТОР ОСТ" В КРАСНОЯРСКЕ ПЕРЕЕХАЛ!</h2>
 					<div class="newsWrap__announce">
-						<p>Не стоит откладывать визит в "Доктор Ост", тем более, если консультацию неврологаили ортопеда можно получить с 50% скидкой!</p>
-						<div class="newsWrap__announce-link">Подробнее</div>
+						<p>Уважаемые пациенты! Медицинский центр "Доктор Ост" в Красноярске переехал в новое просторное помещение по адресу:
+							Светлогорский переулок, 19А. </p>
+						<div class="newsWrap__announce-link">Читать полностью</div>
 					</div>
 				</a>
 				<a class="newsWrap__list-item" href="#">
 					<div class="newsWrap__list__pic" style="background:url(img/main/sale1.jpg);"></div>
-					<h2>Название заголовка может быть в две строки</h2>
+					<h2>ПОДАРОЧНЫЕ СЕРТИФИКАТЫ ПОЯВИЛИСЬ В ДОКТОР ОСТ!</h2>
 					<div class="newsWrap__announce">
-						<p>Не стоит откладывать визит в "Доктор Ост", тем более, если консультацию неврологаили ортопеда можно получить с 50% скидкой!</p>
-						<div class="newsWrap__announce-link">Подробнее</div>
+						<p>Cнова ломаете голову над тем, что подарить на Новый год? Перестаньте это делать! Лучше поспешите в Доктор ОСТ, ведь здесь можно приобрести по‑настоящему стоящий подарок — сертификат на лечение.</p>
+						<div class="newsWrap__announce-link">Читать полностью</div>
 					</div>
 				</a>
 				<a class="newsWrap__list-item" href="#">
@@ -670,14 +712,18 @@
 					<h2>Название</h2>
 					<div class="newsWrap__announce">
 						<p>Не стоит!</p>
-						<div class="newsWrap__announce-link">Подробнее</div>
+						<div class="newsWrap__announce-link">Читать полностью</div>
 					</div>
 				</a>
 			</div>
 			
 			<div class="newsMain__sliderNav">
-				<div class="newsMain__sliderArrows"></div>
-				<form action="#" method="POST">
+				<div class="newsMain__sliderArrows">
+					<form class="d-none" action="#" method="POST">
+						<button class="btn__white">Все новости</button>
+					</form>
+				</div>
+				<form class="md-none" action="#" method="POST">
 					<button class="btn__white">Все новости</button>
 				</form>
 			</div>
