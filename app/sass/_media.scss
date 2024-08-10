@@ -229,10 +229,6 @@
 		padding: 1rem 1rem 1rem 2rem;
 	}
 
-	.author__body {
-		padding-top: 0;
-	}
-
 	.reasons_info .col-lg-6 {
 		padding: 2rem;
 	}
@@ -699,7 +695,6 @@
         		width: fit-content;
 			}
 		}
-
 		&__list {
 			&-item {
 				min-height: auto; 
@@ -710,7 +705,60 @@
 				background-position: center;
 			}
 		}
+		&__methods {
+			margin: 4rem 0 3.2rem 0;
+		}
+		&__methodsList {
+			&-item { 
+				width: 100%;
+				position: relative;
+				&:after {
+					position: absolute;
+					right: 1.2rem;
+				}
+			}
+		}
 	}
+
+	.videoDetail {
+		font-size: 1.6rem;
+		line-height: 2rem;
+		&__content {
+			margin: 0 -1.5rem;
+		}
+	}
+
+	.author {
+		display: flex;
+		flex-wrap: nowrap;
+		&__text {
+			padding: 1.2rem 0.8rem 0.8rem 1.2rem;
+		}
+		&__expert, 
+		&__speciality, 
+		&__link {
+			font-size: 1.2rem;
+			line-height: 1.6rem;
+		}
+		&__link {
+			margin-top: 1.6rem;
+		}
+		&__name {
+			font-size: 1.4rem;
+			line-height: 2rem;	
+			margin-bottom: 1.2rem;
+		}
+
+		&__doctor {
+			flex-direction: row;
+			margin: 0;
+			width: auto;
+			&__photo {
+				width: 14rem;
+			}
+		}
+	}
+	
 
 	.newsMain__head h2,
 	.reviewsMain__head h2,
@@ -1387,7 +1435,7 @@
 			font-size: 1.8rem;
 			line-height: 2.1rem;
 			flex: auto;
-			min-height:auto;
+			min-height: auto;
 			h1 {
 				font-size: 2.2rem;
 				line-height: 2.5rem;

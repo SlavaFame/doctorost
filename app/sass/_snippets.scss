@@ -11,6 +11,16 @@
 	text-align: center;
 }
 
+.d-flex {
+	display:flex!important;
+} 
+
+.justify-content-center {
+	display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
 .contacts__row {
 	margin-top: 1.5rem;
 }
@@ -180,63 +190,56 @@ p.blu {
 	h2 {
 		margin: 1.5rem 0;
 	}
-}
-
-#achievements .box {
-    height: 20rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-#achievements .box.box_1,
-#achievements .box.box_2,
-#achievements .box.box_3,
-#achievements .box.box_4 {
-    padding-left: 1.5rem;
-}
-#achievements .box.box_4 {
-    padding-right: 4rem;
-}
-
-#achievements .box h2 {
-    font-size: 5.5rem;
-    line-height: 1;
-    color: $white;
-    font-weight: 600;
-}
-
-#achievements .box h2.box_4 {
-    font-size: 6rem;
-}
-
-#achievements .box h2.box_4 span {
-    font-size: 2.4rem;
-}
-
-#achievements .box h3 {
-    font-size: 3.6rem;
-    line-height: 1;
-    color: $white;
-    font-weight: 700;
-	margin: 0;
-}
-
-#achievements .box h4 {
-    font-size: 4.8rem;
-	line-height: 1;
-    font-weight: 700;
-    color: $white;
-    margin: 0!important;
-    text-transform: capitalize!important;
-    text-align: left;
-}
-
-#achievements .box p {
-    font-size: 2.4rem;
-	line-height: 2.8rem;
-	font-weight: 500;
-    color: $white;
-    margin: 0;
+	.box {
+		height: 20rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		h2 {
+			font-size: 5.5rem;
+			line-height: 1;
+			color: $white;
+			font-weight: 600;
+			.box_4 {
+				font-size: 6rem;
+				span {
+					font-size: 2.4rem;
+				}
+			}
+		}
+		h3 {
+			font-size: 3.6rem;
+			line-height: 1;
+			color: $white;
+			font-weight: 700;
+			margin: 0;
+		}
+		h4 {
+			font-size: 4.8rem;
+			line-height: 1;
+			font-weight: 700;
+			color: $white;
+			margin: 0!important;
+			text-transform: capitalize!important;
+			text-align: left;
+		}
+		p {
+			font-size: 2.4rem;
+			line-height: 2.8rem;
+			font-weight: 500;
+			color: $white;
+			margin: 0;
+		}
+		.box_4 {
+			padding-right: 4rem;
+		}
+	}
+	.box.box_1,
+	.box.box_2,
+	.box.box_3,
+	.box.box_4 {
+	   padding-left: 1.5rem;
+   }
 }
 
 .tiles_achievements {
@@ -307,16 +310,6 @@ h2.last span {
 .square_wrap:nth-child(6):hover .square_link {
 	background: $white;
 	color: $green-3;
-}
-
-.d-flex {
-	display:flex!important;
-} 
-
-.justify-content-center {
-	display: flex;
-    justify-content: center;
-    flex-wrap: wrap; 
 }
 
 .square {
