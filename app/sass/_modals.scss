@@ -1,127 +1,17 @@
-/*#overlay {
-    background: rgba(0,0,0,.5);
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    z-index: 1002;
-}
-
-#overlay, .modal_div {
-    position: fixed;
-    display: none;
-}
-
-.modal_div {
-    background: $white;
-    z-index: 1003;
-    width: 53rem;
-    form {
-        padding: 2rem 4rem;
-        border: 0.2rem solid $green-1;
-    }
-}
-
-.modal_div, .spec_slides_faq .photo img {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-*/
-.form-bars,
 .result_form {
     p {
         font-size: 1.8rem; 
         line-height: 2.1rem;
     }
 }
-    /*
-.ya-share2__container {
+
+/* .ya-share2__container {
     padding: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
+} */ 
 
-.form-bars__title {
-    background: $green-1;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 1.8rem; 
-}
-
-.form__fieldset {
-    border: none;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
-    padding: 0;
-    input {
-        font-size: 1.6rem; 
-        padding: 8px 18px;
-        width: 100%;
-        border: 1px solid #cfcfcf;
-    }
-
-    span {
-        font-size: 1.6rem; 
-        color: $green-1;
-        margin-bottom: 1rem;
-    }
-
-    textarea {
-        border: 1px solid #cfcfcf;
-        font-size: 1.6rem; 
-        width: 100%;
-        height: 120px;
-        padding: 8px 18px;
-        resize: none;
-    }
-}
-
-.form-bars__title .modal_close {
-    width: 2rem;
-    height: 2rem;
-    position: relative;
-    cursor: pointer;
-}
-.form-bars__title .modal_close:before {
-    transform: rotate(45deg);
-}
-.form-bars__title .modal_close:after {
-    transform: rotate(-45deg);
-}
-.form-bars__title .modal_close:after, .form-bars__title .modal_close:before {
-    content: "";
-    width: 2rem;
-    height: 0.3rem;
-    margin-top: 1rem;
-    background: $white;
-    position: absolute;
-}
-
-.form__submit {
-    color: $white;
-    background-color: $orange;
-    border: 0.3rem solid $orange;
-    width: 100%;
-    padding: 1.5rem;
-    font-size: 1.6rem; 
-    font-weight: 700;
-    margin: 2rem 0 0 0;
-    cursor: pointer;
-    text-transform: uppercase;
-    &:hover {
-        color: $orange;
-        background-color: $white;
-    }
-}
-*/ 
 .thanks-form {
     font-size: 1.8rem; 
     line-height: 2.1rem;
@@ -133,7 +23,6 @@
         margin: 1rem 0 0 0;
     }
 }
-
 
 .modalview {
     width: 40rem;
@@ -147,6 +36,9 @@
     top: calc(30% - 10rem);
     left: calc(50% - 20rem);
 	&-body {
+        background-position: center;
+        background-size: contain; 
+        background-repeat: no-repeat;
 		height: 100%;
 		width: 100%;
 		display: flex;
@@ -207,4 +99,8 @@
         left: 0;
         top: calc(50% - 7rem);
     }
+}
+
+.promo, .overlay, .modal {
+    z-index:4!important;
 }

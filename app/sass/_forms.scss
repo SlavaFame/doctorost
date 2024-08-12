@@ -589,10 +589,10 @@ body {
 	}
 
 	&__form {
-		
 		&-outer {
 			border: 0.2rem solid $green-1;
 			flex: 1;
+			min-height: 19rem;
 			max-width: 62rem;
 			padding: 1.6rem 2rem;
 			position: relative;

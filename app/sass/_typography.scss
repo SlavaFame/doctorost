@@ -101,6 +101,11 @@ h2, h3, h4, h5 {
 	margin: 1.5rem 0;
 }
 
+video {
+	object-fit: cover;
+	cursor: pointer;
+}
+
 .regular__section {
 	font-weight: 300;
 	font-size: 1.8rem;
@@ -112,6 +117,10 @@ h2, h3, h4, h5 {
 
 	img {
 		max-width: 100%;
+	}
+
+	video {
+		width: 100%
 	}
 }
 
@@ -148,12 +157,5 @@ h2, h3, h4, h5 {
 	}
 	.navBottom__pic {
 		background-color: $orange;
-	}
-	&:hover {
-		border: 0.6rem solid #0079a7!important;
-		color: #0079a7!important;
-		.navBottom__pic {
-			background-color: #0079a7!important;
-		}
 	}
 }

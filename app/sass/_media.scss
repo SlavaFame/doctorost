@@ -432,10 +432,6 @@
 		}
 	}
 
-	.modal_div {
-		width: 100%;
-	}
-
 	.aboutMain {
 		&__head {
 			margin: 6rem auto 0 0;
@@ -2172,6 +2168,12 @@
 }
 
 @media (max-width: 600px){
+
+	.modal-tele {
+        left: 0;
+        top: calc(50% - 7rem);
+    }
+
 	.floatLeft {
         float: none;
         width: 100%;
